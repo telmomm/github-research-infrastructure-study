@@ -63,10 +63,22 @@ Methodological decisions are logged separately in [`docs/DECISION_LOG.md`](docs/
 - `docs/TEMPLATE_PROJECT.md` — marked as draft; the built template in `template/` is authoritative.
 - `docs/ROADMAP.md` — Phase 7 marked complete; `docs/README.md`, `analysis/README.md` updated.
 
-### Working towards
-- Phase 8 — Case study (self-referential + template as transferable artifact; check the lifecycle model against this repo's history).
+### Added — Phase 8: Case study (self-referential, RQ5)
+- `case-study/implementation_record.csv` — architecture components A1–X1 with implementation status and evidence.
+- `case-study/activity_register.csv` — reconstructed register: 5 RQs, 8 milestones, 16 tasks, 14 decisions, with links.
+- `case-study/traceability_examples.md` — four end-to-end chains through real artifacts; `case-study/README.md`.
+- Framework configuration applied to this repository: `CITATION.cff`, `CONTRIBUTING.md`, `LICENSE`; `.github/ISSUE_TEMPLATE/`, `.github/pull_request_template.md`, `.github/labels.yml`, `.github/project-fields.md`, `.github/mlc-config.json`, `.github/release-checklist.md`, `.github/workflows/validate-structure.yml`, `.github/workflows/markdown-link-check.yml`; `docs/conventions.md`, `docs/glossary.md`. Root/`.github` inventory now mirrors the template.
+- `analysis/scripts/summarise_case_study.py` → `results/framework/cs_*.csv`, `case_study_summary.md`.
+- `docs/PHASE8_PROGRESS.md`; `DECISION_LOG.md` D14.
 
-### Pending / optional (do not block Phase 8)
+### Changed
+- `docs/CASE_STUDY.md` — marked as protocol; the `case-study/` record is authoritative.
+- `docs/ROADMAP.md` — Phase 8 marked complete; `docs/README.md`, `analysis/README.md` updated.
+
+### Working towards
+- Phase 9 — Evaluation (score the six dimensions; build the fragmented-workflow comparison).
+
+### Pending / optional (do not block Phase 9)
 - Track A: Crossref / Semantic Scholar citation enrichment; precision check on the broad OpenAlex queries; 2025 tail treatment; co-word map rendering.
 - Factcheck `literature/references.bib` (venues, volumes, pages, DOIs).
 - Second-coder reliability on the requirement extraction and the RE→RM assignment (~20%) — deferred, single-coder project.

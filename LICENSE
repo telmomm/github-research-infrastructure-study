@@ -1,0 +1,8 @@
+Copyright (c) 2026 Telmo Miguel-Medina
+
+This repository contains mixed material. Pending a final choice, the intended licensing is:
+  - Code (analysis/, template/ workflows and scripts): MIT
+  - Text and figures (docs/, manuscript/, framework/ narratives): CC-BY-4.0
+  - Datasets (data/processed/, literature/*.csv): CC-BY-4.0
+
+Replace this file with the chosen licence text(s) before the v1.0 release (Phase 12).

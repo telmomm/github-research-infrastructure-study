@@ -1,0 +1,41 @@
+name: validate-structure
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+# Self-referential check: this study repo follows its own framework (Phase 8).
+jobs:
+  structure:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Required folders and documents
+        run: |
+          set -e
+          req_dirs="docs literature data data/raw data/processed analysis analysis/scripts \
+            framework framework/requirements framework/mapping framework/architecture \
+            template manuscript results case-study .github/ISSUE_TEMPLATE .github/workflows"
+          req_files="README.md CHANGELOG.md CITATION.cff CONTRIBUTING.md LICENSE .gitignore \
+            docs/DECISION_LOG.md docs/ROADMAP.md docs/conventions.md \
+            docs/PHASE1_PROJECT_DEFINITION.md \
+            framework/requirements/requirements_framework.csv \
+            framework/mapping/requirement_feature_matrix.csv \
+            framework/architecture/reference_architecture.md \
+            template/template_manifest.csv case-study/implementation_record.csv \
+            .github/pull_request_template.md .github/labels.yml"
+          fail=0
+          for d in $req_dirs; do [ -d "$d" ] || { echo "::error::missing directory $d"; fail=1; }; done
+          for f in $req_files; do [ -f "$f" ] || { echo "::error::missing file $f"; fail=1; }; done
+          exit $fail
+      - name: No large data committed
+        run: |
+          set -e
+          bad=$(git ls-files 'data/raw/**' 'data/processed/**' | grep -v -E '(\.gitkeep|README\.md|corpus\.csv|dedup_report\.md)$' || true)
+          if [ -n "$bad" ]; then echo "::error::unexpected data files tracked in Git:"; echo "$bad"; exit 1; fi
+      - name: Framework cross-tabs regenerate
+        run: |
+          set -e
+          for s in summarise_requirements summarise_capabilities coverage_indicators summarise_architecture check_template summarise_case_study; do
+            python3 "analysis/scripts/$s.py" >/dev/null || { echo "::error::$s.py failed"; exit 1; }
+          done

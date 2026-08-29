@@ -1,0 +1,47 @@
+name: Decision record (Dn)
+description: A significant methodological or scope decision. Pairs with a docs/decision-log.md entry.
+title: "[decision] "
+labels: ["decision"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Convention 3 (`docs/conventions.md`). After deciding, add the matching
+        `Dn` entry to `docs/decision-log.md` in a PR and link it here.
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: What prompted this decision?
+    validations:
+      required: true
+  - type: textarea
+    id: options
+    attributes:
+      label: Options considered
+      description: List the alternatives.
+    validations:
+      required: true
+  - type: textarea
+    id: decision
+    attributes:
+      label: Proposed decision
+    validations:
+      required: true
+  - type: textarea
+    id: affects
+    attributes:
+      label: Affects
+      description: Files, issues, RQs, results that change if this is adopted.
+    validations:
+      required: true
+  - type: input
+    id: supersedes
+    attributes:
+      label: Supersedes
+      description: e.g. "D3", or leave blank.
+  - type: input
+    id: discussion
+    attributes:
+      label: Deliberation link
+      description: Discussion thread / poll where this was debated.

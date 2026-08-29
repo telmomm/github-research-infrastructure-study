@@ -19,6 +19,7 @@ The purpose of the documentation is to provide a transparent and traceable recor
 | [PHASE5_PROGRESS.md](PHASE5_PROGRESS.md) | Phase 5 status: requirement–feature mapping, RM1–RM15 scored (mean 2.33/3); handoff to Phase 6 |
 | [PHASE6_PROGRESS.md](PHASE6_PROGRESS.md) | Phase 6 status: reference architecture, 15 components / 7 workflows (`framework/architecture/`); handoff to Phase 7 |
 | [PHASE7_PROGRESS.md](PHASE7_PROGRESS.md) | Phase 7 status: reusable template, 33 files (`template/`); handoff to Phase 8 |
+| [PHASE8_PROGRESS.md](PHASE8_PROGRESS.md) | Phase 8 status: self-referential case study (`case-study/`), 8/15 components exercised; handoff to Phase 9 |
 | [PAPER_PLAN.md](PAPER_PLAN.md) | Complete conceptual structure of the scientific paper |
 | [ROADMAP.md](ROADMAP.md) | Research project phases and development roadmap |
 | [RESEARCH_DESIGN.md](RESEARCH_DESIGN.md) | Overall research design |

@@ -1,5 +1,12 @@
 # Case Study Protocol
 
+> **Status (2026-08-30).** Phase 8 executed. The **case-study record** is authoritative at
+> [`case-study/`](../case-study/) — `implementation_record.csv`, `activity_register.csv`,
+> `traceability_examples.md`, `README.md`. See `DECISION_LOG.md` D5 and D14 and
+> `PHASE8_PROGRESS.md`. Approach: self-referential (Option A) + reusable template.
+> The protocol below is the design input; note D14 — the Issue/Project/PR layer was
+> specified and configured but not exercised (single-author sprint).
+
 # Purpose
 
 This document defines the real-world implementation and evaluation of the proposed GitHub-based research management framework.

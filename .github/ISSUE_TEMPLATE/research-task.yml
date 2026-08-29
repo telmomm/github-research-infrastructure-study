@@ -1,0 +1,51 @@
+name: Research task
+description: A unit of research work (literature, data, analysis, documentation, manuscript...).
+title: "[task] "
+labels: ["general-task"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Set an **activity label**, a **Research phase** and a **milestone** after creating.
+        The task must reference the research question it serves.
+  - type: textarea
+    id: what
+    attributes:
+      label: What needs doing
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Definition of done
+      description: Concrete, checkable outcome. Use "- [ ]" items.
+    validations:
+      required: true
+  - type: input
+    id: rq
+    attributes:
+      label: Serves research question
+      description: e.g. "Refs #7"
+    validations:
+      required: true
+  - type: dropdown
+    id: activity
+    attributes:
+      label: Activity
+      options:
+        - literature
+        - methodology
+        - data
+        - analysis
+        - validation
+        - documentation
+        - manuscript
+        - automation
+        - infrastructure
+    validations:
+      required: true
+  - type: textarea
+    id: artifacts
+    attributes:
+      label: Artifacts affected
+      description: Files / folders this will create or change.

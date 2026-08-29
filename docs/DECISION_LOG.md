@@ -164,3 +164,17 @@ Chronological record of major methodological decisions. Each entry: ID, date, co
   - **Large data excluded** by `.gitignore` and the `data/external/` pointer convention.
   - **Two-repository strategy** (from `REPOSITORY_ARCHITECTURE.md`): the template lives inside the study repo for development/evaluation; it is extracted as an independent GitHub template repository at Phase 12.
 - **Affects:** `template/`; `TEMPLATE_PROJECT.md` (draft; the built template is authoritative); `PHASE7_PROGRESS.md`; `analysis/scripts/check_template.py`; `results/framework/`; `FIGURES_AND_TABLES.md` (Table 4).
+
+---
+
+## D14 — Case study executed self-referentially; coordination layer specified but not exercised
+
+- **Date:** 2026-08-30
+- **Context:** Phase 8 applies the framework (D5: self-referential + template). Phases 1–7 were done as a single-author working sprint, so the GitHub-native Issue / Project / Pull Request / Release layer was never used during the study.
+- **Decision:** Record the case study honestly as a **document-and-git implementation** of the framework:
+  - `case-study/implementation_record.csv` classifies each architecture component as native / partial / config / retrospective / planned.
+  - `case-study/activity_register.csv` **reconstructs** the RQ / milestone / task / decision register that would have been GitHub Issues (5 RQs, 8 milestones, 16 tasks, 14 decisions) — labelled as a reconstruction, not lived history.
+  - Framework configuration (`.github/` issue forms, PR template, labels, project-fields, `validate-structure` workflow, `docs/conventions.md`, `CONTRIBUTING.md`, `LICENSE`) is **added to this repository** now (task T16) so it is available going forward.
+  - The un-exercised components (A4, D1, D2, X1) and the requirements they serve (RM6, RM7, RM14, RM15) are scored in Phase 9 on **design support**, not observed use, and flagged.
+- **Rationale:** fabricating an Issue/PR history would be dishonest and circular. The genuine result — the record/decision/version-control spine works with near-zero overhead while the coordination layer was not adopted solo — is itself informative and becomes the study's main practical limitation and a clear future-work direction (multi-author, multi-project evaluation).
+- **Affects:** `case-study/`; `.github/`; `docs/conventions.md`; `CONTRIBUTING.md`; `LICENSE`; `CASE_STUDY.md` (draft; `case-study/` is the record); `PHASE8_PROGRESS.md`; `analysis/scripts/summarise_case_study.py`; `EVALUATION_PROTOCOL.md` (Phase 9 scores design support where use is absent).

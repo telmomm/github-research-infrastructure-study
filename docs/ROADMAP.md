@@ -15,8 +15,9 @@
 | 5 — Requirement–feature mapping | **complete** — RM1–RM15 scored (mean 2.33/3), `framework/mapping/requirement_feature_matrix.csv` + `coverage_analysis.md` (`PHASE5_PROGRESS.md`, `DECISION_LOG.md` D11) |
 | 6 — Reference architecture | **complete** — 15 components / 5 layers, 7 workflows, 12-stage lifecycle model in `framework/architecture/` (`PHASE6_PROGRESS.md`, `DECISION_LOG.md` D12) |
 | 7 — Reusable template | **complete** — 33-file template in `template/github-research-project-template/` (`PHASE7_PROGRESS.md`, `DECISION_LOG.md` D13) |
-| 8 — Case study | next |
-| 9–12 | not started |
+| 8 — Case study | **complete** — self-referential record in `case-study/`; 8/15 components exercised (`PHASE8_PROGRESS.md`, `DECISION_LOG.md` D14) |
+| 9 — Evaluation | next |
+| 10–12 | not started |
 
 ---
 

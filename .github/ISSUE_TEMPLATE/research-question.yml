@@ -1,0 +1,34 @@
+name: Research question (RQ-n)
+description: Register or refine a research question. Title must be "RQ-n: <question>".
+title: "RQ-: "
+labels: ["research-question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Convention 2 (`docs/conventions.md`). After creating this issue, add it to
+        the RQ index (issue #1) and set its Research phase on the Project.
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: State the research question precisely.
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Why it matters
+      description: What gap or need does it address?
+    validations:
+      required: true
+  - type: textarea
+    id: approach
+    attributes:
+      label: Intended approach
+      description: How will it be answered (methods, data)? Link related issues later with "Refs #".
+  - type: input
+    id: parent
+    attributes:
+      label: Parent / related RQ
+      description: e.g. "Refs #12" if this refines another question.
