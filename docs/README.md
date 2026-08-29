@@ -12,6 +12,7 @@ The purpose of the documentation is to provide a transparent and traceable recor
 
 | File | Purpose |
 |---|---|
+| [PHASE1_PROJECT_DEFINITION.md](PHASE1_PROJECT_DEFINITION.md) | **Authoritative** Phase 1 output: problem, aim, RQs, scope, journal positioning, structure, repo architecture |
 | [PAPER_PLAN.md](PAPER_PLAN.md) | Complete conceptual structure of the scientific paper |
 | [ROADMAP.md](ROADMAP.md) | Research project phases and development roadmap |
 | [RESEARCH_DESIGN.md](RESEARCH_DESIGN.md) | Overall research design |

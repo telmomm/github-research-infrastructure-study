@@ -2,773 +2,378 @@
 
 # From Code Repository to Research Infrastructure: Evaluating GitHub for Managing the Scientific Research Lifecycle
 
+**Aligned with:** `PHASE1_PROJECT_DEFINITION.md` (authoritative) · `DECISION_LOG.md` D1–D5
+**Target journal:** *Scientometrics* (Springer Nature)
+**Framing:** Hybrid — bibliometric field analysis + reproducible requirement–feature coverage analysis + synthesised reference architecture and reusable template
+
 ---
 
 # 1. Purpose
 
-This document defines the overall research design for the study:
+This document defines the overall research design: the logic connecting the research questions to the data, methods and outputs. It operationalises the Phase 1 project definition and governs Phases 2–10 of the roadmap.
 
-> **From Code Repository to Research Infrastructure: Evaluating GitHub for Managing the Scientific Research Lifecycle**
-
-The study investigates whether GitHub can be systematically used beyond software development as a structured infrastructure for managing scientific research activities across the research lifecycle.
-
-The research design integrates:
-
-* structured literature analysis;
-* requirements identification;
-* GitHub capability analysis;
-* requirement-feature mapping;
-* reference architecture development;
-* reusable template development;
-* real-world implementation;
-* framework evaluation.
-
-The study follows a **design-and-evaluation research approach**, in which a practical artifact is developed from identified research needs and subsequently evaluated through systematic analysis and real-world implementation.
+The study investigates whether, and to what extent, GitHub's native functionalities can serve as an integrated coordination, documentation and traceability layer for scientific research projects across the research lifecycle. It does **not** treat GitHub as a replacement for specialised research infrastructure.
 
 ---
 
 # 2. Research problem
 
-Scientific research projects generate multiple interconnected activities and artifacts.
+Scientific projects generate a chain of interdependent artifacts — research question, protocol, literature corpus, data, analysis code, computational environment, intermediate results, figures, tables, manuscript, publication, software, supplementary material — that evolve over the life of the project.
 
-These may include:
+In common practice these artifacts and their generating activities are spread across disconnected systems (email, cloud storage, local folders, spreadsheets, reference managers, statistical software, code repositories, task managers, manuscript editors). Each tool serves its local function, but the coordination layer between them is largely absent. The literature associates this fragmentation with weak decision traceability, incomplete process documentation, inconsistent versioning, limited provenance and low project visibility.
 
-* research ideas;
-* research questions;
-* project plans;
-* protocols;
-* literature searches;
-* methodological decisions;
-* datasets;
-* analysis scripts;
-* computational environments;
-* intermediate results;
-* figures;
-* tables;
-* manuscripts;
-* publications;
-* software;
-* supplementary materials.
-
-These artifacts frequently evolve throughout a research project and may be distributed across multiple disconnected systems.
-
-A typical fragmented research environment may include:
-
-```text
-Email
-   +
-Cloud storage
-   +
-Local folders
-   +
-Spreadsheets
-   +
-Reference managers
-   +
-Statistical software
-   +
-Code repositories
-   +
-Task management tools
-   +
-Manuscript editors
-```
-
-Although specialized tools may effectively support individual activities, fragmentation can create challenges related to:
-
-* project coordination;
-* traceability;
-* documentation;
-* version consistency;
-* research provenance;
-* decision reconstruction;
-* project visibility;
-* artifact relationships.
-
-The study investigates whether GitHub can provide a structured coordination and traceability layer connecting significant components of the scientific research lifecycle.
+Code-hosting platforms already provide primitives for coordination, versioning, issue tracking, structured discussion, review and automation. Whether these primitives can be organised into an infrastructure for managing the research *process* — and which lifecycle stages such an infrastructure can actually cover — has not been established on an evidentiary basis. The *management* of the research process, as distinct from the archiving of its outputs, has received little systematic quantitative attention.
 
 ---
 
 # 3. Central research concept
 
-The central concept of the study is:
-
-```text
-SCIENTIFIC RESEARCH
-        │
-        ▼
-RESEARCH MANAGEMENT REQUIREMENTS
-        │
-        ▼
-DIGITAL CAPABILITIES
-        │
-        ▼
-GITHUB-BASED IMPLEMENTATION
-        │
-        ▼
-RESEARCH MANAGEMENT INFRASTRUCTURE
 ```
-
-The study does not assume that GitHub should replace all existing research tools.
-
-Instead, it evaluates whether GitHub can function as a central infrastructure for:
-
-* coordination;
-* documentation;
-* traceability;
-* collaboration;
-* version control;
-* workflow management;
-* research artifact organization.
+SCIENTIFIC LITERATURE ON RESEARCH-PROCESS INFRASTRUCTURE
+                    │
+        ┌───────────┴───────────┐
+        ▼                       ▼
+BIBLIOMETRIC MAP          SCREENED SUBSET
+(field structure,          (requirement
+ trends, gaps)              extraction)
+        │                       │
+        │                       ▼
+        │          RESEARCH MANAGEMENT REQUIREMENTS
+        │                       │
+        │                       ▼
+        │          GITHUB CAPABILITY CATALOGUE
+        │                       │
+        │                       ▼
+        └────────►  REQUIREMENT × FUNCTIONALITY COVERAGE
+                                │
+                                ▼
+                    REFERENCE ARCHITECTURE + TEMPLATE
+                                │
+                                ▼
+                 SELF-REFERENTIAL IMPLEMENTATION + EVALUATION
+```
 
 ---
 
 # 4. Study aim
 
-The overall aim of the study is:
-
-> **To develop and evaluate a GitHub-based framework for managing scientific research projects across the research lifecycle.**
+> **To characterise the scholarly literature on digital infrastructure for research-process management, derive a lifecycle-structured set of research management requirements from it, and determine quantitatively to what extent GitHub's native functionalities cover those requirements — consolidating the covered functionalities into a reusable reference architecture and project template, and probing its feasibility through a self-referential implementation.**
 
 ---
 
-# 5. Study objectives
+# 5. Objectives and research questions
 
-The study will pursue the following objectives.
+| Objective | Research question | Method | Phase |
+|---|---|---|---|
+| O1 Characterise the field | **RQ1** How has the literature on digital infrastructure for managing the research process evolved in volume, disciplines, venues and thematic structure, and which lifecycle stages are under-represented? | Descriptive bibliometrics + co-word / keyword co-occurrence mapping over the full corpus | 2 |
+| O2 Derive requirements | **RQ2** What research project management requirements across the research lifecycle can be derived from the screened literature? | Thematic extraction and classification on the PRISMA-screened subset | 2–3 |
+| O3–O4 Map and quantify coverage | **RQ3** To what extent, with what support level and limitations do GitHub's native functionalities cover the requirements, and how is coverage distributed across lifecycle stages? | Capability catalogue + requirement×functionality mapping (4-level rubric) + coverage indicators | 4–5 |
+| O5 Synthesise the artifact | **RQ4** How can the covered functionalities be organised into a coherent reusable reference architecture and project template? | Synthesis of components, relationships, workflows, lifecycle integration; template operationalisation | 6–7 |
+| O6 Probe feasibility | **RQ5** What does a self-referential implementation plus the reusable template reveal about feasibility, traceability gains and limitations versus a fragmented workflow? | Self-referential case study + template packaging + structured six-dimension evaluation with fragmented-workflow comparison | 8–9 |
 
-## Objective 1
+**Main research question.** *To what extent can GitHub function as an integrated infrastructure for managing scientific research projects across the research lifecycle?*
 
-Identify research project management requirements reported in scientific literature.
-
-## Objective 2
-
-Analyse GitHub functionalities relevant to scientific research management.
-
-## Objective 3
-
-Develop a systematic mapping between research management requirements and GitHub capabilities.
-
-## Objective 4
-
-Develop a GitHub-based Research Management Reference Architecture.
-
-## Objective 5
-
-Develop a reusable GitHub Research Project Template.
-
-## Objective 6
-
-Implement the proposed framework in a real research context.
-
-## Objective 7
-
-Evaluate the framework regarding:
-
-* requirement coverage;
-* traceability;
-* documentation;
-* organization;
-* transparency;
-* usability.
+**RQ → Results mapping.** RQ1 → Results §1; RQ2 + RQ3 → Results §2; RQ4 + RQ5 → Results §3.
 
 ---
 
 # 6. Research approach
 
-The study combines conceptual and practical research components.
+The study is a **multi-method evidence synthesis** with three coupled components:
 
-```text
-CONCEPTUAL RESEARCH
-        │
-        ├── Literature analysis
-        │
-        ├── Requirement identification
-        │
-        └── Framework development
-        │
-        ▼
-PRACTICAL DEVELOPMENT
-        │
-        ├── GitHub implementation
-        │
-        ├── Template development
-        │
-        └── Case study
-        │
-        ▼
-EVALUATION
-        │
-        ├── Requirement coverage
-        ├── Traceability
-        ├── Documentation
-        ├── Organization
-        ├── Transparency
-        └── Usability
+```
+COMPONENT A — BIBLIOMETRIC ANALYSIS        (quantitative, descriptive)
+   corpus construction · trends · disciplines · venues · co-word maps · lifecycle gap analysis
+                    │
+                    ▼
+COMPONENT B — COVERAGE ANALYSIS            (structured, reproducible mapping)
+   requirement extraction · GitHub capability catalogue · requirement×functionality matrix · coverage indicators
+                    │
+                    ▼
+COMPONENT C — SYNTHESIS + FEASIBILITY      (design synthesis, secondary)
+   reference architecture · reusable template · self-referential implementation · six-dimension evaluation
 ```
 
-The overall approach can therefore be described as a **design-and-evaluation study**.
+Component A supplies the science-of-science backbone expected by the target journal. Component B is the quantitative core of the contribution. Component C delivers the transferable artifact concisely and tests it once, self-referentially.
+
+The design retains a design-and-evaluation element (Component C) but subordinates it to the empirical components; it is **not** presented as a design-science paper.
 
 ---
 
 # 7. Research process
 
-The research process consists of eight principal stages.
-
-```text
-PHASE 1
-Research problem definition
-        │
-        ▼
-PHASE 2
-Literature analysis
-        │
-        ▼
-PHASE 3
-Research management requirements
-        │
-        ▼
-PHASE 4
-GitHub capability analysis
-        │
-        ▼
-PHASE 5
-Requirement-feature mapping
-        │
-        ▼
-PHASE 6
-Reference architecture development
-        │
-        ▼
-PHASE 7
-Template and case study implementation
-        │
-        ▼
-PHASE 8
-Evaluation
+```
+PHASE 1  Project definition                     → PHASE1_PROJECT_DEFINITION.md
+   │
+   ▼
+PHASE 2  Literature analysis (two tracks)        → corpus + screened subset + extraction dataset
+   │        A: bibliometric corpus  ·  B: PRISMA-screened subset
+   ▼
+PHASE 3  Requirements framework                  → Research Management Requirements Framework
+   │
+   ▼
+PHASE 4  GitHub capability analysis              → GitHub capability catalogue
+   │
+   ▼
+PHASE 5  Requirement–feature mapping             → coverage matrix + indicators
+   │
+   ▼
+PHASE 6  Reference architecture                  → conceptual architecture + lifecycle model
+   │
+   ▼
+PHASE 7  Reusable template                       → github-research-project-template
+   │
+   ▼
+PHASE 8  Case study (self-referential + template)→ implementation evidence
+   │
+   ▼
+PHASE 9  Evaluation                              → six-dimension scores + comparison
+   │
+   ▼
+PHASE 10 Analysis                                → coverage, feasibility, strengths, limitations
 ```
 
----
-
-# 8. Phase 1 — Research problem definition
-
-The first phase defines:
-
-* the research problem;
-* study scope;
-* study objectives;
-* research questions;
-* conceptual boundaries.
-
-## Output
-
-A clearly defined research problem and study scope.
+Evidence produced in each phase feeds the next.
 
 ---
 
-# 9. Phase 2 — Literature analysis
+# 8. Phase 1 — Project definition
 
-The literature analysis will identify previous evidence related to:
-
-* scientific research management;
-* research workflows;
-* research lifecycle management;
-* scientific collaboration;
-* research provenance;
-* research documentation;
-* digital research infrastructures;
-* reproducibility-related workflows.
-
-The purpose is not simply to summarize previous research.
-
-The evidence will be analysed to identify research management challenges and derive structured requirements.
-
-## Output
-
-A dataset of literature-derived research management needs and requirements.
+Fixes the research problem, aim, objectives, RQs, conceptual scope, journal positioning, manuscript structure and repository architecture. Output: `PHASE1_PROJECT_DEFINITION.md`. Closed 2026-08-29.
 
 ---
 
-# 10. Phase 3 — Research Management Requirements Framework
+# 9. Phase 2 — Literature analysis (two-track, nested)
 
-Literature evidence will be transformed into structured requirements.
+Detailed protocol in `LITERATURE_REVIEW.md`. Summary:
 
-The transformation process will follow:
+## Track A — Bibliometric corpus (RQ1)
 
-```text
-LITERATURE EVIDENCE
-        │
-        ▼
-RESEARCH MANAGEMENT CHALLENGE
-        │
-        ▼
-MANAGEMENT NEED
-        │
-        ▼
-REQUIREMENT
-        │
-        ▼
-REQUIREMENT CATEGORY
+- Databases: Scopus + Web of Science Core Collection (primary); OpenAlex / Dimensions (coverage check); Google Scholar (grey-literature spot checks only).
+- Registered search strings; retrieval date logged; window 2008–2025.
+- De-duplication → **corpus**.
+- Analysis: publication-year trend, document types, source/venue distribution, disciplinary categories, country/affiliation, author keywords and Keywords Plus, keyword co-occurrence and co-word maps (`bibliometrix` / VOSviewer), thematic evolution, and a mapping of corpus themes onto research-lifecycle stages to expose under-represented stages.
+
+## Track B — Screened subset (RQ2)
+
+- Title/abstract screening then full-text assessment against the inclusion/exclusion criteria in `LITERATURE_REVIEW.md`.
+- PRISMA 2020 flow diagram from corpus to included studies.
+- Data extraction per the variable table in `LITERATURE_REVIEW.md`.
+- Requirement extraction: literature evidence → identified challenge → management need → requirement → requirement category.
+- Reliability: a second coder double-codes a random ~20% of included studies for requirement extraction; agreement reported (Cohen's κ or percentage agreement); disagreements reconciled and logged.
+
+## Outputs
+
+Corpus dataset · bibliometric indicator tables and maps · PRISMA record · included-study dataset · data-extraction table · requirement-extraction dataset with evidence.
+
+---
+
+# 10. Phase 3 — Research Management Requirements Framework (RQ2)
+
+Literature evidence is transformed into structured requirements:
+
+```
+LITERATURE EVIDENCE → RESEARCH MANAGEMENT CHALLENGE → MANAGEMENT NEED → REQUIREMENT → REQUIREMENT CATEGORY
 ```
 
-The resulting requirements may include:
+Each requirement records: ID, name, definition, supporting evidence, research-lifecycle stage(s), category (planning / execution / documentation / collaboration / traceability / artifact management / automation / output management), relative importance. The provisional domains RM1–RM14 in `REQUIREMENTS_FRAMEWORKS.md` are the starting point and are revised against the extracted evidence. Requirement relationships (e.g., planning → task management → documentation → traceability → provenance) are modelled explicitly.
 
-* planning;
-* task management;
-* documentation;
-* collaboration;
-* communication;
-* decision traceability;
-* version control;
-* artifact management;
-* research provenance;
-* transparency;
-* reproducibility support;
-* automation;
-* output management.
-
-## Output
-
-Research Management Requirements Framework.
+Output: **Research Management Requirements Framework**.
 
 ---
 
-# 11. Phase 4 — GitHub capability analysis
+# 11. Phase 4 — GitHub capability analysis (RQ3)
 
-GitHub functionalities will be analysed according to their potential research management applications.
+GitHub **native** functionalities are catalogued (repositories, Issues, Projects, Milestones, Discussions, branches, Pull Requests, Markdown/README/wiki, Actions, Releases, Labels, and the Git substrate). Marketplace / third-party apps are out of scope; plan-dependent availability is noted.
 
-The analysis will include:
+Each functionality is assessed for: technical capability, research applicability, traceability preservation, integration with other activities, practical implementation complexity, and limitations.
 
-```text
-Repositories
-Issues
-Projects
-Milestones
-Discussions
-Branches
-Pull Requests
-Markdown
-Actions
-Releases
-Labels
+Output: **GitHub capability catalogue**.
+
+---
+
+# 12. Phase 5 — Requirement–feature mapping and coverage indicators (RQ3)
+
+```
+REQUIREMENT → REQUIRED CAPABILITY → GITHUB FUNCTIONALITY → IMPLEMENTATION PATTERN → SUPPORT LEVEL
 ```
 
-Each functionality will be assessed regarding:
+Support-level rubric (every cell carries an evidence note):
 
-* technical capability;
-* research applicability;
-* traceability;
-* integration;
-* practical complexity;
-* limitations.
+| Level | Score | Meaning |
+|---|---|---|
+| Direct | 3 | Native functionality meets the requirement |
+| Partial | 2 | Supported with an additional process or convention |
+| Limited | 1 | Marginal support only |
+| Not supported | 0 | Cannot reasonably be met by GitHub alone |
 
-## Output
+Coverage indicators computed from the matrix:
 
-GitHub capability catalogue.
+- per-requirement support level;
+- share of requirements Direct / Partial / Limited / Not supported;
+- mean coverage per requirement category;
+- **lifecycle-coverage profile**: mean coverage per lifecycle stage (idea → publication), cross-referenced with the RQ1 gap analysis;
+- count of requirements needing complementary external tools.
 
----
-
-# 12. Phase 5 — Requirement-feature mapping
-
-Research management requirements will be mapped to GitHub capabilities.
-
-```text
-REQUIREMENT
-     │
-     ▼
-REQUIRED CAPABILITY
-     │
-     ▼
-GITHUB FEATURE
-     │
-     ▼
-IMPLEMENTATION PATTERN
-     │
-     ▼
-SUPPORT LEVEL
-```
-
-Each mapping will be classified as:
-
-```text
-DIRECT SUPPORT
-PARTIAL SUPPORT
-LIMITED SUPPORT
-NOT SUPPORTED
-```
-
-## Output
-
-Requirement-feature mapping matrix.
+Output: **requirement–feature matrix**, coverage indicator tables, lifecycle-coverage profile.
 
 ---
 
-# 13. Phase 6 — Reference architecture development
+# 13. Phase 6 — Reference architecture (RQ4)
 
-The mapping analysis will be used to develop a structured reference architecture.
+The mapping is synthesised into an architecture defining components, relationships, workflows, lifecycle integration and implementation principles. GitHub operates as a **central traceability and coordination layer**, not as a container for every research activity. Detail in `REFERENCE_ARCHITECTURE.md`.
 
-The architecture will define how GitHub components can support research management.
-
-```text
-RESEARCH MANAGEMENT
-        │
-        ▼
-GITHUB SERVICES
-        │
-        ▼
-RESEARCH ARTIFACTS
-        │
-        ▼
-RESEARCH OUTPUTS
-```
-
-The architecture should define:
-
-* components;
-* relationships;
-* workflows;
-* lifecycle integration;
-* implementation principles.
-
-## Output
-
-GitHub-Based Research Management Reference Architecture.
+Output: **GitHub-Based Research Management Reference Architecture**.
 
 ---
 
-# 14. Phase 7 — Template development
+# 14. Phase 7 — Reusable template (RQ4)
 
-The proposed framework will be operationalized as a reusable project template.
+The architecture is operationalised as `github-research-project-template`: repository structure, documentation templates, Issue templates, Pull Request template, labels, Project configuration, milestones, automation workflows, release procedure. Design principles: reusable, discipline-independent, understandable, adaptable, minimally complex, platform-native. Detail in `TEMPLATE_PROJECT.md`.
 
-The template may include:
-
-```text
-Repository structure
-Documentation templates
-Issue templates
-Pull request templates
-Labels
-Project configuration
-Milestones
-Automation workflows
-Release procedures
-```
-
-The template should be:
-
-* reusable;
-* discipline-independent where possible;
-* understandable;
-* adaptable;
-* minimally complex.
-
-## Output
-
-GitHub Research Project Template.
+Output: **GitHub Research Project Template** (extracted as an independent repository at release).
 
 ---
 
-# 15. Phase 8 — Case study implementation
+# 15. Phase 8 — Case study: self-referential + template (RQ5)
 
-The framework will be implemented in a real research context.
+Decision D5: the framework manages this study's own development (Option A), and the template is packaged as a transferable artifact evaluated at a second level.
 
-The case study will demonstrate:
+The implementation demonstrates repository organisation, research planning (Project + milestones), Issue structure, documentation, artifact organisation, decision traceability, version history and output management. The repository history itself is the empirical evidence. Protocol and traceability demonstrations in `CASE_STUDY.md`.
 
-* repository organization;
-* research planning;
-* Issue management;
-* documentation;
-* research artifact organization;
-* decision traceability;
-* version history;
-* output management.
+Circularity and developer-evaluation bias are declared limitations (§20–§21).
 
-The implementation will generate empirical evidence regarding the practical application of the framework.
-
-## Output
-
-Implemented GitHub-based research project.
+Output: implemented research repository + packaged template + implementation observations.
 
 ---
 
-# 16. Evaluation design
+# 16. Evaluation design (RQ5)
 
-The framework will be evaluated across several dimensions.
+Protocol in `EVALUATION_PROTOCOL.md`. Six dimensions, each scored 0 (not supported) / 1 (partially) / 2 (fully):
 
-## 16.1. Requirement coverage
+| Dimension | Question |
+|---|---|
+| Requirement coverage | Are the identified requirements supported by the implemented framework? |
+| Traceability | Can research activities, decisions and artifact relationships be reconstructed (question → method → data → analysis → result → manuscript)? |
+| Documentation | Are major research processes systematically documented? |
+| Organization | Are artifacts and tasks systematically structured? |
+| Transparency | Can project progress and development be understood by a third party? |
+| Usability | Can researchers realistically implement and maintain the framework? |
 
-Assessment of whether identified requirements are supported.
+A **fragmented-workflow comparison** contrasts the GitHub implementation with a conventional email + documents + local files + separate tools setup across task, decision and version traceability, documentation, provenance and project visibility. The comparison identifies specific advantages and limitations rather than assuming the conventional workflow is ineffective.
 
-## 16.2. Traceability
-
-Assessment of whether research activities and relationships can be reconstructed.
-
-Example:
-
-```text
-RESEARCH QUESTION
-        │
-        ▼
-METHOD
-        │
-        ▼
-DATA
-        │
-        ▼
-ANALYSIS
-        │
-        ▼
-RESULT
-        │
-        ▼
-MANUSCRIPT
-```
-
----
-
-## 16.3. Documentation
-
-Assessment of whether research activities are systematically documented.
-
----
-
-## 16.4. Organization
-
-Assessment of whether research artifacts and tasks are structured and manageable.
-
----
-
-## 16.5. Transparency
-
-Assessment of whether project progress and development can be understood.
-
----
-
-## 16.6. Usability
-
-Assessment of practical implementation complexity.
+Output: coverage score, traceability/documentation/organization/transparency/usability assessment, comparison table, implementation observations, identified limitations.
 
 ---
 
 # 17. Units of analysis
 
-The study will analyse several units.
-
-## Unit 1 — Literature evidence
-
-Scientific publications describing research management needs and challenges.
-
-## Unit 2 — Research management requirements
-
-Requirements derived from literature evidence.
-
-## Unit 3 — GitHub functionalities
-
-Platform capabilities relevant to research management.
-
-## Unit 4 — Requirement-feature relationships
-
-Relationships between identified requirements and GitHub capabilities.
-
-## Unit 5 — Framework components
-
-Components of the proposed reference architecture.
-
-## Unit 6 — Case study artifacts
-
-Artifacts generated during implementation.
+| Unit | Description | Used for |
+|---|---|---|
+| U1 Bibliographic record | Publication in the corpus | RQ1 |
+| U2 Included study | Screened publication with extracted data | RQ2 |
+| U3 Research management requirement | Requirement derived from U2 | RQ2, RQ3 |
+| U4 GitHub functionality | Native platform capability | RQ3 |
+| U5 Requirement–functionality relationship | Mapping cell with support level and evidence | RQ3 |
+| U6 Architecture component | Element of the reference architecture | RQ4 |
+| U7 Case-study artifact | Issue, Project item, commit, PR, release, doc from the implementation | RQ5 |
 
 ---
 
 # 18. Data sources
 
-Potential study data sources include:
-
-* scientific literature;
-* GitHub documentation;
-* GitHub repository artifacts;
-* Issues;
-* Projects;
-* Discussions;
-* commits;
-* Pull Requests;
-* workflow executions;
-* releases;
-* structured evaluation records.
+Scientific literature (Scopus, WoS, OpenAlex/Dimensions); GitHub official documentation; GitHub repository artifacts of this project (Issues, Projects, Discussions, commits, Pull Requests, workflow runs, Releases); structured evaluation records.
 
 ---
 
 # 19. Evidence integration
 
-The study integrates multiple evidence sources.
-
-```text
-LITERATURE
-    │
-    ▼
-REQUIREMENTS
-    │
-    ▼
-GITHUB ANALYSIS
-    │
-    ▼
-MAPPING
-    │
-    ▼
-FRAMEWORK
-    │
-    ▼
-IMPLEMENTATION
-    │
-    ▼
-EVALUATION
+```
+LITERATURE ─┬─► BIBLIOMETRIC MAP (RQ1)
+            └─► REQUIREMENTS (RQ2) ─► GITHUB ANALYSIS ─► COVERAGE MATRIX (RQ3)
+                                                             │
+                                                             ▼
+                                              REFERENCE ARCHITECTURE + TEMPLATE (RQ4)
+                                                             │
+                                                             ▼
+                                              SELF-REFERENTIAL IMPLEMENTATION + EVALUATION (RQ5)
 ```
 
-The evidence produced in one phase informs the subsequent phase.
+---
+
+# 20. Validity considerations
+
+| Type | Question | Handling |
+|---|---|---|
+| Construct | Do the extracted requirements faithfully represent research-management needs? | Evidence-linked extraction; second-coder reliability; provisional RM1–RM14 revised against data. |
+| Internal | Are coverage conclusions supported by the mapping? | Explicit rubric; per-cell evidence notes; scores and scripts released. |
+| External | Do the requirements and architecture transfer across disciplines and project types? | Discipline-independent template; scope limited to scholarly research; multi-site transfer named as future work. |
+| Reproducibility | Can the bibliometric and coverage results be regenerated? | Registered queries, retrieval dates, database versions, export files and scripts deposited (Zenodo/OSF). |
+| Practical | Can researchers realistically run the framework? | Usability dimension in the evaluation; minimal-complexity template principle. |
 
 ---
 
-# 20. Study validity considerations
+# 21. Sources of bias and mitigation
 
-The study should consider several potential validity issues.
+Bias: researcher involvement in framework development; subjective requirement interpretation; single-case, self-referential evaluation; prior GitHub familiarity; selective feature use; database coverage bias; English-language bias.
 
-## Construct validity
-
-Are the identified requirements an appropriate representation of research management needs?
-
-## Internal validity
-
-Are framework conclusions adequately supported by the mapping and case study evidence?
-
-## External validity
-
-Can the framework be transferred across research disciplines and project types?
-
-## Practical validity
-
-Can researchers realistically implement and maintain the framework?
-
----
-
-# 21. Potential sources of bias
-
-Potential sources of bias include:
-
-* researcher involvement in framework development;
-* subjective requirement interpretation;
-* single-case evaluation;
-* prior familiarity with GitHub;
-* selective implementation of platform features.
-
-Mitigation strategies should include:
-
-* transparent methodology;
-* documented decisions;
-* explicit evaluation criteria;
-* evidence-based requirement identification;
-* publication of research artifacts where possible.
+Mitigation: transparent, registered methodology; `DECISION_LOG.md`; pre-specified evaluation criteria; evidence-based requirement extraction with reliability check; multi-database retrieval with OpenAlex/Dimensions cross-check; explicit statement of language and coverage limits; public release of all artifacts.
 
 ---
 
 # 22. Expected scientific outputs
 
-The study is expected to produce:
-
-1. Literature-derived Research Management Requirements Framework.
-2. GitHub Capability Catalogue.
-3. Requirement-Feature Mapping Matrix.
+1. Bibliometric map of the research-process-infrastructure literature, with lifecycle gap analysis.
+2. Literature-derived Research Management Requirements Framework.
+3. Reproducible requirement×functionality coverage analysis of GitHub, with lifecycle-coverage profile.
 4. GitHub-Based Research Management Reference Architecture.
 5. Reusable GitHub Research Project Template.
-6. Case Study Implementation.
-7. Framework Evaluation Results.
-8. Scientific Manuscript.
+6. Self-referential case-study implementation and six-dimension evaluation.
+7. Deposited datasets (corpus, coding sheet, mapping matrix) with DOI.
+8. Scientific manuscript for *Scientometrics*.
 
 ---
 
 # 23. Relationship with the previous reproducibility workflow
 
-The proposed study extends the conceptual scope of the previous GitHub–Zenodo–ORCID reproducibility workflow.
+The prior GitHub–Zenodo–ORCID workflow addresses the archiving and persistent identification of research **outputs**:
 
-The previous workflow focuses primarily on:
-
-```text
-RESEARCH OUTPUT
-        │
-        ▼
-GITHUB
-        │
-        ▼
-ZENODO
-        │
-        ▼
-DOI
-        │
-        ▼
-ORCID
+```
+RESEARCH OUTPUT → GITHUB → ZENODO → DOI → ORCID
 ```
 
-The present study focuses on the broader research process:
+The present study addresses the management and traceability of the research **process** that produces those outputs:
 
-```text
-IDEA
- │
- ▼
-PLANNING
- │
- ▼
-RESEARCH ACTIVITIES
- │
- ▼
-DOCUMENTATION
- │
- ▼
-ANALYSIS
- │
- ▼
-MANUSCRIPT
- │
- ▼
-OUTPUT
+```
+IDEA → PLANNING → RESEARCH ACTIVITIES → DOCUMENTATION → ANALYSIS → MANUSCRIPT → OUTPUT
 ```
 
-The two studies are therefore complementary.
-
-The first study investigates the reproducibility and traceability of research outputs.
-
-The present study investigates the management and traceability of the research process leading to those outputs.
+The two are complementary: process management upstream, output preservation downstream. The data-availability deposit in this study (§22.7) is itself an instance of the earlier workflow.
 
 ---
 
 # 24. Final conceptual workflow
 
-```text
+```
 RESEARCH PROBLEM
-        │
-        ▼
-LITERATURE ANALYSIS
-        │
-        ▼
-REQUIREMENT IDENTIFICATION
-        │
-        ▼
+      ▼
+LITERATURE ANALYSIS ──► BIBLIOMETRIC MAP (RQ1)
+      ▼
+REQUIREMENT IDENTIFICATION (RQ2)
+      ▼
 REQUIREMENTS FRAMEWORK
-        │
-        ▼
+      ▼
 GITHUB CAPABILITY ANALYSIS
-        │
-        ▼
-REQUIREMENT-FEATURE MAPPING
-        │
-        ▼
-REFERENCE ARCHITECTURE
-        │
-        ▼
-REUSABLE TEMPLATE
-        │
-        ▼
-CASE STUDY
-        │
-        ▼
-EVALUATION
-        │
-        ▼
-SCIENTIFIC PAPER
+      ▼
+REQUIREMENT–FEATURE MAPPING + COVERAGE INDICATORS (RQ3)
+      ▼
+REFERENCE ARCHITECTURE (RQ4)
+      ▼
+REUSABLE TEMPLATE (RQ4)
+      ▼
+SELF-REFERENTIAL CASE STUDY (RQ5)
+      ▼
+EVALUATION + FRAGMENTED-WORKFLOW COMPARISON (RQ5)
+      ▼
+SCIENTIFIC MANUSCRIPT
 ```

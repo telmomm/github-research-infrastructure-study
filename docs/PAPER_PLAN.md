@@ -4,6 +4,10 @@
 
 ---
 
+> **Revision note (2026-08-29).** Target journal fixed as *Scientometrics* (Springer Nature); framing changed to hybrid (bibliometric field map + requirement–feature coverage analysis + synthesised architecture/template). See `PHASE1_PROJECT_DEFINITION.md` (authoritative) and `DECISION_LOG.md` D1–D5. Sections 5 (research questions), 6 (contributions), 9 (methods) and 10 (results) below are superseded by `PHASE1_PROJECT_DEFINITION.md` §5, §8, §2 and §3 respectively; the remaining sections stand.
+
+---
+
 # 1. Study concept
 
 ## Central idea

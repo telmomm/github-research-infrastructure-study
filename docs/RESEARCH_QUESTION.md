@@ -4,6 +4,10 @@
 
 ---
 
+> **Revision note (2026-08-29).** Phase 1 is closed in `PHASE1_PROJECT_DEFINITION.md`, which is now the authoritative source for the research problem, aim, RQs and scope. The RQ set below was written under the original design-science framing and is **superseded** by the hybrid RQ1–RQ5 in `PHASE1_PROJECT_DEFINITION.md` §5 (see `DECISION_LOG.md` D2–D3). The main research question, the propositions P1–P5, and the evaluation dimensions in this document remain valid and are carried forward unchanged.
+
+---
+
 # 1. Purpose
 
 This document defines the research questions, study objectives, expected propositions and evaluation criteria for the study.
