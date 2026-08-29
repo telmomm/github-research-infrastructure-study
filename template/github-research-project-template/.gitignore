@@ -25,3 +25,4 @@ data/raw/*
 data/processed/*
 !data/**/.gitkeep
 !data/**/README.md
+!data/raw/exclude_sources.txt

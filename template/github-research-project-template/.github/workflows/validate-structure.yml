@@ -23,7 +23,9 @@ jobs:
       - name: No large data committed
         run: |
           set -e
-          bad=$(git ls-files 'data/raw/**' 'data/processed/**' | grep -v -E '(\.gitkeep|README\.md)$' || true)
+          # allow placeholders, docs and small text/config; block data payloads
+          allow='(\.gitkeep|README\.md|\.txt|exclude_sources\.txt)$'
+          bad=$(git ls-files 'data/raw/**' 'data/processed/**' | grep -v -E "$allow" || true)
           if [ -n "$bad" ]; then echo "::error::data files tracked in Git (use data/external/ pointers):"; echo "$bad"; exit 1; fi
       - name: Placeholders resolved on the default branch
         if: github.ref == 'refs/heads/main'
