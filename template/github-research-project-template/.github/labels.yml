@@ -1,0 +1,49 @@
+# Research activity + workflow label set (component A2 / convention 4).
+# Apply with a label-sync action (e.g. github-label-sync or EndBug/label-sync)
+# or create manually. Keep the set small and discipline-neutral.
+
+# --- research activity ---
+- name: research-question
+  color: "5319e7"
+  description: A research question (RQ-n) or its refinement
+- name: literature
+  color: "0e8a16"
+  description: Literature search, screening, extraction
+- name: methodology
+  color: "1d76db"
+  description: Study design, protocol, analysis plan
+- name: data
+  color: "fbca04"
+  description: Data acquisition, cleaning, processing
+- name: analysis
+  color: "d93f0b"
+  description: Running and reviewing the analysis
+- name: validation
+  color: "c2e0c6"
+  description: Checks, tests, reproducibility
+- name: documentation
+  color: "006b75"
+  description: docs/, READMEs, methodology write-up
+- name: manuscript
+  color: "b60205"
+  description: Manuscript drafting and revision
+- name: decision
+  color: "5319e7"
+  description: A significant logged decision (Dn)
+- name: automation
+  color: "bfd4f2"
+  description: GitHub Actions and tooling
+- name: infrastructure
+  color: "cfd3d7"
+  description: Repository setup, Project, labels, templates
+- name: general-task
+  color: "ededed"
+  description: Research task not covered by another activity label
+
+# --- workflow state ---
+- name: blocked
+  color: "d73a4a"
+  description: Waiting on something external
+- name: help-wanted
+  color: "008672"
+  description: Input from a collaborator would help

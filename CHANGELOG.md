@@ -53,10 +53,20 @@ Methodological decisions are logged separately in [`docs/DECISION_LOG.md`](docs/
 - `docs/REFERENCE_ARCHITECTURE.md` — marked as an early sketch; the built architecture in `framework/architecture/` is authoritative.
 - `docs/ROADMAP.md` — Phase 6 marked complete; `docs/README.md`, `analysis/README.md`, `framework/README.md`, `FIGURES_AND_TABLES.md` updated.
 
-### Working towards
-- Phase 7 — Reusable GitHub Research Project Template (operationalise the architecture in `template/`).
+### Added — Phase 7: Reusable GitHub Research Project Template
+- `template/github-research-project-template/` — 33-file template: repo skeleton; `docs/` set with `conventions.md` (the four architecture conventions), charter, protocol, methodology, roadmap (plan of record), decision log, glossary; three issue forms (research-question, research-task, decision-record); PR template with reproducibility checklist; `labels.yml`, `project-fields.md`, `release-checklist.md`; starter Actions `validate-structure`, `markdown-link-check`, `reproduce`.
+- `template/template_manifest.csv` — every file → architecture component(s) → requirement(s) → purpose.
+- `template/README.md`; `analysis/scripts/check_template.py` → `results/framework/template_coverage.csv`, `template_summary.md`.
+- `docs/PHASE7_PROGRESS.md`; `DECISION_LOG.md` D13.
 
-### Pending / optional (do not block Phase 7)
+### Changed
+- `docs/TEMPLATE_PROJECT.md` — marked as draft; the built template in `template/` is authoritative.
+- `docs/ROADMAP.md` — Phase 7 marked complete; `docs/README.md`, `analysis/README.md` updated.
+
+### Working towards
+- Phase 8 — Case study (self-referential + template as transferable artifact; check the lifecycle model against this repo's history).
+
+### Pending / optional (do not block Phase 8)
 - Track A: Crossref / Semantic Scholar citation enrichment; precision check on the broad OpenAlex queries; 2025 tail treatment; co-word map rendering.
 - Factcheck `literature/references.bib` (venues, volumes, pages, DOIs).
 - Second-coder reliability on the requirement extraction and the RE→RM assignment (~20%) — deferred, single-coder project.

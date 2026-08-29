@@ -1,0 +1,32 @@
+name: validate-structure
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  structure:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Required folders and documents
+        run: |
+          set -e
+          req_dirs="docs literature data data/raw data/processed data/external analysis analysis/scripts manuscript outputs .github/ISSUE_TEMPLATE .github/workflows"
+          req_files="README.md CONTRIBUTING.md CITATION.cff .gitignore \
+            docs/conventions.md docs/project-charter.md docs/roadmap.md docs/decision-log.md \
+            .github/pull_request_template.md .github/labels.yml .github/project-fields.md .github/release-checklist.md"
+          fail=0
+          for d in $req_dirs; do [ -d "$d" ] || { echo "::error::missing directory $d"; fail=1; }; done
+          for f in $req_files; do [ -f "$f" ] || { echo "::error::missing file $f"; fail=1; }; done
+          exit $fail
+      - name: No large data committed
+        run: |
+          set -e
+          bad=$(git ls-files 'data/raw/**' 'data/processed/**' | grep -v -E '(\.gitkeep|README\.md)$' || true)
+          if [ -n "$bad" ]; then echo "::error::data files tracked in Git (use data/external/ pointers):"; echo "$bad"; exit 1; fi
+      - name: Placeholders resolved on the default branch
+        if: github.ref == 'refs/heads/main'
+        run: |
+          hits=$(git grep -l "{{" -- README.md CITATION.cff docs/project-charter.md || true)
+          if [ -n "$hits" ]; then echo "::warning::unresolved {{placeholders}} in: $hits"; fi

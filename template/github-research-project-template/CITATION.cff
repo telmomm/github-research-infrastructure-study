@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this research project, please cite it as below."
+title: "{{PROJECT_NAME}}"
+abstract: "{{one-sentence description}}"
+authors:
+  - family-names: "{{Surname}}"
+    given-names: "{{Given}}"
+    orcid: "https://orcid.org/{{0000-0000-0000-0000}}"
+version: "0.1.0"
+date-released: "{{YYYY-MM-DD}}"
+license: "{{e.g. CC-BY-4.0 for text/data, MIT for code}}"
+repository-code: "https://github.com/{{owner}}/{{repo}}"
+# doi: "10.5281/zenodo.{{id}}"   # added after the first Zenodo release
+keywords:
+  - research management

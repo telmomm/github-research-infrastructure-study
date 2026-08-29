@@ -1,0 +1,36 @@
+name: reproduce
+on:
+  pull_request:
+    paths: ["analysis/**", "data/processed/**", ".github/workflows/reproduce.yml"]
+  workflow_dispatch:
+
+# Re-runs the analysis on a pinned environment (component C3 / RM12).
+# Adapt the matrix and the run step to your stack; keep the job summary.
+jobs:
+  rerun:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install
+        run: |
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+      - name: Run analysis
+        run: |
+          if [ -x analysis/run.sh ]; then
+            bash analysis/run.sh
+          else
+            echo "No analysis/run.sh — add your reproduction entry point." >> "$GITHUB_STEP_SUMMARY"
+          fi
+      - name: Collect outputs
+        uses: actions/upload-artifact@v4
+        with:
+          name: results-py${{ matrix.python }}
+          path: analysis/results
+          if-no-files-found: ignore

@@ -1,4 +1,10 @@
-# GitHub Research Project Template
+# GitHub Research Project Template — Draft
+
+> **Status (2026-08-30).** Phase 7 executed. The **built template** is authoritative at
+> [`template/github-research-project-template/`](../template/) (33 files) with
+> [`template/template_manifest.csv`](../template/template_manifest.csv) mapping each file
+> to architecture components and requirements. See `DECISION_LOG.md` D13 and
+> `PHASE7_PROGRESS.md`. The structure and lists below were the design input.
 
 ## Purpose
 

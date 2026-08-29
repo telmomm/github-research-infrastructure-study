@@ -112,6 +112,7 @@ Reference architecture components.
 ## Table 4
 
 Reusable template components.
+*Source: `template/template_manifest.csv` (33 files → architecture components → requirements). — Phase 7, done.*
 
 ## Table 5
 

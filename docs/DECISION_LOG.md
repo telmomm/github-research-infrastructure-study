@@ -150,3 +150,17 @@ Chronological record of major methodological decisions. Each entry: ID, date, co
   - Design stance retained from `RESEARCH_DESIGN.md`: GitHub is a coordination and traceability layer, not a container.
 - **Rationale:** a small named component set makes the framework teachable, checkable (every RM served, no idle component — verified by `summarise_architecture.py`) and directly operationalisable as the Phase 7 template.
 - **Affects:** `framework/architecture/`; `REFERENCE_ARCHITECTURE.md` (draft; the built artifact is authoritative); `PHASE6_PROGRESS.md`; `analysis/scripts/summarise_architecture.py`; `results/framework/`; `FIGURES_AND_TABLES.md` (Table 3, Figures 3–4).
+
+---
+
+## D13 — Reusable template: 33 files, config-only components, two-repo strategy
+
+- **Date:** 2026-08-30
+- **Context:** Phase 7 operationalises the reference architecture (D12) as a GitHub template.
+- **Decision:** Build `template/github-research-project-template/` — **33 files** mapped in `template/template_manifest.csv` to the 15 architecture components and RM1–RM15. Choices:
+  - **Config-only components:** A1, A2 (GitHub Project + fields, not file-expressible → documented in `.github/project-fields.md`), D2 (Zenodo webhook → `release-checklist.md`), X1 (public visibility → a governance decision). Every other component has ≥1 template file; verified by `analysis/scripts/check_template.py`.
+  - The **four architecture conventions** are made enforceable through `docs/conventions.md`, the three issue forms, the PR template, `CONTRIBUTING.md` and the `validate-structure` Action.
+  - **Starter Actions kept generic** (`validate-structure` fully working; `markdown-link-check` via a public action; `reproduce` a matrix stub with adaptation notes) — the template must run for any discipline out of the box.
+  - **Large data excluded** by `.gitignore` and the `data/external/` pointer convention.
+  - **Two-repository strategy** (from `REPOSITORY_ARCHITECTURE.md`): the template lives inside the study repo for development/evaluation; it is extracted as an independent GitHub template repository at Phase 12.
+- **Affects:** `template/`; `TEMPLATE_PROJECT.md` (draft; the built template is authoritative); `PHASE7_PROGRESS.md`; `analysis/scripts/check_template.py`; `results/framework/`; `FIGURES_AND_TABLES.md` (Table 4).

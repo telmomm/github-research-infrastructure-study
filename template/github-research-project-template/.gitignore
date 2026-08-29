@@ -1,0 +1,27 @@
+# OS / editor
+.DS_Store
+*.swp
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+
+# R
+.Rhistory
+.RData
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.bbl
+*.blg
+
+# Large data must not be committed — link from data/external/ instead
+data/raw/*
+data/processed/*
+!data/**/.gitkeep
+!data/**/README.md

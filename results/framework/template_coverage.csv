@@ -1,0 +1,16 @@
+comp_id,name,config_only,n_template_files,files
+A1,Research Plan,yes,4,docs/conventions.md docs/project-charter.md docs/roadmap.md .github/project-fields.md
+A2,Activity Tracker,yes,4,.github/ISSUE_TEMPLATE/config.yml .github/ISSUE_TEMPLATE/research-task.yml .github/labels.yml .github/project-fields.md
+A3,Question Register,,2,docs/conventions.md .github/ISSUE_TEMPLATE/research-question.yml
+A4,Discussion Space,,1,.github/ISSUE_TEMPLATE/config.yml
+B1,Documentation Set,,5,docs/research-protocol.md docs/methodology.md docs/glossary.md docs/README.md literature/search-strategy.md
+B2,Decision Log,,3,docs/conventions.md docs/decision-log.md .github/ISSUE_TEMPLATE/decision-record.yml
+B3,Linkage Discipline,,4,CONTRIBUTING.md docs/conventions.md .github/pull_request_template.md .github/labels.yml
+B4,Change History,,1,CONTRIBUTING.md
+C1,Artifact Workspace,,8,README.md .gitignore literature/README.md data/README.md data/external/README.md analysis/README.md manuscript/README.md manuscript/manuscript.md
+C2,Review Workflow,,1,.github/pull_request_template.md
+C3,Automation Suite,,6,docs/methodology.md analysis/README.md .github/mlc-config.json .github/workflows/validate-structure.yml .github/workflows/markdown-link-check.yml .github/workflows/reproduce.yml
+D1,Release Process,,3,CITATION.cff outputs/README.md .github/release-checklist.md
+D2,Archival Bridge,yes,3,CITATION.cff outputs/README.md .github/release-checklist.md
+D3,Governance Setup,,3,CONTRIBUTING.md LICENSE docs/project-charter.md
+X1,Transparency Surface,yes,1,README.md
