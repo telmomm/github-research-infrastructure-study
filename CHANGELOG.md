@@ -8,14 +8,27 @@ Methodological decisions are logged separately in [`docs/DECISION_LOG.md`](docs/
 
 ## [Unreleased]
 
-### Working towards
-- Phase 3 — Research Management Requirements Framework (from `literature/requirements_extraction.csv`).
+### Added — Phase 3: Research Management Requirements Framework (RQ2)
+- `framework/requirements/requirements_framework.csv` — canonical set RM1–RM15 (id, name, category, definition, expected_capabilities, lifecycle stages, evidence, literature attention, importance, differentiator flag, relationships, limitations).
+- `framework/requirements/lifecycle_requirements_matrix.csv` — RM × 11 lifecycle stages, applicability 0–3.
+- `framework/requirements/REQUIREMENTS_FRAMEWORK.md` — narrative: method, the 15 requirements, classification, relationship model, changes from the provisional set, RQ1 corroboration.
+- `framework/README.md`; `framework/mapping/`, `framework/architecture/` (placeholders for Phases 5–6).
+- `analysis/scripts/summarise_requirements.py` → `results/framework/*.csv`, `requirements_summary.md`.
+- `docs/PHASE3_PROGRESS.md`; `DECISION_LOG.md` D9.
 
-### Pending / optional (do not block Phase 3)
+### Changed
+- `docs/REQUIREMENTS_FRAMEWORKS.md` — reframed as the method doc; the built framework in `framework/requirements/` is authoritative.
+- `docs/ROADMAP.md` — Phase 3 marked complete; `docs/README.md`, `analysis/README.md` indexes updated.
+
+### Working towards
+- Phase 4 — GitHub capability analysis (catalogue native functionalities against RM1–RM15 `expected_capabilities`).
+
+### Pending / optional (do not block Phase 4)
 - Track A: Crossref / Semantic Scholar citation enrichment; precision check on the broad OpenAlex queries; 2025 tail treatment; co-word map rendering.
 - Factcheck `literature/references.bib` (venues, volumes, pages, DOIs).
-- Second-coder reliability on the requirement extraction (~20%) — deferred, single-coder project.
+- Second-coder reliability on the requirement extraction and the RE→RM assignment (~20%) — deferred, single-coder project.
 - Scopus / WoS cross-check if access appears.
+- Revisit RM15 (governance) scope after the Phase 5 mapping.
 
 ---
 

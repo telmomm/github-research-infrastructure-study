@@ -1,10 +1,18 @@
-# Research Management Requirements Framework
+# Research Management Requirements Framework — Method
+
+> **Status (2026-08-30).** Phase 3 executed. This document is the **method**; the
+> **built framework** is the authoritative artifact at
+> [`framework/requirements/`](../framework/requirements/) —
+> `requirements_framework.csv` (RM1–RM15), `lifecycle_requirements_matrix.csv`,
+> `REQUIREMENTS_FRAMEWORK.md`. See `DECISION_LOG.md` D9. The provisional domains
+> RM1–RM14 below were the starting point; the final set has 15 (RM15 added;
+> RM9/RM10/RM14 broadened; all definitions rewritten).
 
 # Purpose
 
 This document defines the methodology for identifying, organizing and describing the requirements necessary for managing scientific research projects.
 
-The framework will be derived primarily from the literature analysis and refined through the subsequent framework development process.
+The framework was derived primarily from the literature analysis (`literature/requirements_extraction.csv`) and refined through reconciliation with the provisional domains below.
 
 ---
 

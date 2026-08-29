@@ -8,6 +8,12 @@ Scripts that regenerate the study's tables and figures from the versioned datase
 |---|---|---|
 | `scripts/summarise_track_b.py` | `literature/*.csv` | `results/tb_*.csv`, `results/track_b_summary.md` |
 
+## Requirements framework (Phase 3)
+
+| Script | Input | Output |
+|---|---|---|
+| `scripts/summarise_requirements.py` | `framework/requirements/*.csv` | `results/framework/*.csv`, `results/framework/requirements_summary.md` |
+
 ## Track A (bibliometric corpus, open sources — `DECISION_LOG.md` D8)
 
 Run in order:

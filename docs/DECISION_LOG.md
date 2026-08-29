@@ -91,3 +91,21 @@ Chronological record of major methodological decisions. Each entry: ID, date, co
 - **First run (2026-08-30):** OpenAlex 15 queries (5,936 works) + arXiv 5 queries (462 preprints) → 6,398 in → −1,167 repository deposits → −69 duplicates → **corpus 5,139**. Lifecycle stage-hit profile independently reproduces the Track B output bias: data management 50.8% and analysis/workflow 41.9% dominate; idea/question 3.7% and provenance 7.0% are lowest.
 - **Open refinements:** decide whether to trim the 2025 tail (indexing recency: 901 vs 529 in 2024) for trend claims; tighten the broad `"open science"` and `github` queries if precision is low on manual inspection; run the PRISMA screen from this corpus to the deep subset if expanding requirement extraction.
 - **Affects:** `search_strings.md`; `search_log.md`; `PHASE2_PROGRESS.md`; `RESEARCH_DESIGN.md` §9; `LITERATURE_REVIEW.md` §5.1; `analysis/`, `data/`, `results/track_a/`.
+
+---
+
+## D9 — Research Management Requirements Framework: final set RM1–RM15
+
+- **Date:** 2026-08-30
+- **Context:** Phase 3 turns the 17 literature-extraction rows (RE01–RE17) into a defined, classified requirement set. The provisional list in `REQUIREMENTS_FRAMEWORKS.md` had 14 domains (RM1–RM14).
+- **Decision:** Adopt **RM1–RM15** as the framework (`framework/requirements/requirements_framework.csv`). Changes from the provisional set:
+  - RM9 "Research artifact management" → "…and integration" (absorbs RE09, integration across heterogeneous tools — the most-cited literature challenge).
+  - RM10 "Research provenance" → "…and artifact linkage" (absorbs RE11).
+  - RM14 "Research output management" → "…and identification" (absorbs RE15: PIDs, interoperable metadata).
+  - **RM15 Governance and sustainability** added (RE17); flagged as only partly in scope per `PHASE1_PROJECT_DEFINITION.md` §6.3.
+  - All 14 provisional definitions rewritten to be testable, each with an `expected_capabilities` field (the hook for the Phase 5 mapping).
+  - `differentiator = yes` flag introduced for **RM1, RM2, RM5** — High importance despite weak literature attention (the upstream planning / research-question / decision-traceability gap the study targets).
+- **Rationale:** the extraction evidence did not fit 14 clean domains — integration, artifact linkage and interoperability were distinct enough to name explicitly, and governance recurred often enough to record even though it is largely institutional. The differentiator flag makes the paper's central argument checkable against the framework itself.
+- **Importance scale:** High / Medium-High / Medium / Low-Medium, assigned from evidence weight, centrality in the relationship model, and (for the differentiators) the size of the literature gap.
+- **Not done:** second-coder check on the RE→RM assignment — deferred (single-coder project), declared as a limitation.
+- **Affects:** `framework/requirements/`; `REQUIREMENTS_FRAMEWORKS.md` (now a method doc; the artifact is authoritative); `PHASE3_PROGRESS.md`; `analysis/scripts/summarise_requirements.py`; `results/framework/`.
