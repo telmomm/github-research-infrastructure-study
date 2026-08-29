@@ -1,4 +1,12 @@
-# GitHub Feature Mapping
+# GitHub Feature Mapping — Method
+
+> **Status (2026-08-30).** Method for Phases 4–5.
+> **Phase 4 done:** the built catalogue is authoritative at
+> [`framework/mapping/github_capability_catalogue.csv`](../framework/mapping/) (68 capabilities,
+> 12 groups) + `GITHUB_CAPABILITY_CATALOGUE.md`. See `DECISION_LOG.md` D10.
+> **Phase 5 (pending):** the requirement–feature matrix and coverage indicators
+> will be written to `framework/mapping/requirement_feature_matrix.csv`.
+> The GF1–GF11 groups below were the starting point; the catalogue uses GF1–GF12 at finer grain.
 
 # Purpose
 

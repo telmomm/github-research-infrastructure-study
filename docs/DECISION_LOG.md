@@ -109,3 +109,17 @@ Chronological record of major methodological decisions. Each entry: ID, date, co
 - **Importance scale:** High / Medium-High / Medium / Low-Medium, assigned from evidence weight, centrality in the relationship model, and (for the differentiators) the size of the literature gap.
 - **Not done:** second-coder check on the RE→RM assignment — deferred (single-coder project), declared as a limitation.
 - **Affects:** `framework/requirements/`; `REQUIREMENTS_FRAMEWORKS.md` (now a method doc; the artifact is authoritative); `PHASE3_PROGRESS.md`; `analysis/scripts/summarise_requirements.py`; `results/framework/`.
+
+---
+
+## D10 — GitHub capability catalogue: native-only scope, 12 groups
+
+- **Date:** 2026-08-30
+- **Context:** Phase 4 catalogues GitHub functionality for the Phase 5 requirement mapping.
+- **Decision:** Adopt `framework/mapping/github_capability_catalogue.csv` — **68 capabilities (GC01–GC68)** in **12 feature groups** GF1–GF12. Rules:
+  - **Native only.** Excluded: GitHub Marketplace apps and third-party GitHub Apps, Copilot, API-only capabilities without a UI surface, Enterprise-server-only administration.
+  - **One kept exception:** the GitHub–Zenodo release webhook (GC61) — a third-party service, but the canonical bridge for persistent identification and preservation, and the link to the prior GitHub–Zenodo–ORCID workflow.
+  - Capabilities are catalogued at finer grain than the GF1–GF11 groups in `GITHUB_FEATURE_MAPPING.md` (e.g. Issues → issue, forms, types, sub-issues, assignees, cross-references, closing keywords, timeline, reactions, pinned). A 12th group (GF12 Access, identity & meta) was added for permissions, visibility, forks, insights, audit log and Dependabot.
+  - Each row records `plan_availability` and `practical_complexity`; `candidate_requirements` is a **Phase-4 hint** at which RM(s) a capability might serve, explicitly not the Phase-5 support score.
+- **Rationale:** native-only keeps the framework reproducible by any researcher on a standard account; finer grain makes the Phase 5 mapping a near-mechanical join on `expected_capabilities`.
+- **Affects:** `framework/mapping/`; `GITHUB_FEATURE_MAPPING.md` (now method for Phases 4–5); `PHASE4_PROGRESS.md`; `analysis/scripts/summarise_capabilities.py`; `results/framework/`.

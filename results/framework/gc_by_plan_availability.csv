@@ -1,0 +1,16 @@
+plan_availability,n
+all plans,53
+all plans (custom roles Enterprise),1
+all plans (external service),1
+all plans (internal = Enterprise),1
+all plans (minutes quota; free for public),1
+all plans (opt-in),1
+all plans (private wiki paid),1
+all plans (public); private Team+,1
+all plans (public; paid for private),1
+all plans (quota; paid for more),1
+all plans (retention limit),1
+all plans (some public-only),1
+org (Team/Enterprise),2
+public all plans; private Team+,1
+public repos all plans; private needs Team+,1

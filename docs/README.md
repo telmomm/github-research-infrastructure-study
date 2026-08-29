@@ -15,6 +15,7 @@ The purpose of the documentation is to provide a transparent and traceable recor
 | [PHASE1_PROJECT_DEFINITION.md](PHASE1_PROJECT_DEFINITION.md) | **Authoritative** Phase 1 output: problem, aim, RQs, scope, journal positioning, structure, repo architecture |
 | [PHASE2_PROGRESS.md](PHASE2_PROGRESS.md) | Phase 2 status: Track B complete, Track A first run done; handoff to Phase 3 |
 | [PHASE3_PROGRESS.md](PHASE3_PROGRESS.md) | Phase 3 status: Requirements Framework RM1–RM15 (`framework/requirements/`); handoff to Phase 4 |
+| [PHASE4_PROGRESS.md](PHASE4_PROGRESS.md) | Phase 4 status: GitHub capability catalogue, 68 capabilities (`framework/mapping/`); handoff to Phase 5 |
 | [PAPER_PLAN.md](PAPER_PLAN.md) | Complete conceptual structure of the scientific paper |
 | [ROADMAP.md](ROADMAP.md) | Research project phases and development roadmap |
 | [RESEARCH_DESIGN.md](RESEARCH_DESIGN.md) | Overall research design |

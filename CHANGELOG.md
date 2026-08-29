@@ -20,10 +20,20 @@ Methodological decisions are logged separately in [`docs/DECISION_LOG.md`](docs/
 - `docs/REQUIREMENTS_FRAMEWORKS.md` — reframed as the method doc; the built framework in `framework/requirements/` is authoritative.
 - `docs/ROADMAP.md` — Phase 3 marked complete; `docs/README.md`, `analysis/README.md` indexes updated.
 
-### Working towards
-- Phase 4 — GitHub capability analysis (catalogue native functionalities against RM1–RM15 `expected_capabilities`).
+### Added — Phase 4: GitHub capability analysis (RQ3)
+- `framework/mapping/github_capability_catalogue.csv` — 68 native capabilities (GC01–GC68) across 12 feature groups (GF1–GF12), with what_it_does, research_use, traceability, plan_availability, practical_complexity, limitations, candidate_requirements.
+- `framework/mapping/GITHUB_CAPABILITY_CATALOGUE.md` — narrative: scope (native only; GC61 Zenodo-bridge exception), plan model, the 12 groups, cross-cutting observations, candidate coverage.
+- `analysis/scripts/summarise_capabilities.py` → `results/framework/gc_*.csv`, `capability_summary.md`.
+- `docs/PHASE4_PROGRESS.md`; `DECISION_LOG.md` D10.
 
-### Pending / optional (do not block Phase 4)
+### Changed
+- `docs/GITHUB_FEATURE_MAPPING.md` — reframed as the method doc for Phases 4–5; the built catalogue is authoritative.
+- `docs/ROADMAP.md` — Phase 4 marked complete; `docs/README.md`, `analysis/README.md`, `framework/README.md` indexes updated.
+
+### Working towards
+- Phase 5 — Requirement–feature mapping (grade RM × capability as Direct/Partial/Limited/Not supported; coverage indicators; lifecycle-coverage profile).
+
+### Pending / optional (do not block Phase 5)
 - Track A: Crossref / Semantic Scholar citation enrichment; precision check on the broad OpenAlex queries; 2025 tail treatment; co-word map rendering.
 - Factcheck `literature/references.bib` (venues, volumes, pages, DOIs).
 - Second-coder reliability on the requirement extraction and the RE→RM assignment (~20%) — deferred, single-coder project.
