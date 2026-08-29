@@ -1,0 +1,73 @@
+# Changelog
+
+All notable changes to this research project are recorded here.
+Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versions
+follow the roadmap release points (`docs/CASE_STUDY.md` §5): v0.1 concept, v0.2
+literature, v0.3 requirements framework, v0.4 reference architecture, v1.0 paper.
+Methodological decisions are logged separately in [`docs/DECISION_LOG.md`](docs/DECISION_LOG.md).
+
+## [Unreleased]
+
+### Working towards
+- Phase 3 — Research Management Requirements Framework (from `literature/requirements_extraction.csv`).
+
+### Pending / optional (do not block Phase 3)
+- Track A: Crossref / Semantic Scholar citation enrichment; precision check on the broad OpenAlex queries; 2025 tail treatment; co-word map rendering.
+- Factcheck `literature/references.bib` (venues, volumes, pages, DOIs).
+- Second-coder reliability on the requirement extraction (~20%) — deferred, single-coder project.
+- Scopus / WoS cross-check if access appears.
+
+---
+
+## [0.2.0] — 2026-08-30 — Phase 2: Literature analysis
+
+Two-track literature analysis (`DECISION_LOG.md` D2 hybrid framing).
+
+### Added — Track B (structured evidence review)
+- `SOTA/SOTA.md` adopted as the Track B evidence base (Consensus Deep Search synthesis) — `DECISION_LOG.md` D6.
+- `literature/included_studies.csv` — 52 studies (S01–S52), coded by strand and lifecycle focus.
+- `literature/requirements_extraction.csv` — 17 requirement rows (RE01–RE17), challenge → need → requirement, mapped to RM1–RM14.
+- `literature/lifecycle_coverage.csv` — 15 lifecycle stages with literature-attention level.
+- `literature/references.bib` — BibTeX for S01–S52.
+- `literature/screening_notes.md`, `literature/background_synthesis.md` (working synthesis for the Introduction / Results §10.1).
+- `analysis/scripts/summarise_track_b.py` and generated `results/tb_*.csv`, `results/track_b_summary.md`.
+
+### Added — Track A (bibliometric corpus, open sources — `DECISION_LOG.md` D8)
+- `literature/search_strings.md` — frozen OpenAlex (15 queries) and arXiv (5 queries) search strings; Scopus/WoS strings kept as optional cross-checks.
+- `literature/search_log.md` — retrieval and de-duplication log.
+- `analysis/scripts/fetch_openalex.py` — OpenAlex API retrieval (cursor pagination, abstract reconstruction).
+- `analysis/scripts/fetch_arxiv.py` — arXiv supplement for the version-control / research-software strand.
+- `analysis/scripts/build_corpus.py` — merge, repository-deposit exclusion (`data/raw/exclude_sources.txt`), de-duplication (DOI → title+year).
+- `analysis/scripts/bibliometrics_track_a.py` — zero-dependency descriptives + co-word edge list; `bibliometrics_track_a.R` — bibliometrix thematic-map skeleton.
+- First run: OpenAlex 5,936 + arXiv 462 → **5,139-work corpus** (`data/processed/corpus.csv`); descriptives in `results/track_a/`. Lifecycle stage-hit profile independently reproduces the Track B output bias (data management 50.8 %, analysis/workflow 41.9 % vs idea/question 3.7 %).
+
+### Added — infrastructure
+- Repository scaffolding `literature/`, `data/`, `analysis/`, `results/`, `manuscript/` mirroring the prior GitHub–Zenodo–ORCID workflow repository.
+- Root `README.md`; `.gitignore` (LaTeX aux, Python cache, raw API dumps).
+- `manuscript/` LaTeX skeleton: `paper.tex` (Springer `sn-jnl` class), `.latexmkrc`, `references.bib`, `figures/`, `tables/`.
+- `docs/PHASE2_PROGRESS.md`.
+
+### Changed
+- `docs/RESEARCH_DESIGN.md` and `docs/LITERATURE_REVIEW.md` rewritten for the hybrid framing (nested corpus + screened subset, bibliometric branch).
+- Working synthesis moved `manuscript/literature-review.md` → `literature/background_synthesis.md` (manuscript prose deferred to Phase 11).
+- `docs/DECISION_LOG.md` — D6, D7, D8.
+- `docs/ROADMAP.md` — added a current-status block; Phase 2 marked closed.
+
+---
+
+## [0.1.0] — 2026-08-29 — Phase 1: Project definition
+
+### Added
+- `docs/PHASE1_PROJECT_DEFINITION.md` — authoritative Phase 1 output: research problem, aim, objectives, revised research questions (RQ1–RQ5), conceptual scope, target-journal positioning (*Scientometrics*, Springer Nature), manuscript structure, repository architecture.
+- `docs/DECISION_LOG.md` — D1 (target journal), D2 (hybrid framing: bibliometric map + coverage analysis + synthesised architecture/template), D3 (revised RQ set), D4 (nested literature design), D5 (case study: self-referential + reusable template).
+
+### Changed
+- `docs/RESEARCH_QUESTION.md`, `docs/PAPER_PLAN.md` — alignment notes pointing to the Phase 1 definition as authoritative; superseded sections flagged.
+- `docs/README.md` — index updated.
+
+---
+
+## [0.0.1] — 2026-08-29 — Initial documentation
+
+### Added
+- `docs/` — initial research design, protocols and planning documents: `PAPER_PLAN.md`, `ROADMAP.md`, `RESEARCH_DESIGN.md`, `RESEARCH_QUESTION.md`, `LITERATURE_REVIEW.md`, `REQUIREMENTS_FRAMEWORKS.md`, `GITHUB_FEATURE_MAPPING.md`, `REFERENCE_ARCHITECTURE.md`, `REPOSITORY_ARCHITECTURE.md`, `TEMPLATE_PROJECT.md`, `CASE_STUDY.md`, `EVALUATION_PROTOCOL.md`, `FIGURES_AND_TABLES.md`.

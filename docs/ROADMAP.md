@@ -4,6 +4,17 @@
 
 ---
 
+## Current status (2026-08-30)
+
+| Phase | State |
+|---|---|
+| 1 — Project definition | complete (`PHASE1_PROJECT_DEFINITION.md`) |
+| 2 — Literature analysis | **closed** — Track B complete; Track A first run done on OpenAlex + arXiv (5,139-work corpus); optional refinements listed (`PHASE2_PROGRESS.md`, `DECISION_LOG.md` D6–D8) |
+| 3 — Requirement framework | next |
+| 4–12 | not started |
+
+---
+
 # Phase 1 — Project definition
 
 ## Objectives

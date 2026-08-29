@@ -1,0 +1,29 @@
+# LaTeX build artifacts
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.spl
+*.synctex.gz
+*.bbl
+*.blg
+*.run.xml
+
+# LaTeX aux directory (folder and all its contents)
+manuscript/aux_files/
+manuscript/aux_files/**
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Track A raw API dumps — regenerable from the frozen queries + snapshot date;
+# archived on Zenodo, not git. The de-duplicated data/processed/corpus.csv is tracked.
+data/raw/openalex/*.jsonl
+data/raw/openalex/*.csv
+data/raw/arxiv/*.csv
+
+# OS
+.DS_Store

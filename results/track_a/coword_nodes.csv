@@ -1,0 +1,944 @@
+id,label,weight
+computer science,computer science,3586
+data science,data science,1592
+database,database,1473
+workflow,workflow,1329
+world wide web,world wide web,1312
+engineering,engineering,1035
+political science,political science,940
+business,business,792
+knowledge management,knowledge management,789
+software,software,603
+software engineering,software engineering,580
+medicine,medicine,553
+operating system,operating system,502
+data management,data management,494
+artificial intelligence,artificial intelligence,483
+programming language,programming language,446
+data mining,data mining,433
+biology,biology,431
+open science,open science,418
+sociology,sociology,415
+geography,geography,370
+metadata,metadata,345
+cloud computing,cloud computing,344
+psychology,psychology,327
+process (computing),process (computing),324
+public relations,public relations,321
+interoperability,interoperability,318
+engineering management,engineering management,299
+context (archaeology),context (archaeology),274
+library science,library science,269
+mathematics,mathematics,258
+distributed computing,distributed computing,256
+process management,process management,255
+data sharing,data sharing,252
+open data,open data,240
+information retrieval,information retrieval,236
+workflow management system,workflow management system,227
+engineering ethics,engineering ethics,222
+data curation,data curation,215
+service (business),service (business),207
+computer security,computer security,199
+work (physics),work (physics),195
+systems engineering,systems engineering,194
+documentation,documentation,192
+publishing,publishing,172
+ecology,ecology,168
+physics,physics,157
+workflow technology,workflow technology,154
+law,law,152
+key (lock),key (lock),149
+social science,social science,147
+reuse,reuse,147
+computational biology,computational biology,145
+workflow engine,workflow engine,144
+environmental science,environmental science,144
+python (programming language),python (programming language),144
+quality (philosophy),quality (philosophy),139
+scalability,scalability,139
+transparency (behavior),transparency (behavior),136
+research data,research data,136
+rdm,rdm,136
+economics,economics,134
+machine learning,machine learning,130
+field (mathematics),field (mathematics),128
+set (abstract data type),set (abstract data type),128
+marketing,marketing,123
+big data,big data,122
+medline,medline,120
+open source,open source,119
+best practice,best practice,114
+resource (disambiguation),resource (disambiguation),112
+management science,management science,110
+scholarly communication,scholarly communication,106
+project management,project management,106
+management,management,106
+statistics,statistics,106
+pipeline (software),pipeline (software),105
+genetics,genetics,105
+chemistry,chemistry,105
+geology,geology,104
+software development,software development,103
+data management plan,data management plan,103
+data collection,data collection,101
+grid,grid,99
+visualization,visualization,99
+bioinformatics,bioinformatics,99
+pathology,pathology,95
+open research,open research,95
+scheduling (production processes),scheduling (production processes),93
+medical education,medical education,92
+variety (cybernetics),variety (cybernetics),91
+philosophy,philosophy,89
+domain (mathematical analysis),domain (mathematical analysis),88
+human–computer interaction,human–computer interaction,86
+internal medicine,internal medicine,86
+software deployment,software deployment,86
+operations management,operations management,85
+source code,source code,85
+gene,gene,85
+task (project management),task (project management),84
+alternative medicine,alternative medicine,84
+environmental resource management,environmental resource management,84
+data quality,data quality,84
+scripting language,scripting language,82
+qualitative research,qualitative research,82
+e-science,e-science,81
+health care,health care,81
+code (set theory),code (set theory),80
+interface (matter),interface (matter),76
+computer network,computer network,74
+scale (ratio),scale (ratio),73
+protocol (science),protocol (science),70
+cyberinfrastructure,cyberinfrastructure,69
+provenance,provenance,69
+pedagogy,pedagogy,69
+information system,information system,69
+modular design,modular design,67
+citizen science,citizen science,66
+nursing,nursing,66
+art,art,65
+humanities,humanities,65
+the internet,the internet,63
+epistemology,epistemology,62
+analytics,analytics,62
+algorithm,algorithm,61
+automation,automation,61
+presentation (obstetrics),presentation (obstetrics),61
+plan (archaeology),plan (archaeology),60
+scope (computer science),scope (computer science),59
+publication,publication,59
+usability,usability,58
+telecommunications,telecommunications,57
+remote sensing,remote sensing,57
+architecture,architecture,56
+archaeology,archaeology,56
+perspective (graphical),perspective (graphical),56
+sustainability,sustainability,56
+semantic web,semantic web,55
+grid computing,grid computing,53
+public health,public health,53
+corporate governance,corporate governance,53
+control (management),control (management),52
+openness to experience,openness to experience,52
+cartography,cartography,52
+computational science,computational science,51
+data access,data access,51
+identification (biology),identification (biology),51
+population,population,51
+data integration,data integration,50
+geospatial analysis,geospatial analysis,50
+identifier,identifier,50
+ontology,ontology,49
+standardization,standardization,49
+reproducibility,reproducibility,49
+disease,disease,48
+citation,citation,48
+focus (optics),focus (optics),47
+flexibility (engineering),flexibility (engineering),47
+history,history,47
+neuroscience,neuroscience,47
+linguistics,linguistics,46
+relevance (law),relevance (law),46
+leverage (statistics),leverage (statistics),46
+scholarship,scholarship,46
+value (mathematics),value (mathematics),45
+raw data,raw data,45
+web service,web service,44
+mathematical optimization,mathematical optimization,44
+public administration,public administration,44
+digital library,digital library,44
+government (linguistics),government (linguistics),43
+internet privacy,internet privacy,42
+deep learning,deep learning,42
+reusability,reusability,41
+theoretical computer science,theoretical computer science,40
+discipline,discipline,40
+graphical user interface,graphical user interface,40
+suite,suite,40
+benchmark (surveying),benchmark (surveying),40
+politics,politics,40
+european union,european union,40
+risk analysis (engineering),risk analysis (engineering),40
+genome,genome,40
+systematic review,systematic review,40
+coronavirus disease 2019 (covid-19),coronavirus disease 2019 (covid-19),40
+gateway (web page),gateway (web page),39
+data governance,data governance,39
+biodiversity,biodiversity,39
+medical physics,medical physics,38
+environmental health,environmental health,38
+order (exchange),order (exchange),37
+management system,management system,37
+originality,originality,37
+environmental planning,environmental planning,37
+parallel computing,parallel computing,36
+multidisciplinary approach,multidisciplinary approach,36
+opm3,opm3,36
+incentive,incentive,36
+dissemination,dissemination,35
+project management triangle,project management triangle,35
+mathematics education,mathematics education,34
+benchmarking,benchmarking,34
+toolbox,toolbox,34
+stakeholder,stakeholder,34
+graph,graph,33
+annotation,annotation,33
+open innovation,open innovation,33
+health informatics,health informatics,33
+data visualization,data visualization,33
+meteorology,meteorology,33
+social psychology,social psychology,33
+component (thermodynamics),component (thermodynamics),32
+windows workflow foundation,windows workflow foundation,32
+psychological intervention,psychological intervention,32
+executable,executable,32
+science policy,science policy,32
+finance,finance,32
+natural language processing,natural language processing,32
+stewardship (theology),stewardship (theology),32
+materials science,materials science,32
+function (biology),function (biology),31
+supercomputer,supercomputer,31
+upload,upload,31
+higher education,higher education,31
+informatics,informatics,31
+digitization,digitization,31
+clinical trial,clinical trial,31
+point (geometry),point (geometry),30
+state (computer science),state (computer science),30
+provisioning,provisioning,30
+regional science,regional science,30
+usable,usable,30
+family medicine,family medicine,30
+pandemic,pandemic,30
+digital preservation,digital preservation,29
+digital curation,digital curation,29
+economic growth,economic growth,29
+open source software,open source software,29
+multimedia,multimedia,29
+pattern recognition (psychology),pattern recognition (psychology),29
+china,china,28
+exploit,exploit,28
+middleware (distributed applications),middleware (distributed applications),28
+coding (social sciences),coding (social sciences),28
+general partnership,general partnership,28
+scopus,scopus,28
+genomics,genomics,28
+empirical research,empirical research,28
+agile software development,agile software development,27
+computer graphics (images),computer graphics (images),27
+sociology of scientific knowledge,sociology of scientific knowledge,27
+feature (linguistics),feature (linguistics),27
+computer vision,computer vision,27
+program management,program management,26
+consistency (knowledge bases),consistency (knowledge bases),26
+r package,r package,26
+thematic analysis,thematic analysis,26
+image (mathematics),image (mathematics),26
+virtual machine,virtual machine,25
+session (web analytics),session (web analytics),25
+training (meteorology),training (meteorology),25
+implementation,implementation,25
+cancer,cancer,25
+astronomy,astronomy,24
+intellectual property,intellectual property,24
+accounting,accounting,24
+robustness (evolution),robustness (evolution),24
+audit,audit,24
+cluster analysis,cluster analysis,24
+chromatography,chromatography,24
+sample (material),sample (material),24
+institution,institution,24
+user interface,user interface,24
+subject (documents),subject (documents),24
+devops,devops,24
+intensive care medicine,intensive care medicine,24
+ecosystem,ecosystem,24
+artificial neural network,artificial neural network,24
+mechanical engineering,mechanical engineering,23
+schedule,schedule,23
+object (grammar),object (grammar),23
+embedded system,embedded system,23
+web application,web application,23
+software portability,software portability,23
+taxonomy (biology),taxonomy (biology),23
+reliability (semiconductor),reliability (semiconductor),23
+psychiatry,psychiatry,23
+meta-analysis,meta-analysis,23
+cochrane library,cochrane library,23
+xpdl,xpdl,22
+server,server,22
+operations research,operations research,22
+software construction,software construction,22
+infectious disease (medical specialty),infectious disease (medical specialty),22
+productivity,productivity,22
+linked data,linked data,22
+pharmacology,pharmacology,22
+climate change,climate change,21
+evolutionary biology,evolutionary biology,21
+traceability,traceability,21
+computer data storage,computer data storage,21
+information repository,information repository,21
+neuroimaging,neuroimaging,21
+social media,social media,21
+digital humanities,digital humanities,21
+virology,virology,21
+bridging (networking),bridging (networking),21
+equity (law),equity (law),21
+container (type theory),container (type theory),21
+generative grammar,generative grammar,21
+radiology,radiology,20
+production (economics),production (economics),20
+metadata management,metadata management,20
+data processing,data processing,20
+promotion (chess),promotion (chess),20
+competence (human resources),competence (human resources),20
+credibility,credibility,20
+metadata repository,metadata repository,20
+space (punctuation),space (punctuation),20
+qualitative property,qualitative property,20
+curriculum,curriculum,20
+grey literature,grey literature,20
+segmentation,segmentation,20
+data element,data element,19
+agriculture,agriculture,19
+replication (statistics),replication (statistics),19
+job shop scheduling,job shop scheduling,19
+medical emergency,medical emergency,19
+representation (politics),representation (politics),19
+proteomics,proteomics,19
+adaptation (eye),adaptation (eye),19
+inference,inference,19
+metagenomics,metagenomics,19
+discoverability,discoverability,19
+german,german,19
+media studies,media studies,19
+preprint,preprint,19
+sustainable development,sustainable development,19
+severe acute respiratory syndrome coronavirus 2 (sars-cov-2),severe acute respiratory syndrome coronavirus 2 (sars-cov-2),19
+diversity (politics),diversity (politics),18
+license,license,18
+oceanography,oceanography,18
+earth science,earth science,18
+exploratory research,exploratory research,18
+event (particle physics),event (particle physics),18
+terminology,terminology,18
+outreach,outreach,18
+microbiome,microbiome,18
+software versioning,software versioning,18
+application programming interface,application programming interface,18
+pipeline transport,pipeline transport,18
+open peer review,open peer review,18
+surgery,surgery,18
+preprocessor,preprocessor,18
+mit license,mit license,18
+schema (genetic algorithms),schema (genetic algorithms),17
+translational research,translational research,17
+overhead (engineering),overhead (engineering),17
+personalization,personalization,17
+selection (genetic algorithm),selection (genetic algorithm),17
+data as a service,data as a service,17
+scientific communication,scientific communication,17
+download,download,17
+plant biology,plant biology,17
+physical therapy,physical therapy,17
+2019-20 coronavirus outbreak,2019-20 coronavirus outbreak,17
+paleontology,paleontology,16
+semantic interoperability,semantic interoperability,16
+construct (python library),construct (python library),16
+cognitive science,cognitive science,16
+semantics (computer science),semantics (computer science),16
+cheminformatics,cheminformatics,16
+perception,perception,16
+electronic data capture,electronic data capture,16
+digital scholarship,digital scholarship,16
+econometrics,econometrics,16
+data discovery,data discovery,15
+orchestration,orchestration,15
+computation,computation,15
+rdf,rdf,15
+workbench,workbench,15
+quality assurance,quality assurance,15
+genotype,genotype,15
+pace,pace,15
+neuroinformatics,neuroinformatics,15
+european commission,european commission,15
+software development process,software development process,15
+action (physics),action (physics),15
+bridge (graph theory),bridge (graph theory),15
+citizen journalism,citizen journalism,15
+power (physics),power (physics),15
+crowdsourcing,crowdsourcing,15
+european research area,european research area,15
+science education,science education,15
+visibility,visibility,15
+hydrology (agriculture),hydrology (agriculture),15
+transformative learning,transformative learning,15
+data extraction,data extraction,15
+blockchain,blockchain,15
+randomized controlled trial,randomized controlled trial,15
+ukrainian,ukrainian,15
+blueprint,blueprint,15
+convolutional neural network,convolutional neural network,15
+confidentiality,confidentiality,14
+meta data services,meta data services,14
+workload,workload,14
+electrical engineering,electrical engineering,14
+relation (database),relation (database),14
+fault tolerance,fault tolerance,14
+biobank,biobank,14
+bioconductor,bioconductor,14
+conceptual framework,conceptual framework,14
+quality of service,quality of service,14
+geographic information system,geographic information system,14
+immunology,immunology,14
+drug discovery,drug discovery,14
+data model (gis),data model (gis),14
+portfolio,portfolio,14
+alliance,alliance,14
+personalized medicine,personalized medicine,14
+accountability,accountability,14
+bibliometrics,bibliometrics,14
+descriptive statistics,descriptive statistics,14
+gene expression,gene expression,14
+cohort,cohort,14
+botany,botany,14
+inclusion (mineral),inclusion (mineral),14
+oncology,oncology,14
+health services research,health services research,14
+digital transformation,digital transformation,14
+cinahl,cinahl,14
+tracking (education),tracking (education),13
+real-time computing,real-time computing,13
+data modeling,data modeling,13
+ranking (information retrieval),ranking (information retrieval),13
+precision medicine,precision medicine,13
+visual arts,visual arts,13
+commons,commons,13
+plug-in,plug-in,13
+application lifecycle management,application lifecycle management,13
+scientific literature,scientific literature,13
+test (biology),test (biology),13
+workforce,workforce,13
+global health,global health,13
+drug,drug,13
+checklist,checklist,13
+agency (philosophy),agency (philosophy),12
+quality management,quality management,12
+project charter,project charter,12
+software quality,software quality,12
+information management,information management,12
+christian ministry,christian ministry,12
+replicate,replicate,12
+civil engineering,civil engineering,12
+software project management,software project management,12
+reliability engineering,reliability engineering,12
+debugging,debugging,12
+nanotechnology,nanotechnology,12
+social network analysis,social network analysis,12
+cultural heritage,cultural heritage,12
+risk management,risk management,12
+biochemistry,biochemistry,12
+optics,optics,12
+face (sociological concept),face (sociological concept),12
+clarity,clarity,12
+range (aeronautics),range (aeronautics),12
+commit,commit,12
+open education,open education,12
+environmental ethics,environmental ethics,12
+energy consumption,energy consumption,12
+code review,code review,12
+xml,xml,11
+management information systems,management information systems,11
+open standard,open standard,11
+project planning,project planning,11
+natural (archaeology),natural (archaeology),11
+the arts,the arts,11
+single-nucleotide polymorphism,single-nucleotide polymorphism,11
+academic library,academic library,11
+earth system science,earth system science,11
+novelty,novelty,11
+artifact (error),artifact (error),11
+maturity (psychological),maturity (psychological),11
+knowledge sharing,knowledge sharing,11
+file format,file format,11
+data publishing,data publishing,11
+excellence,excellence,11
+system lifecycle,system lifecycle,11
+research ethics,research ethics,11
+computer architecture,computer architecture,11
+simple (philosophy),simple (philosophy),11
+satellite,satellite,11
+robot,robot,11
+spatial analysis,spatial analysis,11
+professional development,professional development,11
+json,json,11
+preparedness,preparedness,11
+core (optical fiber),core (optical fiber),11
+data type,data type,11
+data integrity,data integrity,11
+product (mathematics),product (mathematics),10
+access control,access control,10
+sql,sql,10
+correctness,correctness,10
+scientific management,scientific management,10
+abstraction,abstraction,10
+workflow management coalition,workflow management coalition,10
+astrobiology,astrobiology,10
+probabilistic logic,probabilistic logic,10
+theme (computing),theme (computing),10
+decision support system,decision support system,10
+investment (military),investment (military),10
+simulation,simulation,10
+risk assessment,risk assessment,10
+computational model,computational model,10
+peer review,peer review,10
+social network (sociolinguistics),social network (sociolinguistics),10
+bottleneck,bottleneck,10
+asset (computer security),asset (computer security),10
+table (database),table (database),10
+gerontology,gerontology,10
+mandate,mandate,10
+dna sequencing,dna sequencing,10
+search engine indexing,search engine indexing,10
+service provider,service provider,10
+scientific publishing,scientific publishing,10
+popularity,popularity,10
+term (time),term (time),10
+ontology-based data integration,ontology-based data integration,10
+javascript,javascript,10
+profiling (computer programming),profiling (computer programming),10
+development (topology),development (topology),10
+cornerstone,cornerstone,10
+throughput,throughput,10
+metric (unit),metric (unit),10
+applied psychology,applied psychology,10
+metadata modeling,metadata modeling,10
+readability,readability,10
+stakeholder engagement,stakeholder engagement,10
+harmonization,harmonization,10
+cognition,cognition,10
+data mapping,data mapping,10
+medical imaging,medical imaging,10
+mental health,mental health,10
+similarity (geometry),similarity (geometry),9
+resource management (computing),resource management (computing),9
+sparql,sparql,9
+software system,software system,9
+dicom,dicom,9
+outcome (game theory),outcome (game theory),9
+cloud computing security,cloud computing security,9
+capacity building,capacity building,9
+focus group,focus group,9
+hierarchy,hierarchy,9
+scientific discovery,scientific discovery,9
+system integration,system integration,9
+vocabulary,vocabulary,9
+project manager,project manager,9
+life-cycle assessment,life-cycle assessment,9
+mechanism (biology),mechanism (biology),9
+art history,art history,9
+narrative,narrative,9
+categorization,categorization,9
+section (typography),section (typography),9
+data file,data file,9
+information technology,information technology,9
+information and communications technology,information and communications technology,9
+dimension (graph theory),dimension (graph theory),9
+aerospace engineering,aerospace engineering,9
+architectural engineering,architectural engineering,9
+data center,data center,9
+index (typography),index (typography),9
+epidemiology,epidemiology,9
+staffing,staffing,9
+timeline,timeline,9
+transcriptome,transcriptome,9
+parsing,parsing,9
+demography,demography,9
+science communication,science communication,9
+consolidation (business),consolidation (business),9
+rigour,rigour,9
+international trade,international trade,9
+information privacy,information privacy,9
+dependency (uml),dependency (uml),9
+normative,normative,9
+efficient energy use,efficient energy use,9
+static program analysis,static program analysis,9
+autonomy,autonomy,9
+acupuncture,acupuncture,9
+speech recognition,speech recognition,9
+interpretability,interpretability,9
+trustworthiness,trustworthiness,9
+thematic map,thematic map,9
+radiomics,radiomics,9
+digital data,digital data,9
+translational science,translational science,8
+geospatial metadata,geospatial metadata,8
+java,java,8
+work in process,work in process,8
+workspace,workspace,8
+principal (computer security),principal (computer security),8
+ibm,ibm,8
+current (fluid),current (fluid),8
+advertising,advertising,8
+cloud storage,cloud storage,8
+summit,summit,8
+digital content,digital content,8
+perl,perl,8
+authentication (law),authentication (law),8
+reading (process),reading (process),8
+granularity,granularity,8
+center (category theory),center (category theory),8
+structuring,structuring,8
+mass spectrometry,mass spectrometry,8
+earth observation,earth observation,8
+health informatics tools,health informatics tools,8
+domain knowledge,domain knowledge,8
+conceptual model,conceptual model,8
+semantic computing,semantic computing,8
+teamwork,teamwork,8
+commercialization,commercialization,8
+nuclear physics,nuclear physics,8
+survey data collection,survey data collection,8
+sociotechnical system,sociotechnical system,8
+software analytics,software analytics,8
+electronic publishing,electronic publishing,8
+legislation,legislation,8
+matching (statistics),matching (statistics),8
+dashboard,dashboard,8
+anthropology,anthropology,8
+codebase,codebase,8
+participatory action research,participatory action research,8
+metabolomics,metabolomics,8
+supply chain,supply chain,8
+virtual reality,virtual reality,8
+bespoke,bespoke,8
+generalizability theory,generalizability theory,8
+information literacy,information literacy,8
+sustainability science,sustainability science,8
+research integrity,research integrity,8
+personal software process,personal software process,8
+physiology,physiology,8
+data set,data set,8
+transformation (genetics),transformation (genetics),8
+code reuse,code reuse,8
+diabetes mellitus,diabetes mellitus,8
+information infrastructure,information infrastructure,8
+intervention (counseling),intervention (counseling),8
+digital health,digital health,8
+transformer,transformer,8
+semantic grid,semantic grid,7
+dataflow,dataflow,7
+identity (music),identity (music),7
+negotiation,negotiation,7
+modalities,modalities,7
+foundation (evidence),foundation (evidence),7
+petri net,petri net,7
+relational database,relational database,7
+business process,business process,7
+reputation,reputation,7
+radiation therapy,radiation therapy,7
+astrophysics,astrophysics,7
+biological data,biological data,7
+mode (computer interface),mode (computer interface),7
+earth (classical element),earth (classical element),7
+modernization theory,modernization theory,7
+extreme project management,extreme project management,7
+testbed,testbed,7
+collaborative software,collaborative software,7
+quantitative proteomics,quantitative proteomics,7
+milestone,milestone,7
+waste management,waste management,7
+tree (set theory),tree (set theory),7
+maintainability,maintainability,7
+phylogenetic tree,phylogenetic tree,7
+data analysis,data analysis,7
+fishery,fishery,7
+resilience (materials science),resilience (materials science),7
+position (finance),position (finance),7
+computational neuroscience,computational neuroscience,7
+institutional repository,institutional repository,7
+filter (signal processing),filter (signal processing),7
+viewpoints,viewpoints,7
+scientometrics,scientometrics,7
+semantic integration,semantic integration,7
+host (biology),host (biology),7
+geometry,geometry,7
+extensibility,extensibility,7
+capability maturity model,capability maturity model,7
+operationalization,operationalization,7
+data security,data security,7
+dna microarray,dna microarray,7
+literature,literature,7
+vision,vision,7
+computational chemistry,computational chemistry,7
+netcdf,netcdf,7
+repurposing,repurposing,7
+commission,commission,7
+class (philosophy),class (philosophy),7
+health policy,health policy,7
+open government,open government,7
+structural bioinformatics,structural bioinformatics,7
+geotechnical engineering,geotechnical engineering,7
+literacy,literacy,7
+heuristic,heuristic,7
+frontier,frontier,7
+web of science,web of science,7
+service delivery framework,service delivery framework,7
+software documentation,software documentation,7
+ancient history,ancient history,7
+traditional medicine,traditional medicine,7
+certification,certification,7
+sampling (signal processing),sampling (signal processing),7
+terabyte,terabyte,7
+image processing,image processing,7
+cohort study,cohort study,7
+mainstream,mainstream,7
+information science,information science,7
+research design,research design,7
+comparability,comparability,7
+cognitive psychology,cognitive psychology,7
+dynamics (music),dynamics (music),7
+observational study,observational study,7
+environmental engineering,environmental engineering,7
+bayesian probability,bayesian probability,7
+tanzania,tanzania,7
+quantum mechanics,quantum mechanics,7
+distribution (mathematics),distribution (mathematics),7
+telemedicine,telemedicine,7
+interpretation (philosophy),interpretation (philosophy),7
+endocrinology,endocrinology,7
+developing country,developing country,7
+embedding,embedding,7
+outbreak,outbreak,7
+grand challenges,grand challenges,7
+random forest,random forest,7
+data warehouse,data warehouse,7
+psycinfo,psycinfo,7
+baseline (sea),baseline (sea),7
+health equity,health equity,7
+balance (ability),balance (ability),7
+cancer research,cancer research,6
+entrepreneurship,entrepreneurship,6
+authorization,authorization,6
+plasma,plasma,6
+health data,health data,6
+genotyping,genotyping,6
+latin americans,latin americans,6
+troubleshooting,troubleshooting,6
+flow (mathematics),flow (mathematics),6
+strengths and weaknesses,strengths and weaknesses,6
+revenue,revenue,6
+transformational leadership,transformational leadership,6
+outsourcing,outsourcing,6
+scientific instrument,scientific instrument,6
+cluster (spacecraft),cluster (spacecraft),6
+fuzzy logic,fuzzy logic,6
+heuristics,heuristics,6
+resource allocation,resource allocation,6
+mobile device,mobile device,6
+extension (predicate logic),extension (predicate logic),6
+climatology,climatology,6
+data exchange,data exchange,6
+semantic technology,semantic technology,6
+habitat,habitat,6
+informed consent,informed consent,6
+volume (thermodynamics),volume (thermodynamics),6
+compliance (psychology),compliance (psychology),6
+medical research,medical research,6
+health records,health records,6
+nonlinear system,nonlinear system,6
+data dictionary,data dictionary,6
+code refactoring,code refactoring,6
+workstation,workstation,6
+molecular dynamics,molecular dynamics,6
+transition (genetics),transition (genetics),6
+ensemble learning,ensemble learning,6
+predictive modelling,predictive modelling,6
+magnetic resonance imaging,magnetic resonance imaging,6
+geomorphology,geomorphology,6
+mechanics,mechanics,6
+normalization (sociology),normalization (sociology),6
+ethnography,ethnography,6
+nonprobability sampling,nonprobability sampling,6
+business model,business model,6
+cloudsim,cloudsim,6
+spark (programming language),spark (programming language),6
+unique identifier,unique identifier,6
+exploratory data analysis,exploratory data analysis,6
+indigenous,indigenous,6
+public policy,public policy,6
+encryption,encryption,6
+multivariate statistics,multivariate statistics,6
+directory,directory,6
+applied linguistics,applied linguistics,6
+energy (signal processing),energy (signal processing),6
+trait,trait,6
+covariate,covariate,6
+time series,time series,6
+metallurgy,metallurgy,6
+weighting,weighting,6
+snapshot (computer storage),snapshot (computer storage),6
+environmental economics,environmental economics,6
+status quo,status quo,6
+reinforcement learning,reinforcement learning,6
+knowledge graph,knowledge graph,6
+quantum,quantum,6
+design science research,design science research,6
+guideline,guideline,6
+correlation,correlation,6
+genome-wide association study,genome-wide association study,6
+scientific progress,scientific progress,6
+matlab,matlab,6
+elixir (programming language),elixir (programming language),6
+particle swarm optimization,particle swarm optimization,6
+course (navigation),course (navigation),5
+developmental psychology,developmental psychology,5
+enhanced data rates for gsm evolution,enhanced data rates for gsm evolution,5
+scheme (mathematics),scheme (mathematics),5
+interdependence,interdependence,5
+document management system,document management system,5
+graduate students,graduate students,5
+scientific misconduct,scientific misconduct,5
+predictability,predictability,5
+trace (psycholinguistics),trace (psycholinguistics),5
+centrality,centrality,5
+knowledge creation,knowledge creation,5
+fair use,fair use,5
+instrumentation (computer programming),instrumentation (computer programming),5
+asynchronous communication,asynchronous communication,5
+realm,realm,5
+construction engineering,construction engineering,5
+geoinformatics,geoinformatics,5
+kepler,kepler,5
+adaptability,adaptability,5
+property (philosophy),property (philosophy),5
+modularity (biology),modularity (biology),5
+public domain,public domain,5
+semantic data model,semantic data model,5
+water resources,water resources,5
+watershed,watershed,5
+globe,globe,5
+strategic planning,strategic planning,5
+climate model,climate model,5
+phase (matter),phase (matter),5
+geochemistry,geochemistry,5
+underpinning,underpinning,5
+porting,porting,5
+systems biology,systems biology,5
+delphi method,delphi method,5
+connotation,connotation,5
+interim,interim,5
+knowledge base,knowledge base,5
+applied mathematics,applied mathematics,5
+mathematical analysis,mathematical analysis,5
+creativity,creativity,5
+software as a service,software as a service,5
+vendor,vendor,5
+vegetation (pathology),vegetation (pathology),5
+rna-seq,rna-seq,5
+survey research,survey research,5
+load balancing (electrical power),load balancing (electrical power),5
+interactive visualization,interactive visualization,5
+component-based software engineering,component-based software engineering,5
+science and engineering,science and engineering,5
+engineering drawing,engineering drawing,5
+information governance,information governance,5
+shared resource,shared resource,5
+large hadron collider,large hadron collider,5
+particle physics,particle physics,5
+expression (computer science),expression (computer science),5
+syntax,syntax,5
+action research,action research,5
+disk formatting,disk formatting,5
+citation analysis,citation analysis,5
+extraction (chemistry),extraction (chemistry),5
+social software engineering,social software engineering,5
+multitude,multitude,5
+end-to-end principle,end-to-end principle,5
+service design,service design,5
+association (psychology),association (psychology),5
+water resource management,water resource management,5
+research council,research council,5
+multispectral image,multispectral image,5
+statistical analysis,statistical analysis,5
+sediment,sediment,5
+zoom,zoom,5
+software security assurance,software security assurance,5
+verifiable secret sharing,verifiable secret sharing,5
+ecosystem services,ecosystem services,5
+installation,installation,5
+framing (construction),framing (construction),5
+feature extraction,feature extraction,5
+ehealth,ehealth,5
+social sustainability,social sustainability,5
+classifier (uml),classifier (uml),5
+support vector machine,support vector machine,5
+amplicon,amplicon,5
+physical medicine and rehabilitation,physical medicine and rehabilitation,5
+descriptive research,descriptive research,5
+drug development,drug development,5
+environmental chemistry,environmental chemistry,5
+limiting,limiting,5
+organic chemistry,organic chemistry,5
+dna,dna,5
+modeling language,modeling language,5
+biotechnology,biotechnology,5
+causal inference,causal inference,5
+microservices,microservices,5
+controlled vocabulary,controlled vocabulary,5
+drone,drone,5
+hazard,hazard,5
+biomarker,biomarker,5
+statistical physics,statistical physics,5
+industrial organization,industrial organization,5
+inequality,inequality,5
+breast cancer,breast cancer,5
+adverse effect,adverse effect,5
+safeguarding,safeguarding,5
+open biomedical ontologies,open biomedical ontologies,5
+phenotype,phenotype,5
+motion (physics),motion (physics),5
+open educational resources,open educational resources,5
+nuclear medicine,nuclear medicine,5
+immune system,immune system,5
+grassroots,grassroots,5
+image segmentation,image segmentation,5
+environmental data,environmental data,5
+optometry,optometry,5
+thermodynamics,thermodynamics,5
+process engineering,process engineering,5
+philosophy of science,philosophy of science,5
+public engagement,public engagement,5
+data protection act 1998,data protection act 1998,5
+pooling,pooling,5
+wearable computer,wearable computer,5
+quantitative analysis (chemistry),quantitative analysis (chemistry),5
+applications of artificial intelligence,applications of artificial intelligence,5
+digital asset management,digital asset management,5
+adversarial system,adversarial system,5
+health science,health science,5
+quantum computer,quantum computer,5
+siege,siege,5

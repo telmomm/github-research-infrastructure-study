@@ -1,0 +1,12 @@
+# Track A corpus cleaning — source-name substrings to drop (case-insensitive).
+# Rationale: the bibliometric corpus is scholarly documents, not data/software deposits.
+# Edit this list, then re-run: python3 analysis/scripts/build_corpus.py
+zenodo
+figshare
+dryad
+dataverse
+open science framework
+osf.io
+mendeley data
+protocols.io
+datacite
