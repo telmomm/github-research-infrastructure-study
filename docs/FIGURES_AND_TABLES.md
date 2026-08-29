@@ -107,6 +107,7 @@ Mapping between research management requirements and GitHub functionalities.
 ## Table 3
 
 Reference architecture components.
+*Source: `framework/architecture/architecture_components.csv` (15 components, 5 layers). — Phase 6, done. Companions: `workflows.csv` (Table for workflow definitions), `lifecycle_model.csv` (Figure 4 traceability path).*
 
 ## Table 4
 

@@ -1,4 +1,10 @@
-# GitHub-Based Research Management Reference Architecture
+# GitHub-Based Research Management Reference Architecture — Sketch
+
+> **Status (2026-08-30).** Early sketch. Phase 6 executed; the **built architecture**
+> is authoritative at [`framework/architecture/`](../framework/architecture/) —
+> `reference_architecture.md` (narrative), `architecture_components.csv` (15 components,
+> 5 layers), `workflows.csv` (7), `lifecycle_model.csv` (12 stages). See `DECISION_LOG.md` D12.
+> The layer stack and lifecycle table below are retained as the conceptual seed.
 
 ## Concept
 

@@ -1,0 +1,16 @@
+rm_id,name,support_label,components,workflows,n_components
+RM1,Research planning and roadmap,Partial,A1,WF1,1
+RM2,Research question management,Limited,A3 B3,WF1,2
+RM3,Task management,Direct,A1 A2,WF2,2
+RM4,Documentation,Direct,B1 C1,,2
+RM5,Decision traceability,Partial,A4 B2 B3 C2,WF3,4
+RM6,Collaboration and contribution tracking,Direct,C2 D3,WF2 WF4 WF7,2
+RM7,Communication,Direct,A4,,1
+RM8,Version control,Direct,B4 D1,WF2 WF4 WF5,2
+RM9,Research artifact management and integration,Partial,A2 C1,,2
+RM10,Research provenance and artifact linkage,Partial,B3 B4,WF2 WF3,2
+RM11,Transparency,Direct,B1 C3 D3 X1,WF7,4
+RM12,Reproducibility support,Partial,C2 C3,WF4 WF6,2
+RM13,Automation,Direct,C3,WF6,1
+RM14,Research output management and identification,Partial,D1 D2,WF5,2
+RM15,Governance and sustainability,Limited,D3,WF7,1

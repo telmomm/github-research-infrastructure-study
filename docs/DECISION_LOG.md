@@ -136,3 +136,17 @@ Chronological record of major methodological decisions. Each entry: ID, date, co
 - **Note on "no 0s":** nothing is scored Not supported because every requirement has *some* workable pattern; the honesty is carried by the two Limited scores, the convention caveats in the evidence notes, and the external-tool column. A stricter-rubric sensitivity check is listed as optional.
 - **Also:** `requirements_framework.csv` `github_support` column back-filled with the Phase 5 label.
 - **Affects:** `framework/mapping/`; `framework/requirements/requirements_framework.csv`; `PHASE5_PROGRESS.md`; `analysis/scripts/coverage_indicators.py`; `results/framework/`; `FIGURES_AND_TABLES.md` (Table 2 produced).
+
+---
+
+## D12 — Reference architecture: 15 components, 5 layers, conventions as first-class
+
+- **Date:** 2026-08-30
+- **Context:** Phase 6 turns the Phase 5 coverage assessment into a buildable framework.
+- **Decision:** Adopt a **15-component, 5-layer** architecture (`framework/architecture/architecture_components.csv`): Coordination (A1–A4), Record (B1–B4), Production (C1–C3), Release (D1–D3), Cross-cutting (X1). Each component is one GitHub configuration serving a named set of RMs. Plus `workflows.csv` (7 workflows) and `lifecycle_model.csv` (12 stages). Key choices:
+  - **B3 Linkage Discipline** (cross-references + closing keywords + timeline) is a named component and the keystone — a mandatory practice, not a feature.
+  - The **four conventions** that lift RM1 (phased-plan), RM2 (question register), RM5 (decision-record) and RM10 (linkage discipline) from Partial/Limited toward research-usable are **part of the architecture**, specified in `reference_architecture.md` §4, not left implicit.
+  - **Boundary rule:** at every external-tool boundary (large data, containers, DOI/preservation, institutional governance) the repository holds a durable versioned **reference** (URL/DOI/id), never the artifact.
+  - Design stance retained from `RESEARCH_DESIGN.md`: GitHub is a coordination and traceability layer, not a container.
+- **Rationale:** a small named component set makes the framework teachable, checkable (every RM served, no idle component — verified by `summarise_architecture.py`) and directly operationalisable as the Phase 7 template.
+- **Affects:** `framework/architecture/`; `REFERENCE_ARCHITECTURE.md` (draft; the built artifact is authoritative); `PHASE6_PROGRESS.md`; `analysis/scripts/summarise_architecture.py`; `results/framework/`; `FIGURES_AND_TABLES.md` (Table 3, Figures 3–4).

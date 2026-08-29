@@ -1,0 +1,13 @@
+stage,n_active_components,active_components,unresolved
+idea,2,A4 B1,
+question,3,A3 A1 B3,
+planning,3,A1 B1 B2,
+literature,3,A2 C1 B4,
+methods,4,B1 A2 B4 C2,
+data,3,C1 B4 A2,
+analysis,5,A2 C2 C3 B4 B3,
+results,4,C1 C2 D1 B3,
+manuscript,4,C1 C2 B4 A2,
+publication,4,D1 D2 D3 X1,
+outputs,4,D1 D2 B3 X1,
+post_project,3,D3 X1 B2,

@@ -1,0 +1,4 @@
+rm_id,name,phase5_support,lifting_conventions
+RM1,Research planning and roadmap,Partial,A1: Phased-plan convention
+RM2,Research question management,Limited,A3: Question Register convention | B3: Linkage-discipline convention (mandatory)
+RM5,Decision traceability,Partial,"A4: Methodological deliberation happens in Discussions; the accepted answer or poll result is referenced from the decision record | B2: Decision-record convention | B3: Linkage-discipline convention (mandatory) | C2: Substantive changes to analysis, methodology or manuscript go through a reviewed PR; the PR checklist gates 'results reproduced? data documented?'"

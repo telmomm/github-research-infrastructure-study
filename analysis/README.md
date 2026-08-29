@@ -15,6 +15,7 @@ Scripts that regenerate the study's tables and figures from the versioned datase
 | `scripts/summarise_requirements.py` | `framework/requirements/*.csv` | `results/framework/rm_*.csv`, `requirements_summary.md` |
 | `scripts/summarise_capabilities.py` | `framework/mapping/github_capability_catalogue.csv` + `framework/requirements/requirements_framework.csv` | `results/framework/gc_*.csv`, `capability_summary.md` |
 | `scripts/coverage_indicators.py` | `framework/mapping/requirement_feature_matrix.csv` + `framework/requirements/*.csv` | `results/framework/coverage_*.csv`, `coverage_summary.md` |
+| `scripts/summarise_architecture.py` | `framework/architecture/*.csv` + `framework/mapping/` + `framework/requirements/` | `results/framework/arch_*.csv`, `architecture_summary.md` |
 
 ## Track A (bibliometric corpus, open sources — `DECISION_LOG.md` D8)
 

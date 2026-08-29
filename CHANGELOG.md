@@ -41,10 +41,22 @@ Methodological decisions are logged separately in [`docs/DECISION_LOG.md`](docs/
 - `docs/GITHUB_FEATURE_MAPPING.md` — Phase 5 status/headline added.
 - `docs/ROADMAP.md` — Phase 5 marked complete; `docs/README.md`, `analysis/README.md`, `framework/README.md` indexes updated.
 
-### Working towards
-- Phase 6 — Reference architecture (organise Direct/Partial capabilities into components, workflows and a lifecycle model).
+### Added — Phase 6: Reference architecture (RQ3, constructive)
+- `framework/architecture/reference_architecture.md` — narrative: concept, 5-layer conceptual architecture, 15 components, the four lifting conventions, lifecycle model, 7 workflows, external-tool boundaries, implementation principles.
+- `framework/architecture/architecture_components.csv` — 15 components (A1–A4, B1–B4, C1–C3, D1–D3, X1) with github_basis, convention, requirements_served, traceability_role.
+- `framework/architecture/workflows.csv` — 7 workflows (WF1–WF7) with steps, components, requirements, traceability link.
+- `framework/architecture/lifecycle_model.csv` — 12 stages → active components, artifacts, entry/exit links.
+- `analysis/scripts/summarise_architecture.py` → `results/framework/arch_*.csv`, `architecture_summary.md` (consistency checks all pass).
+- `docs/PHASE6_PROGRESS.md`; `DECISION_LOG.md` D12.
 
-### Pending / optional (do not block Phase 6)
+### Changed
+- `docs/REFERENCE_ARCHITECTURE.md` — marked as an early sketch; the built architecture in `framework/architecture/` is authoritative.
+- `docs/ROADMAP.md` — Phase 6 marked complete; `docs/README.md`, `analysis/README.md`, `framework/README.md`, `FIGURES_AND_TABLES.md` updated.
+
+### Working towards
+- Phase 7 — Reusable GitHub Research Project Template (operationalise the architecture in `template/`).
+
+### Pending / optional (do not block Phase 7)
 - Track A: Crossref / Semantic Scholar citation enrichment; precision check on the broad OpenAlex queries; 2025 tail treatment; co-word map rendering.
 - Factcheck `literature/references.bib` (venues, volumes, pages, DOIs).
 - Second-coder reliability on the requirement extraction and the RE→RM assignment (~20%) — deferred, single-coder project.
