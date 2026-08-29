@@ -1,0 +1,12 @@
+lifecycle_stage,weighted_mean_support,applicability_weight
+idea,2.12,16
+question,2.25,20
+planning,2.36,28
+literature,2.43,23
+methods,2.39,31
+data,2.41,32
+analysis,2.43,35
+results,2.35,31
+manuscript,2.42,33
+publication,2.41,29
+outputs,2.39,33

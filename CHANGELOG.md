@@ -30,10 +30,21 @@ Methodological decisions are logged separately in [`docs/DECISION_LOG.md`](docs/
 - `docs/GITHUB_FEATURE_MAPPING.md` — reframed as the method doc for Phases 4–5; the built catalogue is authoritative.
 - `docs/ROADMAP.md` — Phase 4 marked complete; `docs/README.md`, `analysis/README.md`, `framework/README.md` indexes updated.
 
-### Working towards
-- Phase 5 — Requirement–feature mapping (grade RM × capability as Direct/Partial/Limited/Not supported; coverage indicators; lifecycle-coverage profile).
+### Added — Phase 5: Requirement–feature mapping (RQ3)
+- `framework/mapping/requirement_feature_matrix.csv` — RM1–RM15 support scores (Direct 3 / Partial 2 / Limited 1 / Not supported 0) with primary capabilities, contributing feature groups, implementation pattern, evidence note, external-tool dependencies, residual gap.
+- `framework/mapping/coverage_analysis.md` — narrative: method, headline (mean 2.33/3; 7 Direct, 6 Partial, 2 Limited, 0 Not supported), strengths/weaknesses, differentiator gap (RM1/RM2/RM5 mean 1.67 vs 2.50), lifecycle-coverage profile, 5 external-tool dependencies, feature-group contribution, RQ3 answer.
+- `analysis/scripts/coverage_indicators.py` → `results/framework/coverage_*.csv`, `coverage_summary.md`.
+- `docs/PHASE5_PROGRESS.md`; `DECISION_LOG.md` D11.
 
-### Pending / optional (do not block Phase 5)
+### Changed
+- `framework/requirements/requirements_framework.csv` — `github_support` column back-filled with Phase 5 labels.
+- `docs/GITHUB_FEATURE_MAPPING.md` — Phase 5 status/headline added.
+- `docs/ROADMAP.md` — Phase 5 marked complete; `docs/README.md`, `analysis/README.md`, `framework/README.md` indexes updated.
+
+### Working towards
+- Phase 6 — Reference architecture (organise Direct/Partial capabilities into components, workflows and a lifecycle model).
+
+### Pending / optional (do not block Phase 6)
 - Track A: Crossref / Semantic Scholar citation enrichment; precision check on the broad OpenAlex queries; 2025 tail treatment; co-word map rendering.
 - Factcheck `literature/references.bib` (venues, volumes, pages, DOIs).
 - Second-coder reliability on the requirement extraction and the RE→RM assignment (~20%) — deferred, single-coder project.

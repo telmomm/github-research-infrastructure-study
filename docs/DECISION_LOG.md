@@ -123,3 +123,16 @@ Chronological record of major methodological decisions. Each entry: ID, date, co
   - Each row records `plan_availability` and `practical_complexity`; `candidate_requirements` is a **Phase-4 hint** at which RM(s) a capability might serve, explicitly not the Phase-5 support score.
 - **Rationale:** native-only keeps the framework reproducible by any researcher on a standard account; finer grain makes the Phase 5 mapping a near-mechanical join on `expected_capabilities`.
 - **Affects:** `framework/mapping/`; `GITHUB_FEATURE_MAPPING.md` (now method for Phases 4–5); `PHASE4_PROGRESS.md`; `analysis/scripts/summarise_capabilities.py`; `results/framework/`.
+
+---
+
+## D11 — Requirement–feature mapping: per-requirement support scores
+
+- **Date:** 2026-08-30
+- **Context:** Phase 5 grades GitHub's support for RM1–RM15 for RQ3.
+- **Decision:** Score **one support level per requirement** — the best level GitHub's native functionality can reach with a reasonable implementation pattern — using the four-level rubric (Direct 3 / Partial 2 / Limited 1 / Not supported 0). Recorded in `framework/mapping/requirement_feature_matrix.csv` with primary capabilities, contributing feature groups (weighted), a concrete implementation pattern, an evidence note, external-tool dependencies and the residual gap. Per-cell RM×capability scoring was rejected as 15×68 with little added insight; the RM×feature-group contribution matrix (`coverage_group_matrix.csv`) is derived from the `contributing_groups` field instead.
+- **Scores:** Direct RM3, RM4, RM6, RM7, RM8, RM11, RM13 (7); Partial RM1, RM5, RM9, RM10, RM12, RM14 (6); Limited RM2, RM15 (2); none Not supported. Overall mean **2.33/3**.
+- **Key findings:** (a) Direct where research work resembles software engineering; Partial/Limited for research-specific traceability of questions/decisions/provenance and for planning/governance. (b) Differentiators RM1/RM2/RM5 mean **1.67** vs **2.50** for the rest — the upstream gap is real on the tool side, matching RQ1. (c) **5 requirements need external tools** (RM8, RM9, RM12, RM14, RM15). (d) Issues + Git repository carry most of the framework.
+- **Note on "no 0s":** nothing is scored Not supported because every requirement has *some* workable pattern; the honesty is carried by the two Limited scores, the convention caveats in the evidence notes, and the external-tool column. A stricter-rubric sensitivity check is listed as optional.
+- **Also:** `requirements_framework.csv` `github_support` column back-filled with the Phase 5 label.
+- **Affects:** `framework/mapping/`; `framework/requirements/requirements_framework.csv`; `PHASE5_PROGRESS.md`; `analysis/scripts/coverage_indicators.py`; `results/framework/`; `FIGURES_AND_TABLES.md` (Table 2 produced).

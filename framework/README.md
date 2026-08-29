@@ -5,7 +5,7 @@ The study's constructed artifacts, built across Phases 3–6.
 | Path | Phase | Contents | Status |
 |---|---|---|---|
 | `requirements/` | 3 | Research Management Requirements Framework — `REQUIREMENTS_FRAMEWORK.md` (narrative), `requirements_framework.csv` (canonical, RM1–RM15), `lifecycle_requirements_matrix.csv` | **done** |
-| `mapping/` | 4–5 | `github_capability_catalogue.csv` + `GITHUB_CAPABILITY_CATALOGUE.md` (Phase 4, **done**, 68 capabilities). Requirement×functionality coverage matrix + indicators (Phase 5) | Phase 4 done; Phase 5 pending |
+| `mapping/` | 4–5 | Phase 4: `github_capability_catalogue.csv` + `GITHUB_CAPABILITY_CATALOGUE.md` (68 capabilities). Phase 5: `requirement_feature_matrix.csv` (RM1–RM15 scored) + `coverage_analysis.md` | **done** |
 | `architecture/` | 6 | GitHub-based research management reference architecture | pending |
 
 ## Requirements framework (Phase 3)

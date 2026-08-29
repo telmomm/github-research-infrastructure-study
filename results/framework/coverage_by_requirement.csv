@@ -1,0 +1,16 @@
+rm_id,name,category,support_level,support_label,external_tools_needed
+RM1,Research planning and roadmap,Planning,2,Partial,none
+RM2,Research question management,Traceability,1,Limited,none
+RM3,Task management,Execution,3,Direct,none
+RM4,Documentation,Documentation,3,Direct,none
+RM5,Decision traceability,Traceability,2,Partial,none
+RM6,Collaboration and contribution tracking,Collaboration,3,Direct,none
+RM7,Communication,Collaboration,3,Direct,none
+RM8,Version control,Traceability,3,Direct,external data repository for large datasets
+RM9,Research artifact management and integration,Artifact management,2,Partial,external stores for large data and specialised-tool artifacts
+RM10,Research provenance and artifact linkage,Traceability,2,Partial,none
+RM11,Transparency,Documentation,3,Direct,none
+RM12,Reproducibility support,Documentation,2,Partial,containerisation (Docker / conda) for environments; Zenodo / repository for archival
+RM13,Automation,Automation,3,Direct,none
+RM14,Research output management and identification,Output management,2,Partial,Zenodo or an institutional repository for DOIs and preservation
+RM15,Governance and sustainability,Cross-cutting,1,Limited,institutional governance; external archive for exit

@@ -97,10 +97,12 @@ Projects + Issues + Documentation + Version Control
 ## Table 1
 
 Research management requirements identified in the literature.
+*Source: `framework/requirements/requirements_framework.csv` (RM1–RM15). — Phase 3, done.*
 
 ## Table 2
 
 Mapping between research management requirements and GitHub functionalities.
+*Source: `framework/mapping/requirement_feature_matrix.csv` + `results/framework/coverage_by_requirement.csv`. — Phase 5, done. Companion: RM × feature-group heatmap from `coverage_group_matrix.csv`; lifecycle-coverage profile from `coverage_lifecycle_profile.csv`.*
 
 ## Table 3
 

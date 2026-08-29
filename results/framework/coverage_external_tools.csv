@@ -1,0 +1,6 @@
+rm_id,name,external_tools_needed
+RM8,Version control,external data repository for large datasets
+RM9,Research artifact management and integration,external stores for large data and specialised-tool artifacts
+RM12,Reproducibility support,containerisation (Docker / conda) for environments; Zenodo / repository for archival
+RM14,Research output management and identification,Zenodo or an institutional repository for DOIs and preservation
+RM15,Governance and sustainability,institutional governance; external archive for exit
