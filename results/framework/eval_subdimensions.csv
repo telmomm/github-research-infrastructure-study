@@ -1,0 +1,22 @@
+dimension,subdimension,score,max,basis
+E1,Requirement coverage,2.0,2.0,design-support
+E2,Task traceability,1.0,2.0,retrospective
+E2,Decision traceability,2.0,2.0,observed
+E2,Version traceability,2.0,2.0,observed
+E2,Provenance / artifact linkage,1.0,2.0,observed
+E3,Documented protocol,2.0,2.0,observed
+E3,Documented methodology,2.0,2.0,observed
+E3,Documented decisions,2.0,2.0,observed
+E3,Documented roadmap,2.0,2.0,observed
+E4,Defined repository structure,2.0,2.0,observed
+E4,Research phase identification,2.0,2.0,observed
+E4,Artifact classification,2.0,2.0,observed
+E4,Task categorization,1.0,2.0,design-support
+E5,Accessible documentation,2.0,2.0,observed
+E5,Historical changes visible,2.0,2.0,observed
+E5,Traceable decisions,2.0,2.0,observed
+E5,External project visibility,0.0,2.0,planned
+E6,Configuration complexity,1.0,2.0,observed
+E6,Technical knowledge required,1.0,2.0,observed
+E6,Workflow overhead,1.0,2.0,observed
+E6,Maintenance effort,2.0,2.0,observed

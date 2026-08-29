@@ -117,7 +117,9 @@ Reusable template components.
 ## Table 5
 
 Evaluation results.
+*Source: `case-study/evaluation_scores.csv` + `results/framework/eval_by_dimension.csv` (E1–E6, 0–2). — Phase 9, done. Overall 1.62/2; observed-only 1.76/2.*
 
 ## Table 6
 
 Comparison between conventional and GitHub-based research workflows.
+*Source: `case-study/workflow_comparison.csv` (6 dimensions × fragmented / framework / advantage / caveat). — Phase 9, done.*

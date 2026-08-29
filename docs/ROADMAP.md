@@ -16,8 +16,9 @@
 | 6 — Reference architecture | **complete** — 15 components / 5 layers, 7 workflows, 12-stage lifecycle model in `framework/architecture/` (`PHASE6_PROGRESS.md`, `DECISION_LOG.md` D12) |
 | 7 — Reusable template | **complete** — 33-file template in `template/github-research-project-template/` (`PHASE7_PROGRESS.md`, `DECISION_LOG.md` D13) |
 | 8 — Case study | **complete** — self-referential record in `case-study/`; 8/15 components exercised (`PHASE8_PROGRESS.md`, `DECISION_LOG.md` D14) |
-| 9 — Evaluation | next |
-| 10–12 | not started |
+| 9 — Evaluation | **complete** — 6 dimensions scored, overall 1.62/2 (`case-study/evaluation.md`, `PHASE9_PROGRESS.md`, `DECISION_LOG.md` D15) |
+| 10 — Analysis | next |
+| 11–12 | not started |
 
 ---
 

@@ -178,3 +178,14 @@ Chronological record of major methodological decisions. Each entry: ID, date, co
   - The un-exercised components (A4, D1, D2, X1) and the requirements they serve (RM6, RM7, RM14, RM15) are scored in Phase 9 on **design support**, not observed use, and flagged.
 - **Rationale:** fabricating an Issue/PR history would be dishonest and circular. The genuine result — the record/decision/version-control spine works with near-zero overhead while the coordination layer was not adopted solo — is itself informative and becomes the study's main practical limitation and a clear future-work direction (multi-author, multi-project evaluation).
 - **Affects:** `case-study/`; `.github/`; `docs/conventions.md`; `CONTRIBUTING.md`; `LICENSE`; `CASE_STUDY.md` (draft; `case-study/` is the record); `PHASE8_PROGRESS.md`; `analysis/scripts/summarise_case_study.py`; `EVALUATION_PROTOCOL.md` (Phase 9 scores design support where use is absent).
+
+---
+
+## D15 — Evaluation: 0/1/2 per sub-dimension with an explicit basis tag
+
+- **Date:** 2026-08-30
+- **Context:** Phase 9 scores the six evaluation dimensions (`EVALUATION_PROTOCOL.md`). The single-author self-referential case (D14) means several dimensions cannot be scored on observed use.
+- **Decision:** Score **21 sub-dimensions** across E1–E6 on the protocol's 0/1/2 scale (`case-study/evaluation_scores.csv`), each tagged with its **basis**: `observed` (17), `retrospective` (1), `design-support` (2), `planned` (1). E1 additionally uses the quantitative Phase 5 coverage (13/15 supported). Report both the **overall mean 1.62/2** and the **observed-only mean 1.76/2**. Un-exercised dimensions (notably E5 external visibility = 0, pending public release) are scored on design support and flagged, not omitted or inflated.
+- **Rationale:** transparent basis tags let a reviewer see exactly which scores rest on the actual repository and which on the framework's design; reporting the observed-only figure alongside the overall prevents the planned/design items from either deflating or hiding the realised result.
+- **Results:** E1 2.00, E3 2.00, E4 1.75, E2 1.50, E5 1.50, E6 1.25. Table 6 (`workflow_comparison.csv`) contrasts the fragmented workflow with the framework across 6 dimensions.
+- **Affects:** `case-study/evaluation_scores.csv`, `workflow_comparison.csv`, `evaluation.md`; `EVALUATION_PROTOCOL.md` (draft; `case-study/evaluation.md` is the record); `PHASE9_PROGRESS.md`; `analysis/scripts/evaluation_summary.py`; `results/framework/`; `FIGURES_AND_TABLES.md` (Tables 5–6).

@@ -38,6 +38,6 @@ jobs:
       - name: Framework cross-tabs regenerate
         run: |
           set -e
-          for s in summarise_requirements summarise_capabilities coverage_indicators summarise_architecture check_template summarise_case_study; do
+          for s in summarise_track_b summarise_requirements summarise_capabilities coverage_indicators summarise_architecture check_template summarise_case_study evaluation_summary; do
             python3 "analysis/scripts/$s.py" >/dev/null || { echo "::error::$s.py failed"; exit 1; }
           done

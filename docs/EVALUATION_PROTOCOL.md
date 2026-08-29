@@ -1,5 +1,11 @@
 # Evaluation Protocol
 
+> **Status (2026-08-30).** Phase 9 executed. The **evaluation record** is authoritative at
+> [`case-study/evaluation.md`](../case-study/evaluation.md) + `evaluation_scores.csv`
+> (21 sub-dimensions, E1–E6) + `workflow_comparison.csv` (Table 6). See `DECISION_LOG.md` D15
+> and `PHASE9_PROGRESS.md`. Overall 1.62/2 (observed-only 1.76/2). The matrix below is the
+> protocol; each score now carries a basis tag (observed / retrospective / design-support / planned).
+
 ## Objective
 
 Evaluate whether the proposed GitHub-based framework supports research management requirements.

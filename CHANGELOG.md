@@ -75,10 +75,21 @@ Methodological decisions are logged separately in [`docs/DECISION_LOG.md`](docs/
 - `docs/CASE_STUDY.md` — marked as protocol; the `case-study/` record is authoritative.
 - `docs/ROADMAP.md` — Phase 8 marked complete; `docs/README.md`, `analysis/README.md` updated.
 
-### Working towards
-- Phase 9 — Evaluation (score the six dimensions; build the fragmented-workflow comparison).
+### Added — Phase 9: Evaluation (RQ5)
+- `case-study/evaluation_scores.csv` — 21 sub-dimensions across E1–E6, scored 0/1/2 with a basis tag (observed / retrospective / design-support / planned).
+- `case-study/workflow_comparison.csv` — Table 6: fragmented workflow vs the framework across 6 dimensions.
+- `case-study/evaluation.md` — narrative: method, results (overall 1.62/2; observed-only 1.76/2), dimension by dimension, comparison, observations, limitations.
+- `analysis/scripts/evaluation_summary.py` → `results/framework/eval_*.csv`, `evaluation_summary.md`.
+- `docs/PHASE9_PROGRESS.md`; `DECISION_LOG.md` D15.
 
-### Pending / optional (do not block Phase 9)
+### Changed
+- `docs/EVALUATION_PROTOCOL.md` — marked as protocol; `case-study/evaluation.md` is the record.
+- `docs/ROADMAP.md` — Phase 9 marked complete; `docs/README.md`, `analysis/README.md` updated.
+
+### Working towards
+- Phase 10 — Analysis (synthesise RQ1–RQ5: coverage, implementation results, strengths, limitations).
+
+### Pending / optional (do not block Phase 10)
 - Track A: Crossref / Semantic Scholar citation enrichment; precision check on the broad OpenAlex queries; 2025 tail treatment; co-word map rendering.
 - Factcheck `literature/references.bib` (venues, volumes, pages, DOIs).
 - Second-coder reliability on the requirement extraction and the RE→RM assignment (~20%) — deferred, single-coder project.
