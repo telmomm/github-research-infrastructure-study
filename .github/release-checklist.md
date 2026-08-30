@@ -17,5 +17,6 @@ Cut a release at each roadmap point (`v0.1` … `v1.0`). Workflow WF5.
 - [ ] Tag `vX.Y` (annotated) and push.
 - [ ] Publish a **GitHub Release** from the tag with **auto-generated notes**; attach any output assets.
 - [ ] Zenodo mints a DOI — copy it into `CITATION.cff` (`doi:`) and `README.md`, commit.
+- [ ] Refresh the **companion Zenodo dataset record** (<https://doi.org/10.5281/zenodo.22173525>): rebuild `dist/track_a_raw_exports_<date>.zip` (see `data/README.md`) plus the `processed/` and `literature/` datasets, upload as a New version, keep `isSupplementTo` the software DOI.
 - [ ] For `v1.0`: make the repository **public** (governance decision — log it), update visibility note in `docs/project-charter.md`.
 - [ ] Link the release from the relevant `outputs/` entry and closing issues.

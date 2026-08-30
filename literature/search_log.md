@@ -34,9 +34,26 @@ Export: `data/raw/openalex/works_20260830.jsonl` + `works_20260830.csv` — **5,
 
 Export: `data/raw/arxiv/works_20260830.csv`. (First attempt used broad `all:` fields — A2 hit the 2000 cap with mostly repo-link noise — and was discarded; queries tightened, see `search_strings.md`.)
 
-## Scopus / Web of Science — not run
+## Scopus / Web of Science — cross-check, run 2026-09-30
 
-Optional cross-check only (no subscription used). Strings in `search_strings.md`.
+Retrieved via FECYT institutional access as an independent coverage cross-check of the
+OpenAlex + arXiv corpus (not merged into it). Strings frozen in `search_strings.md`
+(WoS `TS=`; Scopus `TITLE-ABS-KEY` with `DOCTYPE(ar|re|cp)`), window 2008–2025.
+
+| Query | Web of Science | Scopus |
+|---|---|---|
+| Q1 core process management        | 1,060 | 2,273 |
+| Q2 data mgmt / open science       | 3,301 | 3,063 |
+| Q3 version control in research    | 4,812 | 2,986 |
+| Q4 research environments / RIS    |   268 |   487 |
+| **raw total** | **9,441** | **8,809** |
+
+Combined raw 18,250 → **13,586** de-duplicated in-window records (338 outside 2008–2025 dropped).
+WoS exported record-level tab-delimited "Full Record" in ≤1,000-row batches under
+`data/raw/wos/Q*/`; Scopus CSV (Citation + Bibliographical) under `data/raw/scopus/Q*.csv`.
+Raw exports are `.gitignore`d. Analysis: `analysis/scripts/scopus_wos_crosscheck.py`;
+result: `results/track_a/scopus_wos_crosscheck.md` (**22% DOI overlap** with the corpus;
+`DECISION_LOG.md` D24).
 
 ## Google Scholar — spot checks
 
