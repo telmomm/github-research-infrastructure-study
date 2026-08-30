@@ -72,7 +72,7 @@ Consolidates every "open / optional" item raised in `PHASE2–9_PROGRESS.md`. Ea
 | # | Item | Status | Resolution |
 |---|---|---|---|
 | 9.1 | Independent second rater on the 21 sub-scores | **limitation** | Same as 2.7 |
-| 9.2 | Re-score E5/E6 after the repo is public + a real cycle | **user-task** | Preconditions now met (12.1 public, 8.1 cycle); re-run `evaluation_summary.py` — GitHub issue #3 |
+| 9.2 | Re-score E5/E6 after the repo is public + a real cycle | **closed** | `DECISION_LOG.md` D23; E2/E4/E5/E6 sub-scores re-scored on observed evidence; overall **1.62 → 1.86 / 2**. `evaluation.md`, `results/framework/eval_*`, `findings.csv`, `synthesis.md` updated. `manuscript/paper.tex` figures updated in the manuscript pass (issue #6). Issue #3. |
 
 ## Phase 12 — Publication
 
@@ -91,9 +91,9 @@ Consolidates every "open / optional" item raised in `PHASE2–9_PROGRESS.md`. Ea
 
 | Status | Count | Items |
 |---|---|---|
-| **closed** | 18 | 2.1–2.6, 3.2, 4.1, 4.2, 5.1, 5.3, 6.1, 6.2, 7.1, 7.2, 7.3, 8.1, 12.1 |
+| **closed** | 19 | 2.1–2.6, 3.2, 4.1, 4.2, 5.1, 5.3, 6.1, 6.2, 7.1, 7.2, 7.3, 8.1, 9.2, 12.1 |
 | **limitation** (declared in the manuscript) | 5 | 2.7, 2.8, 3.1, 5.2, 9.1 — all reduce to "single-coder project" and "no Scopus/WoS access" |
-| **user-task** (before submission) | 6 | 9.2, 12.2–12.6 — GitHub issues #3, #5–#9 |
+| **user-task** (before submission) | 5 | 12.2–12.6 — GitHub issues #5–#9 |
 | **future-work** | 1 | 8.2 second-project external validity — GitHub issue #12 |
 
 Tracked as GitHub issues #1–#12 (milestone *Phase 12 – Publication*). The 5 limitations

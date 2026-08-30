@@ -1,7 +1,7 @@
 dimension,name,mean_score_0_2,n_subdimensions,pct
 E1,Requirement coverage,2.0,1,100.0
-E2,Traceability,1.5,4,75.0
+E2,Traceability,1.75,4,88.0
 E3,Documentation,2.0,4,100.0
-E4,Organization,1.75,4,88.0
-E5,Transparency,1.5,4,75.0
-E6,Usability,1.25,4,62.0
+E4,Organization,2.0,4,100.0
+E5,Transparency,2.0,4,100.0
+E6,Usability,1.5,4,75.0
