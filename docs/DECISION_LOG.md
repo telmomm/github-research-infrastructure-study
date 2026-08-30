@@ -252,3 +252,14 @@ Chronological record of major methodological decisions. Each entry: ID, date, co
 - **Not in v1.0.0 (Phase 12):** the three pre-submission user-tasks (make the repository public, run one live Issue→PR→Release cycle, screenshot the Project), the Zenodo archive and DOI, the manuscript body expansion toward ~8,000 words, and the full `references.bib` check for the cited subset. These land in a later 1.x release.
 - **Rationale:** the scientific contribution is done and self-contained; tagging it fixes a citable state before the outward-facing publication steps, which depend on actions outside this working session.
 - **Affects:** `CHANGELOG.md`; `CITATION.cff`; `ROADMAP.md`; git tag `v1.0.0`.
+
+---
+
+## D22 — Repository made public
+
+- **Date:** 2026-08-30 · **Closes:** GitHub issue #4
+- **Context:** The self-referential design (`D5`, `D14`) scored the Transparency dimension (E5) on *internal* visibility because the repository was private during the work; `X1 Transparency Surface` was `planned`. Making the repository public is the governance decision that enacts the "private during the work, public at publication" policy.
+- **Pre-public checklist (verified):** no secrets or tokens in history (`git log -p` scan; `.claude/` untracked since D-note in `.gitignore`); no embargoed or third-party-restricted material (the corpus is bibliographic metadata; `SOTA/SOTA.md` is a Consensus export used under its personal-use terms and cited, not redistributed as a product); licensing in place (`LICENSES/`, `REUSE.toml`, D7.1); raw API dumps `.gitignore`d, only the reproducible `data/processed/corpus.csv` tracked.
+- **Decision:** Set repository visibility to **public**. This enacts E5 external visibility, enables third-party inspection of the full history for RQ5, and is a precondition for issue #3 (re-score E5/E6) and issue #5 (Zenodo DOI wiring).
+- **Not done here:** GitHub Pages summary page and Insights write-up (`X1` stays `partial`); the E5/E6 re-score (issue #3).
+- **Affects:** repository settings; `case-study/implementation_record.csv` (X1 `planned` → `partial`, D3 `config` → `partial`); `results/framework/cs_*`; `docs/OPEN_ITEMS.md`.

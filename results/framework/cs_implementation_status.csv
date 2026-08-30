@@ -12,5 +12,5 @@ C2,Review Workflow,Production,partial
 C3,Automation Suite,Production,partial
 D1,Release Process,Release,partial
 D2,Archival Bridge,Release,planned
-D3,Governance Setup,Release,config
-X1,Transparency Surface,Cross-cutting,planned
+D3,Governance Setup,Release,partial
+X1,Transparency Surface,Cross-cutting,partial

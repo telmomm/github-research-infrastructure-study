@@ -6,12 +6,11 @@
 ## Implementation status
 
 - native: 7  (A1 A2 A3 B1 B2 B4 C1)
-- partial: 4  (B3 C2 C3 D1)
-- config: 1  (D3)
-- planned: 3  (A4 D2 X1)
+- partial: 6  (B3 C2 C3 D1 D3 X1)
+- planned: 2  (A4 D2)
 
-- Components exercised (native/partial): 11 / 15 — A1 A2 A3 B1 B2 B3 B4 C1 C2 C3 D1
-- Requirements with **no** exercised component: RM7, RM15
+- Components exercised (native/partial): 13 / 15 — A1 A2 A3 B1 B2 B3 B4 C1 C2 C3 D1 D3 X1
+- Requirements with **no** exercised component: RM7
 
 ## Register status
 
