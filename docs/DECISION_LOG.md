@@ -219,3 +219,14 @@ Chronological record of major methodological decisions. Each entry: ID, date, co
 - **Decision:** Add `framework/mapping/requirement_feature_matrix_strict.csv` — a stricter variant capping convention-heavy support (RM1, RM5, RM10) at Limited — and `coverage_indicators.py --strict`. Result: overall mean **2.33 → 2.13** (core-14 2.43 → 2.21); distribution 7 Direct / 3 Partial / 5 Limited / 0 Not supported. The qualitative conclusion (Direct where research resembles software work; Limited for upstream research-specific traceability) is unchanged under both rubrics.
 - **Rationale:** shows the headline finding is not an artefact of a generous rubric.
 - **Affects:** `analysis/scripts/coverage_indicators.py`; `framework/mapping/`; `results/framework/coverage_*_strict.*`; the manuscript methods/robustness note.
+
+---
+
+## D19 — Phase 10 synthesis: 32 typed findings with verifiable evidence
+
+- **Date:** 2026-08-30
+- **Context:** Phase 10 integrates RQ1–RQ5 for the manuscript.
+- **Decision:** Record the synthesis as **`analysis/findings.csv`** — 32 findings (F01–F32), each tagged with its RQ, a **type** (result / limitation / implication), a **strength** (strong / moderate), a one-sentence statement, and **evidence paths** that `analysis/scripts/synthesis_check.py` verifies exist. `analysis/synthesis.md` is the narrative. `findings.csv` rows are pre-mapped to manuscript sections.
+- **Central analytical claim:** the RQ1 literature gap and the RQ3 coverage gap are the same gap reached independently; GitHub is a coordination/traceability *layer*, systematically strong execution-to-output and weak upstream.
+- **Rationale:** a typed, evidence-linked finding list keeps the Discussion honest (limitations and implications are first-class, not an afterthought) and makes Phase 11 a mechanical assembly rather than a fresh argument.
+- **Affects:** `analysis/synthesis.md`, `analysis/findings.csv`; `PHASE10_PROGRESS.md`; `analysis/scripts/synthesis_check.py`; `results/framework/synthesis_*`; the manuscript Results and Discussion.

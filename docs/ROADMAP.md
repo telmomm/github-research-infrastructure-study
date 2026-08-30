@@ -17,8 +17,9 @@
 | 7 — Reusable template | **complete** — 33-file template in `template/github-research-project-template/` (`PHASE7_PROGRESS.md`, `DECISION_LOG.md` D13) |
 | 8 — Case study | **complete** — self-referential record in `case-study/`; 8/15 components exercised (`PHASE8_PROGRESS.md`, `DECISION_LOG.md` D14) |
 | 9 — Evaluation | **complete** — 6 dimensions scored, overall 1.62/2 (`case-study/evaluation.md`, `PHASE9_PROGRESS.md`, `DECISION_LOG.md` D15) |
-| 10 — Analysis | next |
-| 11–12 | not started |
+| 10 — Analysis | **complete** — 32-finding synthesis of RQ1–RQ5 (`analysis/synthesis.md`, `findings.csv`; `PHASE10_PROGRESS.md`, `DECISION_LOG.md` D19) |
+| 11 — Manuscript | next |
+| 12 | not started |
 
 ---
 

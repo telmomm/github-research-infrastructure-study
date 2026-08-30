@@ -19,6 +19,11 @@ Scripts that regenerate the study's tables and figures from the versioned datase
 | `scripts/check_template.py` | `template/template_manifest.csv` + `template/github-research-project-template/` + `framework/architecture/` | `results/framework/template_coverage.csv`, `template_summary.md` (exits non-zero on any gap) |
 | `scripts/summarise_case_study.py` | `case-study/*.csv` + `framework/architecture/` + `framework/mapping/` | `results/framework/cs_*.csv`, `case_study_summary.md` (exits non-zero on a broken reference) |
 | `scripts/evaluation_summary.py` | `case-study/evaluation_scores.csv` + `framework/mapping/requirement_feature_matrix.csv` | `results/framework/eval_*.csv`, `evaluation_summary.md` |
+| `scripts/synthesis_check.py` | `analysis/findings.csv` | `results/framework/synthesis_*.csv`, `synthesis_summary.md` (exits non-zero on a missing evidence path) |
+
+## Phase 10 synthesis
+
+`analysis/synthesis.md` (narrative) + `analysis/findings.csv` (32 findings F01–F32, typed and evidence-linked) integrate RQ1–RQ5 for the manuscript.
 
 ## Track A (bibliometric corpus, open sources — `DECISION_LOG.md` D8)
 

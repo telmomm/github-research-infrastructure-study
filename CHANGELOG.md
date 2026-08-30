@@ -99,8 +99,17 @@ Methodological decisions are logged separately in [`docs/DECISION_LOG.md`](docs/
 ### Changed
 - Every `PHASEn_PROGRESS.md` "Open / optional" section replaced with a resolution table pointing to `docs/OPEN_ITEMS.md`.
 
+### Added — Phase 10: Analysis
+- `analysis/synthesis.md` — integrates RQ1–RQ5: the through-line, findings by RQ, framework-coverage analysis, implementation results, strengths, limitations, implications, answer to the main RQ, Phase 11 section map.
+- `analysis/findings.csv` — 32 findings (F01–F32), typed (result / limitation / implication), strength-rated, with verifiable evidence paths.
+- `analysis/scripts/synthesis_check.py` → `results/framework/synthesis_*.csv`, `synthesis_summary.md`.
+- `docs/PHASE10_PROGRESS.md`; `DECISION_LOG.md` D19.
+
+### Changed
+- `docs/ROADMAP.md` — Phase 10 marked complete; `docs/README.md`, `analysis/README.md` updated.
+
 ### Working towards
-- Phase 10 — Analysis (synthesise RQ1–RQ5: coverage, implementation results, strengths, limitations).
+- Phase 11 — Manuscript development (assemble Results and Discussion from `findings.csv`; write Introduction and Methods).
 
 ### Carried to the manuscript (not blockers)
 - Limitations: single-coder project (no second rater on RE→RM, the 15 support scores, or the 21 evaluation sub-scores); no Scopus/WoS access (OpenAlex trade-off).

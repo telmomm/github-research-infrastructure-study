@@ -1,5 +1,5 @@
 name: Research question (RQ-n)
-description: Register or refine a research question. Title must be "RQ-n: <question>".
+description: Register or refine a research question. Title must be "RQ-n; <question>".
 title: "RQ-: "
 labels: ["research-question"]
 body:

@@ -2,6 +2,8 @@
 
 # Proposed Figures
 
+> **Status (2026-08-30, Phase 10).** Figure sources: Fig 1 study design (ASCII below → to render); Fig 2 requirements framework (`results/framework/rm_by_category.csv`); **Fig 3 architecture** = `manuscript/figures/fig3_architecture.svg` (done); **Fig 4 traceability path** = `manuscript/figures/fig4_traceability.svg` (done); **Fig 5** conventional vs proposed = `case-study/workflow_comparison.csv`; **new: bibliometric co-word map** = `manuscript/figures/coword_map.svg` + `results/track_a/coword_map.gexf`; **new: RQ1 production timeline** = `results/track_a/annual_production{,_trimmed}.csv`; **new: lifecycle-coverage profile** = `results/framework/coverage_lifecycle_profile.csv`. Findings→section map in `analysis/synthesis.md` §9.
+
 ## Figure 1
 
 ### Study design
