@@ -43,6 +43,22 @@ Each requirement row is mapped to the provisional `RM1-RM14` domains in `docs/RE
 
 The lifecycle-attention judgements in `lifecycle_coverage.csv` are qualitative, taken from `SOTA.md` §3.4, the Discussion and the Research Gaps section. Track A (Scopus / WoS bibliometrics) will produce an independent, quantitative lifecycle-coverage profile; the two are compared in the manuscript Discussion.
 
+## Primary-study supplement (S53–S67) — added 2026-08-30, OPEN_ITEMS 2.6
+
+The Consensus Deep Search prioritised review / survey / synthesis papers, so primary
+empirical studies of Git/GitHub in research were under-sampled. `included_studies_primary.csv`
+adds **15 targeted primary studies** (S53–S67): operational-rules papers (Sandve, Wilson,
+Perez-Riverol, Ram, Bryan), discipline-specific empirical studies of GitHub-in-research
+(Braga et al. ecology, Chen et al. wet-lab), the ReScience platform, and mining / bibliometric
+studies of GitHub in the scholarly record (Escamilla, Kalliamvakou, Trisovic, Pimentel,
+Milewicz). Selection was purposive (well-cited, on-topic), not a systematic search —
+flagged as such. Strand = VC for all. DOIs are in the CSV; BibTeX for the subset actually
+cited is generated and factchecked at manuscript stage (Phase 11).
+
+This supplement does not change the RQ2 requirement extraction (RE01–RE17), which stays
+on the review-based Track B corpus; it strengthens the RQ4/RQ5 discussion of GitHub-in-research
+evidence and the RQ1 note that GitHub adoption in publications is itself measurable (S66).
+
 ## Known limitations of the Track B base
 
 - Single-provider synthesis (Consensus / Semantic Scholar backbone); database coverage and the ML relevance filter are not fully transparent — hence the complementary Scopus / WoS retrieval in Track A.

@@ -41,7 +41,7 @@ Every RM has ≥5 candidate capabilities (RM6 15, RM11 15, RM3 14, RM5 14 … RM
 
 For each RM × candidate capability: assign Direct 3 / Partial 2 / Limited 1 / Not supported 0 with an evidence note and an implementation pattern → `framework/mapping/requirement_feature_matrix.csv`; roll up to per-requirement / per-category coverage; combine with `lifecycle_requirements_matrix.csv` for the lifecycle-coverage profile.
 
-## Open / optional (do not block Phase 5)
+## Open / optional — closed 2026-08-30 (see `docs/OPEN_ITEMS.md`)
 
-- [ ] Verify plan-availability details against current GitHub docs at write-up time (features move between tiers).
-- [ ] Confirm the GC61 Zenodo-bridge framing with a reviewer-facing justification in the manuscript.
+- Plan-availability verification — **done**: `framework/mapping/plan_availability_check.md` (10 plan-gated capabilities checked against GitHub Docs 2026-08-30; GC15 note refined; no coverage-score change).
+- GC61 Zenodo-bridge justification — **done**: `GITHUB_CAPABILITY_CATALOGUE.md` §2, expanded reviewer-facing rationale.

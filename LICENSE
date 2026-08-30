@@ -1,8 +1,7 @@
-Copyright (c) 2026 Telmo Miguel-Medina
+This repository is licensed per material type (REUSE 3.0 — see REUSE.toml):
 
-This repository contains mixed material. Pending a final choice, the intended licensing is:
-  - Code (analysis/, template/ workflows and scripts): MIT
-  - Text and figures (docs/, manuscript/, framework/ narratives): CC-BY-4.0
-  - Datasets (data/processed/, literature/*.csv): CC-BY-4.0
+  Code (analysis/, workflows, template scripts)          MIT           LICENSES/MIT.txt
+  Prose, figures, framework, data tables, manuscript     CC-BY-4.0     LICENSES/CC-BY-4.0.txt
 
-Replace this file with the chosen licence text(s) before the v1.0 release (Phase 12).
+Copyright (c) 2026 Telmo Miguel-Medina.
+Full licence texts are in LICENSES/. Run `reuse lint` to check compliance.

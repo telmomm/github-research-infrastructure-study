@@ -1,3 +1,3 @@
 group,n,mean_support,rm_ids
-differentiators,3,1.67,RM1 RM2 RM5
-all others,12,2.5,
+differentiators,3,1.0,RM1 RM2 RM5
+all others,12,2.42,

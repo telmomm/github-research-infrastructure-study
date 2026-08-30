@@ -1,0 +1,61 @@
+query_tag,verdict,year,title
+Q2b,on-topic,2016,Innovations in scholarly communication - global survey on research tool usage
+Q2b,on-topic,2020,Read Mapping and Transcript Assembly: A Scalable and High-Throughput Workflow for the Processing and Analysis 
+Q2b,on-topic,2023,"Stanford Experience With Commissioning, Quality Assurance and IMRT/ SBRT Treatment of the First Biology-Guided"
+Q2b,on-topic,2018,Eliciting academic SDI requirements through a survey of user practices
+Q2b,on-topic,2025,Open Science in the Swedish clinical research context: what clinicians need to know
+Q2b,on-topic,2025,Postgres test article
+Q2b,on-topic,2015,Booming university administrations
+Q2b,on-topic,2024,Russian Science in the OpenAlex System of Open Scientific Knowledge
+Q2b,on-topic,2025,BrainScape: An open-source framework for integrating and preprocessing anatomical MRI datasets
+Q2b,on-topic,2021,Objective Evaluation of Multiple Sclerosis Lesion Segmentation using a Data Management and Processing Infrastr
+Q2b,on-topic,2024,Seamlessly estimating socio-economic variables across river catchments
+Q2b,on-topic,2022,akc: A Tidy Framework for Automatic Knowledge Classification in R
+Q2b,on-topic,2014,Scientific Publishing and the Commitments of Researcher Communities
+Q2b,on-topic,2020,Information security at South African universities—implications for biomedical research
+Q2b,on-topic,2024,Are Open Science instructions targeted to ecologists and evolutionary biologists sufficient? A literature revi
+Q3a,on-topic,2025,Who Do You Think You Are? Creating RSE Personas From GitHub Interactions
+Q3a,on-topic,2015,The Open Data Repositorys Data Publisher
+Q3a,on-topic,2017,지식의 탐색(Exploration)과 활용(Exploitation)이 개방형협업의 성과에 미치는 영향: 오픈소스 소프트웨어 개발 프로젝트를 중심으로
+Q3a,on-topic,2022,Featured Collection Introduction: National Water Model IV
+Q3a,on-topic,2014,MODIST ools – downloading and processing MODIS remotely sensed data in R
+Q3a,on-topic,2021,cchsflow: an open science approach to transform and combine population health surveys
+Q3a,on-topic,2022,Workflow analysis of data science code in public GitHub repositories
+Q3a,on-topic,2015,GHTorrent: Github’s data from a firehose
+Q3a,on-topic,2024,Multi-Tool Collaboration Environments for Effective Stakeholder Communication and Sprint Coordination in Agile
+Q3a,on-topic,2025,User-centered evaluation of an IntuNav in multi-browser virtual reality across diverse cognitive user profiles
+Q3a,on-topic,2025,Sixth Annual BCM Hackathon on Structural Variation and Pangenomics
+Q3a,on-topic,2019,Pathway-based biomarker identification with crosstalk analysis for robust prognosis prediction in hepatocellul
+Q3a,on-topic,2025,Automated Testing in Kubernetes: A Comprehensive Framework for Code Quality and Deployment Assurance
+Q3a,on-topic,2024,EvoAug-TF: extending evolution-inspired data augmentations for genomic deep learning to TensorFlow
+Q3a,on-topic,2019,Development of Open Model-Based Collaboration Tool and Application on Nano-Satellite Project
+Q1g,on-topic,2010,Detecting distant homologies on protozoans metabolic pathways using scientific workflows
+Q1g,on-topic,2019,SMALL-SCALE RESIDENTIAL STORMWATER MANAGEMENT IN URBANIZED WATERSHEDS: A GEOINFORMATICS-DRIVEN ECOHYDROLOGY MO
+Q1g,on-topic,2013,Temporal representation for mining scientific data provenance
+Q1g,on-topic,2009,Trust‐based robust scheduling and runtime adaptation of scientific workflow
+Q1g,on-topic,2018,Sharing interoperable workflow provenance: A review of best practices and their practical application in CWLPr
+Q1g,on-topic,2017,"Excuse Me, Do You Have a Moment to Talk About Version Control?"
+Q1g,on-topic,2013,Bringing Scientific Workflow to the Masses via Pegasus and HUBzero.
+Q1g,off-topic,2021,Replication and data management-based workflow scheduling algorithm for multi-cloud data centre platform
+Q1g,on-topic,2022,"A system for organizing, collecting, and presenting open-source intelligence"
+Q1g,on-topic,2012,Distributed Management of Grid !based Scientific Workflows
+Q1g,on-topic,2015,The TimeStudio Project: An open source scientific workflow system for the behavioral and brain sciences
+Q1g,on-topic,2012,From Information Technology to Informatics: The Information Revolution in Dental Education
+Q1g,off-topic,2013,"Automated data provenance capture in spreadsheets, with case studies"
+Q1g,on-topic,2019,Data-Oriented scheduling with Dynamic-Clustering fault-tolerant technique for Scientific Workflows in Clouds
+Q1g,on-topic,2021,Micro-Workflows Data Stream Processing Model for Industrial Internet of Things
+Q2a,on-topic,2025,"Capturing Creativity 2025 - Presentation 2: 9th October 2025 - Practice Research Diaries, a Project Report (Sc"
+Q2a,on-topic,2022,An Open Digital Platform to Support Interdisciplinary Energy Research and Practice—Conceptualization
+Q2a,on-topic,2013,Research Data Management Education for Future Curators
+Q2a,on-topic,2014,Research Data Management: Practical Strategies for Information Professionals
+Q2a,on-topic,2021,Scaling by Optimising: Modularisation of Data Curation Services in Growing Organisations
+Q2a,on-topic,2025,Research Data Lifecycle (RDLC)
+Q2a,on-topic,2025,Reusing Chemical Data Across Disciplines: Initiatives and Common Challenges
+Q2a,on-topic,2022,Development strategies as catalysts for provision of the RDM services in the South African higher education in
+Q2a,on-topic,2023,DMPFrame: A Conceptual Metadata Framework for Data Management Plans
+Q2a,on-topic,2023,Need for Data Standardization and Infrastructure of Research Data Management to Promote Using Real-world Data
+Q2a,on-topic,2024,The role of research university libraries in research data management: The case of Türkiye
+Q2a,on-topic,2021,Global presence of open-source research data management platform for libraries: the Dataverse project
+Q2a,on-topic,2025,Data Curation: Introducing a Competency Framework for the Social Sciences
+Q2a,on-topic,2024,Formal policy framework and ICT tools for research data management in academic institutions in Ghana
+Q2a,on-topic,2015,Exploring The Boundaries Of Marc21 – Creating A Metadata Schema For The Cern Open Data Portal

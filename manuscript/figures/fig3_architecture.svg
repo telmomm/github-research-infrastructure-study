@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" font-family="system-ui,Segoe UI,Arial,sans-serif">
+  <rect width="900" height="620" fill="#ffffff"/>
+  <style>
+    .lyr{fill:#eef2f7;stroke:#9fb3c8;stroke-width:1}
+    .lbl{font-weight:700;font-size:13px;fill:#1f2a37}
+    .cmp{fill:#3b6fb0;stroke:#2b527e;stroke-width:1}
+    .cmpt{font-size:10.5px;fill:#ffffff;font-weight:600}
+    .rm{font-size:10px;fill:#41506a}
+    .hdr{font-weight:700;font-size:15px;fill:#111827}
+    .arrow{stroke:#5b6b82;stroke-width:1.6;marker-end:url(#a)}
+    .note{font-size:10.5px;fill:#6b7280}
+  </style>
+  <defs>
+    <marker id="a" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#5b6b82"/>
+    </marker>
+  </defs>
+
+  <text x="24" y="30" class="hdr">GitHub-based research management reference architecture</text>
+  <text x="24" y="48" class="note">GitHub as a coordination and traceability layer, not a container. 15 components; RM = requirement served.</text>
+
+  <rect x="330" y="60" width="240" height="34" rx="6" class="lyr" fill="#dbe4ef"/>
+  <text x="450" y="82" text-anchor="middle" class="lbl">RESEARCH PROJECT</text>
+  <line x1="450" y1="94" x2="450" y2="112" class="arrow"/>
+
+  <!-- A Coordination -->
+  <rect x="24" y="114" width="852" height="86" rx="8" class="lyr"/>
+  <text x="36" y="132" class="lbl">A · COORDINATION</text>
+  <text x="36" y="148" class="rm">planning · tasks · questions · communication  →  RM1 RM2 RM3 RM7</text>
+  <g>
+    <rect x="120" y="156" width="150" height="34" rx="5" class="cmp"/><text x="195" y="177" text-anchor="middle" class="cmpt">A1 Research Plan</text>
+    <rect x="285" y="156" width="150" height="34" rx="5" class="cmp"/><text x="360" y="177" text-anchor="middle" class="cmpt">A2 Activity Tracker</text>
+    <rect x="450" y="156" width="160" height="34" rx="5" class="cmp"/><text x="530" y="177" text-anchor="middle" class="cmpt">A3 Question Register</text>
+    <rect x="625" y="156" width="160" height="34" rx="5" class="cmp"/><text x="705" y="177" text-anchor="middle" class="cmpt">A4 Discussion Space</text>
+  </g>
+  <line x1="450" y1="200" x2="450" y2="214" class="arrow"/>
+
+  <!-- B Record -->
+  <rect x="24" y="216" width="852" height="86" rx="8" class="lyr"/>
+  <text x="36" y="234" class="lbl">B · RECORD</text>
+  <text x="36" y="250" class="rm">documentation · decisions · linkage · history  →  RM4 RM5 RM8 RM10 RM11</text>
+  <g>
+    <rect x="120" y="258" width="150" height="34" rx="5" class="cmp"/><text x="195" y="279" text-anchor="middle" class="cmpt">B1 Documentation</text>
+    <rect x="285" y="258" width="150" height="34" rx="5" class="cmp"/><text x="360" y="279" text-anchor="middle" class="cmpt">B2 Decision Log</text>
+    <rect x="450" y="258" width="160" height="34" rx="5" class="cmp" fill="#2b527e"/><text x="530" y="279" text-anchor="middle" class="cmpt">B3 Linkage Discipline</text>
+    <rect x="625" y="258" width="160" height="34" rx="5" class="cmp"/><text x="705" y="279" text-anchor="middle" class="cmpt">B4 Change History</text>
+  </g>
+  <text x="465" y="309" class="note">B3 (keystone): cross-references + closing keywords + timeline — a mandatory practice</text>
+  <line x1="450" y1="316" x2="450" y2="330" class="arrow"/>
+
+  <!-- C Production -->
+  <rect x="24" y="332" width="852" height="76" rx="8" class="lyr"/>
+  <text x="36" y="350" class="lbl">C · PRODUCTION</text>
+  <text x="36" y="366" class="rm">artifacts · review · automation  →  RM6 RM9 RM12 RM13</text>
+  <g>
+    <rect x="200" y="372" width="150" height="30" rx="5" class="cmp"/><text x="275" y="392" text-anchor="middle" class="cmpt">C1 Artifact Workspace</text>
+    <rect x="375" y="372" width="150" height="30" rx="5" class="cmp"/><text x="450" y="392" text-anchor="middle" class="cmpt">C2 Review Workflow</text>
+    <rect x="550" y="372" width="150" height="30" rx="5" class="cmp"/><text x="625" y="392" text-anchor="middle" class="cmpt">C3 Automation Suite</text>
+  </g>
+  <line x1="450" y1="408" x2="450" y2="422" class="arrow"/>
+
+  <!-- D Release -->
+  <rect x="24" y="424" width="852" height="76" rx="8" class="lyr"/>
+  <text x="36" y="442" class="lbl">D · RELEASE</text>
+  <text x="36" y="458" class="rm">outputs · identification · governance  →  RM8 RM14 RM15</text>
+  <g>
+    <rect x="200" y="464" width="150" height="30" rx="5" class="cmp"/><text x="275" y="484" text-anchor="middle" class="cmpt">D1 Release Process</text>
+    <rect x="375" y="464" width="150" height="30" rx="5" class="cmp"/><text x="450" y="484" text-anchor="middle" class="cmpt">D2 Archival Bridge</text>
+    <rect x="550" y="464" width="150" height="30" rx="5" class="cmp"/><text x="625" y="484" text-anchor="middle" class="cmpt">D3 Governance Setup</text>
+  </g>
+  <line x1="450" y1="500" x2="450" y2="514" class="arrow"/>
+
+  <!-- X1 -->
+  <rect x="270" y="516" width="360" height="30" rx="6" class="lyr" fill="#e5ecf4"/>
+  <text x="450" y="536" text-anchor="middle" class="cmpt" fill="#2b527e">X1 Transparency Surface  (emergent, on public release)  → RM11</text>
+  <line x1="450" y1="546" x2="450" y2="560" class="arrow"/>
+
+  <rect x="300" y="562" width="300" height="34" rx="6" class="lyr" fill="#dbe4ef"/>
+  <text x="450" y="584" text-anchor="middle" class="lbl">RESEARCH OUTPUTS — results · publications · releases · DOIs</text>
+</svg>

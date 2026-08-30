@@ -116,6 +116,9 @@ def main():
 
     os.makedirs(OUT, exist_ok=True)
     write_counter("annual_production.csv", by_year, "publication_year")
+    # 2008-2024 trimmed series for trend claims (2025 is only partially indexed — D16)
+    by_year_trimmed = Counter({y: c for y, c in by_year.items() if y.isdigit() and int(y) <= 2024})
+    write_counter("annual_production_trimmed.csv", by_year_trimmed, "publication_year")
     write_counter("top_sources.csv", by_source, "source", top=60)
     write_counter("doc_types.csv", by_type, "type")
     write_counter("countries.csv", countries, "country", top=60)

@@ -43,7 +43,7 @@ RM9 broadened to absorb tool integration (RE09); RM10 to absorb artifact linkage
 
 Catalogue GitHub native functionalities against the `expected_capabilities` of RM1–RM15 → `framework/mapping/`. Then Phase 5 fills `github_support` (Direct 3 / Partial 2 / Limited 1 / Not supported 0) and combines it with `lifecycle_requirements_matrix.csv` for the coverage profile.
 
-## Open / optional (do not block Phase 4)
+## Open / optional — closed 2026-08-30 (see `docs/OPEN_ITEMS.md`)
 
-- [ ] Second-coder check on the RE→RM assignment (~20%) — deferred, single-coder project, declared as a limitation.
-- [ ] Revisit RM15 scope after the Phase 5 mapping (may be dropped from headline coverage figures).
+- Second-coder check on the RE→RM assignment — **limitation** (single-coder project; declared).
+- RM15 scope — **done**: `DECISION_LOG.md` D17 — kept in the framework, excluded from headline coverage; `coverage_indicators.py` now reports core-14 (2.43/3) and full-15 (2.33/3).

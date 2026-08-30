@@ -31,6 +31,9 @@ Run in order:
 | 3 | `scripts/build_corpus.py` | Merge all `data/raw/` sources, drop repository deposits (`data/raw/exclude_sources.txt`), de-duplicate (DOI → title+year) → `data/processed/corpus.csv`, `data/processed/dedup_report.md`. |
 | 4 | `scripts/bibliometrics_track_a.py` | Zero-dependency descriptives → `results/track_a/*.csv`, `results/track_a/track_a_summary.md`, plus `coword_nodes.csv` / `coword_edges.csv` for VOSviewer / Gephi. |
 | 4′ | `scripts/bibliometrics_track_a.R` | Optional: `bibliometrix` thematic maps and co-word networks. Needs `install.packages(c("bibliometrix","readr","dplyr","stringr","tidyr","ggplot2"))`. |
+| 5 | `scripts/coword_map.py` | `results/track_a/coword_{nodes,edges}.csv` → `coword_map.gexf` (Gephi/VOSviewer) + `manuscript/figures/coword_map.svg`. |
+| — | `scripts/query_precision_check.py` | Estimates precision of the broad OpenAlex queries → `results/track_a/query_precision.md`. One-shot. |
+| — | `scripts/enrich_crossref.py --mailto <e>` | Crossref DOI/citation match for no-DOI corpus records → `data/processed/corpus_enrichment.csv`. One-shot, network. |
 
 Steps 1–4 are standard-library Python 3 only. Manual Google Scholar spot-check additions go in `data/raw/manual/*.csv` (columns: `title,doi,publication_year,source`; `source=GS`) and are picked up by step 3.
 

@@ -46,7 +46,7 @@ Lowest sub-scores: E5 external visibility 0 (repo not yet public — Phase 12), 
 
 Phase 10 synthesises RQ1–RQ5 (coverage, implementation results, strengths, limitations) for the manuscript. Inputs: `results/track_a/` (RQ1), `framework/` (RQ2–RQ4), `case-study/evaluation.md` + `evaluation_scores.csv` + `workflow_comparison.csv` (RQ5). These become Results §10.6 and Tables 5–6.
 
-## Open / optional (do not block Phase 10)
+## Open / optional (see `docs/OPEN_ITEMS.md`)
 
-- [ ] Independent second rater on the 21 sub-scores.
-- [ ] Re-score E5/E6 after the repository is made public and one real Issue→PR→Release cycle is run.
+- Independent second rater on the 21 sub-scores — **limitation** (single-coder project; declared).
+- Re-score E5/E6 after the repo is public + a real cycle — **user-task** (depends on the Phase 7/8 user-tasks; re-run `evaluation_summary.py` afterwards).

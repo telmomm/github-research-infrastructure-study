@@ -1,0 +1,5 @@
+query_tag,pool_size,sample,on_topic,est_precision
+Q2b,1510,120,116,0.967
+Q3a,964,120,111,0.925
+Q1g,614,120,105,0.875
+Q2a,641,120,118,0.983

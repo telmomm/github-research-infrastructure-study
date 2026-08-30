@@ -1,0 +1,12 @@
+version = 1
+
+# Per-material-type licensing (REUSE 3.0). Code = MIT, prose/figures/data = CC-BY-4.0.
+[[annotations]]
+path = ["analysis/**", ".github/workflows/**", "template/**/*.yml", "template/**/*.py"]
+SPDX-FileCopyrightText = "2026 Telmo Miguel-Medina"
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = ["docs/**", "framework/**", "manuscript/**", "literature/**", "case-study/**", "SOTA/**", "*.md", "data/processed/**", "results/**"]
+SPDX-FileCopyrightText = "2026 Telmo Miguel-Medina"
+SPDX-License-Identifier = "CC-BY-4.0"

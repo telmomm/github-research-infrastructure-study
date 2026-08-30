@@ -46,7 +46,7 @@ Organises the Phase 5 Direct- and Partial-support capabilities into a named comp
 
 Operationalise as the reusable GitHub Research Project Template (`template/`): repo skeleton (C1), issue/PR templates (A2, B2, C2), label set + Project field definitions (A1, A2), starter Actions (C3), CITATION.cff + release checklist (D1), CONTRIBUTING + roles (D3), a `docs/` set pre-seeded with the §4 conventions.
 
-## Open / optional (do not block Phase 7)
+## Open / optional — closed 2026-08-30 (see `docs/OPEN_ITEMS.md`)
 
-- [ ] Draw the conceptual-architecture and traceability-path figures for the manuscript (Figure 3, Figure 4).
-- [ ] Sanity-check the lifecycle model against this repository's own history as the first case-study evidence (Phase 8).
+- Figures 3 & 4 — **done**: `manuscript/figures/fig3_architecture.svg` (5-layer architecture), `fig4_traceability.svg` (end-to-end path).
+- Lifecycle-model sanity check — **done** in Phase 8 (`case-study/traceability_examples.md`, `implementation_record.csv`).

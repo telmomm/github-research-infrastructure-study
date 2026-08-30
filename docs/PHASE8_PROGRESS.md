@@ -56,7 +56,7 @@ The repository's root and `.github/` inventory now mirrors the template (bar `re
 
 Evaluate the six dimensions (`EVALUATION_PROTOCOL.md`) using `implementation_record.csv` and `activity_register.csv` as evidence; build the conventional-vs-GitHub comparison (Table 6). The un-exercised components (RM6, RM7, RM14, RM15) are scored on *design support*, not observed use, and flagged.
 
-## Open / optional
+## Open / optional (see `docs/OPEN_ITEMS.md`)
 
-- [ ] If time allows before submission: run one real cycle (Issue → branch → PR → review → merge → Release) for a small task, to demonstrate the coordination layer in practice.
-- [ ] Instantiate the template for an unrelated second project (external validity) — future work otherwise.
+- One real Issue → PR → Release cycle — **user-task** (needs GitHub write access; do before submission to demonstrate the coordination layer).
+- Instantiate the template for a second project — **future-work** (external-validity study).

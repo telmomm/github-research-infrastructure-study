@@ -189,3 +189,33 @@ Chronological record of major methodological decisions. Each entry: ID, date, co
 - **Rationale:** transparent basis tags let a reviewer see exactly which scores rest on the actual repository and which on the framework's design; reporting the observed-only figure alongside the overall prevents the planned/design items from either deflating or hiding the realised result.
 - **Results:** E1 2.00, E3 2.00, E4 1.75, E2 1.50, E5 1.50, E6 1.25. Table 6 (`workflow_comparison.csv`) contrasts the fragmented workflow with the framework across 6 dimensions.
 - **Affects:** `case-study/evaluation_scores.csv`, `workflow_comparison.csv`, `evaluation.md`; `EVALUATION_PROTOCOL.md` (draft; `case-study/evaluation.md` is the record); `PHASE9_PROGRESS.md`; `analysis/scripts/evaluation_summary.py`; `results/framework/`; `FIGURES_AND_TABLES.md` (Tables 5–6).
+
+---
+
+## D16 — 2025 tail kept in the production trend, with a caveat and a trimmed series
+
+- **Date:** 2026-08-30 · **Closes:** OPEN_ITEMS 2.3
+- **Context:** The Track A corpus shows 1,030 works dated 2025 vs 585 in 2024 — a spike driven by OpenAlex indexing recency, not a real doubling of output.
+- **Decision:** Keep 2025 in the corpus and in the production figure, annotated as **partially indexed**. Report a **2008–2024 trimmed series** alongside for any growth-rate statement (`results/track_a/annual_production_trimmed.csv`). Do not compute a CAGR that ends in 2025.
+- **Rationale:** dropping 2025 loses genuine recent work; keeping it unannotated invites a misreading. The trimmed series carries the trend claim.
+- **Affects:** `PHASE2_PROGRESS.md`; `results/track_a/`; the manuscript RQ1 figure caption.
+
+---
+
+## D17 — RM15 kept in the framework, excluded from headline coverage
+
+- **Date:** 2026-08-30 · **Closes:** OPEN_ITEMS 3.2
+- **Context:** RM15 (governance and sustainability) is flagged since D9 as only partly in scope; Phase 5 scored it Limited (1), and most of the requirement (funding, workforce, institutional continuity) is not a platform matter.
+- **Decision:** **Keep RM15** in `requirements_framework.csv` and the architecture (component D3) for completeness, but report **headline coverage for the core 14** (mean 2.43/3) as well as the full 15 (mean 2.33/3). `coverage_indicators.py` now emits both. The manuscript leads with the core-14 figure and notes RM15 separately.
+- **Rationale:** removing RM15 would hide a real, literature-attested need; letting it drag the headline number understates GitHub's support for the requirements that are actually in scope.
+- **Affects:** `analysis/scripts/coverage_indicators.py`; `framework/mapping/coverage_analysis.md`; `PHASE3_PROGRESS.md`, `PHASE5_PROGRESS.md`; the manuscript RQ3 results.
+
+---
+
+## D18 — Coverage-score sensitivity check (strict rubric)
+
+- **Date:** 2026-08-30 · **Closes:** OPEN_ITEMS 5.1
+- **Context:** Phase 5 scored several requirements Partial where the support is a mandatory convention on a generic feature; a reviewer could argue those should be Limited.
+- **Decision:** Add `framework/mapping/requirement_feature_matrix_strict.csv` — a stricter variant capping convention-heavy support (RM1, RM5, RM10) at Limited — and `coverage_indicators.py --strict`. Result: overall mean **2.33 → 2.13** (core-14 2.43 → 2.21); distribution 7 Direct / 3 Partial / 5 Limited / 0 Not supported. The qualitative conclusion (Direct where research resembles software work; Limited for upstream research-specific traceability) is unchanged under both rubrics.
+- **Rationale:** shows the headline finding is not an artefact of a generous rubric.
+- **Affects:** `analysis/scripts/coverage_indicators.py`; `framework/mapping/`; `results/framework/coverage_*_strict.*`; the manuscript methods/robustness note.

@@ -14,12 +14,17 @@ Standard library only.
 
 import csv
 import os
+import sys
 from collections import defaultdict
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 MAP = os.path.join(ROOT, "framework", "mapping")
 REQ = os.path.join(ROOT, "framework", "requirements")
 OUT = os.path.join(ROOT, "results", "framework")
+
+# RM15 (governance and sustainability) is only partly in scope (PHASE1 sec6.3);
+# headline coverage is reported for the core 14 as well as the full 15.
+OUT_OF_HEADLINE = {"RM15"}
 
 LABELS = {0: "Not supported", 1: "Limited", 2: "Partial", 3: "Direct"}
 GROUP_NAMES = {
@@ -44,7 +49,10 @@ def dump(name, header, rows):
 
 
 def main():
-    m = read(os.path.join(MAP, "requirement_feature_matrix.csv"))
+    strict = "--strict" in sys.argv
+    src = "requirement_feature_matrix_strict.csv" if strict else "requirement_feature_matrix.csv"
+    m = read(os.path.join(MAP, src))
+    suffix = "_strict" if strict else ""
     reqs = {r["rm_id"]: r for r in read(os.path.join(REQ, "requirements_framework.csv"))}
     life = {r["rm_id"]: r for r in read(os.path.join(REQ, "lifecycle_requirements_matrix.csv"))}
     stages = [k for k in next(iter(life.values())).keys() if k != "rm_id"]
@@ -56,12 +64,14 @@ def main():
     n = len(m)
     total = sum(r["support_level"] for r in m)
     mean = total / n
+    core = [r["support_level"] for r in m if r["rm_id"] not in OUT_OF_HEADLINE]
+    mean_core = sum(core) / len(core)
 
     # distribution
     dist = defaultdict(int)
     for r in m:
         dist[r["support_level"]] += 1
-    dump("coverage_distribution.csv", ["support_level", "label", "n", "pct"],
+    dump(f"coverage_distribution{suffix}.csv", ["support_level", "label", "n", "pct"],
          [[k, LABELS[k], dist[k], round(100 * dist[k] / n, 1)] for k in (3, 2, 1, 0)])
 
     # per category
@@ -118,9 +128,10 @@ def main():
     dump("coverage_group_matrix.csv", ["rm_id"] + gids, grid)
     group_tot = {g: sum(row[i + 1] for row in grid) for i, g in enumerate(gids)}
 
-    md = ["# Requirement-feature coverage — indicators\n",
+    md = [f"# Requirement-feature coverage — indicators{' (STRICT rubric)' if strict else ''}\n",
           f"- Requirements assessed: **{n}**",
-          f"- Overall mean support (0-3): **{mean:.2f}**",
+          f"- Overall mean support (0-3), full 15: **{mean:.2f}**",
+          f"- Overall mean support (0-3), core 14 (excl. RM15, partly out of scope): **{mean_core:.2f}**",
           f"- Requirements needing a complementary external tool: **{len(ext)}** ({', '.join(r['rm_id'] for r in ext)})\n",
           "## Support distribution\n"]
     for k in (3, 2, 1, 0):
@@ -139,7 +150,7 @@ def main():
     for g in sorted(gids, key=lambda x: -group_tot[x]):
         md.append(f"- {g} {GROUP_NAMES[g]}: {group_tot[g]}")
     md.append("")
-    with open(os.path.join(OUT, "coverage_summary.md"), "w", encoding="utf-8") as fh:
+    with open(os.path.join(OUT, f"coverage_summary{suffix}.md"), "w", encoding="utf-8") as fh:
         fh.write("\n".join(md))
     print("\n".join(md))
 

@@ -95,16 +95,18 @@ Annual production rises 60 (2008) → 585 (2024); 2025 = 1,030 (indexing recency
 - [x] Track A retrieval executed on open sources — OpenAlex (5,936) + arXiv (462) → 5,139-work corpus (`data/processed/corpus.csv`).
 - [x] Track A descriptives generated (`results/track_a/`), lifecycle profile cross-checked against Track B.
 
-## Optional refinements (not blocking Phase 3)
+## Optional refinements — closed 2026-08-30 (see `docs/OPEN_ITEMS.md`)
 
-- [ ] Crossref / Semantic Scholar citation enrichment for no-DOI records.
-- [ ] Precision check + possible tightening of the broad OpenAlex queries (`"open science"`, `github`).
-- [ ] 2025 tail treatment for the production trend.
-- [ ] Render the co-word map (VOSviewer / Gephi / R).
-- [ ] Factcheck `references.bib` (venues, volumes, pages, DOIs) — e.g. `phd-skills:factcheck`.
-- [ ] Expand Track B with primary empirical GitHub-in-research studies under-sampled by the review-focused Deep Search.
-- [ ] Second-coder reliability on the requirement extraction (~20%), per `LITERATURE_REVIEW.md` §8.6 — deferred (single-coder project; declared as a limitation).
-- [ ] Run Scopus / WoS as a cross-check if access appears.
+| Item | Outcome |
+|---|---|
+| Crossref enrichment for no-DOI records | **done** — `analysis/scripts/enrich_crossref.py`; 250 processed, 8% Crossref-matchable → `data/processed/corpus_enrichment.csv`, `results/track_a/enrichment_summary.md`. Confirms the no-DOI tail is grey literature; OpenAlex `cited_by_count` stays primary. |
+| Precision of the broad queries | **done** — `analysis/scripts/query_precision_check.py`; est. precision 0.88–0.98 (weighted 0.94); queries kept frozen (`results/track_a/query_precision.md`). |
+| 2025 tail | **done** — `DECISION_LOG.md` D16; 2008–2024 trimmed series in `results/track_a/annual_production_trimmed.csv`; no CAGR ending 2025. |
+| Co-word map | **done** — `analysis/scripts/coword_map.py` → `results/track_a/coword_map.gexf` (Gephi/VOSviewer) + `manuscript/figures/coword_map.svg`. |
+| Factcheck `references.bib` | **done** — `literature/references_factcheck.md`; sampled verification, 3 Phase-2 edits confirmed, no year/author/DOI errors in sample; cited subset fully re-checked at Phase 11. |
+| Primary GitHub-in-research studies | **done** — `literature/included_studies_primary.csv` (S53–S67); does not change RE01–RE17. |
+| Second-coder reliability | **limitation** — single-coder project; declared in `case-study/evaluation.md` §6. |
+| Scopus / WoS cross-check | **limitation** — no access; declared. |
 
 ## Decisions logged this phase
 

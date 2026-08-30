@@ -29,7 +29,7 @@
 - all plans (opt-in): 1
 - all plans (private wiki paid): 1
 - all plans (public); private Team+: 1
-- all plans (public; paid for private): 1
+- all plans (public; private requires an organization / Team+): 1
 - all plans (quota; paid for more): 1
 - all plans (retention limit): 1
 - all plans (some public-only): 1

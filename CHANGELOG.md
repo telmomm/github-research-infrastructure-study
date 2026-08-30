@@ -86,15 +86,26 @@ Methodological decisions are logged separately in [`docs/DECISION_LOG.md`](docs/
 - `docs/EVALUATION_PROTOCOL.md` — marked as protocol; `case-study/evaluation.md` is the record.
 - `docs/ROADMAP.md` — Phase 9 marked complete; `docs/README.md`, `analysis/README.md` updated.
 
+### Added — Open-items close-out (Phases 2–9)
+- `docs/OPEN_ITEMS.md` — consolidated ledger; 15 closed, 5 limitations, 3 user-tasks, 1 future-work.
+- Track A: `analysis/scripts/enrich_crossref.py` (+ `data/processed/corpus_enrichment.csv`), `query_precision_check.py` (+ `results/track_a/query_precision.md`), `coword_map.py` (+ `results/track_a/coword_map.gexf`, `manuscript/figures/coword_map.svg`); `annual_production_trimmed.csv` (2008–2024).
+- `literature/references_factcheck.md`; `literature/included_studies_primary.csv` (S53–S67).
+- `framework/mapping/requirement_feature_matrix_strict.csv` + `coverage_indicators.py --strict`; core-14 vs full-15 headline coverage.
+- `framework/mapping/plan_availability_check.md`; GC15 plan note refined; `GITHUB_CAPABILITY_CATALOGUE.md` §2 GC61 justification expanded.
+- `manuscript/figures/fig3_architecture.svg`, `fig4_traceability.svg`.
+- `LICENSES/{MIT,CC-BY-4.0}.txt` + `REUSE.toml` (study repo); `LICENSES/` + `CC0-1.0.txt` and `.github/workflows/label-sync.yml` in both repo and template.
+- `DECISION_LOG.md` D16 (2025 tail), D17 (RM15 headline scope), D18 (coverage sensitivity check).
+
+### Changed
+- Every `PHASEn_PROGRESS.md` "Open / optional" section replaced with a resolution table pointing to `docs/OPEN_ITEMS.md`.
+
 ### Working towards
 - Phase 10 — Analysis (synthesise RQ1–RQ5: coverage, implementation results, strengths, limitations).
 
-### Pending / optional (do not block Phase 10)
-- Track A: Crossref / Semantic Scholar citation enrichment; precision check on the broad OpenAlex queries; 2025 tail treatment; co-word map rendering.
-- Factcheck `literature/references.bib` (venues, volumes, pages, DOIs).
-- Second-coder reliability on the requirement extraction and the RE→RM assignment (~20%) — deferred, single-coder project.
-- Scopus / WoS cross-check if access appears.
-- Revisit RM15 (governance) scope after the Phase 5 mapping.
+### Carried to the manuscript (not blockers)
+- Limitations: single-coder project (no second rater on RE→RM, the 15 support scores, or the 21 evaluation sub-scores); no Scopus/WoS access (OpenAlex trade-off).
+- User-tasks before submission: make the repo public; run one live Issue→PR→Release cycle; screenshot the Project; re-score E5/E6 afterwards.
+- Future work: instantiate the template for an unrelated second project.
 
 ---
 

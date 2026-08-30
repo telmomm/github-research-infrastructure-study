@@ -23,7 +23,8 @@ Every row of `requirement_feature_matrix.csv` records the level, the primary cap
 
 | Indicator | Value |
 |---|---|
-| Overall mean support (0–3) | **2.33** (≈ 78%) |
+| Overall mean support (0–3), core 14 | **2.43** (≈ 81%) |
+| Overall mean support (0–3), full 15 | **2.33** (≈ 78%) |
 | Direct | 7 / 15 — RM3, RM4, RM6, RM7, RM8, RM11, RM13 |
 | Partial | 6 / 15 — RM1, RM5, RM9, RM10, RM12, RM14 |
 | Limited | 2 / 15 — RM2, RM15 |
@@ -113,6 +114,12 @@ Which native feature groups carry the framework (sum of RM contribution weights,
 ## 9. Answer to RQ3
 
 GitHub's native functionalities support research project management requirements **substantially but unevenly** (mean 2.33/3; Direct for 7 of 15, at least Partial for 13). Support is **Direct where research work resembles software engineering** — tasks, review, communication, version control, documentation, transparency, automation — and **Partial or Limited for the research-specific traceability of questions, decisions and provenance, and for planning and governance**. Five requirements need complementary external infrastructure. The under-served upstream layer (RM1, RM2, RM5) is exactly the literature gap identified in RQ1.
+
+## 9a. Robustness (added 2026-08-30)
+
+- **RM15 scope (`DECISION_LOG.md` D17).** RM15 (governance and sustainability) is only partly in scope. Headline coverage is reported for the **core 14** (mean 2.43/3) and the full 15 (2.33/3); the qualitative picture is identical either way.
+- **Stricter rubric (`DECISION_LOG.md` D18).** Re-scoring with convention-heavy support capped at Limited (RM1, RM5, RM10 → 1) gives `requirement_feature_matrix_strict.csv`: overall mean **2.13** (core-14 2.21), distribution 7 Direct / 3 Partial / 5 Limited / 0 Not supported. The conclusion — Direct where research resembles software work, Limited for upstream research-specific traceability — holds under both rubrics. Run: `coverage_indicators.py --strict`.
+- **Plan availability.** Ten plan-gated capabilities were verified against GitHub Docs (2026-08-30, `plan_availability_check.md`); none changes a support level.
 
 ## 10. Handoff to Phase 6
 

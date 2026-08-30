@@ -47,8 +47,8 @@ GitHub supports research management **substantially but unevenly**: Direct where
 
 The reference architecture organises the Direct and Partial capabilities into components, workflows and a lifecycle model, and specifies the conventions that lift RM1, RM2, RM5 and RM10 from raw features to research-usable support. Output to `framework/architecture/`.
 
-## Open / optional (do not block Phase 6)
+## Open / optional — closed 2026-08-30 (see `docs/OPEN_ITEMS.md`)
 
-- [ ] Sensitivity check: re-score with a stricter rubric (convention-heavy = Limited) to show the result is not fragile.
-- [ ] Second rater on the 15 scores (~all) — deferred, single-coder project, declared as a limitation.
-- [ ] Confirm plan-availability caveats (Phase 4 open item) before the scores go in the manuscript.
+- Sensitivity check — **done**: `DECISION_LOG.md` D18; `requirement_feature_matrix_strict.csv` + `coverage_indicators.py --strict`; overall mean 2.33 → 2.13, qualitative conclusion unchanged.
+- Second rater on the 15 scores — **limitation** (single-coder project; declared).
+- Plan-availability caveats — **done** (folded into Phase 4; `plan_availability_check.md`).

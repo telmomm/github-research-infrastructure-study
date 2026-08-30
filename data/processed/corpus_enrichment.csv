@@ -1,0 +1,21 @@
+corpus_id,matched_doi,crossref_type,crossref_cited_by,title_sim,crossref_title
+C0042,10.1109/services-1.2008.79,proceedings-article,47,0.83,"Scientific Workflow Systems for 21st Century, New Bottle or New Wine?"
+C0043,10.1109/services-1.2008.79,proceedings-article,47,0.77,"Scientific Workflow Systems for 21st Century, New Bottle or New Wine?"
+C0044,10.1109/waim.2008.41,proceedings-article,25,0.88,Scientific Workflow Provenance Querying with Security Views
+C0058,10.1109/icmse.2007.4421954,proceedings-article,0,0.77,Research of College's Scientific Research Management Workflow Model Based on Petri Net
+C0067,10.1109/services-i.2009.55,proceedings-article,6,0.8,Analyzing the Gap between Workflows and their Natural Language Descriptions
+C0117,10.1088/1742-6596/219/6/062014,journal-article,2,1.0,XACML profile and implementation for authorization interoperability between OSG and EGEE
+C0178,10.1145/1989284.1989305,proceedings-article,31,1.0,Provenance views for module privacy
+C0205,10.1109/ccgrid.2010.89,proceedings-article,6,1.0,WORKEM: Representing and Emulating Distributed Scientific Workflow Execution State
+C0208,10.1007/978-3-642-13818-8_31,book-chapter,6,0.82,A Fault-Tolerance Architecture for Kepler-Based Distributed Scientific Workflows
+C0225,10.1109/escience.2011.15,proceedings-article,12,0.75,A Cloud-based Dynamic Workflow for Mass Spectrometry Data Analysis
+C0229,10.29173/iq893,journal-article,0,0.83,Data Curation at U.Porto: Identifying current practices across disciplinary domains
+C0298,10.1145/2304576.2304611,proceedings-article,14,0.62,An analysis of computational workloads for the ORNL Jaguar system
+C0316,10.1088/1742-6596/396/0/001001,journal-article,0,0.75,International Conference on Computing in High Energy and Nuclear Physics (CHEP 2012)
+C0325,10.3724/sp.j.1087.2013.00571,journal-article,0,0.67,Design and implementation of EPON performance management system based on SSH framework
+C0419,10.1109/icse.2013.6606588,proceedings-article,213,1.0,Boa: A language and infrastructure for analyzing ultra-large-scale software repositories
+C0434,10.1109/sc.2012.38,proceedings-article,159,1.0,Cost- and deadline-constrained provisioning for scientific workflow ensembles in IaaS clouds
+C0471,10.4203/ccp.95.80,proceedings-article,0,0.75,New Science Gateways for Advanced Computing Simulations and Visualization using the Vine Toolkit
+C0485,10.1109/csss.2012.538,proceedings-article,0,0.62,Research and Implementation of a Research Projects Management System Based on SOA
+C0498,10.2172/1092068,report,0,0.8,Scientific Data Management (SDM) Center for Enabling Technologies. 2007-2012
+C0512,10.14569/ijacsa.2013.040202,journal-article,2,1.0,Toward the Integration of Traditional and Agile Approaches

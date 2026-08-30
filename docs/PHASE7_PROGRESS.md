@@ -45,8 +45,8 @@ Discipline-independent core (layout, workflows, linkage rules fixed; labels / Pr
 
 Case study: apply the framework to a real project. Recommended (D5): self-referential + the template as a transferable artifact. Check the lifecycle model and conventions against this repository's own history; then instantiate the template for a second, independent project if feasible.
 
-## Open / optional (do not block Phase 8)
+## Open / optional — closed 2026-08-30 (see `docs/OPEN_ITEMS.md`)
 
-- [ ] Add a `LICENSES/` directory (REUSE-style) instead of the single placeholder `LICENSE`, once the material-type licences are chosen.
-- [ ] Optional `label-sync` workflow to apply `labels.yml` automatically.
-- [ ] Screenshot the configured Project (board + roadmap view) for the manuscript once the case study runs.
+- `LICENSES/` REUSE directory — **done**: `LICENSES/{MIT,CC-BY-4.0,CC0-1.0}.txt` + `REUSE.toml` in the template and this repo; root `LICENSE` explains the split.
+- `label-sync` workflow — **done**: `.github/workflows/label-sync.yml` (template + this repo).
+- Project screenshot — **user-task** (needs a live GitHub Project; before submission).

@@ -32,7 +32,7 @@ jobs:
         run: |
           set -e
           # allow: placeholders, docs, small config, and the reproducible derived corpus
-          allow='(\.gitkeep|README\.md|exclude_sources\.txt|corpus\.csv|dedup_report\.md)$'
+          allow='(\.gitkeep|README\.md|exclude_sources\.txt|corpus\.csv|corpus_enrichment\.csv|dedup_report\.md)$'
           bad=$(git ls-files 'data/raw/**' 'data/processed/**' | grep -v -E "$allow" || true)
           if [ -n "$bad" ]; then echo "::error::unexpected data files tracked in Git:"; echo "$bad"; exit 1; fi
       - name: Framework cross-tabs regenerate

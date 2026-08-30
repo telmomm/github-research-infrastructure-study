@@ -21,6 +21,7 @@ The purpose of the documentation is to provide a transparent and traceable recor
 | [PHASE7_PROGRESS.md](PHASE7_PROGRESS.md) | Phase 7 status: reusable template, 33 files (`template/`); handoff to Phase 8 |
 | [PHASE8_PROGRESS.md](PHASE8_PROGRESS.md) | Phase 8 status: self-referential case study (`case-study/`), 8/15 components exercised; handoff to Phase 9 |
 | [PHASE9_PROGRESS.md](PHASE9_PROGRESS.md) | Phase 9 status: evaluation, 6 dimensions scored (overall 1.62/2), Table 6 comparison; handoff to Phase 10 |
+| [OPEN_ITEMS.md](OPEN_ITEMS.md) | Consolidated ledger of every optional item raised in Phases 2–9: 15 closed, 5 limitations, 3 user-tasks, 1 future-work |
 | [PAPER_PLAN.md](PAPER_PLAN.md) | Complete conceptual structure of the scientific paper |
 | [ROADMAP.md](ROADMAP.md) | Research project phases and development roadmap |
 | [RESEARCH_DESIGN.md](RESEARCH_DESIGN.md) | Overall research design |

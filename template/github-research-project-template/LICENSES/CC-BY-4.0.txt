@@ -1,0 +1,12 @@
+SPDX-License-Identifier: CC-BY-4.0
+
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+The canonical legal text is at:
+  https://creativecommons.org/licenses/by/4.0/legalcode.txt
+
+Before the v1.0 release, run `reuse download CC-BY-4.0` (or paste the legalcode
+above) so this file contains the full licence text for REUSE compliance.
+
+Summary: you are free to share and adapt this material for any purpose, provided
+you give appropriate credit to Telmo Miguel-Medina and indicate if changes were made.
