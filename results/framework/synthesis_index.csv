@@ -18,12 +18,12 @@ F16,RQ3,result,moderate,The headline finding is robust to rubric choice: capping
 F17,RQ4,result,strong,"The covered capabilities organise into a 15-component, 5-layer reference architecture in which GitHub is a coordination "
 F18,RQ4,result,strong,One component (B3 Linkage Discipline) and four named conventions are the framework's distinctive contribution over a pla
 F19,RQ4,result,moderate,"The architecture is operationalised as a 33-file, discipline-independent GitHub template in which every requirement RM1-"
-F20,RQ5,result,strong,"In the self-referential implementation, 8 of 15 components were exercised natively or partially; the documentation, deci"
-F21,RQ5,result,strong,The six-dimension evaluation scores 1.62/2 overall (1.76/2 for observed-only sub-scores); requirement coverage and docum
+F20,RQ5,result,strong,"In the self-referential implementation, 13 of 15 components were exercised natively or partially (8 during the single-au"
+F21,RQ5,result,strong,"After one live Issue->PR->Release cycle and making the repository public, the six-dimension evaluation scores 1.86/2 ove"
 F22,RQ5,result,moderate,"Against a fragmented workflow, the framework's benefit is concentrated in linking artifacts that would otherwise stay di"
 F23,main,limitation,strong,"The framework maps the upstream research-process gap but does not close it: RM1, RM2 and RM5 remain Partial or Limited e"
-F24,RQ5,limitation,strong,The coordination layer's collaborative benefit is unproven: a single-author sprint meant the Issue/Project/Pull Request 
-F25,RQ5,limitation,moderate,"The evaluation is single-case and self-referential, scored by a single coder, on a repository that is not yet public."
+F24,RQ5,limitation,strong,"The coordination layer's collaborative benefit is unproven: it was run once end-to-end by a single author, so multi-auth"
+F25,RQ5,limitation,moderate,"The evaluation is single-case and self-referential, scored by a single coder."
 F26,RQ1,limitation,moderate,The bibliometric corpus is built from OpenAlex plus arXiv; the coverage and precision trade-off versus Scopus/Web of Sci
 F27,RQ3,limitation,moderate,"About a third of the coverage rests on mandatory convention rather than native features, as the stricter-rubric mean of "
 F28,main,limitation,strong,"GitHub is not a complete research infrastructure: persistent identifiers and preservation (Zenodo), computational enviro"

@@ -263,3 +263,18 @@ Chronological record of major methodological decisions. Each entry: ID, date, co
 - **Decision:** Set repository visibility to **public**. This enacts E5 external visibility, enables third-party inspection of the full history for RQ5, and is a precondition for issue #3 (re-score E5/E6) and issue #5 (Zenodo DOI wiring).
 - **Not done here:** GitHub Pages summary page and Insights write-up (`X1` stays `partial`); the E5/E6 re-score (issue #3).
 - **Affects:** repository settings; `case-study/implementation_record.csv` (X1 `planned` → `partial`, D3 `config` → `partial`); `results/framework/cs_*`; `docs/OPEN_ITEMS.md`.
+
+---
+
+## D23 — Evaluation re-score after the repository was made public and one live cycle was run
+
+- **Date:** 2026-08-30 · **Closes:** GitHub issue #3
+- **Context:** In `D15` four evaluation sub-scores were tagged *planned* / *retrospective* / *design-support* because Phases 1–11 were a single-author sprint with the coordination layer only configured. `D22` (repo public) and issue #2 (one full Issue→branch→PR→merge→Release cycle over the study's backlog) removed those preconditions.
+- **Decision:** Re-score four sub-scores in `case-study/evaluation_scores.csv` on observed evidence:
+  - **E5 external project visibility** `0` (planned) → `2` (observed) — repository public, full history / docs / Insights / Project #2 third-party inspectable.
+  - **E2 task traceability** `1` (retrospective) → `2` (observed) — real GitHub Issues #1–#12 cross-referenced; one full coordination cycle demonstrated.
+  - **E4 task categorization** `1` (design-support) → `2` (observed) — the activity label set applied to Issues #1–#12.
+  - **E6 workflow overhead** `1` → `2` (observed) — the Issue/PR/Release layer run once end-to-end; per-item overhead modest solo.
+- **Result:** dimension means E1 2.00, E2 1.75, E3 2.00, E4 2.00, E5 2.00, E6 1.50. **Overall 1.62 → 1.86 / 2** (observed-only 1.76 → 1.85, n 17 → 20).
+- **Unchanged / still limiting:** E6 configuration complexity and technical-literacy (1 each); E2 provenance/artifact linkage (1 — one chain demonstrated, no automated lineage); the coordination layer's **collaborative** value (multi-author review, communication) remains untested.
+- **Affects:** `case-study/evaluation_scores.csv`, `case-study/evaluation.md`; `results/framework/eval_*`; `analysis/findings.csv` (F21), `analysis/synthesis.md`; `docs/PHASE9_PROGRESS.md`, `docs/OPEN_ITEMS.md`. **`manuscript/paper.tex` still carries the pre-re-score figures (Abstract, Results §3.3, Table 4, Methods §2.7, Limitations §4.6) and is updated in the manuscript pass (issue #6).**

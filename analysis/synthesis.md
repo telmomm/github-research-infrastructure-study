@@ -49,8 +49,8 @@ The gap identified bibliometrically (RQ1) and the gap measured in GitHub's cover
 
 ### RQ5 — Feasibility and evaluation
 
-- **F20** Self-referential: 8/15 components exercised; documentation/decision/version-control spine works at near-zero overhead.
-- **F21** Evaluation 1.62/2 overall (1.76/2 observed-only); coverage and documentation at 2.0, usability lowest at 1.25.
+- **F20** Self-referential: 13/15 components exercised (8 in the single-author phase, +5 after one live cycle and making the repo public); documentation/decision/version-control spine works at near-zero overhead.
+- **F21** Evaluation 1.86/2 overall (1.85/2 observed-only, n=20) after the D23 re-score; coverage, documentation, organization and transparency at 2.0, usability lowest at 1.50.
 - **F22** vs fragmented workflow: benefit = linking otherwise-disconnected artifacts; cost = the coordination layer.
 
 ## 3. Framework coverage analysis
@@ -68,9 +68,9 @@ The gap identified bibliometrically (RQ1) and the gap measured in GitHub's cover
 
 ## 4. Implementation results (RQ5)
 
-- The **record layer** (documentation, decision log) and the **artifact workspace** and **version control** were realised natively and at full evaluation strength (E3 = 2.0, decision/version traceability = 2).
-- The **coordination layer** (Issues, Project, Pull Requests) was configured but not exercised — a single-author sprint does not incur or test its overhead.
-- **Cost/benefit shape:** the low-cost half of the framework delivered; the higher-cost half is unproven here and is where collaborative value would accrue.
+- The **record layer** (documentation, decision log), the **artifact workspace** and **version control** were realised natively and at full evaluation strength (E3 = 2.0, decision/version traceability = 2).
+- The **coordination layer** (Issues, Project, Pull Requests, Releases) was configured during the single-author phase and then **run once end-to-end** (one Issue→branch→PR→merge→`v1.1.0` Release cycle over the study's own backlog); the repository was made public. This lifted E2/E4/E5/E6 sub-scores to observed and the overall evaluation to **1.86/2** (D23). The per-item overhead is modest solo.
+- **Cost/benefit shape:** the low-cost half of the framework delivered fully; the coordination layer is feasible and low-overhead for a solo author, but its **collaborative** value — multi-author review and communication — is still unproven.
 
 ## 5. Strengths
 
@@ -84,8 +84,8 @@ The gap identified bibliometrically (RQ1) and the gap measured in GitHub's cover
 ## 6. Limitations
 
 1. **The upstream gap is mapped, not closed** — RM1/RM2/RM5 stay Partial/Limited even with conventions (F23).
-2. **Collaborative benefit unproven** — solo sprint; RM6/RM7 and the Issue/PR layer scored on design support (F24).
-3. **Single-case, self-referential, single-coder, not-yet-public** evaluation (F25).
+2. **Collaborative benefit unproven** — the coordination layer was run once solo, so its multi-author review / communication value is untested; E6 configuration and technical-literacy costs remain (F24).
+3. **Single-case, self-referential, single-coder** evaluation (F25).
 4. **OpenAlex+arXiv corpus** — coverage/precision trade-off vs Scopus/WoS (F26; precision ≈ 0.94).
 5. **Convention-dependence** — ~1/3 of coverage rests on discipline, not features (F27; strict rubric 2.13).
 6. **Not a complete infrastructure** — preservation, environments, large data, governance are external (F28).
