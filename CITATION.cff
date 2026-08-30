@@ -19,6 +19,13 @@ date-released: "2026-08-30"
 license: "CC-BY-4.0"
 repository-code: "https://github.com/telmomm/github-research-infrastructure-study"
 doi: "10.5281/zenodo.22167500"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.22167500"
+    description: "Software record (this repository at release)"
+  - type: doi
+    value: "10.5281/zenodo.22173525"
+    description: "Companion dataset record: Track A corpus, processed datasets and raw OpenAlex/arXiv/WoS/Scopus retrieval exports"
 keywords:
   - research management
   - research infrastructure

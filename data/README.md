@@ -24,9 +24,15 @@ The Track B evidence base is versioned under `literature/`, not here (`included_
 
 The `raw/{openalex,arxiv,wos,scopus}/` dumps are **not in git** — they are large and fully
 regenerable from the frozen queries in `literature/search_strings.md` plus the retrieval
-dates in `literature/search_log.md`. For archival reproducibility they are deposited as a
-**supplementary file on the study's Zenodo record** at release (see `.github/release-checklist.md`).
-Build the bundle with:
+dates in `literature/search_log.md`. They are archived in a **companion Zenodo dataset
+record**, separate from the auto-generated GitHub–Zenodo *software* record so it is not
+overwritten by later releases:
+
+- **Dataset record:** <https://doi.org/10.5281/zenodo.22173525> — Track A datasets and raw
+  retrieval exports (OpenAlex, arXiv, WoS, Scopus). `isSupplementTo` the software record.
+- **Software record:** <https://doi.org/10.5281/zenodo.22167500> — the repository at release.
+
+Rebuild the bundle before re-depositing:
 
 ```
 mkdir -p dist && cd data/raw && \
@@ -34,12 +40,11 @@ zip -rq -X ../../dist/track_a_raw_exports_$(date +%Y%m%d).zip \
     openalex arxiv wos scopus exclude_sources.txt && cd -
 ```
 
-## Deposit (what goes to Zenodo)
+## Deposit (what goes to the dataset record)
 
 - `processed/corpus.csv`, `processed/dedup_report.md`, `processed/corpus_enrichment.csv`
 - `literature/*.csv`, `literature/references.bib`
 - `dist/track_a_raw_exports_<date>.zip` (raw OpenAlex / arXiv / WoS / Scopus exports)
-- the repository release archive itself (auto-attached by the GitHub–Zenodo integration)
 
-The DOI is recorded in `CITATION.cff` and `README.md`; this connects to the prior
-GitHub–Zenodo–ORCID reproducibility workflow.
+Both DOIs go in the manuscript's data-availability statement (code = software DOI,
+data = dataset DOI). This connects to the prior GitHub–Zenodo–ORCID workflow.
