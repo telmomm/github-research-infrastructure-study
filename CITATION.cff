@@ -18,7 +18,7 @@ version: "1.0.0"
 date-released: "2026-08-30"
 license: "CC-BY-4.0"
 repository-code: "https://github.com/telmomm/github-research-infrastructure-study"
-# doi: "10.5281/zenodo.XXXXXXX"   # added after the first Zenodo release (Phase 12)
+doi: "10.5281/zenodo.22167500"
 keywords:
   - research management
   - research infrastructure

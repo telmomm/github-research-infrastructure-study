@@ -2,6 +2,8 @@
 
 **Evaluating GitHub for Managing the Scientific Research Lifecycle**
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22167500.svg)](https://doi.org/10.5281/zenodo.22167500)
+
 A hybrid bibliometric + coverage-analysis study, targeted at *Scientometrics* (Springer Nature). It maps the literature on digital infrastructure for research-process management, derives a lifecycle-structured set of research management requirements, measures how far GitHub's native functionalities cover them, and consolidates the covered functionalities into a reusable reference architecture and project template tested self-referentially on this repository.
 
 ## Repository structure
