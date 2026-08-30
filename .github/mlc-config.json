@@ -1,7 +1,15 @@
 {
   "ignorePatterns": [
-    { "pattern": "^https://github.com/.*/(issues|pull|discussions)" },
+    { "pattern": "^https://github\\.com/.*/(issues|pull|discussions)" },
+    { "pattern": "^https?://(dx\\.)?doi\\.org/" },
+    { "pattern": "^https?://(www\\.)?consensus\\.app" },
+    { "pattern": "^https://zenodo\\.org/badge/" },
     { "pattern": "\\{\\{.*\\}\\}" }
   ],
-  "aliveStatusCodes": [200, 206, 429]
+  "replacementPatterns": [],
+  "aliveStatusCodes": [200, 201, 202, 206, 301, 302, 307, 308, 403, 429],
+  "retryOn429": true,
+  "retryCount": 3,
+  "fallbackRetryDelay": "30s",
+  "timeout": "20s"
 }
