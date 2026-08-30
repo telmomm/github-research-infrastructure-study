@@ -1,36 +1,36 @@
 # Scopus / Web of Science cross-check (OPEN_ITEMS 2.8)
 
-- Source files: 12  ·  raw records: 9441  ·  outside 2008-2025 window: 338
-- De-duplicated in-window cross-check set: **8819**
-- Overlap with the OpenAlex + arXiv corpus: **2373 (27%)**  (by DOI 2186, by title+year 187)
-- WoS/Scopus records not in the corpus: **6446 (73%)** — `xref_not_in_corpus.csv`
-- Corpus records not returned by these queries: 2717 of 5139 (OpenAlex indexes preprints and OA venues; the open queries are phrased differently)
+- Source files: 16  ·  raw records: 18250  ·  outside 2008-2025 window: 338
+- De-duplicated in-window cross-check set: **13586**
+- Overlap with the OpenAlex + arXiv corpus: **2933 (22%)**  (by DOI 2656, by title+year 277)
+- WoS/Scopus records not in the corpus: **10653 (78%)** — `xref_not_in_corpus.csv.gz`
+- Corpus records not returned by these queries: 2175 of 5139 (OpenAlex indexes preprints and OA venues; the open queries are phrased differently)
 
 ## WoS/Scopus-only records — where they come from
 
 | Query | in set | not in corpus |
 |---|---|---|
-| Q1 | 1035 | 561 |
-| Q2 | 3064 | 1826 |
-| Q3 | 4484 | 3875 |
-| Q4 | 236 | 184 |
+| Q1 | 2761 | 2031 |
+| Q2 | 4343 | 2908 |
+| Q3 | 5954 | 5262 |
+| Q4 | 528 | 452 |
 
 **Top venues of the not-in-corpus set:**
 
-- Bioinformatics: 718
+- Bioinformatics: 720
 - ?: 278
-- Bmc Bioinformatics: 180
-- Plos One: 144
+- Lecture Notes In Computer Science (Including Sub: 274
+- Bmc Bioinformatics: 185
+- Plos One: 150
+- Acm International Conference Proceeding Series: 145
+- Ceur Workshop Proceedings: 142
 - Bioinformatics Advances: 95
-- Scientific Reports: 89
-- Briefings In Bioinformatics: 82
+- Scientific Reports: 93
+- Communications In Computer And Information Scien: 88
+- Briefings In Bioinformatics: 83
 - Septentrio Conference Series: 72
-- Siam Journal On Scientific Computing: 67
-- Ieee Transactions On Geoscience And Remote Sensi: 64
-- Plos Computational Biology: 62
-- Computers In Biology And Medicine: 56
 
-**By year:** 2008:15, 2009:25, 2010:34, 2011:37, 2012:51, 2013:62, 2014:102, 2015:160, 2016:196, 2017:303, 2018:328, 2019:471, 2020:502, 2021:635, 2022:698, 2023:822, 2024:895, 2025:1110
+**By year:** 2008:138, 2009:162, 2010:174, 2011:169, 2012:189, 2013:198, 2014:253, 2015:303, 2016:349, 2017:490, 2018:518, 2019:729, 2020:749, 2021:870, 2022:1009, 2023:1181, 2024:1329, 2025:1843
 
 ## Reading
 

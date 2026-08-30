@@ -278,3 +278,15 @@ Chronological record of major methodological decisions. Each entry: ID, date, co
 - **Result:** dimension means E1 2.00, E2 1.75, E3 2.00, E4 2.00, E5 2.00, E6 1.50. **Overall 1.62 → 1.86 / 2** (observed-only 1.76 → 1.85, n 17 → 20).
 - **Unchanged / still limiting:** E6 configuration complexity and technical-literacy (1 each); E2 provenance/artifact linkage (1 — one chain demonstrated, no automated lineage); the coordination layer's **collaborative** value (multi-author review, communication) remains untested.
 - **Affects:** `case-study/evaluation_scores.csv`, `case-study/evaluation.md`; `results/framework/eval_*`; `analysis/findings.csv` (F21), `analysis/synthesis.md`; `docs/PHASE9_PROGRESS.md`, `docs/OPEN_ITEMS.md`. **`manuscript/paper.tex` still carries the pre-re-score figures (Abstract, Results §3.3, Table 4, Methods §2.7, Limitations §4.6) and is updated in the manuscript pass (issue #6).**
+
+---
+
+## D24 — Scopus / Web of Science coverage cross-check executed
+
+- **Date:** 2026-09-30 · **Closes:** GitHub issue #11 · OPEN_ITEMS 2.8
+- **Context:** `D8` executed Track A on OpenAlex + arXiv and declared the coverage/precision trade-off versus Scopus/WoS as a limitation. Institutional access (FECYT) later became available, so the trade-off was measured rather than only asserted.
+- **Method:** the frozen `search_strings.md` queries Q1–Q4 were run in Web of Science (`TS=`, Full Record tab-delimited, ≤1,000-row batches) and Scopus (`TITLE-ABS-KEY` + `DOCTYPE(ar|re|cp)`, CSV), window 2008–2025. Raw exports (`data/raw/{wos,scopus}/`, `.gitignore`d) → `analysis/scripts/scopus_wos_crosscheck.py`.
+- **Result:** 18,250 raw → **13,586 de-duplicated in-window** records. Overlap with the OpenAlex + arXiv corpus: **22 % (2,933; 2,656 by DOI)**. Not in the corpus: 10,653; 2,175 corpus records not returned by these queries (OpenAlex indexes preprints and OA venues).
+- **Interpretation:** the divergence is dominated by Q3 (`"version control" OR git OR github OR gitlab`), 88 % of whose records are not in the corpus, and by WoS *Topic* also matching Keywords Plus / author keywords. The not-in-corpus set is concentrated in recent bioinformatics and CS tool papers that cite a GitHub repository and mention "workflow"/"reproducibility" (top venues: *Bioinformatics*, *BMC Bioinformatics*, LNCS, *PLoS ONE*) — the low-precision tail a title/abstract-anchored search deliberately excludes, not missed core literature on research-process infrastructure.
+- **Decision:** OpenAlex + arXiv stays the primary Track A corpus; the cross-check is reported as evidence for that choice, not a reason to re-run. `OPEN_ITEMS.md` 2.8 moves from *limitation* to *closed*; the `manuscript/paper.tex` wording in Methods §2.2 and Limitations §4.6 is updated in the manuscript pass (issue #6) from "not used, a limitation" to "cross-checked; 22 % DOI overlap; the delta is a characterised precision tail".
+- **Affects:** `literature/search_log.md`; `results/track_a/scopus_wos_crosscheck.md`, `xref_not_in_corpus.csv.gz`; `analysis/scripts/scopus_wos_crosscheck.py`; `.gitignore`; `docs/OPEN_ITEMS.md`; (deferred) `manuscript/paper.tex`, `analysis/findings.csv` F26.

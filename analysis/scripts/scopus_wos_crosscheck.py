@@ -16,6 +16,8 @@ Output:
 
 import csv
 import glob
+import gzip
+import io
 import os
 import re
 import sys
@@ -43,6 +45,14 @@ def yr4(v):
     return m.group(0) if m else ""
 
 
+def qtag(path):
+    for part in (os.path.basename(os.path.dirname(path)), os.path.basename(path)):
+        m = re.match(r"(Q\d+)", part, re.I)
+        if m:
+            return m.group(1).upper()
+    return "?"
+
+
 def read_wos(path):
     with open(path, encoding="utf-8-sig", newline="") as fh:
         rows = list(csv.reader(fh, delimiter="\t"))
@@ -51,7 +61,7 @@ def read_wos(path):
     idx = {}
     for i, name in enumerate(rows[0]):
         idx.setdefault(name.strip(), i)
-    q = os.path.basename(os.path.dirname(path)).split("_")[0] or "?"
+    q = qtag(path)
     out = []
     for r in rows[1:]:
         if not any(c.strip() for c in r):
@@ -72,7 +82,7 @@ def read_scopus(path):
     pick = lambda *c: next((km[x] for x in c if x in km), None)
     kd, kt, ky, ks, kx = (pick("doi"), pick("title"), pick("year"),
                           pick("source title"), pick("document type"))
-    q = os.path.basename(os.path.dirname(path)).split("_")[0] or "?"
+    q = qtag(path)
     return [{"src": "scopus", "q": q,
              "doi": r.get(kd, "") if kd else "", "title": r.get(kt, "") if kt else "",
              "year": yr4(r.get(ky, "") if ky else ""),
@@ -141,11 +151,14 @@ def main():
                    and (norm_title(c.get("title")), yr4(c.get("publication_year"))) not in x_ty]
 
     os.makedirs(OUT, exist_ok=True)
-    with open(os.path.join(OUT, "xref_not_in_corpus.csv"), "w", newline="", encoding="utf-8") as fh:
-        w = csv.writer(fh)
-        w.writerow(["src", "q", "doi", "year", "doctype", "venue", "title"])
-        for x in sorted(missing, key=lambda r: (r["year"], r["title"].lower())):
-            w.writerow([x["src"], x["q"], x["doi"], x["year"], x["doctype"], x["venue"], x["title"]])
+    # full list is ~2 MB -> gzip so it is git-friendly
+    buf = io.StringIO()
+    w = csv.writer(buf)
+    w.writerow(["src", "q", "doi", "year", "doctype", "venue", "title"])
+    for x in sorted(missing, key=lambda r: (r["year"], r["title"].lower())):
+        w.writerow([x["src"], x["q"], x["doi"], x["year"], x["doctype"], x["venue"], x["title"]])
+    with gzip.open(os.path.join(OUT, "xref_not_in_corpus.csv.gz"), "wt", encoding="utf-8", newline="") as fh:
+        fh.write(buf.getvalue())
 
     n = len(uniq)
     ov = 100 * len(matched) / n if n else 0
@@ -160,7 +173,7 @@ def main():
           f"- Overlap with the OpenAlex + arXiv corpus: **{len(matched)} ({ov:.0f}%)**  "
           f"(by DOI {hit_doi}, by title+year {hit_ty})",
           f"- WoS/Scopus records not in the corpus: **{len(missing)} ({100-ov:.0f}%)** "
-          f"— `xref_not_in_corpus.csv`",
+          f"— `xref_not_in_corpus.csv.gz`",
           f"- Corpus records not returned by these queries: {len(corpus_only)} of {len(corpus)} "
           f"(OpenAlex indexes preprints and OA venues; the open queries are phrased differently)\n",
           "## WoS/Scopus-only records — where they come from\n",

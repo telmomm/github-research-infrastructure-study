@@ -32,3 +32,6 @@ data/raw/scopus/
 
 # OS
 .DS_Store
+
+# Local build artifacts for Zenodo deposit (not versioned)
+dist/

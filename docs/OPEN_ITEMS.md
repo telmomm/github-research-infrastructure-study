@@ -21,7 +21,7 @@ Consolidates every "open / optional" item raised in `PHASE2–9_PROGRESS.md`. Ea
 | 2.5 | Factcheck `literature/references.bib` | **closed** | `phd-skills:factcheck` run; corrections applied; `literature/references_factcheck.md` |
 | 2.6 | Expand Track B with primary GitHub-in-research studies | **closed** | `literature/included_studies_primary.csv` (S53–S67, purposive) + `screening_notes.md`; does not change RE01–RE17; BibTeX for the cited subset generated at Phase 11 |
 | 2.7 | Second-coder reliability on requirement extraction (~20%) | **limitation** | Single-coder project; declared in `case-study/evaluation.md` §6 and the manuscript |
-| 2.8 | Scopus / WoS cross-check | **limitation** | No subscription access; OpenAlex coverage/precision trade-off declared; `DECISION_LOG.md` D8 |
+| 2.8 | Scopus / WoS cross-check | **closed** | Run 2026-09-30 via FECYT: WoS + Scopus Q1–Q4, 13,586 de-dup in-window records, **22% DOI overlap** with the corpus; the delta is a characterised precision tail (bioinformatics/CS tool papers via `git`/`github` + Keywords Plus). `DECISION_LOG.md` D24; `results/track_a/scopus_wos_crosscheck.md`. Issue #11. |
 
 ## Phase 3 — Requirements framework
 
@@ -91,8 +91,8 @@ Consolidates every "open / optional" item raised in `PHASE2–9_PROGRESS.md`. Ea
 
 | Status | Count | Items |
 |---|---|---|
-| **closed** | 19 | 2.1–2.6, 3.2, 4.1, 4.2, 5.1, 5.3, 6.1, 6.2, 7.1, 7.2, 7.3, 8.1, 9.2, 12.1 |
-| **limitation** (declared in the manuscript) | 5 | 2.7, 2.8, 3.1, 5.2, 9.1 — all reduce to "single-coder project" and "no Scopus/WoS access" |
+| **closed** | 20 | 2.1–2.6, 2.8, 3.2, 4.1, 4.2, 5.1, 5.3, 6.1, 6.2, 7.1, 7.2, 7.3, 8.1, 9.2, 12.1 |
+| **limitation** (declared in the manuscript) | 4 | 2.7, 3.1, 5.2, 9.1 — all reduce to "single-coder project" (no second rater) |
 | **user-task** (before submission) | 5 | 12.2–12.6 — GitHub issues #5–#9 |
 | **future-work** | 1 | 8.2 second-project external validity — GitHub issue #12 |
 
