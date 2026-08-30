@@ -18,8 +18,8 @@
 | 8 — Case study | **complete** — self-referential record in `case-study/`; 8/15 components exercised (`PHASE8_PROGRESS.md`, `DECISION_LOG.md` D14) |
 | 9 — Evaluation | **complete** — 6 dimensions scored, overall 1.62/2 (`case-study/evaluation.md`, `PHASE9_PROGRESS.md`, `DECISION_LOG.md` D15) |
 | 10 — Analysis | **complete** — 32-finding synthesis of RQ1–RQ5 (`analysis/synthesis.md`, `findings.csv`; `PHASE10_PROGRESS.md`, `DECISION_LOG.md` D19) |
-| 11 — Manuscript | next |
-| 12 | not started |
+| 11 — Manuscript | **complete (v1 draft)** — `manuscript/paper.tex`, 16 pp., compiles clean (`PHASE11_PROGRESS.md`, `DECISION_LOG.md` D20) |
+| 12 — Publication | **in progress** — v1.0.0 cut 2026-08-30 (`DECISION_LOG.md` D21); remaining: 3 user-tasks, Zenodo DOI, submission |
 
 ---
 

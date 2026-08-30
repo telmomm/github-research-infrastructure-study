@@ -8,6 +8,22 @@ Methodological decisions are logged separately in [`docs/DECISION_LOG.md`](docs/
 
 ## [Unreleased]
 
+### Working towards
+- Phase 12 — Publication: final review; complete the three `docs/OPEN_ITEMS.md` user-tasks (make the repo public, run one live Issue→PR→Release cycle, screenshot the Project); archive on Zenodo and add the DOI to `paper.tex` and `CITATION.cff`; submit to *Scientometrics*.
+
+### Carried to the manuscript (not blockers)
+- Limitations: single-coder project (no second rater on RE→RM, the 15 support scores, or the 21 evaluation sub-scores); no Scopus/WoS access (OpenAlex trade-off).
+- Future work: instantiate the template for an unrelated second project.
+
+---
+
+## [1.0.0] — 2026-08-30
+
+Roadmap Phases 3–11: the requirements framework, GitHub capability analysis and coverage
+mapping, the reference architecture and reusable template, the self-referential case study,
+the six-dimension evaluation, the RQ1–RQ5 synthesis, and a complete v1 manuscript for
+*Scientometrics*. Answers RQ1–RQ5. `DECISION_LOG.md` D6–D20.
+
 ### Added — Phase 3: Research Management Requirements Framework (RQ2)
 - `framework/requirements/requirements_framework.csv` — canonical set RM1–RM15 (id, name, category, definition, expected_capabilities, lifecycle stages, evidence, literature attention, importance, differentiator flag, relationships, limitations).
 - `framework/requirements/lifecycle_requirements_matrix.csv` — RM × 11 lifecycle stages, applicability 0–3.
@@ -108,13 +124,18 @@ Methodological decisions are logged separately in [`docs/DECISION_LOG.md`](docs/
 ### Changed
 - `docs/ROADMAP.md` — Phase 10 marked complete; `docs/README.md`, `analysis/README.md` updated.
 
-### Working towards
-- Phase 11 — Manuscript development (assemble Results and Discussion from `findings.csv`; write Introduction and Methods).
+### Added — Phase 11: Manuscript development
+- `manuscript/paper.tex` — complete v1 draft for *Scientometrics* (`sn-jnl`): Abstract, Introduction, Materials and Methods, Results (bibliometric map / requirements + coverage / architecture + template + feasibility), Discussion, Conclusions, Declarations. 16 pp., 4 tables, 3 figures; compiles clean (0 undefined citations/references).
+- `manuscript/references.bib` — 62 entries (52 from `literature/references.bib` + 10 primary GitHub-in-research studies cited).
+- `manuscript/figures/*.pdf` — architecture, traceability path and co-word map rendered from SVG; `manuscript/build.sh`.
+- `docs/PHASE11_PROGRESS.md`; `DECISION_LOG.md` D20.
 
-### Carried to the manuscript (not blockers)
-- Limitations: single-coder project (no second rater on RE→RM, the 15 support scores, or the 21 evaluation sub-scores); no Scopus/WoS access (OpenAlex trade-off).
-- User-tasks before submission: make the repo public; run one live Issue→PR→Release cycle; screenshot the Project; re-score E5/E6 afterwards.
-- Future work: instantiate the template for an unrelated second project.
+### Changed
+- `docs/ROADMAP.md` — Phase 11 marked complete (v1 draft); `docs/README.md` updated.
+
+### Added — Phase 12 preparation
+- `manuscript/build.sh`; `docs/OPEN_ITEMS.md` summary of the 3 pre-submission user-tasks.
+- `CITATION.cff` version → 1.0.0; `CHANGELOG.md` [Unreleased] promoted to [1.0.0]; `DECISION_LOG.md` D21.
 
 ---
 

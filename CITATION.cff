@@ -14,7 +14,7 @@ authors:
     email: "tmiguel@ubu.es"
     orcid: "https://orcid.org/0009-0004-0654-6650"
     affiliation: "Electromechanical Engineering Department, University of Burgos, Spain"
-version: "0.2.0"
+version: "1.0.0"
 date-released: "2026-08-30"
 license: "CC-BY-4.0"
 repository-code: "https://github.com/telmomm/github-research-infrastructure-study"

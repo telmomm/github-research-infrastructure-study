@@ -230,3 +230,25 @@ Chronological record of major methodological decisions. Each entry: ID, date, co
 - **Central analytical claim:** the RQ1 literature gap and the RQ3 coverage gap are the same gap reached independently; GitHub is a coordination/traceability *layer*, systematically strong execution-to-output and weak upstream.
 - **Rationale:** a typed, evidence-linked finding list keeps the Discussion honest (limitations and implications are first-class, not an afterthought) and makes Phase 11 a mechanical assembly rather than a fresh argument.
 - **Affects:** `analysis/synthesis.md`, `analysis/findings.csv`; `PHASE10_PROGRESS.md`; `analysis/scripts/synthesis_check.py`; `results/framework/synthesis_*`; the manuscript Results and Discussion.
+
+---
+
+## D20 — Manuscript: hybrid structure, assembled from `findings.csv`
+
+- **Date:** 2026-08-30
+- **Context:** Phase 11 writes the *Scientometrics* manuscript (`sn-jnl`, sn-mathphys-num).
+- **Decision:** Write `manuscript/paper.tex` as a complete v1 draft on the hybrid structure fixed in `PHASE1_PROJECT_DEFINITION.md` §9 (Introduction; Materials and Methods; Results 3.1 bibliometric map / 3.2 requirements + coverage / 3.3 architecture + template + feasibility; Discussion; Conclusions), with each Results/Discussion paragraph traceable to rows of `analysis/findings.csv`. Four tables (lifecycle stage-hits, RM1–RM15 + support, coverage by category + differentiators, evaluation) and three figures (co-word map, architecture, traceability path). `manuscript/references.bib` = the 52 `literature/references.bib` entries plus 10 primary GitHub-in-research studies actually cited. Figures rendered SVG→PDF with `rsvg-convert` via `manuscript/build.sh`.
+- **Rationale:** driving the prose from a typed, evidence-linked finding list keeps the claims aligned with the artifacts and makes the draft auditable against `xray`/`factcheck`.
+- **Status:** compiles clean (0 undefined citations/references, 16 pp.); ~6,000 words of body — expansion candidates listed in `PHASE11_PROGRESS.md`.
+- **Affects:** `manuscript/`; `PHASE11_PROGRESS.md`; `PAPER_PLAN.md` (design input; `paper.tex` is now the artifact); `FIGURES_AND_TABLES.md`.
+
+---
+
+## D21 — Release v1.0.0
+
+- **Date:** 2026-08-30
+- **Context:** Roadmap Phases 1–11 are complete: the requirements framework, capability catalogue and coverage mapping, reference architecture, reusable template, self-referential case study, six-dimension evaluation, RQ1–RQ5 synthesis, and a complete v1 *Scientometrics* manuscript that compiles clean. All closeable open items (`OPEN_ITEMS.md`) are closed.
+- **Decision:** Cut **v1.0.0**. `CHANGELOG.md` `[Unreleased]` promoted to `[1.0.0] — 2026-08-30`; `CITATION.cff` `version: 1.0.0`. This is the pre-submission research snapshot: it answers RQ1–RQ5 and packages every artifact needed to reproduce the study.
+- **Not in v1.0.0 (Phase 12):** the three pre-submission user-tasks (make the repository public, run one live Issue→PR→Release cycle, screenshot the Project), the Zenodo archive and DOI, the manuscript body expansion toward ~8,000 words, and the full `references.bib` check for the cited subset. These land in a later 1.x release.
+- **Rationale:** the scientific contribution is done and self-contained; tagging it fixes a citable state before the outward-facing publication steps, which depend on actions outside this working session.
+- **Affects:** `CHANGELOG.md`; `CITATION.cff`; `ROADMAP.md`; git tag `v1.0.0`.

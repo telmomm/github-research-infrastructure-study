@@ -27,8 +27,15 @@ A hybrid bibliometric + coverage-analysis study, targeted at *Scientometrics* (S
 
 ## Status
 
-Phase 1 (project definition) complete. Phase 2 (literature analysis): Track B (structured evidence review) complete; Track A (OpenAlex + arXiv bibliometric corpus, 5,139 works) first run done, analysis refinement open. Phase 3 (requirements framework) next. See [`docs/ROADMAP.md`](docs/ROADMAP.md) and [`docs/PHASE2_PROGRESS.md`](docs/PHASE2_PROGRESS.md).
+Phases 1–11 complete. Phase 12 (publication) next: final review, Zenodo archive + DOI, submission to *Scientometrics*. A full v1 manuscript is in [`manuscript/paper.tex`](manuscript/paper.tex) (16 pp., compiles clean). Per-phase status in [`docs/ROADMAP.md`](docs/ROADMAP.md); open items in [`docs/OPEN_ITEMS.md`](docs/OPEN_ITEMS.md).
 
 ## Related work
 
 Complements the prior [GitHub–Zenodo–ORCID reproducibility workflow](https://github.com/telmomm/github-zenodo-orcid-reproducibility-workflow): that study covers preservation of research *outputs*; this one covers management of the research *process*.
+
+## Citation
+Please cite the archived release on Zenodo.
+
+## Author
+Telmo Miguel-Medina  
+ORCID: [Telmo Miguel-Medina - 0009-0004-0654-6650](https://orcid.org/0009-0004-0654-6650)

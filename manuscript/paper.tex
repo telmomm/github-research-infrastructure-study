@@ -1,5 +1,4 @@
-
-\documentclass[pdflatex,sn-mathphys-num]{sn-jnl}% Math and Physical 
+\documentclass[pdflatex,sn-mathphys-num]{sn-jnl}% Math and Physical
 
 \usepackage{hyperref} % For clickable links
 \usepackage{graphicx}%
@@ -24,27 +23,280 @@
 
 \begin{document}
 
-\author*[1]{Telmo Miguel-Medina}\email{tmiguel@ubu.es}
+\author*[1]{\fnm{Telmo} \sur{Miguel-Medina}}\email{tmiguel@ubu.es}
 
 \affil[1]{\orgdiv{Electromechanical Engineering Department}, \orgname{University of Burgos}, \city{Burgos}, \country{Spain}}
 
-\title[From Code Repository to Research Infrastructure: Evaluating GitHub for Managing the Scientific Research Lifecycle]{From Code Repository to Research Infrastructure: Evaluating GitHub for Managing the Scientific Research Lifecycle}
+\title[From Code Repository to Research Infrastructure]{From Code Repository to Research Infrastructure: Evaluating GitHub for Managing the Scientific Research Lifecycle}
 
 \abstract{
-\textbf{Aims:} 
+\textbf{Aims:} Research projects generate interdependent artifacts that are usually managed across disconnected tools, with weak traceability of the process that produced the outputs. We ask to what extent GitHub's native functionalities can serve as an integrated infrastructure for managing scientific research projects across the research lifecycle.
 
-\textbf{Methods:} 
+\textbf{Methods:} A hybrid design. (i) A bibliometric analysis of a 5{,}139-work OpenAlex and arXiv corpus (2008--2025) on digital infrastructure for research-process management, mapped onto lifecycle stages. (ii) A structured review of 67 review, synthesis and primary studies from which fifteen research management requirements were extracted. (iii) A reproducible assessment of GitHub's 68 native capabilities against those requirements using a four-level rubric. (iv) A reference architecture and a reusable project template synthesised from the mapping. (v) A self-referential implementation of the framework on this study's own repository, evaluated on six dimensions.
 
-\textbf{Results:} 
+\textbf{Results:} The literature is output-biased: data management and analysis account for 50.8\% and 41.9\% of the corpus, against 3.7\% for idea and question formulation. GitHub supports 13 of 15 requirements at partial or better and 7 directly (mean 2.43 of 3 for the fourteen core requirements), with none unsupported, but support is direct where research resembles software engineering and partial or limited for research-specific traceability of questions, decisions and provenance --- the same three requirements the literature under-serves (mean 1.67 versus 2.50). Five requirements need external infrastructure. The reference architecture (15 components, 4 mandatory conventions) and a 33-file template operationalise the covered capabilities. In the self-referential case, the documentation, decision-log and version-control layer worked with near-zero overhead (overall evaluation 1.62 of 2; documentation and coverage at 2.0; usability lowest at 1.25), while the coordination layer was not exercised.
 
-\textbf{Conclusion:} 
+\textbf{Conclusion:} GitHub can serve as an integrated coordination and traceability \emph{layer} for a substantial part of the research lifecycle --- strong from execution to output, weak upstream, and dependent on complementary infrastructure for preservation and large data. It maps the research-process-management gap rather than closing it.
 
-
-\keywords{}
-
+\keywords{research infrastructure, research process management, scientific workflow, GitHub, version control, open science, bibliometrics, reproducibility}
 }
+
 \maketitle
-\section{Introduction}
+
+
+\section{Introduction}\label{sec:intro}
+
+\subsection{Complexity and artifact proliferation in modern research}\label{sec:complexity}
+
+A contemporary research project is a chain of interdependent objects: a research question, a protocol, a literature corpus, data, analysis code, a computational environment, intermediate results, figures, tables, a manuscript, a publication, released software and supplementary material. These objects evolve continuously and are produced by distributed, often multidisciplinary teams. Computational and data-intensive research has amplified both the number of artifacts and the need to keep them consistent with one another \citep{liew2016,liu2015,mattoso2015}.
+
+\subsection{Fragmentation of research-process management}\label{sec:fragmentation}
+
+In common practice these artifacts and the activities that generate them are spread across disconnected systems: email, cloud storage, local folders, spreadsheets, reference managers, statistical software, code repositories, task managers and manuscript editors. Each tool serves its local function, but the coordination layer between them is largely absent. Reviews of research data management, scholarly infrastructure and post-award reporting repeatedly associate this fragmentation with weak decision traceability, incomplete process documentation, inconsistent versioning, limited provenance and low project visibility \citep{perrier2017,donner2022,crane2023,tutko2022}.
+
+\subsection{Managing the process, not only archiving the outputs}\label{sec:process}
+
+Two decades of work on scientific workflow systems, provenance, research data management, virtual research environments and open-science platforms have produced mature evidence on \emph{output} stewardship --- repositories, persistent identifiers, curation, dissemination \citep{davidson2008,perez2018,ho2025,kirkham2020,mayernik2017}. The management of the research \emph{process} that produces those outputs --- planning, question formulation, decision tracking, cross-stage coordination --- has received comparatively little systematic, quantitative attention \citep{cox2018,holler2022,devkota2026}.
+
+\subsection{Code-hosting platforms beyond software}\label{sec:github}
+
+GitHub already provides primitives for coordination, versioning, issue tracking, structured discussion, review and automation. Guidance and case studies describe its use for versioned, collaborative and reproducible research in computational biology \citep{sandve2013,blischak2016,perezriverol2016}, ecology and evolution \citep{braga2023}, laboratory research \citep{chen2025}, and for developing community data standards \citep{crystalornelas2021}; its footprint in the scholarly record is itself growing and measurable \citep{escamilla2022}. Yet this evidence is case-based, and studies that mine GitHub as research data caution that its use is heterogeneous and often shallow \citep{kalliamvakou2016,trisovic2022}. Whether GitHub's primitives can be organised into an infrastructure for managing the research process, and which lifecycle stages such an infrastructure can actually cover, has not been established on an evidentiary basis.
+
+\subsection{Aim and research questions}\label{sec:rqs}
+
+The aim of this study is to characterise the literature on digital infrastructure for research-process management, derive a lifecycle-structured set of research management requirements, determine quantitatively how far GitHub's native functionalities cover them, consolidate the covered functionalities into a reusable reference architecture and template, and probe feasibility through a self-referential implementation. The study does not claim that GitHub replaces specialised research infrastructure.
+
+\begin{description}
+  \item[RQ1] How has the literature on digital infrastructure for managing the research process evolved in volume, disciplines, venues and thematic structure, and which lifecycle stages are under-represented?
+  \item[RQ2] What research project management requirements across the research lifecycle can be derived from this literature?
+  \item[RQ3] To what extent, with what support level and limitations, do GitHub's native functionalities cover these requirements, and how is coverage distributed across lifecycle stages?
+  \item[RQ4] How can the covered functionalities be organised into a coherent reusable reference architecture and project template?
+  \item[RQ5] What does a self-referential implementation, together with the reusable template, reveal about feasibility, traceability gains and limitations relative to a fragmented workflow?
+\end{description}
+
+
+\section{Materials and Methods}\label{sec:methods}
+
+\subsection{Overall design}\label{sec:design}
+
+The study is a multi-method evidence synthesis with three coupled components: a bibliometric analysis of the field (RQ1); a structured requirement extraction and a reproducible requirement--functionality coverage analysis (RQ2, RQ3); and a design synthesis with a single self-referential feasibility test (RQ4, RQ5). All datasets, coding sheets, mapping tables and analysis scripts are openly available (Section~\ref{sec:data-availability}); every table and figure in this paper is regenerated by a versioned script from those inputs.
+
+\subsection{Bibliometric corpus and analysis (RQ1)}\label{sec:m-biblio}
+
+The primary corpus was built from OpenAlex, which indexes journal articles, conference papers and preprints with abstracts, concepts and citations and is fully reproducible from a published query. Fifteen \texttt{title\_and\_abstract} queries combining a research-context term with a process-management or infrastructure term (for example \emph{``research workflow''}, \emph{``research data management''}, \emph{``version control''} + \emph{research}) were run with the filters \texttt{2008--2025} and document types article, review and proceedings-article. Five narrower arXiv queries supplemented the version-control and research-software strand. Records were de-duplicated on DOI then on normalised title and year, and data/software-repository deposits (Zenodo, Figshare and similar) were removed, yielding a corpus of \textbf{5{,}139 works}. Scopus and Web of Science were not used; the coverage and precision trade-off is a limitation (Section~\ref{sec:limitations}), and a heuristic precision estimate for the broadest queries was $\approx 0.94$.
+
+Analysis covered annual production, source and disciplinary profile, country distribution, and a keyword co-occurrence map. Corpus concepts and abstracts were then matched against an eleven-item lexicon of research-lifecycle stages (idea, question, planning, literature, methods, data, analysis, results, dissemination, outputs, governance) to produce a stage-hit profile. Because indexing of 2025 was incomplete at retrieval, growth statements use a 2008--2024 series.
+
+\subsection{Structured review and requirement extraction (RQ2)}\label{sec:m-review}
+
+The requirement extraction rests on a structured evidence base of \textbf{52 review, survey and synthesis papers} identified through a deep-search synthesis prioritising secondary literature, complemented by \textbf{15 purposively selected primary studies} of Git and GitHub use in research. From this base, literature challenges were traced to management needs and then to derived requirements following the chain \emph{finding $\rightarrow$ problem $\rightarrow$ need $\rightarrow$ requirement $\rightarrow$ category}. Seventeen requirement rows were extracted and consolidated, by thematic grouping and reconciliation with a provisional domain list, into a framework of fifteen requirements (RM1--RM15), each with a definition, expected capabilities, lifecycle stages, evidence, a category, and a relative importance. Requirements rated of high importance but weak in literature attention were flagged as \emph{differentiators}. Extraction was performed by a single coder; the absence of a second coder is a limitation.
+
+\subsection{GitHub capability catalogue and mapping rubric (RQ3)}\label{sec:m-catalogue}
+
+GitHub's \emph{native} functionality was catalogued as \textbf{68 capabilities in twelve feature groups} (repositories and Git, Markdown and documentation, Issues, Projects, Milestones, Labels, Discussions, Branches, Pull Requests, Actions, Releases and tags, and access/identity). Marketplace and third-party applications were excluded; the one retained non-native item is the GitHub--Zenodo release webhook, the de facto standard bridge for persistent identification. Each capability records its function, research use, the durable record it leaves, its plan availability (verified against GitHub documentation) and its limitations.
+
+Each requirement RM1--RM15 was then assigned the best support level GitHub's native functionality can reach with a reasonable implementation pattern, using a four-level rubric: \emph{Direct} (3) --- a native feature meets the requirement; \emph{Partial} (2) --- met with an additional process or convention on native features; \emph{Limited} (1) --- marginal support only; \emph{Not supported} (0). Every assignment carries an evidence note, the primary capabilities, an implementation pattern, and any external-tool dependency. A stricter variant capping convention-heavy support at Limited was scored as a robustness check.
+
+\subsection{Coverage indicators (RQ3)}\label{sec:m-coverage}
+
+From the mapping we computed the support distribution, the mean support overall and by requirement category, the mean for the differentiators versus the rest, the count of requirements needing external tools, and a lifecycle-coverage profile (support weighted by each requirement's applicability to each stage). Because one requirement (governance and sustainability) is only partly in scope, the headline mean is reported for the fourteen core requirements as well as for all fifteen.
+
+\subsection{Reference architecture and template (RQ4)}\label{sec:m-arch}
+
+The Direct- and Partial-support capabilities were synthesised into a layered reference architecture of named components, each a single GitHub configuration serving a set of requirements, together with the conventions that make generic features research-usable, a lifecycle model and seven workflow definitions. The architecture was operationalised as a discipline-independent GitHub template repository, with a manifest mapping every file to the components and requirements it serves.
+
+\subsection{Self-referential implementation and evaluation (RQ5)}\label{sec:m-eval}
+
+Following a self-referential design, the framework was applied to the development of this study; the repository is the evidence. Because the work was carried out as a single-author effort, the documentation, decision-log and version-control components were exercised natively while the Issue, Project and Pull Request coordination layer was configured but not used; the activity that would have populated those objects is recorded in a reconstructed register. Each architecture component was classified by implementation status. The framework was then evaluated on six dimensions --- requirement coverage, traceability, documentation, organization, transparency, usability --- with 21 sub-scores on a 0/1/2 scale, each tagged as observed, retrospective, design-support or planned. A conventional fragmented workflow was contrasted with the framework across six traceability and visibility dimensions.
+
+
+\section{Results}\label{sec:results}
+
+\subsection{Bibliometric map of the field (RQ1)}\label{sec:r-biblio}
+
+The literature is an assembly of partially connected strands --- scientific workflow systems, research data management, provenance, research information systems, open science and version control --- rather than one field. In the 5{,}139-work corpus, annual output rises nearly tenfold between 2008 and 2024. Publications concentrate in computer science, library and information science and the biomedical literature; the leading venues after removing repository deposits are the \emph{International Journal of Digital Curation}, \emph{Concurrency and Computation}, \emph{Future Generation Computer Systems}, \emph{F1000Research} and \emph{PLoS ONE}, and the leading countries are the United States, Germany, the United Kingdom, China and the Netherlands. The keyword co-occurrence map (Figure~\ref{fig:coword}) shows the corpus spanning computer science, data science, knowledge management and the social sciences, with workflow, provenance and research data management as recurring bridging terms.
+
+The stage-hit profile is markedly uneven (Table~\ref{tab:lifecycle}). Data management and analysis dominate (50.8\% and 41.9\% of the corpus); dissemination and coordination follow (24.4\% and 21.1\%); and idea and question formulation are at the bottom (3.7\%), with provenance at 7.0\%. A stage-level reading rates seven of fifteen lifecycle stages as thinly covered: idea, question, planning, ethics review, post-publication traceability, cross-stage coordination and governance. The structured review of 52 secondary studies reproduces the same bias independently.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{figures/coword_map.pdf}
+\caption{Keyword co-occurrence map of the 5{,}139-work corpus (top concepts; edges are strong co-occurrences). The field spans computer science, data science, information management and the social sciences, bridged by workflow, provenance and research data management.}\label{fig:coword}
+\end{figure}
+
+\begin{table}[h]
+\caption{Research-lifecycle stage coverage in the bibliometric corpus (RQ1). Share of the 5{,}139-work corpus whose concepts or abstract match the stage lexicon.}\label{tab:lifecycle}
+\begin{tabular}{@{}lr@{\hskip 2em}lr@{}}
+\toprule
+Stage & \% of corpus & Stage & \% of corpus \\
+\midrule
+Data management        & 50.8 & Planning                 & 12.7 \\
+Analysis / workflow     & 41.9 & Literature               & 10.0 \\
+Dissemination           & 24.4 & Outputs / identification & 11.9 \\
+Coordination            & 21.1 & Governance               & 10.9 \\
+Methods / protocol      & 13.7 & Provenance               & 7.0  \\
+                        &      & Idea / question          & \textbf{3.7} \\
+\botrule
+\end{tabular}
+\end{table}
+
+\subsection{Requirements and GitHub coverage (RQ2, RQ3)}\label{sec:r-coverage}
+
+\paragraph{Requirements (RQ2).} Fifteen requirements were derived (Table~\ref{tab:requirements}), concentrated in traceability (four), documentation (three) and collaboration (two). Three requirements --- research planning (RM1), research-question management (RM2) and decision traceability (RM5) --- are of high importance yet weakly attended to in the literature; these differentiators define the gap the study targets. The requirements are interdependent: provenance (RM10) consumes RM2, RM4, RM5, RM8 and RM9, and transparency (RM11) is an emergent property of RM4, RM5, RM8 and RM10.
+
+\paragraph{Coverage (RQ3).} GitHub supports \textbf{13 of 15 requirements at Partial or better and 7 at Direct}, with none unsupported. The mean support is \textbf{2.43 of 3} for the fourteen core requirements (2.33 for all fifteen). Support is Direct where research work resembles software engineering --- task management, review-based collaboration, communication, version control, documentation, transparency and automation, all with category means of 3.0 --- and Partial or Limited for research-specific traceability (RM2 Limited; RM5 and RM10 Partial), planning (RM1 Partial) and governance (RM15 Limited) (Table~\ref{tab:coverage}). The differentiator requirements have a mean support of \textbf{1.67 against 2.50} for the rest: the upstream gap seen bibliometrically in RQ1 reappears, independently, in GitHub's coverage.
+
+Five requirements cannot be met by GitHub alone --- version control of large data (RM8), integration across heterogeneous tools (RM9), reproducibility (RM12), persistent identification and preservation (RM14) and governance (RM15) --- and require external infrastructure. The lifecycle-coverage profile is comparatively flat (weighted mean support 2.1--2.4 per stage) but lowest at idea (2.12) and question (2.25) and highest at literature, analysis and manuscript, echoing the RQ1 shape. Issues and the Git repository carry most of the framework; Projects, Actions, Discussions, Branches and Releases each contribute to only a few requirements. Under the stricter rubric the overall mean falls to 2.13, but the distribution (7 Direct, 3 Partial, 5 Limited, 0 unsupported) and the qualitative conclusion are unchanged.
+
+\begin{table}[h]
+\caption{Research management requirements (RQ2) and their GitHub support level (RQ3). Support: D~Direct, P~Partial, L~Limited. $\star$~differentiator (high importance, weak literature attention).}\label{tab:requirements}
+\begin{tabular}{@{}llcc@{}}
+\toprule
+ID & Requirement & Category & Support \\
+\midrule
+RM1$^\star$  & Research planning and roadmap        & Planning       & P \\
+RM2$^\star$  & Research question management         & Traceability   & L \\
+RM3   & Task management                     & Execution      & D \\
+RM4   & Documentation                      & Documentation  & D \\
+RM5$^\star$  & Decision traceability               & Traceability   & P \\
+RM6   & Collaboration and contribution tracking & Collaboration & D \\
+RM7   & Communication                      & Collaboration  & D \\
+RM8   & Version control                    & Traceability   & D \\
+RM9   & Research artifact management and integration & Artifact mgmt & P \\
+RM10  & Research provenance and artifact linkage & Traceability & P \\
+RM11  & Transparency                      & Documentation  & D \\
+RM12  & Reproducibility support            & Documentation  & P \\
+RM13  & Automation                        & Automation     & D \\
+RM14  & Research output management and identification & Output mgmt & P \\
+RM15  & Governance and sustainability      & Cross-cutting  & L \\
+\botrule
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\caption{GitHub coverage by requirement category and for the differentiators (RQ3). Mean support on a 0--3 scale.}\label{tab:coverage}
+\begin{tabular}{@{}lcc@{}}
+\toprule
+Grouping & $n$ & Mean support \\
+\midrule
+Execution / Collaboration / Automation & 4 & 3.00 \\
+Documentation                          & 3 & 2.67 \\
+Planning / Traceability / Artifact mgmt / Output mgmt & 7 & 2.00 \\
+Governance                             & 1 & 1.00 \\
+\midrule
+Differentiators (RM1, RM2, RM5)        & 3 & \textbf{1.67} \\
+All other requirements                 & 12 & 2.50 \\
+\midrule
+Overall (core 14) & 14 & 2.43 \\
+Overall (full 15) & 15 & 2.33 \\
+Overall, stricter rubric & 15 & 2.13 \\
+\botrule
+\end{tabular}
+\end{table}
+
+\subsection{Reference architecture, template and feasibility (RQ4, RQ5)}\label{sec:r-arch}
+
+\paragraph{Architecture (RQ4).} The covered capabilities organise into a \textbf{15-component, five-layer architecture} (Figure~\ref{fig:arch}) in which GitHub is a coordination and traceability layer, not a container: coordination (research plan, activity tracker, question register, discussion space), record (documentation set, decision log, linkage discipline, change history), production (artifact workspace, review workflow, automation suite), release (release process, archival bridge, governance setup) and a cross-cutting transparency surface. Every requirement is served by at least one component. One component --- \emph{linkage discipline} (mandatory cross-referencing of every commit, pull request and issue) --- and four named conventions (a phased plan of record, a question register, a decision-record convention and the linkage discipline itself) are the framework's contribution over a plain repository: they are what lift RM1, RM2, RM5 and RM10 from raw features toward research-usable support. The end-to-end traceability path they produce is shown in Figure~\ref{fig:trace}. Seven workflow definitions specify the concrete step sequences (registering a research question, executing a task, recording a decision, reviewing an artifact, releasing and archiving, checking reproducibility, onboarding).
+
+\paragraph{Template (RQ4).} The architecture is operationalised as a \textbf{33-file discipline-independent template}: a repository skeleton, a documentation set that states the four conventions, three issue forms, a pull-request checklist, a label set, Project field definitions, starter automation and a release checklist. A manifest maps every file to the components and requirements it serves; all fifteen requirements are covered.
+
+\paragraph{Feasibility (RQ5).} In the self-referential implementation, \textbf{8 of 15 components were exercised} natively or partially. The record layer (23 documentation files, 19 logged decisions), the artifact workspace and version control were realised at full strength; the coordination layer (Issues, Project, Pull Requests) was configured but not used under single-author conditions. The six-dimension evaluation (Table~\ref{tab:eval}) scores \textbf{1.62 of 2 overall} (1.76 for the seventeen observed sub-scores): requirement coverage and documentation reach 2.0, and usability is lowest at 1.25 --- driven by configuration complexity, the assumed Git/Markdown literacy, and coordination-layer overhead that a solo effort does not incur or test. Against a fragmented workflow (Table~\ref{tab:comparison}), the framework's benefit is concentrated in linking artifacts that would otherwise stay disconnected --- decision rationale, version history and the question-to-result chain become reconstructable --- and its cost is concentrated in the coordination layer.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{figures/fig3_architecture.pdf}
+\caption{GitHub-based research management reference architecture (RQ4): five layers, fifteen components. GitHub acts as a coordination and traceability layer; large data, computational environments, persistent identifiers and institutional governance remain external and are linked by reference.}\label{fig:arch}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{figures/fig4_traceability.pdf}
+\caption{End-to-end traceability path produced by the linkage-discipline convention: a research-question issue is referenced by the method issue, whose branch and commits feed a reviewed pull request, whose result feeds the manuscript and a tagged release archived with a DOI. Any node is reachable from any other via recorded cross-references.}\label{fig:trace}
+\end{figure}
+
+\begin{table}[h]
+\caption{Framework evaluation on six dimensions (RQ5), 0--2 scale, from the self-referential case study. ``Observed'' marks sub-scores evidenced by the actual repository state.}\label{tab:eval}
+\begin{tabular}{@{}llc@{}}
+\toprule
+Dimension & Basis & Score \\
+\midrule
+E1 Requirement coverage & design-support & 2.00 \\
+E2 Traceability         & mostly observed & 1.50 \\
+E3 Documentation        & observed & 2.00 \\
+E4 Organization         & observed & 1.75 \\
+E5 Transparency         & observed; external visibility planned & 1.50 \\
+E6 Usability            & observed & 1.25 \\
+\midrule
+Overall (21 sub-scores) & & \textbf{1.62} \\
+Overall, observed only (17) & & 1.76 \\
+\botrule
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\caption{Fragmented workflow versus the GitHub-based framework (RQ5).}\label{tab:comparison}
+\begin{tabular}{@{}p{2.4cm}p{4.6cm}p{4.6cm}@{}}
+\toprule
+Dimension & Fragmented workflow & GitHub-based framework \\
+\midrule
+Task traceability & tasks disconnected from the artifacts they produce & issues plus board plus closing keywords bind task to commit to pull request \\
+Decision traceability & decisions in email and notes, rationale lost & numbered decision log plus decision issue, with rationale and affected artifacts \\
+Version traceability & files renamed ``final''; no history & Git line-level history, diff, restore, tags \\
+Documentation & scattered documents; drift; no history & version-controlled Markdown from project start, with per-folder READMEs \\
+Research provenance & no systematic link between question, data and result & cross-references and timelines assemble the chain; release notes inherit it \\
+Project visibility & known only to the email loop & public repository plus status, activity log and changelog \\
+\botrule
+\end{tabular}
+\end{table}
+
+
+\section{Discussion}\label{sec:discussion}
+
+\subsection{Principal findings}\label{sec:d-principal}
+
+The study's central result is a convergence. The gap identified bibliometrically in RQ1 --- the literature under-serves idea and question formulation, planning and decision traceability --- and the gap measured in RQ3 --- GitHub supports those same requirements at 1.67 against 2.50 for the rest --- are the same gap, reached by two independent routes. GitHub covers the execution-to-output span of the research lifecycle well and the upstream, research-specific layer poorly; the partiality is systematic, not incidental.
+
+\subsection{GitHub as a coordination and traceability layer}\label{sec:d-layer}
+
+Where research work can be expressed as files under version control, discrete tasks, branch-and-review changes and event-triggered automation, GitHub offers mature, purpose-built support, and the self-referential implementation confirms that this layer is low-cost: a full plan of record, nineteen logged decisions and a reproducible analysis pipeline were produced without coordination overhead. Where the object of management is the evolving intellectual process --- the questions asked, the choices made and why --- GitHub offers only generic features on which a discipline must be imposed. The framework's contribution is to name that discipline: a mandatory linkage convention and three record conventions that make a plain repository into a traceable one. Even so, the differentiator requirements remain Partial or Limited; the framework maps the gap rather than closing it.
+
+\subsection{Which lifecycle stages benefit}\label{sec:d-lifecycle}
+
+Both the literature and GitHub's coverage are weakest at the earliest stages. The execution-to-output span --- methods, data, analysis, results, manuscript, release --- benefits most, because its artifacts are files and its activities are changes. The idea, question and planning stages benefit least, because they are deliberative and their ``artifacts'' are decisions. This is where tool development and reporting standards --- for decision records and research-question provenance --- would have the most leverage.
+
+\subsection{Practical implications}\label{sec:d-practical}
+
+For an individual researcher or a small group, the practical recommendation is to adopt the record and version-control layer first: a version-controlled \texttt{docs} directory, a decision log and disciplined commit messages deliver most of the traceability benefit at little cost. The Issue, Project and Pull Request layer should be added when the project has collaborators, where its coordination value accrues and its overhead is justified. The 33-file template lowers the setup cost of both.
+
+\subsection{Relationship with output-preservation workflows}\label{sec:d-relationship}
+
+This study addresses the management of the research process; a complementary line of work addresses the preservation and persistent identification of research \emph{outputs} through GitHub, Zenodo and ORCID. The two are the upstream and downstream halves of one lifecycle: the framework's release and archival-bridge components hand a versioned, cross-referenced record to an external archive that assigns a DOI. GitHub-based process management extends, rather than replaces, the open-science tooling around outputs.
+
+\subsection{Limitations}\label{sec:limitations}
+
+Six limitations bound the findings. First, the framework maps the upstream gap but does not close it: RM1, RM2 and RM5 stay Partial or Limited even with the prescribed conventions. Second, the coordination layer's collaborative benefit is unproven: the single-author implementation meant that RM6, RM7 and the Issue/Project/Pull Request layer were scored on design support, not observed use. Third, the evaluation is single-case, self-referential, scored by a single coder, on a repository not yet public; the requirement extraction and the support scores likewise had no second rater. Fourth, the bibliometric corpus is built from OpenAlex and arXiv rather than Scopus or Web of Science, trading precision for openness and reproducibility (broad-query precision $\approx 0.94$). Fifth, roughly a third of the coverage rests on mandatory convention rather than native features, as the stricter-rubric mean of 2.13 shows. Sixth, GitHub is not a complete research infrastructure: persistent identifiers and preservation, computational environments, large datasets and institutional governance are all external.
+
+\subsection{Future research}\label{sec:d-future}
+
+Three directions follow. A multi-author, multi-project evaluation would test the coordination layer's collaborative value and the framework's transferability across disciplines. Instrumenting the linkage-discipline convention --- automatically checking that commits, pull requests and issues cross-reference their research question and decisions --- would move provenance from a manual practice toward a verifiable one. And a bibliometric follow-up on the upstream stages specifically would quantify whether the idea/question/planning gap is beginning to close as AI-assisted planning and digital ethics platforms mature.
+
+
+\section{Conclusions}\label{sec:conclusions}
+
+GitHub can serve as an integrated coordination and traceability \emph{layer} for a substantial part of the scientific research lifecycle. It supports thirteen of fifteen literature-derived research management requirements at partial or better and seven directly, with none unsupported; it is strong from execution to output and for research that resembles software engineering; and it is weak for the upstream, research-specific traceability of questions, decisions and provenance --- the very requirements the literature also under-serves. Five requirements need complementary external infrastructure. A fifteen-component reference architecture, four mandatory conventions and a thirty-three-file template operationalise what GitHub covers, and a self-referential implementation shows that its documentation and version-control layer works at near-zero overhead while the collaborative value of its coordination layer remains to be demonstrated. GitHub maps the research-process-management gap rather than closing it, and it is best understood not as a replacement for research infrastructure but as the coordination and traceability layer that a fragmented set of research tools currently lacks.
+
+
+\section*{Declarations}
+
+\subsection*{Data and code availability}\label{sec:data-availability}
+The bibliographic corpus, coding sheets, requirement and mapping tables, reference architecture, template and all analysis scripts are openly available in the study repository at \url{https://github.com/telmomm/github-research-infrastructure-study} and will be archived with a DOI on Zenodo at release. Every table and figure in this paper is regenerated from those inputs by a versioned script.
+
+\subsection*{Competing interests}
+The author declares no competing interests.
+
+\subsection*{Funding}
+This research received no specific grant from any funding agency.
+
 
 \bibliography{references}
 
