@@ -14,3 +14,6 @@ jobs:
         with:
           use-quiet-mode: "yes"
           config-file: ".github/mlc-config.json"
+          # PRs check only their own changed Markdown; the weekly cron sweeps the whole repo.
+          check-modified-files-only: ${{ github.event_name == 'pull_request' && 'yes' || 'no' }}
+          base-branch: "main"

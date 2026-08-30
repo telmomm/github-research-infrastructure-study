@@ -5,14 +5,13 @@
 
 ## Implementation status
 
-- native: 6  (A1 A3 B1 B2 B4 C1)
-- partial: 2  (B3 C3)
-- config: 3  (C2 D1 D3)
-- retrospective: 1  (A2)
+- native: 7  (A1 A2 A3 B1 B2 B4 C1)
+- partial: 4  (B3 C2 C3 D1)
+- config: 1  (D3)
 - planned: 3  (A4 D2 X1)
 
-- Components exercised (native/partial): 8 / 15 — A1 A3 B1 B2 B3 B4 C1 C3
-- Requirements with **no** exercised component: RM6, RM7, RM14, RM15
+- Components exercised (native/partial): 11 / 15 — A1 A2 A3 B1 B2 B3 B4 C1 C2 C3 D1
+- Requirements with **no** exercised component: RM7, RM15
 
 ## Register status
 

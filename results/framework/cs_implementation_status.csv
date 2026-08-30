@@ -1,6 +1,6 @@
 comp_id,name,layer,status
 A1,Research Plan,Coordination,native
-A2,Activity Tracker,Coordination,retrospective
+A2,Activity Tracker,Coordination,native
 A3,Question Register,Coordination,native
 A4,Discussion Space,Coordination,planned
 B1,Documentation Set,Record,native
@@ -8,9 +8,9 @@ B2,Decision Log,Record,native
 B3,Linkage Discipline,Record,partial
 B4,Change History,Record,native
 C1,Artifact Workspace,Production,native
-C2,Review Workflow,Production,config
+C2,Review Workflow,Production,partial
 C3,Automation Suite,Production,partial
-D1,Release Process,Release,config
+D1,Release Process,Release,partial
 D2,Archival Bridge,Release,planned
 D3,Governance Setup,Release,config
 X1,Transparency Surface,Cross-cutting,planned

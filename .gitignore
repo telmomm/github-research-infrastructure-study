@@ -25,5 +25,8 @@ data/raw/openalex/*.jsonl
 data/raw/openalex/*.csv
 data/raw/arxiv/*.csv
 
+# Claude Code local config — not part of the research artifact
+.claude/
+
 # OS
 .DS_Store

@@ -64,7 +64,7 @@ Consolidates every "open / optional" item raised in `PHASE2–9_PROGRESS.md`. Ea
 
 | # | Item | Status | Resolution |
 |---|---|---|---|
-| 8.1 | Run one real Issue→PR→Release cycle | **user-task** | Needs GitHub write access — do before submission to demonstrate the coordination layer |
+| 8.1 | Run one real Issue→PR→Release cycle | **closed** | One full cycle run (issue #2 → branch → PR → merge → `v1.1.0` Release). `case-study/live_cycle_demo.md`; `implementation_record.csv` A2 → native, C2/D1 → partial; 11/15 components now exercised. |
 | 8.2 | Instantiate the template for a second project | **future-work** | External-validity study |
 
 ## Phase 9 — Evaluation
