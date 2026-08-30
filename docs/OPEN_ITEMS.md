@@ -65,7 +65,7 @@ Consolidates every "open / optional" item raised in `PHASE2–9_PROGRESS.md`. Ea
 | # | Item | Status | Resolution |
 |---|---|---|---|
 | 8.1 | Run one real Issue→PR→Release cycle | **closed** | One full cycle run (issue #2 → branch → PR → merge → `v1.1.0` Release). `case-study/live_cycle_demo.md`; `implementation_record.csv` A2 → native, C2/D1 → partial; 11/15 components now exercised. |
-| 8.2 | Instantiate the template for a second project | **future-work** | External-validity study |
+| 8.2 | Instantiate the template for a second project | **closed** | Retrospective instantiation on *PreMoCir* (clinical-ML mortality prediction, *Sensors* **26**(5):1656 2026; notebooks Zenodo 10.5281/zenodo.18249069). Structural / coverage test over RM1–RM15: **8 covered / 3 convention / 4 external**, same profile as the self-referential case → supports discipline-independence. `case-study/external_validity.md`, `case-study/external_validity_mapping.csv`, `results/framework/external_validity_summary.md`; `DECISION_LOG.md` D25. Retrospective single-case (same lead author) — a prospective instantiation stays as future work. Issue #12. |
 
 ## Phase 9 — Evaluation
 
@@ -91,11 +91,11 @@ Consolidates every "open / optional" item raised in `PHASE2–9_PROGRESS.md`. Ea
 
 | Status | Count | Items |
 |---|---|---|
-| **closed** | 20 | 2.1–2.6, 2.8, 3.2, 4.1, 4.2, 5.1, 5.3, 6.1, 6.2, 7.1, 7.2, 7.3, 8.1, 9.2, 12.1 |
+| **closed** | 21 | 2.1–2.6, 2.8, 3.2, 4.1, 4.2, 5.1, 5.3, 6.1, 6.2, 7.1, 7.2, 7.3, 8.1, 8.2, 9.2, 12.1 |
 | **limitation** (declared in the manuscript) | 4 | 2.7, 3.1, 5.2, 9.1 — all reduce to "single-coder project" (no second rater) |
 | **user-task** (before submission) | 5 | 12.2–12.6 — GitHub issues #5–#9 |
-| **future-work** | 1 | 8.2 second-project external validity — GitHub issue #12 |
+| **future-work** | 0 | — (8.2 closed retrospectively; a *prospective* second-project instantiation is noted as future work in `case-study/external_validity.md` §5) |
 
-Tracked as GitHub issues #1–#12 (milestone *Phase 12 – Publication*). The 5 limitations
-and 1 future-work item are recorded in `case-study/evaluation.md` §6 and appear in the
-manuscript's Limitations and Future Research.
+Tracked as GitHub issues #1–#12 (milestone *Phase 12 – Publication*). The 4 limitations
+are recorded in `case-study/evaluation.md` §6 and appear in the manuscript's Limitations;
+the prospective-instantiation future-work line is in `case-study/external_validity.md` §5.

@@ -20,6 +20,7 @@ Scripts that regenerate the study's tables and figures from the versioned datase
 | `scripts/summarise_case_study.py` | `case-study/*.csv` + `framework/architecture/` + `framework/mapping/` | `results/framework/cs_*.csv`, `case_study_summary.md` (exits non-zero on a broken reference) |
 | `scripts/evaluation_summary.py` | `case-study/evaluation_scores.csv` + `framework/mapping/requirement_feature_matrix.csv` | `results/framework/eval_*.csv`, `evaluation_summary.md` |
 | `scripts/synthesis_check.py` | `analysis/findings.csv` | `results/framework/synthesis_*.csv`, `synthesis_summary.md` (exits non-zero on a missing evidence path) |
+| `scripts/summarise_external_validity.py` | `case-study/external_validity_mapping.csv` | `results/framework/external_validity_summary.md` (RM1–RM15 status tally; exits non-zero on a missing RM row) |
 
 ## Phase 10 synthesis
 
