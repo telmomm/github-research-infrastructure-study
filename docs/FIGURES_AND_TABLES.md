@@ -94,6 +94,20 @@ Projects + Issues + Documentation + Version Control
 
 ---
 
+## Figure 6 (supplementary)
+
+### The study's GitHub Project in use
+
+*Source: `manuscript/figures/project-board.png` (board view grouped by Status) and
+`manuscript/figures/project-roadmap.png` (roadmap view grouped by Research phase),
+captured from the configured Project with issues #1–#12. Evidence for RQ5 (component
+A1/A2 exercised) and for the case-study record. Closes `OPEN_ITEMS.md` 7.3.*
+
+> **Note:** `project-roadmap.png` currently duplicates `project-board.png`; recapture the
+> roadmap view before using it as a second panel, or ship the board panel alone.
+
+---
+
 # Proposed Tables
 
 ## Table 1

@@ -58,7 +58,7 @@ Consolidates every "open / optional" item raised in `PHASE2–9_PROGRESS.md`. Ea
 |---|---|---|---|
 | 7.1 | REUSE-style `LICENSES/` directory | **closed** | `LICENSES/MIT.txt`, `LICENSES/CC-BY-4.0.txt` + `REUSE.toml` in the study repo and the template; root `LICENSE` explains the split |
 | 7.2 | Optional `label-sync` workflow | **closed** | `.github/workflows/label-sync.yml` added to the template and this repo |
-| 7.3 | Screenshot the configured Project | **user-task** | Needs a live GitHub Project — before submission |
+| 7.3 | Screenshot the configured Project | **closed** | Project #2 configured (fields per `.github/project-fields.md`, issues #1–#12 added); `manuscript/figures/project-board.png` (+ roadmap panel to recapture). `FIGURES_AND_TABLES.md` Figure 6. Issue #1. |
 
 ## Phase 8 — Case study
 
@@ -80,11 +80,11 @@ Consolidates every "open / optional" item raised in `PHASE2–9_PROGRESS.md`. Ea
 
 | Status | Count | Items |
 |---|---|---|
-| **closed** | 15 | 2.1–2.6, 3.2, 4.1, 4.2, 5.1, 5.3, 6.1, 6.2, 7.1, 7.2 |
+| **closed** | 16 | 2.1–2.6, 3.2, 4.1, 4.2, 5.1, 5.3, 6.1, 6.2, 7.1, 7.2, 7.3 |
 | **limitation** (declared in the manuscript) | 5 | 2.7, 2.8, 3.1, 5.2, 9.1 — all reduce to "single-coder project" and "no Scopus/WoS access" |
-| **user-task** (before submission) | 3 | 7.3 Project screenshot · 8.1 one live Issue→PR→Release cycle · 9.2 re-score E5/E6 after repo is public |
+| **user-task** (before submission) | 2 | 8.1 one live Issue→PR→Release cycle · 9.2 re-score E5/E6 after repo is public |
 | **future-work** | 1 | 8.2 second-project external validity |
 
-Every closeable item is closed. The 5 limitations and 1 future-work item are recorded in
-`case-study/evaluation.md` §6 and will appear in the manuscript's Limitations and Future Research.
-The 3 user-tasks need the author's GitHub actions and are not blockers for Phase 10.
+Tracked as GitHub issues #1–#12 (milestone *Phase 12 – Publication*). The 5 limitations
+and 1 future-work item are recorded in `case-study/evaluation.md` §6 and appear in the
+manuscript's Limitations and Future Research.
