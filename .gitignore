@@ -24,6 +24,8 @@ __pycache__/
 data/raw/openalex/*.jsonl
 data/raw/openalex/*.csv
 data/raw/arxiv/*.csv
+data/raw/wos/
+data/raw/scopus/
 
 # Claude Code local config — not part of the research artifact
 .claude/
