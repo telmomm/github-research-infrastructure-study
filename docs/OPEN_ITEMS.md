@@ -80,11 +80,11 @@ Consolidates every "open / optional" item raised in `PHASE2–9_PROGRESS.md`. Ea
 | # | Item | Status | Resolution |
 |---|---|---|---|
 | 12.1 | Make the repository public | **closed** | `DECISION_LOG.md` D22; `implementation_record.csv` X1/D3 → partial; 13/15 components exercised. Issue #4. |
-| 12.2 | Wire the Zenodo DOI into the manuscript | **user-task** | DOI in `CITATION.cff` / README; add to `paper.tex` data-availability — GitHub issue #5 |
-| 12.3 | Expand manuscript body toward ~8,000 words | **user-task** | GitHub issue #6 |
-| 12.4 | Full `references.bib` check for the cited subset | **user-task** | GitHub issue #7 |
-| 12.5 | Publication-quality vector figures 3 & 4 | **user-task** | GitHub issue #8 |
-| 12.6 | Cover letter + Scientometrics submission checklist | **user-task** | GitHub issue #9 |
+| 12.2 | Wire the Zenodo DOI into the manuscript | **closed** | `paper.tex` data-availability statement now cites the software DOI 10.5281/zenodo.22167500 and the companion dataset DOI 10.5281/zenodo.22173525; matches `CITATION.cff` `identifiers:` and the README badge. Fresh release for the submitted version stays a user step (`.github/release-checklist.md`). Issue #5. |
+| 12.3 | Expand manuscript body toward ~8,000 words | **closed** | Body 3.7k → 4.9k words: added a per-strand related-work subsection (§1.4), expanded Methods 2.2 (query strands, PRISMA-style de-dup chain, Scopus/WoS cross-check) and 2.3 (evidence base, re-code), a per-requirement narrative in Results 3.2, and an external-validity paragraph in 3.3. Also reconciled all stale figures: evaluation 1.62→**1.86**, 8/15→**13/15** components, usability 1.25→**1.50**, Table 4, `tab:eval` caption; Scopus/WoS "not used"→cross-checked (22% DOI overlap, D24); single-coder→re-code mitigation (D26); external validity (D25). `analysis/findings.csv` F26 reworded. `latexmk` clean, 19 pp. Issue #6. |
+| 12.4 | Full `references.bib` check for the cited subset | **closed** | All 24 cited entries in `manuscript/references.bib` verified against Crossref; `chen2025` issue 3→2, 15 entries gained missing `number`/`pages`, `escamilla2022` LNCS 13541 confirmed. `latexmk` clean (bibtex 0 warnings, no undefined citations). `literature/references_factcheck.md` "Phase 12" section. Issue #7. |
+| 12.5 | Publication-quality vector figures 3 & 4 | **user-task** | Redraw of `fig3_architecture.svg` / `fig4_traceability.svg` in progress by the author; `build.sh` already renders SVG→PDF. GitHub issue #8 (open). |
+| 12.6 | Cover letter + Scientometrics submission checklist | **closed** | `manuscript/cover_letter.md` (draft, bracketed fields + reviewer slots) and `manuscript/submission_checklist.md` (per-item status against Springer Nature guidelines). Abstract trimmed 377→290 words, keywords 8→6, Declarations gained Ethics approval + Author contributions. Flagged for the author: reference style `sn-mathphys-num`→`sn-basic` (author–year), ORCID on the title page, fresh Zenodo release. Issue #9. |
 
 ---
 
@@ -92,9 +92,9 @@ Consolidates every "open / optional" item raised in `PHASE2–9_PROGRESS.md`. Ea
 
 | Status | Count | Items |
 |---|---|---|
-| **closed** | 21 | 2.1–2.6, 2.8, 3.2, 4.1, 4.2, 5.1, 5.3, 6.1, 6.2, 7.1, 7.2, 7.3, 8.1, 8.2, 9.2, 12.1 |
+| **closed** | 25 | 2.1–2.6, 2.8, 3.2, 4.1, 4.2, 5.1, 5.3, 6.1, 6.2, 7.1, 7.2, 7.3, 8.1, 8.2, 9.2, 12.1, 12.2, 12.3, 12.4, 12.6 |
 | **limitation (mitigated)** | 4 | 2.7, 3.1, 5.2, 9.1 — "single-coder project" (no *human* second rater); an independent LLM re-code of all 53 coded decisions agreed at 96.2% (κ 0.83–1.00), `case-study/reliability_check.md`, D26. Still declared in the manuscript. |
-| **user-task** (before submission) | 5 | 12.2–12.6 — GitHub issues #5–#9 |
+| **user-task** (before submission) | 1 | 12.5 — figure redraw, GitHub issue #8 |
 | **future-work** | 0 | — (8.2 closed retrospectively; a *prospective* second-project instantiation is noted as future work in `case-study/external_validity.md` §5) |
 
 Tracked as GitHub issues #1–#12 (milestone *Phase 12 – Publication*). The 4 limitations
