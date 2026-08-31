@@ -1,6 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" font-family="system-ui,Segoe UI,Arial,sans-serif">
-  <rect width="900" height="620" fill="#ffffff"/>
-  <style>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 900 620"
+   font-family="system-ui,Segoe UI,Arial,sans-serif"
+   version="1.1"
+   id="svg28"
+   sodipodi:docname="fig3_architecture.svg"
+   inkscape:version="1.4.2 (ebf0e940, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview28"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.93546583"
+     inkscape:cx="444.69823"
+     inkscape:cy="194.55548"
+     inkscape:window-width="1472"
+     inkscape:window-height="923"
+     inkscape:window-x="0"
+     inkscape:window-y="33"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg28" />
+  <rect
+     width="900"
+     height="620"
+     fill="#ffffff"
+     id="rect1" />
+  <style
+     id="style1">
     .lyr{fill:#eef2f7;stroke:#9fb3c8;stroke-width:1}
     .lbl{font-weight:700;font-size:13px;fill:#1f2a37}
     .cmp{fill:#3b6fb0;stroke:#2b527e;stroke-width:1}
@@ -10,71 +44,418 @@
     .arrow{stroke:#5b6b82;stroke-width:1.6;marker-end:url(#a)}
     .note{font-size:10.5px;fill:#6b7280}
   </style>
-  <defs>
-    <marker id="a" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto">
-      <path d="M0,0 L7,3 L0,6 Z" fill="#5b6b82"/>
+  <defs
+     id="defs1">
+    <marker
+       id="a"
+       markerWidth="9"
+       markerHeight="9"
+       refX="7"
+       refY="3"
+       orient="auto">
+      <path
+         d="M0,0 L7,3 L0,6 Z"
+         fill="#5b6b82"
+         id="path1" />
     </marker>
   </defs>
-
-  <text x="24" y="30" class="hdr">GitHub-based research management reference architecture</text>
-  <text x="24" y="48" class="note">GitHub as a coordination and traceability layer, not a container. 15 components; RM = requirement served.</text>
-
-  <rect x="330" y="60" width="240" height="34" rx="6" class="lyr" fill="#dbe4ef"/>
-  <text x="450" y="82" text-anchor="middle" class="lbl">RESEARCH PROJECT</text>
-  <line x1="450" y1="94" x2="450" y2="112" class="arrow"/>
-
+  <rect
+     x="330"
+     y="60"
+     width="240"
+     height="34"
+     rx="6"
+     class="lyr"
+     fill="#dbe4ef"
+     id="rect2" />
+  <text
+     x="450"
+     y="82"
+     text-anchor="middle"
+     class="lbl"
+     id="text3">RESEARCH PROJECT</text>
+  <line
+     x1="450"
+     y1="94"
+     x2="450"
+     y2="112"
+     class="arrow"
+     id="line3" />
   <!-- A Coordination -->
-  <rect x="24" y="114" width="852" height="86" rx="8" class="lyr"/>
-  <text x="36" y="132" class="lbl">A · COORDINATION</text>
-  <text x="36" y="148" class="rm">planning · tasks · questions · communication  →  RM1 RM2 RM3 RM7</text>
-  <g>
-    <rect x="120" y="156" width="150" height="34" rx="5" class="cmp"/><text x="195" y="177" text-anchor="middle" class="cmpt">A1 Research Plan</text>
-    <rect x="285" y="156" width="150" height="34" rx="5" class="cmp"/><text x="360" y="177" text-anchor="middle" class="cmpt">A2 Activity Tracker</text>
-    <rect x="450" y="156" width="160" height="34" rx="5" class="cmp"/><text x="530" y="177" text-anchor="middle" class="cmpt">A3 Question Register</text>
-    <rect x="625" y="156" width="160" height="34" rx="5" class="cmp"/><text x="705" y="177" text-anchor="middle" class="cmpt">A4 Discussion Space</text>
+  <rect
+     x="24"
+     y="114"
+     width="852"
+     height="86"
+     rx="8"
+     class="lyr"
+     id="rect3" />
+  <text
+     x="36"
+     y="132"
+     class="lbl"
+     id="text4">A · COORDINATION</text>
+  <text
+     x="36"
+     y="148"
+     class="rm"
+     id="text5">planning · tasks · questions · communication  →  RM1 RM2 RM3 RM7</text>
+  <g
+     id="g9">
+    <rect
+       x="120"
+       y="156"
+       width="150"
+       height="34"
+       rx="5"
+       class="cmp"
+       id="rect5" />
+    <text
+       x="195"
+       y="177"
+       text-anchor="middle"
+       class="cmpt"
+       id="text6">A1 Research Plan</text>
+    <rect
+       x="285"
+       y="156"
+       width="150"
+       height="34"
+       rx="5"
+       class="cmp"
+       id="rect6" />
+    <text
+       x="360"
+       y="177"
+       text-anchor="middle"
+       class="cmpt"
+       id="text7">A2 Activity Tracker</text>
+    <rect
+       x="450"
+       y="156"
+       width="160"
+       height="34"
+       rx="5"
+       class="cmp"
+       id="rect7" />
+    <text
+       x="530"
+       y="177"
+       text-anchor="middle"
+       class="cmpt"
+       id="text8">A3 Question Register</text>
+    <rect
+       x="625"
+       y="156"
+       width="160"
+       height="34"
+       rx="5"
+       class="cmp"
+       id="rect8" />
+    <text
+       x="705"
+       y="177"
+       text-anchor="middle"
+       class="cmpt"
+       id="text9">A4 Discussion Space</text>
   </g>
-  <line x1="450" y1="200" x2="450" y2="214" class="arrow"/>
-
+  <line
+     x1="450"
+     y1="200"
+     x2="450"
+     y2="214"
+     class="arrow"
+     id="line9" />
   <!-- B Record -->
-  <rect x="24" y="216" width="852" height="86" rx="8" class="lyr"/>
-  <text x="36" y="234" class="lbl">B · RECORD</text>
-  <text x="36" y="250" class="rm">documentation · decisions · linkage · history  →  RM4 RM5 RM8 RM10 RM11</text>
-  <g>
-    <rect x="120" y="258" width="150" height="34" rx="5" class="cmp"/><text x="195" y="279" text-anchor="middle" class="cmpt">B1 Documentation</text>
-    <rect x="285" y="258" width="150" height="34" rx="5" class="cmp"/><text x="360" y="279" text-anchor="middle" class="cmpt">B2 Decision Log</text>
-    <rect x="450" y="258" width="160" height="34" rx="5" class="cmp" fill="#2b527e"/><text x="530" y="279" text-anchor="middle" class="cmpt">B3 Linkage Discipline</text>
-    <rect x="625" y="258" width="160" height="34" rx="5" class="cmp"/><text x="705" y="279" text-anchor="middle" class="cmpt">B4 Change History</text>
+  <rect
+     x="24"
+     y="216"
+     width="852"
+     height="86"
+     rx="8"
+     class="lyr"
+     id="rect9" />
+  <text
+     x="36"
+     y="234"
+     class="lbl"
+     id="text10">B · RECORD</text>
+  <text
+     x="36"
+     y="250"
+     class="rm"
+     id="text11">documentation · decisions · linkage · history  →  RM4 RM5 RM8 RM10 RM11</text>
+  <g
+     id="g15">
+    <rect
+       x="120"
+       y="258"
+       width="150"
+       height="34"
+       rx="5"
+       class="cmp"
+       id="rect11" />
+    <text
+       x="195"
+       y="279"
+       text-anchor="middle"
+       class="cmpt"
+       id="text12">B1 Documentation</text>
+    <rect
+       x="285"
+       y="258"
+       width="150"
+       height="34"
+       rx="5"
+       class="cmp"
+       id="rect12" />
+    <text
+       x="360"
+       y="279"
+       text-anchor="middle"
+       class="cmpt"
+       id="text13">B2 Decision Log</text>
+    <rect
+       x="450"
+       y="258"
+       width="160"
+       height="34"
+       rx="5"
+       class="cmp"
+       fill="#2b527e"
+       id="rect13" />
+    <text
+       x="530"
+       y="279"
+       text-anchor="middle"
+       class="cmpt"
+       id="text14">B3 Linkage Discipline</text>
+    <rect
+       x="625"
+       y="258"
+       width="160"
+       height="34"
+       rx="5"
+       class="cmp"
+       id="rect14" />
+    <text
+       x="705"
+       y="279"
+       text-anchor="middle"
+       class="cmpt"
+       id="text15">B4 Change History</text>
   </g>
-  <text x="465" y="309" class="note">B3 (keystone): cross-references + closing keywords + timeline — a mandatory practice</text>
-  <line x1="450" y1="316" x2="450" y2="330" class="arrow"/>
-
+  <text
+     x="461.02908"
+     y="318.53018"
+     class="note"
+     id="text16">B3 (keystone): cross-references + closing keywords + timeline — a mandatory practice</text>
+  <line
+     x1="450"
+     y1="301.86951"
+     x2="450"
+     y2="330"
+     class="arrow"
+     id="line16" />
   <!-- C Production -->
-  <rect x="24" y="332" width="852" height="76" rx="8" class="lyr"/>
-  <text x="36" y="350" class="lbl">C · PRODUCTION</text>
-  <text x="36" y="366" class="rm">artifacts · review · automation  →  RM6 RM9 RM12 RM13</text>
-  <g>
-    <rect x="200" y="372" width="150" height="30" rx="5" class="cmp"/><text x="275" y="392" text-anchor="middle" class="cmpt">C1 Artifact Workspace</text>
-    <rect x="375" y="372" width="150" height="30" rx="5" class="cmp"/><text x="450" y="392" text-anchor="middle" class="cmpt">C2 Review Workflow</text>
-    <rect x="550" y="372" width="150" height="30" rx="5" class="cmp"/><text x="625" y="392" text-anchor="middle" class="cmpt">C3 Automation Suite</text>
+  <rect
+     x="24"
+     y="332"
+     width="852"
+     height="76"
+     rx="8"
+     class="lyr"
+     id="rect16" />
+  <text
+     x="36"
+     y="350"
+     class="lbl"
+     id="text17">C · PRODUCTION</text>
+  <text
+     x="36"
+     y="366"
+     class="rm"
+     id="text18">artifacts · review · automation  →  RM6 RM9 RM12 RM13</text>
+  <g
+     id="g21">
+    <rect
+       x="200"
+       y="372"
+       width="150"
+       height="30"
+       rx="5"
+       class="cmp"
+       id="rect18" />
+    <text
+       x="275"
+       y="392"
+       text-anchor="middle"
+       class="cmpt"
+       id="text19">C1 Artifact Workspace</text>
+    <rect
+       x="375"
+       y="372"
+       width="150"
+       height="30"
+       rx="5"
+       class="cmp"
+       id="rect19" />
+    <text
+       x="450"
+       y="392"
+       text-anchor="middle"
+       class="cmpt"
+       id="text20">C2 Review Workflow</text>
+    <rect
+       x="550"
+       y="372"
+       width="150"
+       height="30"
+       rx="5"
+       class="cmp"
+       id="rect20" />
+    <text
+       x="625"
+       y="392"
+       text-anchor="middle"
+       class="cmpt"
+       id="text21">C3 Automation Suite</text>
   </g>
-  <line x1="450" y1="408" x2="450" y2="422" class="arrow"/>
-
+  <line
+     x1="450"
+     y1="408"
+     x2="450"
+     y2="422"
+     class="arrow"
+     id="line21" />
   <!-- D Release -->
-  <rect x="24" y="424" width="852" height="76" rx="8" class="lyr"/>
-  <text x="36" y="442" class="lbl">D · RELEASE</text>
-  <text x="36" y="458" class="rm">outputs · identification · governance  →  RM8 RM14 RM15</text>
-  <g>
-    <rect x="200" y="464" width="150" height="30" rx="5" class="cmp"/><text x="275" y="484" text-anchor="middle" class="cmpt">D1 Release Process</text>
-    <rect x="375" y="464" width="150" height="30" rx="5" class="cmp"/><text x="450" y="484" text-anchor="middle" class="cmpt">D2 Archival Bridge</text>
-    <rect x="550" y="464" width="150" height="30" rx="5" class="cmp"/><text x="625" y="484" text-anchor="middle" class="cmpt">D3 Governance Setup</text>
+  <rect
+     x="24"
+     y="424"
+     width="852"
+     height="76"
+     rx="8"
+     class="lyr"
+     id="rect21" />
+  <text
+     x="36"
+     y="442"
+     class="lbl"
+     id="text22">D · RELEASE</text>
+  <text
+     x="36"
+     y="458"
+     class="rm"
+     id="text23">outputs · identification · governance  →  RM8 RM14 RM15</text>
+  <g
+     id="g26">
+    <rect
+       x="200"
+       y="464"
+       width="150"
+       height="30"
+       rx="5"
+       class="cmp"
+       id="rect23" />
+    <text
+       x="275"
+       y="484"
+       text-anchor="middle"
+       class="cmpt"
+       id="text24">D1 Release Process</text>
+    <rect
+       x="375"
+       y="464"
+       width="150"
+       height="30"
+       rx="5"
+       class="cmp"
+       id="rect24" />
+    <text
+       x="450"
+       y="484"
+       text-anchor="middle"
+       class="cmpt"
+       id="text25">D2 Archival Bridge</text>
+    <rect
+       x="550"
+       y="464"
+       width="150"
+       height="30"
+       rx="5"
+       class="cmp"
+       id="rect25" />
+    <text
+       x="625"
+       y="484"
+       text-anchor="middle"
+       class="cmpt"
+       id="text26">D3 Governance Setup</text>
   </g>
-  <line x1="450" y1="500" x2="450" y2="514" class="arrow"/>
-
+  <line
+     x1="450"
+     y1="500"
+     x2="450"
+     y2="514"
+     class="arrow"
+     id="line26" />
   <!-- X1 -->
-  <rect x="270" y="516" width="360" height="30" rx="6" class="lyr" fill="#e5ecf4"/>
-  <text x="450" y="536" text-anchor="middle" class="cmpt" fill="#2b527e">X1 Transparency Surface  (emergent, on public release)  → RM11</text>
-  <line x1="450" y1="546" x2="450" y2="560" class="arrow"/>
-
-  <rect x="300" y="562" width="300" height="34" rx="6" class="lyr" fill="#dbe4ef"/>
-  <text x="450" y="584" text-anchor="middle" class="lbl">RESEARCH OUTPUTS — results · publications · releases · DOIs</text>
+  <rect
+     x="270"
+     y="516"
+     width="360"
+     height="30"
+     rx="6"
+     class="lyr"
+     fill="#e5ecf4"
+     id="rect26" />
+  <text
+     x="450"
+     y="536"
+     text-anchor="middle"
+     class="cmpt"
+     fill="#2b527e"
+     id="text27"><tspan
+       style="fill:#000000"
+       id="tspan28">X1 Transparency Surface (emergent, on public release) → RM11</tspan></text>
+  <line
+     x1="450"
+     y1="546"
+     x2="450"
+     y2="560"
+     class="arrow"
+     id="line27" />
+  <rect
+     x="300.1062"
+     y="562.1062"
+     width="299.7876"
+     height="50.011497"
+     rx="5.9957523"
+     class="lyr"
+     fill="#dbe4ef"
+     id="rect27" />
+  <text
+     x="450"
+     y="584"
+     text-anchor="middle"
+     class="lbl"
+     id="text28"
+     style="white-space:pre;inline-size:216.668"
+     xml:space="preserve"><tspan
+       x="450"
+       y="584"
+       id="tspan1">RESEARCH OUTPUTS — results ·<tspan
+   y="584"
+   id="tspan2"> </tspan></tspan><tspan
+       x="450"
+       y="600.25003"
+       id="tspan3">publications · releases · DOIs</tspan></text>
+  <text
+     xml:space="preserve"
+     style="text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000"
+     x="519.68762"
+     y="645.29187"
+     id="text29"><tspan
+       sodipodi:role="line"
+       id="tspan29"></tspan></text>
 </svg>
