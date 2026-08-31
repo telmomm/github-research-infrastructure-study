@@ -51,5 +51,5 @@ Phase 10 synthesises RQ1–RQ5 (coverage, implementation results, strengths, lim
 
 ## Open / optional (see `docs/OPEN_ITEMS.md`)
 
-- Independent second rater on the 21 sub-scores — **limitation** (single-coder project; declared).
+- Independent second rater on the 21 sub-scores — **limitation (mitigated)** (no human second coder; independent LLM re-code of all 53 coded decisions agreed at 96.2%, κ 0.83–1.00 — `case-study/reliability_check.md`, `DECISION_LOG.md` D26, issue #10). Still declared in the manuscript.
 - Re-score E5/E6 after the repo is public + a real cycle — **user-task** (depends on the Phase 7/8 user-tasks; re-run `evaluation_summary.py` afterwards).
