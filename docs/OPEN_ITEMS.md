@@ -5,6 +5,7 @@ Consolidates every "open / optional" item raised in `PHASE2–9_PROGRESS.md`. Ea
 **Status vocabulary**
 - **closed** — done; see the linked artifact
 - **limitation** — cannot be closed within this study's constraints; recorded in the manuscript limitations (single-coder, no Scopus/WoS access)
+- **limitation (mitigated)** — the constraint stands but a partial robustness check was run and is reported
 - **user-task** — requires the author's manual action on GitHub (making the repo public, running a live Issue→PR→Release cycle, screenshots) — to do before submission
 - **future-work** — out of scope for this study; goes in "Future research"
 
@@ -20,14 +21,14 @@ Consolidates every "open / optional" item raised in `PHASE2–9_PROGRESS.md`. Ea
 | 2.4 | Render the co-word map | **closed** | `analysis/scripts/coword_map.py` → `results/track_a/coword_map.gexf` (Gephi-ready) + `manuscript/figures/coword_map.svg` |
 | 2.5 | Factcheck `literature/references.bib` | **closed** | `phd-skills:factcheck` run; corrections applied; `literature/references_factcheck.md` |
 | 2.6 | Expand Track B with primary GitHub-in-research studies | **closed** | `literature/included_studies_primary.csv` (S53–S67, purposive) + `screening_notes.md`; does not change RE01–RE17; BibTeX for the cited subset generated at Phase 11 |
-| 2.7 | Second-coder reliability on requirement extraction (~20%) | **limitation** | Single-coder project; declared in `case-study/evaluation.md` §6 and the manuscript |
+| 2.7 | Second-coder reliability on requirement extraction (~20%) | **limitation (mitigated)** | No human second coder. Independent LLM re-code of all 17 RE→RM assignments: 94.1% agreement, κ 0.94; one adjacent disagreement (RE11 RM10/RM9), no coverage count affected. `case-study/reliability_check.md`, `reliability_check.csv`; `DECISION_LOG.md` D26. Issue #10. |
 | 2.8 | Scopus / WoS cross-check | **closed** | Run 2026-09-30 via FECYT: WoS + Scopus Q1–Q4, 13,586 de-dup in-window records, **22% DOI overlap** with the corpus; the delta is a characterised precision tail (bioinformatics/CS tool papers via `git`/`github` + Keywords Plus). `DECISION_LOG.md` D24; `results/track_a/scopus_wos_crosscheck.md`. Issue #11. |
 
 ## Phase 3 — Requirements framework
 
 | # | Item | Status | Resolution |
 |---|---|---|---|
-| 3.1 | Second-coder check on the RE→RM assignment | **limitation** | Same as 2.7 |
+| 3.1 | Second-coder check on the RE→RM assignment | **limitation (mitigated)** | Covered by the 2.7 re-code (RE→RM unit: 94.1%, κ 0.94). `case-study/reliability_check.md`; D26. Issue #10. |
 | 3.2 | Revisit RM15 (governance) scope after Phase 5 | **closed** | `DECISION_LOG.md` D17 — RM15 kept in the framework but excluded from headline coverage; `coverage_indicators.py` now reports core-14 and full-15 means |
 
 ## Phase 4 — GitHub capability analysis
@@ -42,7 +43,7 @@ Consolidates every "open / optional" item raised in `PHASE2–9_PROGRESS.md`. Ea
 | # | Item | Status | Resolution |
 |---|---|---|---|
 | 5.1 | Sensitivity check with a stricter rubric | **closed** | `DECISION_LOG.md` D18; `framework/mapping/requirement_feature_matrix_strict.csv` + `coverage_indicators.py --strict` → `results/framework/coverage_summary_strict.md`; overall mean 2.33 → 2.13, conclusion unchanged |
-| 5.2 | Second rater on the 15 support scores | **limitation** | Same as 2.7 |
+| 5.2 | Second rater on the 15 support scores | **limitation (mitigated)** | Independent LLM re-code of all 15 support levels: 100% agreement (κ 1.00) — but the least independent unit, since the matrix documents its own Direct/Partial/Limited rationale (caveat in `reliability_check.md` §4). D26. Issue #10. |
 | 5.3 | Confirm plan-availability caveats before scores go in the manuscript | **closed** | Folded into 4.1 |
 
 ## Phase 6 — Reference architecture
@@ -71,7 +72,7 @@ Consolidates every "open / optional" item raised in `PHASE2–9_PROGRESS.md`. Ea
 
 | # | Item | Status | Resolution |
 |---|---|---|---|
-| 9.1 | Independent second rater on the 21 sub-scores | **limitation** | Same as 2.7 |
+| 9.1 | Independent second rater on the 21 sub-scores | **limitation (mitigated)** | Independent LLM re-code of all 21 sub-scores: 95.2% agreement, κ 0.83 (deflated by skewed marginals; see §4). One adjacent disagreement (E6 workflow overhead 2/1); stricter read moves Overall 1.86 → 1.81, ranking unchanged. `case-study/reliability_check.md`; D26. Issue #10. |
 | 9.2 | Re-score E5/E6 after the repo is public + a real cycle | **closed** | `DECISION_LOG.md` D23; E2/E4/E5/E6 sub-scores re-scored on observed evidence; overall **1.62 → 1.86 / 2**. `evaluation.md`, `results/framework/eval_*`, `findings.csv`, `synthesis.md` updated. `manuscript/paper.tex` figures updated in the manuscript pass (issue #6). Issue #3. |
 
 ## Phase 12 — Publication
@@ -92,7 +93,7 @@ Consolidates every "open / optional" item raised in `PHASE2–9_PROGRESS.md`. Ea
 | Status | Count | Items |
 |---|---|---|
 | **closed** | 21 | 2.1–2.6, 2.8, 3.2, 4.1, 4.2, 5.1, 5.3, 6.1, 6.2, 7.1, 7.2, 7.3, 8.1, 8.2, 9.2, 12.1 |
-| **limitation** (declared in the manuscript) | 4 | 2.7, 3.1, 5.2, 9.1 — all reduce to "single-coder project" (no second rater) |
+| **limitation (mitigated)** | 4 | 2.7, 3.1, 5.2, 9.1 — "single-coder project" (no *human* second rater); an independent LLM re-code of all 53 coded decisions agreed at 96.2% (κ 0.83–1.00), `case-study/reliability_check.md`, D26. Still declared in the manuscript. |
 | **user-task** (before submission) | 5 | 12.2–12.6 — GitHub issues #5–#9 |
 | **future-work** | 0 | — (8.2 closed retrospectively; a *prospective* second-project instantiation is noted as future work in `case-study/external_validity.md` §5) |
 

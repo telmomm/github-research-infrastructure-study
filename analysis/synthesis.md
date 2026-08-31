@@ -85,7 +85,7 @@ The gap identified bibliometrically (RQ1) and the gap measured in GitHub's cover
 
 1. **The upstream gap is mapped, not closed** — RM1/RM2/RM5 stay Partial/Limited even with conventions (F23).
 2. **Collaborative benefit unproven** — the coordination layer was run once solo, so its multi-author review / communication value is untested; E6 configuration and technical-literacy costs remain (F24).
-3. **Single-case, self-referential, single-coder** evaluation (F25).
+3. **Single-case, self-referential, single-coder** evaluation (F25); an independent LLM re-code of all 53 coded decisions agreed at 96.2% (κ 0.83–1.00), changing no reported conclusion, but no human second coder was available.
 4. **OpenAlex+arXiv corpus** — coverage/precision trade-off vs Scopus/WoS (F26; precision ≈ 0.94).
 5. **Convention-dependence** — ~1/3 of coverage rests on discipline, not features (F27; strict rubric 2.13).
 6. **Not a complete infrastructure** — preservation, environments, large data, governance are external (F28).

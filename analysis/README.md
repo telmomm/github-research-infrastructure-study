@@ -21,6 +21,7 @@ Scripts that regenerate the study's tables and figures from the versioned datase
 | `scripts/evaluation_summary.py` | `case-study/evaluation_scores.csv` + `framework/mapping/requirement_feature_matrix.csv` | `results/framework/eval_*.csv`, `evaluation_summary.md` |
 | `scripts/synthesis_check.py` | `analysis/findings.csv` | `results/framework/synthesis_*.csv`, `synthesis_summary.md` (exits non-zero on a missing evidence path) |
 | `scripts/summarise_external_validity.py` | `case-study/external_validity_mapping.csv` | `results/framework/external_validity_summary.md` (RM1–RM15 status tally; exits non-zero on a missing RM row) |
+| `scripts/reliability_summary.py` | `case-study/reliability_check.csv` | `results/framework/reliability_summary.md` (second-coding pass: % agreement + Cohen's κ per unit, disagreement log, score sensitivity) |
 
 ## Phase 10 synthesis
 

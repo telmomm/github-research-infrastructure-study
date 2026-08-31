@@ -2,7 +2,7 @@
 
 **Phase 9 deliverable** (roadmap step 9 of 12) · Answers **RQ5**
 **Protocol:** `docs/EVALUATION_PROTOCOL.md` · **Evidence:** `case-study/implementation_record.csv`, `activity_register.csv`, `traceability_examples.md`
-**Artifacts:** `evaluation_scores.csv` (21 sub-dimensions), `workflow_comparison.csv` (Table 6) · **Decisions:** `docs/DECISION_LOG.md` D15, D23
+**Artifacts:** `evaluation_scores.csv` (21 sub-dimensions), `workflow_comparison.csv` (Table 6), `reliability_check.csv` (second-coding pass) · **Decisions:** `docs/DECISION_LOG.md` D15, D23, D26
 
 > **Re-score (2026-08-30, `DECISION_LOG.md` D23, GitHub issue #3).** After the repository was made public (D22) and one full Issue→PR→Release cycle was run (`live_cycle_demo.md`), four sub-scores that had been *planned* / *retrospective* / *design-support* were re-scored on observed evidence: E5 external visibility 0→2, E2 task traceability 1→2, E4 task categorization 1→2, E6 workflow overhead 1→2. **Overall 1.62 → 1.86 / 2** (observed-only 1.76 → 1.85). The numbers below are the re-scored values.
 
@@ -84,7 +84,7 @@ Still the lowest dimension: configuration cost and the technical-literacy barrie
 
 - **Single-case, self-referential** implementation → circularity and developer-as-evaluator bias.
 - **Single author** → the coordination layer was run once end-to-end but its *collaborative* value (multi-author review, communication) is untested; E6 configuration and technical-literacy costs remain.
-- **Single coder** on the scores; no independent rater.
+- **Single coder** on the scores; no human second rater. *Mitigated:* an independent LLM re-code of all 53 coded decisions (RE→RM, 15 support levels, 21 sub-scores) agreed at 96.2% (κ 0.83–1.00 per unit); the two adjacent-category disagreements change no reported conclusion, and adopting the stricter read moves Overall only 1.86 → 1.81. `reliability_check.md`; `DECISION_LOG.md` D26.
 - **Bibliometric corpus from OpenAlex + arXiv** → coverage/precision trade-off versus Scopus/WoS.
 - **Compressed build** → does not test sustained multi-month or multi-project use.
 
