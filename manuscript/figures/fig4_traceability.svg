@@ -1,6 +1,43 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 470" font-family="system-ui,Segoe UI,Arial,sans-serif">
-  <rect width="900" height="470" fill="#ffffff"/>
-  <style>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 900 470"
+   font-family="system-ui,Segoe UI,Arial,sans-serif"
+   version="1.1"
+   id="svg29"
+   sodipodi:docname="fig4_traceability.svg"
+   inkscape:version="1.4.2 (ebf0e940, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview29"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.2928064"
+     inkscape:cx="442.4483"
+     inkscape:cy="199.56584"
+     inkscape:window-width="1472"
+     inkscape:window-height="923"
+     inkscape:window-x="0"
+     inkscape:window-y="33"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg29" />
+  <rect
+     width="900"
+     height="261.58072"
+     fill="#ffffff"
+     id="rect1"
+     x="0"
+     y="0"
+     style="stroke-width:0.746026" />
+  <style
+     id="style1">
     .hdr{font-weight:700;font-size:15px;fill:#111827}
     .note{font-size:10.5px;fill:#6b7280}
     .n{fill:#eef2f7;stroke:#8fa6bd;stroke-width:1.2}
@@ -9,44 +46,271 @@
     .lnk{stroke:#3b6fb0;stroke-width:2;marker-end:url(#h)}
     .mech{font-size:9.5px;fill:#3b6fb0;font-style:italic}
   </style>
-  <defs>
-    <marker id="h" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
-      <path d="M0,0 L8,3 L0,6 Z" fill="#3b6fb0"/>
+  <defs
+     id="defs1">
+    <marker
+       id="h"
+       markerWidth="10"
+       markerHeight="10"
+       refX="8"
+       refY="3"
+       orient="auto">
+      <path
+         d="M0,0 L8,3 L0,6 Z"
+         fill="#3b6fb0"
+         id="path1" />
     </marker>
   </defs>
-
-  <text x="24" y="30" class="hdr">End-to-end traceability path</text>
-  <text x="24" y="48" class="note">Any node is reachable from any other via recorded cross-references — the operational meaning of RM10.</text>
-
   <!-- row 1 -->
-  <g>
-    <rect x="30"  y="70" width="150" height="46" rx="6" class="n"/><text x="105" y="90" text-anchor="middle" class="t">RQ issue</text><text x="105" y="105" text-anchor="middle" class="s">A3 · "RQ-n: …"</text>
-    <rect x="250" y="70" width="150" height="46" rx="6" class="n"/><text x="325" y="90" text-anchor="middle" class="t">Method issue</text><text x="325" y="105" text-anchor="middle" class="s">A2 · in milestone</text>
-    <rect x="470" y="70" width="150" height="46" rx="6" class="n"/><text x="545" y="90" text-anchor="middle" class="t">Branch + commits</text><text x="545" y="105" text-anchor="middle" class="s">B4</text>
-    <rect x="690" y="70" width="180" height="46" rx="6" class="n"/><text x="780" y="90" text-anchor="middle" class="t">Analysis PR</text><text x="780" y="105" text-anchor="middle" class="s">C2 · CI run (C3)</text>
+  <g
+     id="g10">
+    <rect
+       x="30"
+       y="70"
+       width="150"
+       height="46"
+       rx="6"
+       class="n"
+       id="rect2" />
+    <text
+       x="105"
+       y="90"
+       text-anchor="middle"
+       class="t"
+       id="text3">RQ issue</text>
+    <text
+       x="105"
+       y="105"
+       text-anchor="middle"
+       class="s"
+       id="text4">A3 · &quot;RQ-n: …&quot;</text>
+    <rect
+       x="250"
+       y="70"
+       width="150"
+       height="46"
+       rx="6"
+       class="n"
+       id="rect4" />
+    <text
+       x="325"
+       y="90"
+       text-anchor="middle"
+       class="t"
+       id="text5">Method issue</text>
+    <text
+       x="325"
+       y="105"
+       text-anchor="middle"
+       class="s"
+       id="text6">A2 · in milestone</text>
+    <rect
+       x="470"
+       y="70"
+       width="150"
+       height="46"
+       rx="6"
+       class="n"
+       id="rect6" />
+    <text
+       x="545"
+       y="90"
+       text-anchor="middle"
+       class="t"
+       id="text7">Branch + commits</text>
+    <text
+       x="545"
+       y="105"
+       text-anchor="middle"
+       class="s"
+       id="text8">B4</text>
+    <rect
+       x="690"
+       y="70"
+       width="180"
+       height="46"
+       rx="6"
+       class="n"
+       id="rect8" />
+    <text
+       x="780"
+       y="90"
+       text-anchor="middle"
+       class="t"
+       id="text9">Analysis PR</text>
+    <text
+       x="780"
+       y="105"
+       text-anchor="middle"
+       class="s"
+       id="text10">C2 · CI run (C3)</text>
   </g>
-  <line x1="180" y1="93" x2="248" y2="93" class="lnk"/><text x="214" y="86" text-anchor="middle" class="mech">Refs #</text>
-  <line x1="400" y1="93" x2="468" y2="93" class="lnk"/><text x="434" y="86" text-anchor="middle" class="mech">refs #</text>
-  <line x1="620" y1="93" x2="688" y2="93" class="lnk"/><text x="654" y="86" text-anchor="middle" class="mech">Closes #</text>
-
+  <line
+     x1="180"
+     y1="93"
+     x2="248"
+     y2="93"
+     class="lnk"
+     id="line10" />
+  <text
+     x="214"
+     y="86"
+     text-anchor="middle"
+     class="mech"
+     id="text11">Refs #</text>
+  <line
+     x1="400"
+     y1="93"
+     x2="468"
+     y2="93"
+     class="lnk"
+     id="line11" />
+  <text
+     x="434"
+     y="86"
+     text-anchor="middle"
+     class="mech"
+     id="text12">Refs #</text>
+  <line
+     x1="620"
+     y1="93"
+     x2="688"
+     y2="93"
+     class="lnk"
+     id="line12" />
+  <text
+     x="654"
+     y="86"
+     text-anchor="middle"
+     class="mech"
+     id="text13">Closes #</text>
   <!-- connector down -->
-  <path d="M780,116 v40 h-750 v20" fill="none" class="lnk"/>
-
+  <path
+     d="m 780.09397,116 v 52.69021 h -679.5258 v 26.3451"
+     fill="none"
+     class="lnk"
+     id="path13" />
   <!-- row 2 -->
-  <g>
-    <rect x="30"  y="196" width="150" height="46" rx="6" class="n"/><text x="105" y="216" text-anchor="middle" class="t">Result artifact</text><text x="105" y="231" text-anchor="middle" class="s">C1</text>
-    <rect x="250" y="196" width="150" height="46" rx="6" class="n"/><text x="325" y="216" text-anchor="middle" class="t">Manuscript PR</text><text x="325" y="231" text-anchor="middle" class="s">C2</text>
-    <rect x="470" y="196" width="150" height="46" rx="6" class="n"/><text x="545" y="216" text-anchor="middle" class="t">Release vX.Y</text><text x="545" y="231" text-anchor="middle" class="s">D1 · auto notes</text>
-    <rect x="690" y="196" width="180" height="46" rx="6" class="n"/><text x="780" y="216" text-anchor="middle" class="t">Zenodo DOI</text><text x="780" y="231" text-anchor="middle" class="s">D2 · external</text>
+  <g
+     id="g21">
+    <rect
+       x="30"
+       y="196"
+       width="150"
+       height="46"
+       rx="6"
+       class="n"
+       id="rect13" />
+    <text
+       x="105"
+       y="216"
+       text-anchor="middle"
+       class="t"
+       id="text14">Result artifact</text>
+    <text
+       x="105"
+       y="231"
+       text-anchor="middle"
+       class="s"
+       id="text15">C1</text>
+    <rect
+       x="250"
+       y="196"
+       width="150"
+       height="46"
+       rx="6"
+       class="n"
+       id="rect15" />
+    <text
+       x="325"
+       y="216"
+       text-anchor="middle"
+       class="t"
+       id="text16">Manuscript PR</text>
+    <text
+       x="325"
+       y="231"
+       text-anchor="middle"
+       class="s"
+       id="text17">C2</text>
+    <rect
+       x="470"
+       y="196"
+       width="150"
+       height="46"
+       rx="6"
+       class="n"
+       id="rect17" />
+    <text
+       x="545"
+       y="216"
+       text-anchor="middle"
+       class="t"
+       id="text18">Release vX.Y</text>
+    <text
+       x="545"
+       y="231"
+       text-anchor="middle"
+       class="s"
+       id="text19">D1 · auto notes</text>
+    <rect
+       x="690"
+       y="196"
+       width="180"
+       height="46"
+       rx="6"
+       class="n"
+       id="rect19" />
+    <text
+       x="780"
+       y="216"
+       text-anchor="middle"
+       class="t"
+       id="text20">Zenodo DOI</text>
+    <text
+       x="780"
+       y="231"
+       text-anchor="middle"
+       class="s"
+       id="text21">D2 · external</text>
   </g>
-  <line x1="180" y1="219" x2="248" y2="219" class="lnk"/><text x="214" y="212" text-anchor="middle" class="mech">Refs #</text>
-  <line x1="400" y1="219" x2="468" y2="219" class="lnk"/><text x="434" y="212" text-anchor="middle" class="mech">Closes #</text>
-  <line x1="620" y1="219" x2="688" y2="219" class="lnk"/><text x="654" y="212" text-anchor="middle" class="mech">tag → notes</text>
-
-  <rect x="30" y="300" width="840" height="130" rx="8" fill="#f6f8fb" stroke="#d6dee8"/>
-  <text x="48" y="324" class="t">Connective mechanism (B3 Linkage Discipline)</text>
-  <text x="48" y="348" class="s">every commit names its issue  ·  every PR uses "Closes #"  ·  every issue names its RQ and milestone</text>
-  <text x="48" y="368" class="s">the issue / PR timeline records each reference  ·  autogenerated release notes inherit the PR → issue chain</text>
-  <text x="48" y="396" class="s">Manual and only as complete as contributors' referencing discipline; no lineage query; stops at data/computation</text>
-  <text x="48" y="414" class="s">without deliberate upstream linking (RM2, RM5).</text>
+  <line
+     x1="180"
+     y1="219"
+     x2="248"
+     y2="219"
+     class="lnk"
+     id="line21" />
+  <text
+     x="214"
+     y="212"
+     text-anchor="middle"
+     class="mech"
+     id="text22">Refs #</text>
+  <line
+     x1="400"
+     y1="219"
+     x2="468"
+     y2="219"
+     class="lnk"
+     id="line22" />
+  <text
+     x="434"
+     y="212"
+     text-anchor="middle"
+     class="mech"
+     id="text23">Closes #</text>
+  <line
+     x1="620"
+     y1="219"
+     x2="688"
+     y2="219"
+     class="lnk"
+     id="line23" />
+  <text
+     x="654"
+     y="212"
+     text-anchor="middle"
+     class="mech"
+     id="text24">tag → notes</text>
 </svg>
