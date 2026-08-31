@@ -60,3 +60,45 @@ references actually cited in the manuscript gets a full check at Phase 11.
 No errors found in the verified sample beyond the placeholder page ranges. The three
 editorial corrections made in Phase 2 are confirmed. `references.bib` is fit for use;
 the cited subset is fully re-checked when the manuscript is written.
+
+---
+
+## Phase 12 — full check of the cited subset (2026-08-31, GitHub issue #7)
+
+Target: `manuscript/references.bib` (62 entries; **24 actually cited** in `paper.tex`).
+Every cited entry verified against the Crossref record (`api.crossref.org/works/<doi>`),
+cross-checking title, container, volume, issue, pages and year.
+
+**No wrong DOI, author list, title or year** in the cited subset. `escamilla2022` (S66,
+flagged at Phase 2) confirmed: LNCS **13541**, pp. 187–200, `10.1007/978-3-031-16802-4_15`.
+`chen2025` issue corrected **3 → 2** (PLoS Biology 23(2):e3003029, Crossref). The remaining
+edits fill missing `number` / `pages` — mostly the article-numbered venues the Phase 2 note
+listed as residual risk:
+
+| Key | Fix applied |
+|---|---|
+| `chen2025` | issue 3 → **2** |
+| `liew2016` | + `number={4}` (ACM Comput. Surv. 49(4)) |
+| `perrier2017` | + `number={5}`, `pages={e0178261}` |
+| `kirkham2020` | + `number={12}`, `pages={e041849}` |
+| `crystalornelas2021` | + `number={8}`, `pages={e2021EA001797}` |
+| `crane2023` | + `pages={863}` (F1000Research 12:863) |
+| `mayernik2017` | + `number={6}`, `pages={1341--1359}` |
+| `devkota2026` | + `volume={7}`, `number={3}`, `pages={94--116}` |
+| `holler2022` | + `volume={XLVIII-4/W1-2022}`, `pages={201--208}` |
+| `ho2025` | + `number={1}` |
+| `donner2022` | + `number={2}` |
+| `cox2018` | + `number={2}` |
+| `perez2018` | + `number={3}` |
+| `liu2015` | + `number={4}` |
+| `kalliamvakou2016` | + `number={5}` |
+| `trisovic2022` | + `number={1}` |
+
+Confirmed correct as-is: `sandve2013`, `blischak2016`, `perezriverol2016`, `braga2023`,
+`davidson2008`, `mattoso2015`, `escamilla2022`, `tutko2022` (arXiv:2204.08108 preprint —
+no issue/pages expected).
+
+`latexmk` clean build: bibtex 0 warnings, 24 entries, no undefined citations, 16 pages.
+
+**Not re-checked:** the 38 uncited entries still carry SOTA-derived values (some with `1--NN`
+placeholder pages); each is verified if it is cited during the manuscript expansion (#6).

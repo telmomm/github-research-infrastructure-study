@@ -1,52 +1,73 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 470" font-family="system-ui,Segoe UI,Arial,sans-serif">
-  <rect width="900" height="470" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 460"
+     font-family="'DejaVu Sans','Helvetica Neue',Arial,sans-serif">
+  <rect width="900" height="460" fill="#ffffff"/>
   <style>
-    .hdr{font-weight:700;font-size:15px;fill:#111827}
+    .hdr {font-weight:700;font-size:15px;fill:#111827}
     .note{font-size:10.5px;fill:#6b7280}
-    .n{fill:#eef2f7;stroke:#8fa6bd;stroke-width:1.2}
-    .t{font-size:11px;fill:#1f2a37;font-weight:600}
-    .s{font-size:9.5px;fill:#5b6b82}
-    .lnk{stroke:#3b6fb0;stroke-width:2;marker-end:url(#h)}
+    .cmp {fill:#3b6fb0;stroke:#2b527e;stroke-width:1}
+    .cmpt{font-size:10.5px;fill:#ffffff;font-weight:600}
+    .tag {font-size:9px;fill:#dbe4ef}
+    .lnk {stroke:#3b6fb0;stroke-width:1.8;fill:none;marker-end:url(#h)}
     .mech{font-size:9.5px;fill:#3b6fb0;font-style:italic}
+    .panel{fill:#f6f8fb;stroke:#d6dee8;stroke-width:1}
+    .plbl{font-weight:700;font-size:11px;fill:#1f2a37}
+    .ptxt{font-size:10px;fill:#5b6b82}
   </style>
   <defs>
-    <marker id="h" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
-      <path d="M0,0 L8,3 L0,6 Z" fill="#3b6fb0"/>
+    <marker id="h" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#3b6fb0"/>
     </marker>
   </defs>
 
-  <text x="24" y="30" class="hdr">End-to-end traceability path</text>
-  <text x="24" y="48" class="note">Any node is reachable from any other via recorded cross-references — the operational meaning of RM10.</text>
+  <text x="24" y="28" class="hdr">End-to-end traceability path</text>
+  <text x="24" y="46" class="note">Any node is reachable from any other via recorded cross-references &#8212; the operational meaning of RM10.</text>
 
   <!-- row 1 -->
   <g>
-    <rect x="30"  y="70" width="150" height="46" rx="6" class="n"/><text x="105" y="90" text-anchor="middle" class="t">RQ issue</text><text x="105" y="105" text-anchor="middle" class="s">A3 · "RQ-n: …"</text>
-    <rect x="250" y="70" width="150" height="46" rx="6" class="n"/><text x="325" y="90" text-anchor="middle" class="t">Method issue</text><text x="325" y="105" text-anchor="middle" class="s">A2 · in milestone</text>
-    <rect x="470" y="70" width="150" height="46" rx="6" class="n"/><text x="545" y="90" text-anchor="middle" class="t">Branch + commits</text><text x="545" y="105" text-anchor="middle" class="s">B4</text>
-    <rect x="690" y="70" width="180" height="46" rx="6" class="n"/><text x="780" y="90" text-anchor="middle" class="t">Analysis PR</text><text x="780" y="105" text-anchor="middle" class="s">C2 · CI run (C3)</text>
+    <rect x="30"  y="76" width="180" height="48" rx="6" class="cmp"/>
+    <text x="120" y="98"  text-anchor="middle" class="cmpt">RQ issue</text>
+    <text x="120" y="113" text-anchor="middle" class="tag">A3 &#183; &#8220;RQ-n: &#8230;&#8221;</text>
+    <rect x="250" y="76" width="180" height="48" rx="6" class="cmp"/>
+    <text x="340" y="98"  text-anchor="middle" class="cmpt">Method issue</text>
+    <text x="340" y="113" text-anchor="middle" class="tag">A2 &#183; in milestone</text>
+    <rect x="470" y="76" width="180" height="48" rx="6" class="cmp"/>
+    <text x="560" y="98"  text-anchor="middle" class="cmpt">Branch + commits</text>
+    <text x="560" y="113" text-anchor="middle" class="tag">B4</text>
+    <rect x="690" y="76" width="180" height="48" rx="6" class="cmp"/>
+    <text x="780" y="98"  text-anchor="middle" class="cmpt">Analysis PR</text>
+    <text x="780" y="113" text-anchor="middle" class="tag">C2 &#183; CI run (C3)</text>
   </g>
-  <line x1="180" y1="93" x2="248" y2="93" class="lnk"/><text x="214" y="86" text-anchor="middle" class="mech">Refs #</text>
-  <line x1="400" y1="93" x2="468" y2="93" class="lnk"/><text x="434" y="86" text-anchor="middle" class="mech">refs #</text>
-  <line x1="620" y1="93" x2="688" y2="93" class="lnk"/><text x="654" y="86" text-anchor="middle" class="mech">Closes #</text>
+  <line x1="212" y1="100" x2="248" y2="100" class="lnk"/><text x="230" y="92" text-anchor="middle" class="mech">refs #</text>
+  <line x1="432" y1="100" x2="468" y2="100" class="lnk"/><text x="450" y="92" text-anchor="middle" class="mech">refs #</text>
+  <line x1="652" y1="100" x2="688" y2="100" class="lnk"/><text x="670" y="92" text-anchor="middle" class="mech">Closes #</text>
 
-  <!-- connector down -->
-  <path d="M780,116 v40 h-750 v20" fill="none" class="lnk"/>
+  <!-- connector: analysis PR down and around to result artifact -->
+  <path d="M780,124 V160 H120 V204" class="lnk"/>
 
   <!-- row 2 -->
   <g>
-    <rect x="30"  y="196" width="150" height="46" rx="6" class="n"/><text x="105" y="216" text-anchor="middle" class="t">Result artifact</text><text x="105" y="231" text-anchor="middle" class="s">C1</text>
-    <rect x="250" y="196" width="150" height="46" rx="6" class="n"/><text x="325" y="216" text-anchor="middle" class="t">Manuscript PR</text><text x="325" y="231" text-anchor="middle" class="s">C2</text>
-    <rect x="470" y="196" width="150" height="46" rx="6" class="n"/><text x="545" y="216" text-anchor="middle" class="t">Release vX.Y</text><text x="545" y="231" text-anchor="middle" class="s">D1 · auto notes</text>
-    <rect x="690" y="196" width="180" height="46" rx="6" class="n"/><text x="780" y="216" text-anchor="middle" class="t">Zenodo DOI</text><text x="780" y="231" text-anchor="middle" class="s">D2 · external</text>
+    <rect x="30"  y="206" width="180" height="48" rx="6" class="cmp"/>
+    <text x="120" y="228" text-anchor="middle" class="cmpt">Result artifact</text>
+    <text x="120" y="243" text-anchor="middle" class="tag">C1</text>
+    <rect x="250" y="206" width="180" height="48" rx="6" class="cmp"/>
+    <text x="340" y="228" text-anchor="middle" class="cmpt">Manuscript PR</text>
+    <text x="340" y="243" text-anchor="middle" class="tag">C2</text>
+    <rect x="470" y="206" width="180" height="48" rx="6" class="cmp"/>
+    <text x="560" y="228" text-anchor="middle" class="cmpt">Release vX.Y</text>
+    <text x="560" y="243" text-anchor="middle" class="tag">D1 &#183; auto notes</text>
+    <rect x="690" y="206" width="180" height="48" rx="6" class="cmp"/>
+    <text x="780" y="228" text-anchor="middle" class="cmpt">Zenodo DOI</text>
+    <text x="780" y="243" text-anchor="middle" class="tag">D2 &#183; external</text>
   </g>
-  <line x1="180" y1="219" x2="248" y2="219" class="lnk"/><text x="214" y="212" text-anchor="middle" class="mech">Refs #</text>
-  <line x1="400" y1="219" x2="468" y2="219" class="lnk"/><text x="434" y="212" text-anchor="middle" class="mech">Closes #</text>
-  <line x1="620" y1="219" x2="688" y2="219" class="lnk"/><text x="654" y="212" text-anchor="middle" class="mech">tag → notes</text>
+  <line x1="212" y1="230" x2="248" y2="230" class="lnk"/><text x="230" y="222" text-anchor="middle" class="mech">refs #</text>
+  <line x1="432" y1="230" x2="468" y2="230" class="lnk"/><text x="450" y="222" text-anchor="middle" class="mech">Closes #</text>
+  <line x1="652" y1="230" x2="688" y2="230" class="lnk"/><text x="670" y="222" text-anchor="middle" class="mech">tag</text>
 
-  <rect x="30" y="300" width="840" height="130" rx="8" fill="#f6f8fb" stroke="#d6dee8"/>
-  <text x="48" y="324" class="t">Connective mechanism (B3 Linkage Discipline)</text>
-  <text x="48" y="348" class="s">every commit names its issue  ·  every PR uses "Closes #"  ·  every issue names its RQ and milestone</text>
-  <text x="48" y="368" class="s">the issue / PR timeline records each reference  ·  autogenerated release notes inherit the PR → issue chain</text>
-  <text x="48" y="396" class="s">Manual and only as complete as contributors' referencing discipline; no lineage query; stops at data/computation</text>
-  <text x="48" y="414" class="s">without deliberate upstream linking (RM2, RM5).</text>
+  <!-- connective-mechanism panel -->
+  <rect x="30" y="300" width="840" height="138" rx="8" class="panel"/>
+  <text x="48" y="324" class="plbl">Connective mechanism &#8212; B3 Linkage Discipline (mandatory)</text>
+  <text x="48" y="346" class="ptxt">every commit names its issue &#183; every pull request uses &#8220;Closes #&#8221; &#183; every issue names its RQ and milestone</text>
+  <text x="48" y="366" class="ptxt">the issue / pull-request timeline records each reference &#183; autogenerated release notes inherit the PR &#8594; issue chain</text>
+  <text x="48" y="392" class="ptxt">Manual, and only as complete as contributors' referencing discipline; no lineage query; coverage tends to</text>
+  <text x="48" y="410" class="ptxt">stop at data and computation unless the upstream links to questions (RM2) and decisions (RM5) are made deliberately.</text>
 </svg>

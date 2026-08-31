@@ -315,3 +315,19 @@ Chronological record of major methodological decisions. Each entry: ID, date, co
 - **Framing:** this is a **partial mitigation, not human inter-rater reliability** — the LLM had prior repository exposure (not fully blind), and the support-level unit is the least independent because the matrix documents its own Direct/Partial/Limited rationale. The single-coder limitation therefore *stands as declared* in the manuscript, now qualified by a measured robustness check. OPEN_ITEMS 2.7/3.1/5.2/9.1 move *limitation* → *limitation (mitigated)*.
 - **Alternatives:** intra-rater test–retest (same coder, same biases; needs a washout the compressed build cannot provide); publish the rubric only and leave the items as pure limitations (rejected as weaker — a re-code, even LLM, is concrete evidence of rubric-consistency).
 - **Affects:** `case-study/reliability_check.md`, `case-study/reliability_check.csv`; `analysis/scripts/reliability_summary.py`, `results/framework/reliability_summary.md`; `analysis/README.md`; `case-study/evaluation.md` §1/§6; `docs/OPEN_ITEMS.md`. Manuscript Limitations wording (deferred to issue #6): "single coder; an independent LLM re-code of all 53 coded decisions agreed at 96.2%, κ 0.83–1.00, changing no reported conclusion".
+
+---
+
+## D27 — Manuscript reconciled and expanded for submission
+
+- **Date:** 2026-08-31 · **Closes:** GitHub issues #5, #6, #7 (with #8, #9) · OPEN_ITEMS 12.2–12.4
+- **Context:** `manuscript/paper.tex` still carried pre-re-score figures and the "Scopus/WoS not used" framing; `D23`, `D24`, `D25`, `D26` each deferred their manuscript wording to this pass. The body was also short (~3.7k words) and thin on related work and per-requirement detail (issue #6).
+- **Decision:** execute the deferred edits and a bounded expansion in one manuscript pass:
+  - **Figures reconciled** — evaluation overall 1.62 → **1.86** (observed-only, n=20, **1.85**); components exercised 8/15 → **13/15**; usability 1.25 → **1.50**; E2 1.50→1.75, E4 1.75→2.00, E5 1.50→2.00; Table 4 and its caption; Abstract, Results §3.3, Methods §2.7, Discussion §4.2 ("nineteen"→"twenty-six" logged decisions), Limitations.
+  - **Scopus/WoS** (`D24`) — Methods §2.2 and Limitations changed from "not used, a limitation" to "cross-checked; 18,250 raw records; 22% DOI overlap; characterised precision tail".
+  - **External validity** (`D25`) — new Results §3.3 paragraph and a Future-research sentence (retrospective single-case done; prospective multi-author instantiation is the next step).
+  - **Reliability re-code** (`D26`) — Methods §2.3 and Limitations note the 96% / κ 0.83–1.00 re-code and that it leaves every figure unchanged.
+  - **DOIs** (issue #5) — data-availability statement cites the software DOI `10.5281/zenodo.22167500` and dataset DOI `10.5281/zenodo.22173525`; matches `CITATION.cff` and the README badge.
+  - **References** (issue #7) — all 24 cited entries verified against Crossref; `chen2025` issue 3→2; 15 entries gained missing `number`/`pages`; 4 entries added for the new related-work text, also Crossref-checked.
+  - **Expansion** (issue #6) — new §1.4 "Prior reviews, by strand"; expanded Methods §2.2/§2.3; a per-requirement narrative in Results §3.2. Body 3.7k → **4.9k words**, 19 pp., `latexmk` clean (bibtex 0 warnings, no undefined citations). Not padded to a literal 8k — *Scientometrics* sets no minimum and further depth would be unsupported prose; revisited against the author guidelines in issue #9.
+- **Affects:** `manuscript/paper.tex`, `manuscript/references.bib`; `analysis/findings.csv` (F26); `literature/references_factcheck.md`; `docs/OPEN_ITEMS.md`. Figures 3 & 4 redrawn to a common palette (issue #8): `fig3_architecture.svg` restyled by the author, `fig4_traceability.svg` rebuilt to match; both render as clean vector PDF via `rsvg-convert` in `build.sh`.
