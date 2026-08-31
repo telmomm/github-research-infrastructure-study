@@ -331,3 +331,14 @@ Chronological record of major methodological decisions. Each entry: ID, date, co
   - **References** (issue #7) — all 24 cited entries verified against Crossref; `chen2025` issue 3→2; 15 entries gained missing `number`/`pages`; 4 entries added for the new related-work text, also Crossref-checked.
   - **Expansion** (issue #6) — new §1.4 "Prior reviews, by strand"; expanded Methods §2.2/§2.3; a per-requirement narrative in Results §3.2. Body 3.7k → **4.9k words**, 19 pp., `latexmk` clean (bibtex 0 warnings, no undefined citations). Not padded to a literal 8k — *Scientometrics* sets no minimum and further depth would be unsupported prose; revisited against the author guidelines in issue #9.
 - **Affects:** `manuscript/paper.tex`, `manuscript/references.bib`; `analysis/findings.csv` (F26); `literature/references_factcheck.md`; `docs/OPEN_ITEMS.md`. Figures 3 & 4 redrawn to a common palette (issue #8): `fig3_architecture.svg` restyled by the author, `fig4_traceability.svg` rebuilt to match; both render as clean vector PDF via `rsvg-convert` in `build.sh`.
+
+---
+
+## D28 — Release v1.1.0 (submission snapshot)
+
+- **Date:** 2026-08-31
+- **Context:** Phase 12 is complete. Since `v1.0.0` (`D21`): the repository was made public (`D22`), one full Issue→PR→Release cycle was run over issues #1–#12, the evaluation was re-scored on observed evidence 1.62 → 1.86 / 2 (`D23`), a Scopus/Web of Science coverage cross-check was executed (`D24`), the template was instantiated on an unrelated published project (`D25`), all 53 coded decisions were independently re-coded (`D26`), and the manuscript was reconciled to the re-scored figures, expanded and prepared for submission with a cover letter and checklist (`D27`, issues #5–#9). Figures 3 & 4 were redrawn (issue #8). All `OPEN_ITEMS.md` rows are now closed or declared limitations.
+- **Decision:** Cut **v1.1.0**. `CHANGELOG.md` `[Unreleased]` promoted to `[1.1.0] — 2026-08-31`; `CITATION.cff` `version: 1.1.0`, `date-released: 2026-08-31`. This is the **submission snapshot**: the state deposited on Zenodo and submitted to *Scientometrics*.
+- **Rationale:** minor version — substantial additions and a full manuscript reconciliation, but the framework, the coverage results and the conclusions are unchanged from v1.0.0.
+- **Not in v1.1.0:** post-submission revisions (reviewer responses), the `sn-basic` (author–year) reference-style switch, ORCID on the title page, and the prospective multi-author template instantiation — these are future / `[Unreleased]` work.
+- **Affects:** `CHANGELOG.md`; `CITATION.cff`; `docs/ROADMAP.md`; `case-study/live_cycle_demo.md` (the `v1.1.0` placeholder is now the real release); git tag `v1.1.0`; Zenodo software record `10.5281/zenodo.22167500` (new version).

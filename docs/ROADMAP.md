@@ -19,7 +19,7 @@
 | 9 — Evaluation | **complete** — 6 dimensions scored, overall 1.62/2 (`case-study/evaluation.md`, `PHASE9_PROGRESS.md`, `DECISION_LOG.md` D15) |
 | 10 — Analysis | **complete** — 32-finding synthesis of RQ1–RQ5 (`analysis/synthesis.md`, `findings.csv`; `PHASE10_PROGRESS.md`, `DECISION_LOG.md` D19) |
 | 11 — Manuscript | **complete (v1 draft)** — `manuscript/paper.tex`, 16 pp., compiles clean (`PHASE11_PROGRESS.md`, `DECISION_LOG.md` D20) |
-| 12 — Publication | **in progress** — v1.0.0 cut 2026-08-30 (`DECISION_LOG.md` D21); remaining: 3 user-tasks, Zenodo DOI, submission |
+| 12 — Publication | **complete** — issues #1–#12 done; repo public, live cycle run, evaluation re-scored (1.86/2), Scopus/WoS cross-check, external-validity study, second-coding re-code, manuscript reconciled + expanded, cover letter + checklist. **v1.1.0** cut 2026-08-31 as the submission snapshot (`DECISION_LOG.md` D28); remaining: `sn-basic` reference style, ORCID, fresh Zenodo release, upload to *Scientometrics* (`manuscript/submission_checklist.md`) |
 
 ---
 

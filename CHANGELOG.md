@@ -8,12 +8,45 @@ Methodological decisions are logged separately in [`docs/DECISION_LOG.md`](docs/
 
 ## [Unreleased]
 
-### Working towards
-- Phase 12 — Publication: final review; complete the three `docs/OPEN_ITEMS.md` user-tasks (make the repo public, run one live Issue→PR→Release cycle, screenshot the Project); archive on Zenodo and add the DOI to `paper.tex` and `CITATION.cff`; submit to *Scientometrics*.
+Nothing yet — post-submission revisions will land here.
 
-### Carried to the manuscript (not blockers)
-- Limitations: single-coder project (no second rater on RE→RM, the 15 support scores, or the 21 evaluation sub-scores); no Scopus/WoS access (OpenAlex trade-off).
-- Future work: instantiate the template for an unrelated second project.
+### Carried to the manuscript (declared limitations)
+- **Single-*human*-coder project.** An independent LLM re-code of all 53 coded decisions (17 RE→RM assignments, 15 support scores, 21 evaluation sub-scores) agreed at 96.2 % (Cohen's κ 0.83–1.00 by unit), leaving every reported figure unchanged; a second *human* rater was not available. `DECISION_LOG.md` D26.
+- **Coordination layer run once, solo.** The self-referential implementation exercised the Issue/Project/Pull-Request layer through one full cycle but its multi-author value (review, communication) is untested.
+- **OpenAlex + arXiv corpus.** A Scopus/Web of Science cross-check (18,250 raw records) shares 22 % of its DOIs with the corpus; the delta is a characterised precision tail of tool-citing papers, not missed core literature. `DECISION_LOG.md` D24.
+- **Second-project instantiation is retrospective.** Structural/coverage transfer is shown on one further, published project sharing the lead author; a prospective, multi-author instantiation is future work. `DECISION_LOG.md` D25.
+
+---
+
+## [1.1.0] — 2026-08-31 — Phase 12: Publication
+
+Publication phase. The repository was made public, one full Issue→branch→Pull-Request→merge→Release
+cycle was run over the study's own backlog, and the framework claims were hardened with a coverage
+cross-check, an external-validity study and an independent re-code. The manuscript was reconciled to
+the post-re-score figures, expanded, and prepared for submission to *Scientometrics*.
+Answers RQ1–RQ5 at submission state. `DECISION_LOG.md` D21–D27. GitHub issues #1–#12 (milestone
+*Phase 12 – Publication*).
+
+### Added
+- `manuscript/cover_letter.md`, `manuscript/submission_checklist.md` — draft cover letter and a per-item pre-submission checklist against the Springer Nature / *Scientometrics* guidelines (issue #9).
+- `case-study/live_cycle_demo.md` — record of one real Issue→PR→Release cycle over issues #1–#12 (issue #2).
+- `case-study/external_validity.md`, `external_validity_mapping.csv`, `analysis/scripts/summarise_external_validity.py`, `results/framework/external_validity_summary.md` — retrospective instantiation of the template on an unrelated published clinical-ML project (*PreMoCir*): 8 covered / 3 convention / 4 external, same profile as the self-referential case (issue #12; `DECISION_LOG.md` D25).
+- `case-study/reliability_check.md`, `reliability_check.csv`, `analysis/scripts/reliability_summary.py`, `results/framework/reliability_summary.md` — independent LLM re-code of all 53 coded decisions; 96.2 % agreement, κ 0.83–1.00 (issue #10; `DECISION_LOG.md` D26).
+- Track A coverage cross-check: `analysis/scripts/scopus_wos_crosscheck.py`, `results/track_a/scopus_wos_crosscheck.md`, `xref_not_in_corpus.csv.gz`; raw Scopus/WoS exports archived in the companion Zenodo dataset record (issue #11; `DECISION_LOG.md` D24).
+- `manuscript/figures/project-board.png` — screenshot of the configured GitHub Project (issue #1); `docs/FIGURES_AND_TABLES.md` supplementary Figure 6.
+- Companion Zenodo **dataset** record `10.5281/zenodo.22173525` (Track A corpus + processed datasets + raw OpenAlex/arXiv/Scopus/WoS exports), alongside the auto-generated **software** record `10.5281/zenodo.22167500`; both added to `CITATION.cff` `identifiers:` (issue #11).
+- `manuscript/references.bib` — 4 entries added for the new related-work text; all 28 cited entries verified against Crossref (issue #7); `literature/references_factcheck.md` "Phase 12" section.
+- `DECISION_LOG.md` D22 (repo public), D23 (evaluation re-score), D24 (Scopus/WoS cross-check), D25 (external validity), D26 (reliability re-code), D27 (manuscript reconciliation).
+
+### Changed
+- **Repository visibility → public** (issue #4; `DECISION_LOG.md` D22); `case-study/implementation_record.csv` X1/D3 → partial, A2 → native, C2/D1 → partial; **13 of 15** architecture components now exercised.
+- **Evaluation re-scored on observed evidence** after the public repo and the live cycle (issue #3; `DECISION_LOG.md` D23): E2 1.50→1.75, E4 1.75→2.00, E5 1.50→2.00, E6 1.25→1.50; **overall 1.62 → 1.86 / 2** (observed-only 1.76 → 1.85, n=20). Propagated to `case-study/evaluation.md`, `results/framework/eval_*`, `analysis/findings.csv`, `analysis/synthesis.md`, `docs/PHASE9_PROGRESS.md`.
+- **`manuscript/paper.tex` reconciled and expanded** (issues #5, #6; `DECISION_LOG.md` D27): all stale figures updated (1.86/2, 13/15 components, usability 1.50, Table 4); Scopus/WoS reframed from "not used, a limitation" to a measured cross-check; added §1.4 "Prior reviews, by strand", expanded Methods §2.2–§2.3, a per-requirement narrative in Results §3.2, an external-validity paragraph, and the re-code in Limitations; data-availability statement cites both Zenodo DOIs. Abstract 377→290 words, keywords 8→6; Declarations gained Ethics approval and Author contributions. Body ≈3.7k→4.9k words, ~19 pp.; `latexmk` clean (bibtex 0 warnings, no undefined citations).
+- **Figures 3 & 4 redrawn** to a common palette (issue #8): `fig3_architecture.svg` restyled (B3 keystone highlighted), `fig4_traceability.svg` rebuilt; exported as `.png` for the manuscript, `\usepackage{svg}` added.
+- `docs/OPEN_ITEMS.md` — Phase 12 rows 12.1–12.6 closed; 2.7/3.1/5.2/9.1 → *limitation (mitigated)*; 8.2 → closed; summary now 26 closed, 4 mitigated-limitations, 0 user-tasks, 0 future-work.
+- `analysis/findings.csv` — F20/F21 (13/15 components, 1.86/2), F24/F25 (coordination-layer + single-coder reworded), F26 (Scopus/WoS cross-check).
+- `literature/search_log.md`, `data/README.md`, `analysis/README.md`, `.github/release-checklist.md`, `.gitignore` — updated for the Scopus/WoS run and the companion dataset record.
+- `CITATION.cff` version → 1.1.0; `CHANGELOG.md` [Unreleased] promoted to [1.1.0].
 
 ---
 
