@@ -8,7 +8,8 @@ Methodological decisions are logged separately in [`docs/DECISION_LOG.md`](docs/
 
 ## [Unreleased]
 
-Nothing yet — post-submission revisions will land here.
+### Added
+- **`manuscript_csmag/`** — a sibling manuscript adapting this study for IEEE *Computing in Science & Engineering* (`IEEEcsmag` template): condensed, narrative rewrite (~3,042 words abstract+body+references), 20 references, 3 figures, 2 tables, author biography. `manuscript/` (the *Scientometrics* submission, v1.1.0) is unchanged. `DECISION_LOG.md` D29.
 
 ### Carried to the manuscript (declared limitations)
 - **Single-*human*-coder project.** An independent LLM re-code of all 53 coded decisions (17 RE→RM assignments, 15 support scores, 21 evaluation sub-scores) agreed at 96.2 % (Cohen's κ 0.83–1.00 by unit), leaving every reported figure unchanged; a second *human* rater was not available. `DECISION_LOG.md` D26.
