@@ -35,3 +35,6 @@ data/raw/scopus/
 
 # Local build artifacts for Zenodo deposit (not versioned)
 dist/
+
+# Vendor template downloads (reference only, not part of the tracked artifact)
+manuscript/TEMPLATE - CsMag/
