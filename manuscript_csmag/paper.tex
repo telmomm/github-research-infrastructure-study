@@ -33,13 +33,13 @@ Research projects generate a long chain of interdependent artifacts --- question
 
 \maketitle
 
-\chapteri{A} modern research project is not a single artifact but a chain of them: a question, a protocol, a literature corpus, data, analysis code, a computational environment, intermediate results, figures, a manuscript, and eventually released software and supplementary material. These objects evolve continuously, are touched by distributed and often multidisciplinary teams, and computational and data-intensive research keeps adding more of them while raising the cost of keeping them consistent.\textsuperscript{1--3}
+\chapteri{A} modern research project is not a single artifact but a chain of them: a question, a protocol, a literature corpus, data, analysis code, a computational environment, intermediate results, figures, a manuscript, and eventually released software and supplementary material. These objects evolve continuously, are touched by distributed and often multidisciplinary teams, and computational and data-intensive research keeps adding more of them while raising the cost of keeping them consistent.\textsuperscript{1}
 
-In everyday practice, these artifacts and the work that produces them are scattered across disconnected systems --- email, cloud drives, spreadsheets, reference managers, statistical software, code repositories, task boards, manuscript editors. Each tool serves its own purpose well, but the layer that should coordinate them is largely missing. Reviews of research data management, scholarly infrastructure and grant reporting repeatedly link this fragmentation to weak decision traceability, incomplete process documentation, inconsistent versioning and low project visibility.\textsuperscript{4,5}
+In everyday practice, these artifacts and the work that produces them are scattered across disconnected systems --- email, cloud drives, spreadsheets, reference managers, statistical software, code repositories, task boards, manuscript editors. Each tool serves its own purpose well, but the layer that should coordinate them is largely missing. Reviews of research data management and of post-award grant management repeatedly link this fragmentation to weak decision traceability, incomplete process documentation, inconsistent versioning and low project visibility.\textsuperscript{2,3}
 
-Two decades of work on scientific workflow systems, provenance, research data management and open-science platforms have produced solid evidence on stewarding research \emph{outputs} --- repositories, persistent identifiers, curation, dissemination.\textsuperscript{6--9} Managing the research \emph{process} itself --- planning, question formulation, decision tracking, cross-stage coordination --- has received far less systematic attention.\textsuperscript{10,11} The review literature is itself split into partly connected strands: workflow-system surveys that start from an executable pipeline and take the question and the plan behind it as given\textsuperscript{1--3}; provenance research that extends lineage tracking to data and computation but rarely reaches the upstream intellectual choices\textsuperscript{6,7}; data-management reviews centered on data as an output rather than the process that generated it\textsuperscript{4}; research-information-system reviews pitched at an institutional, reporting granularity\textsuperscript{9,12}; and open-science syntheses focused on transparency and incentives rather than day-to-day process management.\textsuperscript{13} A separate, mostly informal strand of guidance and case reports argues that Git and GitHub can carry collaborative, reproducible research in computational biology, ecology and the laboratory.\textsuperscript{14--18} This study cuts across all of these: it treats the research \emph{process} as the object to be managed and asks how far one widely available platform can cover the requirements each strand touches but none addresses as a whole.
+Two decades of work on scientific workflow systems, provenance, research data management and open-science platforms have produced solid evidence on stewarding research \emph{outputs} --- repositories, persistent identifiers, curation, dissemination.\textsuperscript{1,2,4} Managing the research \emph{process} itself --- planning, question formulation, decision tracking, cross-stage coordination --- has received far less systematic attention.\textsuperscript{5} The review literature is itself split into partly connected strands: workflow-system surveys that start from an executable pipeline and take the question and the plan behind it as given\textsuperscript{1}; provenance research that extends lineage tracking to data and computation but rarely reaches the upstream intellectual choices\textsuperscript{4}; data-management reviews centered on data as an output rather than the process that generated it\textsuperscript{2}; research-information-system reviews pitched at an institutional, reporting granularity\textsuperscript{6}; and open-science syntheses focused on transparency and incentives rather than day-to-day process management.\textsuperscript{7} A separate, mostly informal strand of guidance and case reports argues that Git and GitHub can carry collaborative, reproducible research in computational biology, ecology and the laboratory.\textsuperscript{8--10} This study cuts across all of these: it treats the research \emph{process} as the object to be managed and asks how far one widely available platform can cover the requirements each strand touches but none addresses as a whole.
 
-GitHub already offers primitives for coordination, versioning, issue tracking, structured discussion, review and automation, and its footprint in the scholarly record is growing and measurable.\textsuperscript{19} But the evidence for using it as research infrastructure is case-based, and studies that mine GitHub as data caution that its use is heterogeneous and often shallow.\textsuperscript{20} Whether its native primitives can be organized into an infrastructure for managing the research process, and which parts of that process they can actually cover, had not been established on an evidentiary basis. This article answers that question directly: it does not claim GitHub replaces specialized research infrastructure, only that it can serve as the coordination and traceability layer research management currently lacks.
+GitHub already offers primitives for coordination, versioning, issue tracking, structured discussion, review and automation, and its footprint in the scholarly record is growing and measurable.\textsuperscript{11} But the evidence for using it as research infrastructure is case-based, and studies that mine GitHub as data caution that its use is heterogeneous and often shallow.\textsuperscript{12} Whether its native primitives can be organized into an infrastructure for managing the research process, and which parts of that process they can actually cover, had not been established on an evidentiary basis. This article answers that question directly: it does not claim GitHub replaces specialized research infrastructure, only that it can serve as the coordination and traceability layer research management currently lacks.
 
 \section{HOW I STUDIED THIS}
 
@@ -153,32 +153,17 @@ The study repository --- bibliographic corpus, coding sheets, requirement and ma
 \bibitem{liew2016}
 C. S. Liew, M. P. Atkinson, M. Galea, T. F. Ang, P. Martin, and J. I. van Hemert, ``Scientific workflows: Moving across paradigms,'' {\it ACM Comput. Surveys}, vol. 49, no. 4, pp. 1--39, 2016.
 
-\bibitem{mattoso2015}
-M. Mattoso et al., ``Dynamic steering of HPC scientific workflows: A survey,'' {\it Future Gener. Comput. Syst.}, vol. 46, pp. 100--113, 2015.
-
-\bibitem{davidson2008}
-S. B. Davidson and J. Freire, ``Provenance and scientific workflows: Challenges and opportunities,'' in {\it Proc. 2008 ACM SIGMOD Int. Conf. Manage. Data}, 2008, pp. 1345--1350.
-
 \bibitem{perrier2017}
 L. Perrier et al., ``Research data management in academic institutions: A scoping review,'' {\it PLoS ONE}, vol. 12, no. 5, p. e0178261, 2017.
 
 \bibitem{crane2023}
 K. Crane, A. Blatch-Jones, and K. Fackrell, ``The post-award effort of managing and reporting on funded research: A scoping review,'' {\it F1000Research}, vol. 12, p. 863, 2023.
 
-\bibitem{perez2018}
-B. P\'erez, J. Rubio, and C. S\'aenz-Ad\'an, ``A systematic review of provenance systems,'' {\it Knowl. Inf. Syst.}, vol. 57, no. 3, pp. 495--543, 2018.
-
-\bibitem{kirkham2020}
-J. J. Kirkham et al., ``Systematic examination of preprint platforms for use in the medical and biomedical sciences setting,'' {\it BMJ Open}, vol. 10, no. 12, p. e041849, 2020.
-
-\bibitem{mayernik2017}
-M. S. Mayernik, D. L. Hart, K. E. Maull, and N. M. Weber, ``Assessing and tracing the outcomes and impact of research infrastructures,'' {\it J. Assoc. Inf. Sci. Technol.}, vol. 68, no. 6, pp. 1341--1359, 2017.
+\bibitem{davidson2008}
+S. B. Davidson and J. Freire, ``Provenance and scientific workflows: Challenges and opportunities,'' in {\it Proc. 2008 ACM SIGMOD Int. Conf. Manage. Data}, 2008, pp. 1345--1350.
 
 \bibitem{cox2018}
 A. Cox and W. Tam, ``A critical analysis of lifecycle models of the research process and research data management,'' {\it Aslib J. Inf. Manage.}, vol. 70, no. 2, pp. 142--157, 2018.
-
-\bibitem{devkota2026}
-N. Devkota, M. Siddique, D. Karki, and D. Thapa, ``Research in the age of AI --- How to plan? A bibliometric exploration of the research lifecycle,'' {\it Int. Res. J. MMC}, vol. 7, no. 3, pp. 94--116, 2026.
 
 \bibitem{haris2026}
 M. Haris, S. Auer, and M. Stocker, ``Research information systems and knowledge graphs: A review,'' {\it Front. Res. Metrics Anal.}, vol. 11, p. 1786866, 2026.
@@ -186,23 +171,14 @@ M. Haris, S. Auer, and M. Stocker, ``Research information systems and knowledge 
 \bibitem{klebel2025}
 T. Klebel, V. Traag, I. Grypari, L. Stoy, and T. Ross-Hellauer, ``The academic impact of Open Science: A scoping review,'' {\it R. Soc. Open Sci.}, vol. 12, no. 3, p. 241248, 2025.
 
-\bibitem{sandve2013}
-G. K. Sandve, A. Nekrutenko, J. Taylor, and E. Hovig, ``Ten simple rules for reproducible computational research,'' {\it PLoS Comput. Biol.}, vol. 9, no. 10, p. e1003285, 2013.
-
 \bibitem{blischak2016}
 J. D. Blischak, E. R. Davenport, and G. Wilson, ``A quick introduction to version control with Git and GitHub,'' {\it PLoS Comput. Biol.}, vol. 12, no. 1, p. e1004668, 2016.
-
-\bibitem{wilson2017}
-G. Wilson, J. Bryan, K. Cranston, J. Kitzes, L. Nederbragt, and T. K. Teal, ``Good enough practices in scientific computing,'' {\it PLoS Comput. Biol.}, vol. 13, no. 6, p. e1005510, 2017.
 
 \bibitem{braga2023}
 P. H. P. Braga et al., ``Not just for programmers: How GitHub can accelerate collaborative and reproducible research in ecology and evolution,'' {\it Methods Ecol. Evol.}, vol. 14, no. 6, pp. 1364--1380, 2023.
 
 \bibitem{chen2025}
 K. M. Chen, M. Toro-Moreno, and A. R. Subramaniam, ``GitHub enables collaborative and reproducible laboratory research,'' {\it PLoS Biol.}, vol. 23, no. 2, p. e3003029, 2025.
-
-\bibitem{crystalornelas2021}
-R. Crystal-Ornelas et al., ``A guide to using GitHub for developing and versioning data standards and reporting formats,'' {\it Earth Space Sci.}, vol. 8, no. 8, p. e2021EA001797, 2021.
 
 \bibitem{escamilla2022}
 E. Escamilla, M. Klein, T. Cooper, V. Rampin, M. C. Weigle, and M. L. Nelson, ``The rise of GitHub in scholarly publications,'' in {\it Proc. Linking Theory Practice Digit. Libraries (TPDL 2022)}, 2022, pp. 187--200.
