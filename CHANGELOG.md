@@ -13,6 +13,7 @@ Methodological decisions are logged separately in [`docs/DECISION_LOG.md`](docs/
 
 ### Changed
 - **`manuscript_csmag/` references cut from 20 to 12** per CiSE editorial feedback (12-reference limit); citations renumbered in order of first appearance. `DECISION_LOG.md` D30.
+- **`manuscript_csmag/` abstract cut from 189 to 141 words** per CiSE editorial feedback (150-word abstract limit); content unchanged, dashes replaced by parentheses so no word counter can push it over. `DECISION_LOG.md` D31.
 
 ### Carried to the manuscript (declared limitations)
 - **Single-*human*-coder project.** An independent LLM re-code of all 53 coded decisions (17 RE→RM assignments, 15 support scores, 21 evaluation sub-scores) agreed at 96.2 % (Cohen's κ 0.83–1.00 by unit), leaving every reported figure unchanged; a second *human* rater was not available. `DECISION_LOG.md` D26.
