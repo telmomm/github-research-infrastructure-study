@@ -1,0 +1,13 @@
+stage,n_substring,pct_substring,n_anchored,pct_anchored
+data_management,2613,50.8,2613,50.8
+analysis_workflow,2153,41.9,2151,41.9
+dissemination,1207,23.5,1202,23.4
+coordination,1085,21.1,1084,21.1
+methods_protocol,704,13.7,702,13.7
+planning,641,12.5,608,11.8
+literature,507,9.9,506,9.8
+outputs_identification,502,9.8,289,5.6
+governance,459,8.9,458,8.9
+provenance,358,7.0,358,7.0
+idea_question,190,3.7,190,3.7
+(no theme matched),489,9.5,,
