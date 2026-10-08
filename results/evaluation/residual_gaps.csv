@@ -1,0 +1,12 @@
+criterion_id,rm_id,expected_capability,best_free_score
+RM1.2,RM1,objective tracking,2
+RM1.4,RM1,plan revision history,2
+RM2.1,RM2,question registration,2
+RM5.5,RM5,artifact links,2
+RM8.5,RM8,large-file handling,2
+RM9.1,RM9,defined repository structure,2
+RM9.2,RM9,artifact classification,2
+RM9.3,RM9,cross-tool references,2
+RM10.2,RM10,lineage retrieval,1
+RM10.3,RM10,cross-stage linking,2
+RM12.1,RM12,environment capture,2

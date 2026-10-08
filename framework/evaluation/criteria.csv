@@ -1,0 +1,63 @@
+criterion_id,rm_id,expected_capability,test
+RM1.1,RM1,phase and milestone definition,Named phases or milestones with dates can be defined and work items attached to them
+RM1.2,RM1,objective tracking,Objectives can be recorded and progress toward them seen
+RM1.3,RM1,roadmap overview,A timeline view shows phases across the project
+RM1.4,RM1,plan revision history,Earlier versions of the plan can be retrieved
+RM2.1,RM2,question registration,"A research question can be registered as a distinct, identifiable record"
+RM2.2,RM2,revision history,Earlier wordings of a question can be retrieved and compared
+RM2.3,RM2,question-to-method/analysis/output links,"A question can be linked to the items that address it, and the links followed in both directions"
+RM3.1,RM3,task creation,A unit of work can be created as a record
+RM3.2,RM3,status,"At least to-do, in-progress and done can be recorded per task"
+RM3.3,RM3,assignment,A task can be assigned to a person
+RM3.4,RM3,priority,A priority can be recorded per task and used to sort
+RM3.5,RM3,dependency links,One task can be marked as blocking another
+RM3.6,RM3,board overview,Tasks can be viewed on a board by status
+RM4.1,RM4,structured documents,Structured text documents render in place
+RM4.2,RM4,templates,Templates can be defined for recurring documents and records
+RM4.3,RM4,versioned edits,Every edit to a document is versioned and attributable
+RM4.4,RM4,early-stage metadata,"Project metadata can be recorded in structured, machine-readable form from the start"
+RM5.1,RM5,decision records,A decision can be recorded as a distinct type of record
+RM5.2,RM5,rationale and alternatives,The record has structured places for rationale and alternatives considered
+RM5.3,RM5,timestamp,The record carries the date of the decision
+RM5.4,RM5,participants,The record names who took part
+RM5.5,RM5,artifact links,The record links to the artifacts the decision affects
+RM6.1,RM6,review workflow,"A change is reviewed by another person before integration, and the review can be made mandatory"
+RM6.2,RM6,comment and feedback,Reviewers can comment on specific lines and propose changes
+RM6.3,RM6,contribution history,Who contributed what can be retrieved
+RM6.4,RM6,parallel branches,Contributors can work in parallel and merge
+RM7.1,RM7,threaded discussion,Threaded conversation is possible outside a code change
+RM7.2,RM7,linking of topics to tasks and artifacts,A conversation can be linked to the task or artifact it concerns
+RM7.3,RM7,searchable archive,Past conversations can be searched
+RM8.1,RM8,history,Complete change history per file
+RM8.2,RM8,diff,Any two versions can be compared
+RM8.3,RM8,restore,An earlier state can be restored
+RM8.4,RM8,tags and snapshots,A state can be named and retrieved later
+RM8.5,RM8,large-file handling,Large binary or data files can be versioned
+RM9.1,RM9,defined repository structure,A project structure can be defined and reused
+RM9.2,RM9,artifact classification,Artifacts can be classified by type
+RM9.3,RM9,cross-tool references,Artifacts held in other systems can be referenced in a structured way
+RM9.4,RM9,single navigable workspace,Everything can be reached from one place
+RM10.1,RM10,activity-to-artifact links,A task can be linked to the change that resolved it
+RM10.2,RM10,lineage retrieval,The chain from an output back to its origins can be queried
+RM10.3,RM10,cross-stage linking,Items from different stages can be linked
+RM10.4,RM10,granular history,Changes are attributable per line
+RM11.1,RM11,visible status,An outsider can see project status without an account
+RM11.2,RM11,shared or public history,Change history is visible to outsiders
+RM11.3,RM11,accessible documentation,Documentation is readable by outsiders
+RM11.4,RM11,readable activity log,Recent activity can be read as a log
+RM12.1,RM12,environment capture,The computational environment can be recorded with the project
+RM12.2,RM12,pinned data and code versions,Exact versions of code and data can be referenced
+RM12.3,RM12,runnable steps,The steps to regenerate results can be executed from the platform
+RM12.4,RM12,hooks for automated checks,Checks run automatically on proposed changes and can block integration
+RM13.1,RM13,event-triggered workflows,Automation can be triggered by project events
+RM13.2,RM13,validation and CI,Validation runs on every change
+RM13.3,RM13,scheduled checks,Checks can run on a schedule
+RM13.4,RM13,build and release automation,Releases can be built and published automatically
+RM14.1,RM14,versioned releases,A named version can be published with notes and files
+RM14.2,RM14,persistent identifiers via external archive,A release can be deposited in an archive that assigns a persistent identifier
+RM14.3,RM14,machine-readable metadata,Citation metadata is machine-readable and used by the platform
+RM14.4,RM14,output-to-process links,A release links back to the work that produced it
+RM15.1,RM15,access and permission policy,Access can be set by role
+RM15.2,RM15,ownership and handover,Ownership can be transferred
+RM15.3,RM15,contribution guidelines,Contribution rules are surfaced to contributors
+RM15.4,RM15,archival exit plan,The project can be frozen and exported at its end

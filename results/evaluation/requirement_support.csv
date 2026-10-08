@@ -1,0 +1,16 @@
+rm_id,n_criteria,GH_free,GH_free_label,GH_best,GH_best_label,GL_free,GL_free_label,GL_best,GL_best_label,BB_free,BB_free_label,BB_best,BB_best_label,AT_free,AT_free_label,AT_best,AT_best_label
+RM1,4,2.50,Direct,2.50,Direct,2.00,Partial,2.50,Direct,0.50,Limited,0.50,Limited,2.50,Direct,2.50,Direct
+RM2,3,2.33,Partial,2.33,Partial,1.67,Partial,2.33,Partial,1.33,Limited,1.33,Limited,2.67,Direct,2.67,Direct
+RM3,6,3.00,Direct,3.00,Direct,2.33,Partial,2.83,Direct,0.00,Not supported,0.00,Not supported,3.00,Direct,3.00,Direct
+RM4,4,3.00,Direct,3.00,Direct,2.75,Direct,2.75,Direct,2.50,Direct,2.50,Direct,2.75,Direct,2.75,Direct
+RM5,5,2.40,Partial,2.40,Partial,2.40,Partial,2.40,Partial,1.20,Limited,1.20,Limited,2.80,Direct,2.80,Direct
+RM6,4,3.00,Direct,3.00,Direct,2.75,Direct,3.00,Direct,2.50,Direct,2.75,Direct,2.50,Direct,2.75,Direct
+RM7,3,3.00,Direct,3.00,Direct,3.00,Direct,3.00,Direct,1.00,Limited,1.00,Limited,3.00,Direct,3.00,Direct
+RM8,5,2.80,Direct,2.80,Direct,2.80,Direct,2.80,Direct,2.80,Direct,2.80,Direct,2.80,Direct,2.80,Direct
+RM9,4,2.25,Partial,2.25,Partial,2.25,Partial,2.25,Partial,2.25,Partial,2.25,Partial,2.00,Partial,2.00,Partial
+RM10,4,2.25,Partial,2.25,Partial,2.25,Partial,2.25,Partial,1.50,Partial,1.50,Partial,2.25,Partial,2.25,Partial
+RM11,4,3.00,Direct,3.00,Direct,3.00,Direct,3.00,Direct,2.00,Partial,2.00,Partial,2.00,Partial,2.25,Partial
+RM12,4,2.75,Direct,2.75,Direct,2.75,Direct,2.75,Direct,2.50,Direct,2.75,Direct,2.50,Direct,2.75,Direct
+RM13,4,3.00,Direct,3.00,Direct,3.00,Direct,3.00,Direct,2.75,Direct,2.75,Direct,2.75,Direct,2.75,Direct
+RM14,4,3.00,Direct,3.00,Direct,2.25,Partial,2.25,Partial,1.25,Limited,1.25,Limited,1.75,Partial,1.75,Partial
+RM15,4,3.00,Direct,3.00,Direct,3.00,Direct,3.00,Direct,2.25,Partial,2.25,Partial,2.00,Partial,2.25,Partial

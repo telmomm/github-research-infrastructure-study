@@ -1,0 +1,249 @@
+criterion_id,rm_id,platform,score_free,score_best,evidence,verification
+RM1.1,RM1,GH,3,3,Milestones with due dates; Projects iteration and date fields,"documented knowledge, not re-verified"
+RM1.1,RM1,GL,3,3,Milestones with start and due dates (Free); iterations add cadences on Premium,verified: V9
+RM1.1,RM1,BB,0,0,No planning object since native Issues were removed,verified: V1
+RM1.1,RM1,AT,3,3,"Jira versions, sprints and epics with dates","documented knowledge, not re-verified"
+RM1.2,RM1,GH,2,2,Milestone completion percentage and sub-issue progress; no objective object,verified: V15
+RM1.2,RM1,GL,2,2,Milestone completion percentage; epics and objectives are paid and not scored here,verified: V2
+RM1.2,RM1,BB,0,0,None,verified: V1
+RM1.2,RM1,AT,2,2,Epic progress in Jira; no objective object scored,"documented knowledge, not re-verified"
+RM1.3,RM1,GH,3,3,Projects roadmap layout,"documented knowledge, not re-verified"
+RM1.3,RM1,GL,1,3,Milestone list only on Free; roadmaps need Premium,verified: V3
+RM1.3,RM1,BB,0,0,None,verified: V1
+RM1.3,RM1,AT,3,3,Jira timeline view,"documented knowledge, not re-verified"
+RM1.4,RM1,GH,2,2,Plan kept as a versioned file; Projects fields keep no retrievable history,"documented knowledge, not re-verified"
+RM1.4,RM1,GL,2,2,Plan kept as a versioned file,"documented knowledge, not re-verified"
+RM1.4,RM1,BB,2,2,Plan kept as a versioned file,"documented knowledge, not re-verified"
+RM1.4,RM1,AT,2,2,Plan kept as a Confluence page (page history) or versioned file,"documented knowledge, not re-verified"
+RM2.1,RM2,GH,2,2,Issue with an organization issue type and issue fields; no research-question object,verified: V18
+RM2.1,RM2,GL,2,2,Issue with a label; work item types are fixed and none is a research question,verified: V6
+RM2.1,RM2,BB,1,1,A file in the repository only; no record with an identifier,verified: V1
+RM2.1,RM2,AT,2,2,Jira custom issue type; a configured generic object,"documented knowledge, not re-verified"
+RM2.2,RM2,GH,3,3,Issue body edit history with diffs,"documented knowledge, not re-verified"
+RM2.2,RM2,GL,1,3,Free records that the description changed but comparing versions needs Premium,verified: V11
+RM2.2,RM2,BB,2,2,Git history of the file,"documented knowledge, not re-verified"
+RM2.2,RM2,AT,3,3,Jira issue history shows old and new field values,"documented knowledge, not re-verified"
+RM2.3,RM2,GH,2,2,"Cross-references with backlinks, sub-issues and dependencies; no typed 'addresses' link",verified: V14;V15
+RM2.3,RM2,GL,2,2,Related items and child tasks; cross-references with backlinks,verified: V4
+RM2.3,RM2,BB,1,1,Free-text references in commit messages and pull requests,"documented knowledge, not re-verified"
+RM2.3,RM2,AT,3,3,"Jira issue links with configurable link types, plus development panel links to branches, commits and pull requests","documented knowledge, not re-verified"
+RM3.1,RM3,GH,3,3,Issues and sub-issues,verified: V15
+RM3.1,RM3,GL,3,3,Issues and tasks,"documented knowledge, not re-verified"
+RM3.1,RM3,BB,0,0,Native issue tracker removed in August 2026,verified: V1
+RM3.1,RM3,AT,3,3,Jira issues,"documented knowledge, not re-verified"
+RM3.2,RM3,GH,3,3,Projects Status field with built-in workflows,"documented knowledge, not re-verified"
+RM3.2,RM3,GL,2,3,"Open and closed natively; intermediate states by label lists on Free, configurable status on Premium",verified: V12
+RM3.2,RM3,BB,0,0,None,verified: V1
+RM3.2,RM3,AT,3,3,Jira workflow statuses,"documented knowledge, not re-verified"
+RM3.3,RM3,GH,3,3,Assignees,"documented knowledge, not re-verified"
+RM3.3,RM3,GL,3,3,Assignee (several assignees on Premium),"documented knowledge, not re-verified"
+RM3.3,RM3,BB,0,0,None,verified: V1
+RM3.3,RM3,AT,3,3,Assignee,"documented knowledge, not re-verified"
+RM3.4,RM3,GH,3,3,"Issue fields and Projects fields, sortable",verified: V18
+RM3.4,RM3,GL,2,2,Priority labels with label ordering; weights are paid and are not priority,"documented knowledge, not re-verified"
+RM3.4,RM3,BB,0,0,None,verified: V1
+RM3.4,RM3,AT,3,3,Priority field,"documented knowledge, not re-verified"
+RM3.5,RM3,GH,3,3,Blocked-by and blocking relationships,verified: V14
+RM3.5,RM3,GL,1,3,Only 'relates to' on Free; blocking links need Premium,verified: V4
+RM3.5,RM3,BB,0,0,None,verified: V1
+RM3.5,RM3,AT,3,3,'Blocks' issue links,"documented knowledge, not re-verified"
+RM3.6,RM3,GH,3,3,Projects board layout,"documented knowledge, not re-verified"
+RM3.6,RM3,GL,3,3,Project issue boards,verified: V7
+RM3.6,RM3,BB,0,0,None,verified: V1
+RM3.6,RM3,AT,3,3,Jira boards,"documented knowledge, not re-verified"
+RM4.1,RM4,GH,3,3,"Markdown rendering, README surfaced","documented knowledge, not re-verified"
+RM4.1,RM4,GL,3,3,"Markdown rendering, README surfaced, wiki","documented knowledge, not re-verified"
+RM4.1,RM4,BB,3,3,"Markdown rendering, README surfaced; wiki removed",verified: V1
+RM4.1,RM4,AT,3,3,Markdown in repository plus Confluence pages,"documented knowledge, not re-verified"
+RM4.2,RM4,GH,3,3,"Issue forms, pull request templates, template repositories","documented knowledge, not re-verified"
+RM4.2,RM4,GL,3,3,"Description templates, project templates","documented knowledge, not re-verified"
+RM4.2,RM4,BB,2,2,Default pull request description; no repository or record templates,"documented knowledge, not re-verified"
+RM4.2,RM4,AT,3,3,Confluence templates and Jira issue templates by type,"documented knowledge, not re-verified"
+RM4.3,RM4,GH,3,3,Git,"documented knowledge, not re-verified"
+RM4.3,RM4,GL,3,3,Git,"documented knowledge, not re-verified"
+RM4.3,RM4,BB,3,3,Git,"documented knowledge, not re-verified"
+RM4.3,RM4,AT,3,3,Git; Confluence page history,"documented knowledge, not re-verified"
+RM4.4,RM4,GH,3,3,"Topics, licence detection, CITATION.cff parsed by the platform",verified: V19
+RM4.4,RM4,GL,2,2,Topics and licence detection; citation file stored but not interpreted,verified: V27
+RM4.4,RM4,BB,2,2,Metadata file by convention,"documented knowledge, not re-verified"
+RM4.4,RM4,AT,2,2,Metadata file by convention,"documented knowledge, not re-verified"
+RM5.1,RM5,GH,2,2,Issue type or discussion category configured for decisions; no decision object,verified: V18
+RM5.1,RM5,GL,2,2,Issue with label or template; no decision object,"documented knowledge, not re-verified"
+RM5.1,RM5,BB,1,1,A file in the repository only,verified: V1
+RM5.1,RM5,AT,3,3,Confluence Decisions blueprint with an automatic decision log,verified: V25
+RM5.2,RM5,GH,2,2,Issue forms and issue fields configured by the team,verified: V18
+RM5.2,RM5,GL,2,2,"Description template, free text","documented knowledge, not re-verified"
+RM5.2,RM5,BB,1,1,File template by convention,"documented knowledge, not re-verified"
+RM5.2,RM5,AT,3,3,"Decision template with background, options considered and outcome",verified: V25
+RM5.3,RM5,GH,3,3,Creation and edit timestamps on the record,"documented knowledge, not re-verified"
+RM5.3,RM5,GL,3,3,Creation and edit timestamps,"documented knowledge, not re-verified"
+RM5.3,RM5,BB,2,2,"Commit timestamp of the file, not of the decision","documented knowledge, not re-verified"
+RM5.3,RM5,AT,3,3,Timestamps and due date on the decision page,verified: V25
+RM5.4,RM5,GH,3,3,Assignees and participants list,"documented knowledge, not re-verified"
+RM5.4,RM5,GL,3,3,Assignee and participants list,"documented knowledge, not re-verified"
+RM5.4,RM5,BB,1,1,Commit author only,"documented knowledge, not re-verified"
+RM5.4,RM5,AT,3,3,"Owner, contributors and informed parties on the decision template",verified: V25
+RM5.5,RM5,GH,2,2,Cross-references and permalinks; not typed,"documented knowledge, not re-verified"
+RM5.5,RM5,GL,2,2,Cross-references and permalinks; not typed,"documented knowledge, not re-verified"
+RM5.5,RM5,BB,1,1,Free-text references,"documented knowledge, not re-verified"
+RM5.5,RM5,AT,2,2,Smart links to issues and repository; not typed,"documented knowledge, not re-verified"
+RM6.1,RM6,GH,3,3,Pull request reviews; required reviews through branch protection on public repositories,verified: V16
+RM6.1,RM6,GL,2,3,Merge request approvals are optional on Free; required approvals need Premium,verified: V5
+RM6.1,RM6,BB,2,3,Pull request approvals; merge checks warn on Free and are enforced only on Premium,verified: V20
+RM6.1,RM6,AT,2,3,As Bitbucket,verified: V20
+RM6.2,RM6,GH,3,3,Line comments and suggested changes,"documented knowledge, not re-verified"
+RM6.2,RM6,GL,3,3,Line comments and suggestions,"documented knowledge, not re-verified"
+RM6.2,RM6,BB,3,3,"Inline comments, tasks and suggestions","documented knowledge, not re-verified"
+RM6.2,RM6,AT,3,3,As Bitbucket,"documented knowledge, not re-verified"
+RM6.3,RM6,GH,3,3,"Contributors view, blame, commit authorship","documented knowledge, not re-verified"
+RM6.3,RM6,GL,3,3,"Contributor analytics, blame","documented knowledge, not re-verified"
+RM6.3,RM6,BB,2,2,Commit list and blame; no contributor summary,"documented knowledge, not re-verified"
+RM6.3,RM6,AT,2,2,As Bitbucket,"documented knowledge, not re-verified"
+RM6.4,RM6,GH,3,3,Branches and forks,"documented knowledge, not re-verified"
+RM6.4,RM6,GL,3,3,Branches and forks,"documented knowledge, not re-verified"
+RM6.4,RM6,BB,3,3,Branches and forks,"documented knowledge, not re-verified"
+RM6.4,RM6,AT,3,3,Branches and forks,"documented knowledge, not re-verified"
+RM7.1,RM7,GH,3,3,Discussions with categories; issue comments,"documented knowledge, not re-verified"
+RM7.1,RM7,GL,3,3,Threads on issues and epics; no separate forum,"documented knowledge, not re-verified"
+RM7.1,RM7,BB,1,1,Pull request comments only,verified: V1
+RM7.1,RM7,AT,3,3,Confluence comments and Jira issue comments,"documented knowledge, not re-verified"
+RM7.2,RM7,GH,3,3,"References between discussions, issues, pull requests and commits","documented knowledge, not re-verified"
+RM7.2,RM7,GL,3,3,"References between issues, merge requests and commits","documented knowledge, not re-verified"
+RM7.2,RM7,BB,1,1,Pull request to commits only,"documented knowledge, not re-verified"
+RM7.2,RM7,AT,3,3,"Smart links between Confluence, Jira and Bitbucket","documented knowledge, not re-verified"
+RM7.3,RM7,GH,3,3,"Search across issues, pull requests and discussions","documented knowledge, not re-verified"
+RM7.3,RM7,GL,3,3,Search across issues and merge requests,"documented knowledge, not re-verified"
+RM7.3,RM7,BB,1,1,Pull request search only,"documented knowledge, not re-verified"
+RM7.3,RM7,AT,3,3,Search in Jira and Confluence,"documented knowledge, not re-verified"
+RM8.1,RM8,GH,3,3,"Git, with web interface","documented knowledge, not re-verified"
+RM8.1,RM8,GL,3,3,"Git, with web interface","documented knowledge, not re-verified"
+RM8.1,RM8,BB,3,3,"Git, with web interface","documented knowledge, not re-verified"
+RM8.1,RM8,AT,3,3,"Git, with web interface","documented knowledge, not re-verified"
+RM8.2,RM8,GH,3,3,"Git, with web interface","documented knowledge, not re-verified"
+RM8.2,RM8,GL,3,3,"Git, with web interface","documented knowledge, not re-verified"
+RM8.2,RM8,BB,3,3,"Git, with web interface","documented knowledge, not re-verified"
+RM8.2,RM8,AT,3,3,"Git, with web interface","documented knowledge, not re-verified"
+RM8.3,RM8,GH,3,3,"Git, with web interface","documented knowledge, not re-verified"
+RM8.3,RM8,GL,3,3,"Git, with web interface","documented knowledge, not re-verified"
+RM8.3,RM8,BB,3,3,"Git, with web interface","documented knowledge, not re-verified"
+RM8.3,RM8,AT,3,3,"Git, with web interface","documented knowledge, not re-verified"
+RM8.4,RM8,GH,3,3,"Git, with web interface","documented knowledge, not re-verified"
+RM8.4,RM8,GL,3,3,"Git, with web interface","documented knowledge, not re-verified"
+RM8.4,RM8,BB,3,3,"Git, with web interface","documented knowledge, not re-verified"
+RM8.4,RM8,AT,3,3,"Git, with web interface","documented knowledge, not re-verified"
+RM8.5,RM8,GH,2,2,"Git LFS, 10 GiB free quota; not a data repository",verified: V17
+RM8.5,RM8,GL,2,2,Git LFS within a 10 GiB project limit,verified: V13
+RM8.5,RM8,BB,2,2,"Git LFS, 1 GB free quota",verified: V21
+RM8.5,RM8,AT,2,2,As Bitbucket,verified: V21
+RM9.1,RM9,GH,2,2,Directory convention; template repositories,"documented knowledge, not re-verified"
+RM9.1,RM9,GL,2,2,Directory convention; project templates,"documented knowledge, not re-verified"
+RM9.1,RM9,BB,2,2,Directory convention,"documented knowledge, not re-verified"
+RM9.1,RM9,AT,2,2,Directory convention,"documented knowledge, not re-verified"
+RM9.2,RM9,GH,2,2,"By directory convention; labels apply to issues, not files","documented knowledge, not re-verified"
+RM9.2,RM9,GL,2,2,By directory convention; package and model registries type some artifacts,"documented knowledge, not re-verified"
+RM9.2,RM9,BB,2,2,By directory convention,"documented knowledge, not re-verified"
+RM9.2,RM9,AT,2,2,By directory convention,"documented knowledge, not re-verified"
+RM9.3,RM9,GH,2,2,"Autolinks, submodules, LFS pointers; by convention","documented knowledge, not re-verified"
+RM9.3,RM9,GL,2,2,"External tracker integrations, submodules; by convention","documented knowledge, not re-verified"
+RM9.3,RM9,BB,2,2,"Jira links, submodules; by convention","documented knowledge, not re-verified"
+RM9.3,RM9,AT,2,2,Smart links; by convention,"documented knowledge, not re-verified"
+RM9.4,RM9,GH,3,3,"Repository home with issues, projects, discussions and releases","documented knowledge, not re-verified"
+RM9.4,RM9,GL,3,3,"Project home with issues, boards, wiki and releases","documented knowledge, not re-verified"
+RM9.4,RM9,BB,3,3,Repository home; code and pull requests only,verified: V1
+RM9.4,RM9,AT,2,2,Three products with separate navigation,"documented knowledge, not re-verified"
+RM10.1,RM10,GH,3,3,Closing keywords and linked pull requests,"documented knowledge, not re-verified"
+RM10.1,RM10,GL,3,3,Closing patterns and related merge requests,"documented knowledge, not re-verified"
+RM10.1,RM10,BB,1,1,No task object; pull request to commits only,verified: V1
+RM10.1,RM10,AT,3,3,"Issue keys in branches, commits and pull requests feed the Jira development panel","documented knowledge, not re-verified"
+RM10.2,RM10,GH,1,1,Manual navigation through timelines; no lineage query,"documented knowledge, not re-verified"
+RM10.2,RM10,GL,1,1,Manual navigation; no lineage query,"documented knowledge, not re-verified"
+RM10.2,RM10,BB,1,1,Git log only,"documented knowledge, not re-verified"
+RM10.2,RM10,AT,1,1,Manual navigation; no lineage query,"documented knowledge, not re-verified"
+RM10.3,RM10,GH,2,2,"Cross-references among issues, pull requests, discussions and releases; untyped","documented knowledge, not re-verified"
+RM10.3,RM10,GL,2,2,Cross-references; releases can be tied to milestones; untyped,"documented knowledge, not re-verified"
+RM10.3,RM10,BB,1,1,Free-text references,"documented knowledge, not re-verified"
+RM10.3,RM10,AT,2,2,Issue links and smart links across products,"documented knowledge, not re-verified"
+RM10.4,RM10,GH,3,3,Blame,"documented knowledge, not re-verified"
+RM10.4,RM10,GL,3,3,Blame,"documented knowledge, not re-verified"
+RM10.4,RM10,BB,3,3,Blame (annotate),"documented knowledge, not re-verified"
+RM10.4,RM10,AT,3,3,Blame (annotate),"documented knowledge, not re-verified"
+RM11.1,RM11,GH,3,3,"Public projects, milestones and project status updates","documented knowledge, not re-verified"
+RM11.1,RM11,GL,3,3,Public boards and milestones,"documented knowledge, not re-verified"
+RM11.1,RM11,BB,1,1,Public code and pull requests only,verified: V1
+RM11.1,RM11,AT,1,2,Jira and Confluence Free cannot be made public; paid plans allow anonymous viewing of issues but not boards,verified: V24
+RM11.2,RM11,GH,3,3,Public repository,"documented knowledge, not re-verified"
+RM11.2,RM11,GL,3,3,Public project,"documented knowledge, not re-verified"
+RM11.2,RM11,BB,3,3,Public repository,"documented knowledge, not re-verified"
+RM11.2,RM11,AT,3,3,Public repository,"documented knowledge, not re-verified"
+RM11.3,RM11,GH,3,3,Rendered documents and Pages,verified: V16
+RM11.3,RM11,GL,3,3,"Rendered documents, wiki and Pages",verified: V13
+RM11.3,RM11,BB,2,2,Rendered documents in the repository; wiki removed,verified: V1
+RM11.3,RM11,AT,2,2,Rendered documents in the repository; Confluence Free is not public,verified: V24
+RM11.4,RM11,GH,3,3,Repository activity view and pulse,"documented knowledge, not re-verified"
+RM11.4,RM11,GL,3,3,Project activity page,"documented knowledge, not re-verified"
+RM11.4,RM11,BB,2,2,Commit and pull request lists,"documented knowledge, not re-verified"
+RM11.4,RM11,AT,2,2,Commit and pull request lists,"documented knowledge, not re-verified"
+RM12.1,RM12,GH,2,2,Environment files by convention; container registry and dev containers,"documented knowledge, not re-verified"
+RM12.1,RM12,GL,2,2,Environment files by convention; container registry,"documented knowledge, not re-verified"
+RM12.1,RM12,BB,2,2,Environment files by convention; image named in pipeline file,"documented knowledge, not re-verified"
+RM12.1,RM12,AT,2,2,As Bitbucket,"documented knowledge, not re-verified"
+RM12.2,RM12,GH,3,3,"Commit identifiers, tags, permalinks, LFS pointers","documented knowledge, not re-verified"
+RM12.2,RM12,GL,3,3,"Commit identifiers, tags, permalinks, LFS pointers","documented knowledge, not re-verified"
+RM12.2,RM12,BB,3,3,"Commit identifiers, tags, LFS pointers","documented knowledge, not re-verified"
+RM12.2,RM12,AT,3,3,As Bitbucket,"documented knowledge, not re-verified"
+RM12.3,RM12,GH,3,3,Workflows run on demand; free on public repositories,verified: V16
+RM12.3,RM12,GL,3,3,Pipelines run on demand; 400 compute minutes per month,verified: V13
+RM12.3,RM12,BB,3,3,Custom pipelines on demand; 50 build minutes per month,verified: V21
+RM12.3,RM12,AT,3,3,As Bitbucket,verified: V21
+RM12.4,RM12,GH,3,3,Required status checks on public repositories,verified: V16
+RM12.4,RM12,GL,3,3,Pipelines must succeed setting,"documented knowledge, not re-verified"
+RM12.4,RM12,BB,2,3,Build status shown; blocking a merge needs Premium,verified: V20
+RM12.4,RM12,AT,2,3,As Bitbucket,verified: V20
+RM13.1,RM13,GH,3,3,"Actions on repository, issue and release events","documented knowledge, not re-verified"
+RM13.1,RM13,GL,3,3,"CI/CD on push, merge request, tag; webhooks","documented knowledge, not re-verified"
+RM13.1,RM13,BB,3,3,"Pipelines on push, pull request and tag","documented knowledge, not re-verified"
+RM13.1,RM13,AT,3,3,Pipelines plus Jira automation,"documented knowledge, not re-verified"
+RM13.2,RM13,GH,3,3,"Actions, free for public repositories",verified: V16
+RM13.2,RM13,GL,3,3,"CI/CD, 400 minutes per month",verified: V13
+RM13.2,RM13,BB,3,3,"Pipelines, 50 minutes per month",verified: V21
+RM13.2,RM13,AT,3,3,As Bitbucket,verified: V21
+RM13.3,RM13,GH,3,3,Scheduled workflows,"documented knowledge, not re-verified"
+RM13.3,RM13,GL,3,3,Scheduled pipelines,"documented knowledge, not re-verified"
+RM13.3,RM13,BB,3,3,Scheduled pipelines,"documented knowledge, not re-verified"
+RM13.3,RM13,AT,3,3,Scheduled pipelines,"documented knowledge, not re-verified"
+RM13.4,RM13,GH,3,3,Release creation from workflows; generated release notes,"documented knowledge, not re-verified"
+RM13.4,RM13,GL,3,3,Release keyword in CI; changelog generation,"documented knowledge, not re-verified"
+RM13.4,RM13,BB,2,2,No release object; artifacts uploaded to Downloads by script,"documented knowledge, not re-verified"
+RM13.4,RM13,AT,2,2,As Bitbucket; Jira versions released separately,"documented knowledge, not re-verified"
+RM14.1,RM14,GH,3,3,Releases,"documented knowledge, not re-verified"
+RM14.1,RM14,GL,3,3,"Releases, with evidence and milestones","documented knowledge, not re-verified"
+RM14.1,RM14,BB,1,1,Tags and a Downloads area not tied to tags,"documented knowledge, not re-verified"
+RM14.1,RM14,AT,2,2,Tags plus Jira versions with release notes,"documented knowledge, not re-verified"
+RM14.2,RM14,GH,3,3,Zenodo integration archives each release and mints a DOI,verified: V26
+RM14.2,RM14,GL,1,1,No native integration; manual deposit or third-party script in CI,verified: V26
+RM14.2,RM14,BB,1,1,Manual deposit,verified: V26
+RM14.2,RM14,AT,1,1,Manual deposit,verified: V26
+RM14.3,RM14,GH,3,3,CITATION.cff parsed into a citation prompt,verified: V19
+RM14.3,RM14,GL,2,2,CITATION.cff stored as a file; no platform support found,verified: V27
+RM14.3,RM14,BB,2,2,File by convention,"documented knowledge, not re-verified"
+RM14.3,RM14,AT,2,2,File by convention,"documented knowledge, not re-verified"
+RM14.4,RM14,GH,3,3,Generated release notes list merged pull requests and contributors,"documented knowledge, not re-verified"
+RM14.4,RM14,GL,3,3,Releases associated with milestones; changelog from commit trailers,"documented knowledge, not re-verified"
+RM14.4,RM14,BB,1,1,Tag to commits only,"documented knowledge, not re-verified"
+RM14.4,RM14,AT,2,2,Jira version lists its issues; link to tag by convention,"documented knowledge, not re-verified"
+RM15.1,RM15,GH,3,3,Repository roles and visibility,"documented knowledge, not re-verified"
+RM15.1,RM15,GL,3,3,Project roles and visibility,"documented knowledge, not re-verified"
+RM15.1,RM15,BB,3,3,Repository permissions and branch permissions,"documented knowledge, not re-verified"
+RM15.1,RM15,AT,2,3,Bitbucket permissions; Jira Free permissions are not configurable,verified: V24
+RM15.2,RM15,GH,3,3,Transfer of repositories; organization owners,"documented knowledge, not re-verified"
+RM15.2,RM15,GL,3,3,Transfer of projects; group owners,"documented knowledge, not re-verified"
+RM15.2,RM15,BB,3,3,Transfer of repositories,"documented knowledge, not re-verified"
+RM15.2,RM15,AT,2,2,Separate administration in three products,"documented knowledge, not re-verified"
+RM15.3,RM15,GH,3,3,CONTRIBUTING and code of conduct surfaced; community profile,"documented knowledge, not re-verified"
+RM15.3,RM15,GL,3,3,CONTRIBUTING file surfaced,"documented knowledge, not re-verified"
+RM15.3,RM15,BB,2,2,File by convention,"documented knowledge, not re-verified"
+RM15.3,RM15,AT,2,2,File by convention,"documented knowledge, not re-verified"
+RM15.4,RM15,GH,3,3,Archive to read-only; export,"documented knowledge, not re-verified"
+RM15.4,RM15,GL,3,3,Archive project; project export including issues,"documented knowledge, not re-verified"
+RM15.4,RM15,BB,1,1,No archive state in Bitbucket Cloud; clone only,verified: V23
+RM15.4,RM15,AT,2,2,Clone plus Jira and Confluence export; no archive state for the repository,verified: V23

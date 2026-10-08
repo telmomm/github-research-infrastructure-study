@@ -1,0 +1,63 @@
+criterion_id,rm_id,expected_capability,best_free_score,reached_by
+RM1.1,RM1,phase and milestone definition,3,GH;GL;AT
+RM1.2,RM1,objective tracking,2,GH;GL;AT
+RM1.3,RM1,roadmap overview,3,GH;AT
+RM1.4,RM1,plan revision history,2,GH;GL;BB;AT
+RM2.1,RM2,question registration,2,GH;GL;AT
+RM2.2,RM2,revision history,3,GH;AT
+RM2.3,RM2,question-to-method/analysis/output links,3,AT
+RM3.1,RM3,task creation,3,GH;GL;AT
+RM3.2,RM3,status,3,GH;AT
+RM3.3,RM3,assignment,3,GH;GL;AT
+RM3.4,RM3,priority,3,GH;AT
+RM3.5,RM3,dependency links,3,GH;AT
+RM3.6,RM3,board overview,3,GH;GL;AT
+RM4.1,RM4,structured documents,3,GH;GL;BB;AT
+RM4.2,RM4,templates,3,GH;GL;AT
+RM4.3,RM4,versioned edits,3,GH;GL;BB;AT
+RM4.4,RM4,early-stage metadata,3,GH
+RM5.1,RM5,decision records,3,AT
+RM5.2,RM5,rationale and alternatives,3,AT
+RM5.3,RM5,timestamp,3,GH;GL;AT
+RM5.4,RM5,participants,3,GH;GL;AT
+RM5.5,RM5,artifact links,2,GH;GL;AT
+RM6.1,RM6,review workflow,3,GH
+RM6.2,RM6,comment and feedback,3,GH;GL;BB;AT
+RM6.3,RM6,contribution history,3,GH;GL
+RM6.4,RM6,parallel branches,3,GH;GL;BB;AT
+RM7.1,RM7,threaded discussion,3,GH;GL;AT
+RM7.2,RM7,linking of topics to tasks and artifacts,3,GH;GL;AT
+RM7.3,RM7,searchable archive,3,GH;GL;AT
+RM8.1,RM8,history,3,GH;GL;BB;AT
+RM8.2,RM8,diff,3,GH;GL;BB;AT
+RM8.3,RM8,restore,3,GH;GL;BB;AT
+RM8.4,RM8,tags and snapshots,3,GH;GL;BB;AT
+RM8.5,RM8,large-file handling,2,GH;GL;BB;AT
+RM9.1,RM9,defined repository structure,2,GH;GL;BB;AT
+RM9.2,RM9,artifact classification,2,GH;GL;BB;AT
+RM9.3,RM9,cross-tool references,2,GH;GL;BB;AT
+RM9.4,RM9,single navigable workspace,3,GH;GL;BB
+RM10.1,RM10,activity-to-artifact links,3,GH;GL;AT
+RM10.2,RM10,lineage retrieval,1,GH;GL;BB;AT
+RM10.3,RM10,cross-stage linking,2,GH;GL;AT
+RM10.4,RM10,granular history,3,GH;GL;BB;AT
+RM11.1,RM11,visible status,3,GH;GL
+RM11.2,RM11,shared or public history,3,GH;GL;BB;AT
+RM11.3,RM11,accessible documentation,3,GH;GL
+RM11.4,RM11,readable activity log,3,GH;GL
+RM12.1,RM12,environment capture,2,GH;GL;BB;AT
+RM12.2,RM12,pinned data and code versions,3,GH;GL;BB;AT
+RM12.3,RM12,runnable steps,3,GH;GL;BB;AT
+RM12.4,RM12,hooks for automated checks,3,GH;GL
+RM13.1,RM13,event-triggered workflows,3,GH;GL;BB;AT
+RM13.2,RM13,validation and CI,3,GH;GL;BB;AT
+RM13.3,RM13,scheduled checks,3,GH;GL;BB;AT
+RM13.4,RM13,build and release automation,3,GH;GL
+RM14.1,RM14,versioned releases,3,GH;GL
+RM14.2,RM14,persistent identifiers via external archive,3,GH
+RM14.3,RM14,machine-readable metadata,3,GH
+RM14.4,RM14,output-to-process links,3,GH;GL
+RM15.1,RM15,access and permission policy,3,GH;GL;BB
+RM15.2,RM15,ownership and handover,3,GH;GL;BB
+RM15.3,RM15,contribution guidelines,3,GH;GL
+RM15.4,RM15,archival exit plan,3,GH;GL

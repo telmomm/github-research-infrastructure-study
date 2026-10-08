@@ -1,0 +1,5 @@
+platform,mean_free_15,mean_free_core14,mean_best_15,direct,partial,limited,not_supported,differentiators_free,others_free,criteria_native_free,criteria_absent_free,criteria_gated_by_tier,cells_verified
+GH,2.75,2.73,2.75,11,4,0,0,2.41,2.84,48,0,0,17
+GL,2.55,2.51,2.67,8,7,0,0,2.02,2.68,39,0,5,17
+BB,1.76,1.72,1.79,5,4,5,1,1.01,1.94,18,9,2,24
+AT,2.48,2.52,2.55,10,5,0,0,2.66,2.44,34,0,4,14

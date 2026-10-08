@@ -1,0 +1,14 @@
+probe,question,GH,GL,BB,AT
+P1 mandatory review before integration,Review object,"Pull request review (approve, request changes, comment)",Merge request approval,Pull request approval,As Bitbucket
+P1 mandatory review before integration,"Can approval be required, free tier","Yes, on public repositories (branch protection or rulesets) [V16]",No: approvals are optional and do not prevent merging [V5],No: unmet merge checks only warn [V20],No [V20]
+P1 mandatory review before integration,"Can approval be required, paid tier",Yes (Team for private repositories) [V16],"Yes, Premium: approval rules [V5]","Yes, Premium: enforced merge checks [V20]","Yes, Premium [V20]"
+P1 mandatory review before integration,Reviewers assigned by path,"CODEOWNERS, free on public repositories [V16]","Code owners, Premium [V8]",Default reviewers; code owners not verified,As Bitbucket
+P1 mandatory review before integration,"Passing checks required before merge, free tier","Yes, required status checks on public repositories [V16]","Yes, 'Pipelines must succeed' (not re-verified)","No, Premium only [V20]",No [V20]
+P2 runners,"Hosted compute, free tier",Unlimited on standard runners for public repositories [V16],400 compute minutes per month [V13],50 build minutes per month [V21],As Bitbucket [V21]
+P2 runners,Self-hosted runners,Yes; no minute charge (not re-verified),Yes; no minute charge (not re-verified),"Yes; do not consume build minutes; 2026 pricing change, free allowance unclear [V22]",As Bitbucket [V22]
+P2 runners,Triggers,"Repository, issue, release, schedule and manual events","Push, merge request, tag, schedule, manual, API","Push, pull request, tag, schedule, manual","As Bitbucket, plus Jira automation"
+P3 path to a citable publication,Release object,Releases with notes and assets,"Releases with notes, assets, evidence",Tags and a Downloads area; no release object,Tags plus Jira versions
+P3 path to a citable publication,Archive with persistent identifier,Native Zenodo integration: each release archived with a DOI [V26],"Manual deposit, CI job or third-party script [V26]",Manual deposit [V26],Manual deposit [V26]
+P3 path to a citable publication,Citation metadata used by the platform,CITATION.cff read and shown as 'Cite this repository' [V19],File stored; no platform support found [V27],File stored,File stored
+P3 path to a citable publication,Eligible as host for a JOSS submission,Yes [V28],Yes [V28],"Doubtful: JOSS requires that anyone can open issues against the repository, and the native tracker was removed [V1][V28] (inference, not confirmed with JOSS)",Doubtful: Jira Free cannot be made public [V24][V28] (inference)
+P3 path to a citable publication,Where JOSS review happens,"GitHub issues, whatever the host of the software [V28]",GitHub issues [V28],GitHub issues [V28],GitHub issues [V28]
