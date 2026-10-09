@@ -54,6 +54,12 @@ the configurations was exercised in a sandbox project for this evaluation.
 
 - The protocol and the scores were drafted in the same session, by a language model, and have not
   been checked by a human rater. The protocol was not registered before scoring.
+- Second reading (2026-10-09): the blank sheet (`rater_sheet.md`) was completed by five AI assistants
+  (`ratings/`, described in `ratings/README.md`). Agreement with the reference scores is moderate
+  (Krippendorff's alpha, ordinal, 0.54; exact agreement 63-69%). The reference scores were not changed.
+  `analysis/scripts/rater_agreement.py` writes the comparison to `results/evaluation/panel_*`;
+  the cells all five sheets dispute are listed in `panel_summary.md` for adjudication.
+  This is a robustness check, not human inter-rater reliability.
 - Vendor plans change. Three of the facts verified here changed within the last fourteen months.
 - Three probes requested by the journal editor (`probes.csv`) are descriptive and not part of the scores:
   mandatory review before integration, runners, and the path to a citable publication.

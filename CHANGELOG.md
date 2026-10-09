@@ -11,7 +11,10 @@ Methodological decisions are logged separately in [`docs/DECISION_LOG.md`](docs/
 ### Added
 - **`manuscript_csmag/`** — a sibling manuscript adapting this study for IEEE *Computing in Science & Engineering* (`IEEEcsmag` template): condensed, narrative rewrite (~3,042 words abstract+body+references), 12 references, 3 figures, 2 tables, author biography. `manuscript/` (the *Scientometrics* submission, v1.1.0) is unchanged. `DECISION_LOG.md` D29.
 
+- **Second reading of the platform evaluation (manuscript 2).** `framework/evaluation/ratings/` holds five completed rating sheets produced by AI assistants (not human raters; `ratings/README.md`). `analysis/scripts/rater_agreement.py` -> `results/evaluation/panel_{scores,agreement,requirements,strata,gaps}.csv` and `panel_summary.md`; `analysis/scripts/plot_rater_range.py` -> `manuscript_2/fig_raters.{svg,pdf}`. Agreement with the reference scores is moderate: Krippendorff's alpha (ordinal) 0.54, exact agreement 63-69 %, within one point 88-96 %, weighted kappa 0.34-0.54. Bitbucket alone is last in all six readings; the order of GitHub, GitLab and Bitbucket + Jira + Confluence is not stable; 2 of the 11 residual gaps are confirmed by a majority of the sheets. Reference scores unchanged. `DECISION_LOG.md` D32.
+
 ### Changed
+- **`manuscript_2/paper.tex` revised for the second reading** (`D32`): abstract (135 words), a new method paragraph, a new section "Do the scores survive a second reading?" with Figure 2 and Table 3, hedged ranking and residual-gap claims, rewritten limitation and conclusion. 9 pages.
 - **`manuscript_csmag/` references cut from 20 to 12** per CiSE editorial feedback (12-reference limit); citations renumbered in order of first appearance. `DECISION_LOG.md` D30.
 - **`manuscript_csmag/` abstract cut from 189 to 141 words** per CiSE editorial feedback (150-word abstract limit); content unchanged, dashes replaced by parentheses so no word counter can push it over. `DECISION_LOG.md` D31.
 

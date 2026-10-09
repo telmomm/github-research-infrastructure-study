@@ -1,0 +1,7 @@
+stratum,cells,exact_min,exact_max,within_one_min,within_one_max,mean_difference_min,mean_difference_max,exact_vs_median,mean_difference_vs_median
+verified cells,72,0.458,0.542,0.704,0.917,+0.19,+0.49,0.556,+0.40
+unverified cells,176,0.699,0.756,0.955,0.994,-0.06,+0.18,0.778,+0.10
+GitHub,62,0.774,0.887,0.984,1.000,-0.19,+0.10,0.887,+0.02
+GitLab,62,0.710,0.790,0.935,0.984,+0.10,+0.21,0.774,+0.18
+Bitbucket,62,0.410,0.532,0.705,0.903,+0.16,+0.41,0.565,+0.31
+Bitbucket + Jira + Confluence,62,0.597,0.677,0.903,1.000,-0.02,+0.37,0.629,+0.26
